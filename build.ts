@@ -120,7 +120,7 @@ class Type {
         return defs + vars + props + funcs;
     }
 
-    static private computeStaticTypename (context : string[]) : string {
+    private static computeStaticTypename (context : string[]) : string {
         context.reverse();
         var str = _.reduce(context, (prefix : string, current : string) => {
             return prefix + _s.capitalize(current);
@@ -128,7 +128,7 @@ class Type {
         return str + "Static";
     }
 
-    static private convertTypename (type : string) : string {
+    public static convertTypename (type : string) : string {
         if (type == "Object") {
             return "any";
         }
@@ -153,7 +153,7 @@ class Type {
         return Type.computeStaticTypename(type.split(".").reverse());
     }
 
-    static private computeReturnType (returnTypes : JSCAReturnType[]) {
+    private static computeReturnType (returnTypes : JSCAReturnType[]) {
         if (!_.isArray(returnTypes) || returnTypes.length <= 0) {
             return "void";
         }
@@ -165,7 +165,7 @@ class Type {
         }
     }
 
-    static private computeParameter (param : JSCAParameter, optional? : bool) {
+    private static computeParameter (param : JSCAParameter, optional? : bool) {
         var required = "";
         var vararg = "";
         var varargext = "";
@@ -220,7 +220,7 @@ class Type {
 
     private computeProperties (type : JSCAType) {
         if (_.isArray(type.properties) && type.properties.length > 0) {
-            _.each(type.properties, (p : JSCAProperty, name : string) {
+            _.each(type.properties, (p : JSCAProperty, name : string) => {
                 if (_.isUndefined(this.subtypes[p.name]) && _.isUndefined(this.functions[p.name])) {
                     this.properties[p.name] = Type.convertTypename(p.type);
                 }
