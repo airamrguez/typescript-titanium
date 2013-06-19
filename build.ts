@@ -125,7 +125,7 @@ class Type {
         var str = _.reduce(context, (prefix : string, current : string) => {
             return prefix + _s.capitalize(current);
         }, "");
-        return str + "Static";
+        return str;
     }
 
     public static convertTypename (type : string) : string {
@@ -133,7 +133,7 @@ class Type {
             return "any";
         }
         if (type == "Boolean") {
-            return "bool";
+            return "boolean";
         }
         if (type == "Array") {
             return "any[]";
