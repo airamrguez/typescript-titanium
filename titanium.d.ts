@@ -1,10 +1,10 @@
 /*
    Typescript Titanium - 3.1.1.GA
    Typescipt-Titanium may be freely distributed under the MIT license.
-   This source code was auto-generated (Wed Jun 19 2013 21:15:45 GMT+0200 (CEST)}}).
+   This source code was auto-generated (Wed Jun 19 2013 21:47:24 GMT+0200 (CEST)}}).
    More information at https://github.com/alvivi/typescript-titanium.
  */
-declare interface TitaniumXMLEntity {
+interface ITitaniumXMLEntity {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -17,65 +17,65 @@ declare interface TitaniumXMLEntity {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    childNodes : ITitaniumXMLNodeList;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
     notationName : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     publicId : string;
     systemId : string;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getChildNodes () : ITitaniumXMLNodeList;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
     getNotationName () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getPublicId () : string;
     getSystemId () : string;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     setBubbleParent (bubbleParent : boolean) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
 }
-declare interface TitaniumXMLNode {
+interface ITitaniumXMLNode {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -88,59 +88,59 @@ declare interface TitaniumXMLNode {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    childNodes : ITitaniumXMLNodeList;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getChildNodes () : ITitaniumXMLNodeList;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     setBubbleParent (bubbleParent : boolean) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
 }
-declare interface TitaniumXMLNotation {
+interface ITitaniumXMLNotation {
     bubbleParent : boolean;
     publicId : string;
     systemId : string;
@@ -153,7 +153,7 @@ declare interface TitaniumXMLNotation {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumXMLEntityReference {
+interface ITitaniumXMLEntityReference {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -166,59 +166,59 @@ declare interface TitaniumXMLEntityReference {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    childNodes : ITitaniumXMLNodeList;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getChildNodes () : ITitaniumXMLNodeList;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     setBubbleParent (bubbleParent : boolean) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
 }
-declare interface TitaniumXMLCDATASection {
+interface ITitaniumXMLCDATASection {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -231,70 +231,70 @@ declare interface TitaniumXMLCDATASection {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
+    childNodes : ITitaniumXMLNodeList;
     data : string;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     length : number;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     appendData (arg : string) : void;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     deleteData (offset : number, count : number) : void;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
+    getChildNodes () : ITitaniumXMLNodeList;
     getData () : string;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLength () : number;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     insertData (offset : number, arg : string) : void;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     replaceData (offset : number, count : number, arg : string) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setData (data : string) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
-    splitText (offset : number) : TitaniumXMLText;
+    splitText (offset : number) : ITitaniumXMLText;
     substringData (offset : number, count : number) : string;
 }
-declare interface TitaniumXMLDocument {
+interface ITitaniumXMLDocument {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -307,79 +307,79 @@ declare interface TitaniumXMLDocument {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
-    doctype : TitaniumXMLDocumentType;
-    documentElement : TitaniumXMLElement;
-    firstChild : TitaniumXMLNode;
-    implementation : TitaniumXMLDOMImplementation;
-    lastChild : TitaniumXMLNode;
+    childNodes : ITitaniumXMLNodeList;
+    doctype : ITitaniumXMLDocumentType;
+    documentElement : ITitaniumXMLElement;
+    firstChild : ITitaniumXMLNode;
+    implementation : ITitaniumXMLDOMImplementation;
+    lastChild : ITitaniumXMLNode;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
-    createAttribute (name : string) : TitaniumXMLAttr;
-    createAttributeNS (namespaceURI : string, name : string) : TitaniumXMLAttr;
-    createCDATASection (data : string) : TitaniumXMLCDATASection;
-    createComment (data : string) : TitaniumXMLComment;
-    createDocumentFragment () : TitaniumXMLDocumentFragment;
-    createElement (tagName : string) : TitaniumXMLElement;
-    createElementNS (namespaceURI : string, name : string) : TitaniumXMLElement;
-    createEntityReference (name : string) : TitaniumXMLEntityReference;
-    createProcessingInstruction (target : string, data : string) : TitaniumXMLProcessingInstruction;
-    createTextNode (data : string) : TitaniumXMLText;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
+    createAttribute (name : string) : ITitaniumXMLAttr;
+    createAttributeNS (namespaceURI : string, name : string) : ITitaniumXMLAttr;
+    createCDATASection (data : string) : ITitaniumXMLCDATASection;
+    createComment (data : string) : ITitaniumXMLComment;
+    createDocumentFragment () : ITitaniumXMLDocumentFragment;
+    createElement (tagName : string) : ITitaniumXMLElement;
+    createElementNS (namespaceURI : string, name : string) : ITitaniumXMLElement;
+    createEntityReference (name : string) : ITitaniumXMLEntityReference;
+    createProcessingInstruction (target : string, data : string) : ITitaniumXMLProcessingInstruction;
+    createTextNode (data : string) : ITitaniumXMLText;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
-    getDoctype () : TitaniumXMLDocumentType;
-    getDocumentElement () : TitaniumXMLElement;
-    getElementById (elementId : string) : TitaniumXMLElement;
-    getElementsByTagName (tagname : string) : TitaniumXMLNodeList;
-    getElementsByTagNameNS (namespaceURI : string, localname : string) : TitaniumXMLNodeList;
-    getFirstChild () : TitaniumXMLNode;
-    getImplementation () : TitaniumXMLDOMImplementation;
-    getLastChild () : TitaniumXMLNode;
+    getChildNodes () : ITitaniumXMLNodeList;
+    getDoctype () : ITitaniumXMLDocumentType;
+    getDocumentElement () : ITitaniumXMLElement;
+    getElementById (elementId : string) : ITitaniumXMLElement;
+    getElementsByTagName (tagname : string) : ITitaniumXMLNodeList;
+    getElementsByTagNameNS (namespaceURI : string, localname : string) : ITitaniumXMLNodeList;
+    getFirstChild () : ITitaniumXMLNode;
+    getImplementation () : ITitaniumXMLDOMImplementation;
+    getLastChild () : ITitaniumXMLNode;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    importNode (importedNode : TitaniumXMLNode, deep : boolean) : TitaniumXMLNode;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    importNode (importedNode : ITitaniumXMLNode, deep : boolean) : ITitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     setBubbleParent (bubbleParent : boolean) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
 }
-declare interface TitaniumXMLProcessingInstruction {
+interface ITitaniumXMLProcessingInstruction {
     bubbleParent : boolean;
     data : string;
     target : string;
@@ -393,7 +393,7 @@ declare interface TitaniumXMLProcessingInstruction {
     setBubbleParent (bubbleParent : boolean) : void;
     setData (data : string) : void;
 }
-declare interface TitaniumXMLComment {
+interface ITitaniumXMLComment {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -406,60 +406,60 @@ declare interface TitaniumXMLComment {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
+    childNodes : ITitaniumXMLNodeList;
     data : string;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     length : number;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     appendData (arg : string) : void;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     deleteData (offset : number, count : number) : void;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
+    getChildNodes () : ITitaniumXMLNodeList;
     getData () : string;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLength () : number;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     insertData (offset : number, arg : string) : void;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     replaceData (offset : number, count : number, arg : string) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setData (data : string) : void;
@@ -468,7 +468,7 @@ declare interface TitaniumXMLComment {
     setPrefix (prefix : string) : void;
     substringData (offset : number, count : number) : string;
 }
-declare interface TitaniumXMLAttr {
+interface ITitaniumXMLAttr {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -481,80 +481,80 @@ declare interface TitaniumXMLAttr {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    childNodes : ITitaniumXMLNodeList;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     localName : string;
     name : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    ownerElement : TitaniumXMLElement;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    ownerElement : ITitaniumXMLElement;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     specified : boolean;
     text : string;
     textContent : string;
     value : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getChildNodes () : ITitaniumXMLNodeList;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLocalName () : string;
     getName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getOwnerElement () : TitaniumXMLElement;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getOwnerElement () : ITitaniumXMLElement;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getSpecified () : boolean;
     getText () : string;
     getTextContent () : string;
     getValue () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     setBubbleParent (bubbleParent : boolean) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
     setValue (value : string) : void;
 }
-declare interface TitaniumXMLDOMImplementation {
+interface ITitaniumXMLDOMImplementation {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createDocument (namespaceURI : string, qualifiedName : string, doctype : TitaniumXMLDocumentType) : TitaniumXMLDocument;
-    createDocumentType (qualifiedName : string, publicId : string, systemId : string) : TitaniumXMLDocumentType;
+    createDocument (namespaceURI : string, qualifiedName : string, doctype : ITitaniumXMLDocumentType) : ITitaniumXMLDocument;
+    createDocumentType (qualifiedName : string, publicId : string, systemId : string) : ITitaniumXMLDocumentType;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     hasFeature (feature : string, version : string) : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumXMLNodeList {
+interface ITitaniumXMLNodeList {
     bubbleParent : boolean;
     length : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
@@ -562,11 +562,11 @@ declare interface TitaniumXMLNodeList {
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     getLength () : number;
-    item (index : number) : TitaniumXMLNode;
+    item (index : number) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumXMLNamedNodeMap {
+interface ITitaniumXMLNamedNodeMap {
     bubbleParent : boolean;
     length : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
@@ -574,17 +574,17 @@ declare interface TitaniumXMLNamedNodeMap {
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     getLength () : number;
-    getNamedItem (name : string) : TitaniumXMLNode;
-    getNamedItemNS (namespaceURI : string, localName : string) : TitaniumXMLNode;
-    item (index : number) : TitaniumXMLNode;
+    getNamedItem (name : string) : ITitaniumXMLNode;
+    getNamedItemNS (namespaceURI : string, localName : string) : ITitaniumXMLNode;
+    item (index : number) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    removeNamedItem (name : string) : TitaniumXMLNode;
-    removeNamedItemNS (namespaceURI : string, localName : string) : TitaniumXMLNode;
+    removeNamedItem (name : string) : ITitaniumXMLNode;
+    removeNamedItemNS (namespaceURI : string, localName : string) : ITitaniumXMLNode;
     setBubbleParent (bubbleParent : boolean) : void;
-    setNamedItem (node : TitaniumXMLNode) : TitaniumXMLNode;
-    setNamedItemNS (node : TitaniumXMLNode) : TitaniumXMLNode;
+    setNamedItem (node : ITitaniumXMLNode) : ITitaniumXMLNode;
+    setNamedItemNS (node : ITitaniumXMLNode) : ITitaniumXMLNode;
 }
-declare interface TitaniumXMLDocumentType {
+interface ITitaniumXMLDocumentType {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -597,71 +597,71 @@ declare interface TitaniumXMLDocumentType {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
-    entities : TitaniumXMLNamedNodeMap;
-    firstChild : TitaniumXMLNode;
+    childNodes : ITitaniumXMLNodeList;
+    entities : ITitaniumXMLNamedNodeMap;
+    firstChild : ITitaniumXMLNode;
     internalSubset : string;
-    lastChild : TitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     localName : string;
     name : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    notations : TitaniumXMLNamedNodeMap;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    notations : ITitaniumXMLNamedNodeMap;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     publicId : string;
     systemId : string;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
-    getEntities () : TitaniumXMLNamedNodeMap;
-    getFirstChild () : TitaniumXMLNode;
+    getChildNodes () : ITitaniumXMLNodeList;
+    getEntities () : ITitaniumXMLNamedNodeMap;
+    getFirstChild () : ITitaniumXMLNode;
     getInternalSubset () : string;
-    getLastChild () : TitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLocalName () : string;
     getName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getNotations () : TitaniumXMLNamedNodeMap;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getNotations () : ITitaniumXMLNamedNodeMap;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getPublicId () : string;
     getSystemId () : string;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     setBubbleParent (bubbleParent : boolean) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
 }
-declare interface TitaniumXMLElement {
+interface ITitaniumXMLElement {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -674,50 +674,50 @@ declare interface TitaniumXMLElement {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    childNodes : ITitaniumXMLNodeList;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     tagName : string;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     fireEvent (name : string, event : any) : void;
     getAttribute (name : string) : string;
     getAttributeNS (namespaceURI : string, localName : string) : string;
-    getAttributeNode (name : string) : TitaniumXMLAttr;
-    getAttributeNodeNS (namespaceURI : string, localName : string) : TitaniumXMLAttr;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributeNode (name : string) : ITitaniumXMLAttr;
+    getAttributeNodeNS (namespaceURI : string, localName : string) : ITitaniumXMLAttr;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
-    getElementsByTagName (name : string) : TitaniumXMLNodeList;
-    getElementsByTagNameNS (namespaceURI : string, localName : string) : TitaniumXMLNodeList;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getChildNodes () : ITitaniumXMLNodeList;
+    getElementsByTagName (name : string) : ITitaniumXMLNodeList;
+    getElementsByTagNameNS (namespaceURI : string, localName : string) : ITitaniumXMLNodeList;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getTagName () : string;
     getText () : string;
     getTextContent () : string;
@@ -725,25 +725,25 @@ declare interface TitaniumXMLElement {
     hasAttributeNS (namespaceURI : string, localName : string) : boolean;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
     removeAttribute (name : string) : void;
     removeAttributeNS (namespaceURI : string, localName : string) : void;
-    removeAttributeNode (oldAttr : TitaniumXMLAttr) : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeAttributeNode (oldAttr : ITitaniumXMLAttr) : void;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     setAttribute (name : string, value : string) : void;
     setAttributeNS (namespaceURI : string, qualifiedName : string, value : string) : void;
-    setAttributeNode (newAttr : TitaniumXMLAttr) : TitaniumXMLAttr;
-    setAttributeNodeNS (newAttr : TitaniumXMLAttr) : TitaniumXMLAttr;
+    setAttributeNode (newAttr : ITitaniumXMLAttr) : ITitaniumXMLAttr;
+    setAttributeNodeNS (newAttr : ITitaniumXMLAttr) : ITitaniumXMLAttr;
     setBubbleParent (bubbleParent : boolean) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
 }
-declare interface TitaniumXMLCharacterData {
+interface ITitaniumXMLCharacterData {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -756,60 +756,60 @@ declare interface TitaniumXMLCharacterData {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
+    childNodes : ITitaniumXMLNodeList;
     data : string;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     length : number;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     appendData (arg : string) : void;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     deleteData (offset : number, count : number) : void;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
+    getChildNodes () : ITitaniumXMLNodeList;
     getData () : string;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLength () : number;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     insertData (offset : number, arg : string) : void;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     replaceData (offset : number, count : number, arg : string) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setData (data : string) : void;
@@ -818,7 +818,7 @@ declare interface TitaniumXMLCharacterData {
     setPrefix (prefix : string) : void;
     substringData (offset : number, count : number) : string;
 }
-declare interface TitaniumXMLDocumentFragment {
+interface ITitaniumXMLDocumentFragment {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -831,59 +831,59 @@ declare interface TitaniumXMLDocumentFragment {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    childNodes : ITitaniumXMLNodeList;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getChildNodes () : ITitaniumXMLNodeList;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     setBubbleParent (bubbleParent : boolean) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
 }
-declare interface TitaniumXMLText {
+interface ITitaniumXMLText {
     ATTRIBUTE_NODE : number;
     CDATA_SECTION_NODE : number;
     COMMENT_NODE : number;
@@ -896,98 +896,98 @@ declare interface TitaniumXMLText {
     NOTATION_NODE : number;
     PROCESSING_INSTRUCTION_NODE : number;
     TEXT_NODE : number;
-    attributes : TitaniumXMLNamedNodeMap;
+    attributes : ITitaniumXMLNamedNodeMap;
     bubbleParent : boolean;
-    childNodes : TitaniumXMLNodeList;
+    childNodes : ITitaniumXMLNodeList;
     data : string;
-    firstChild : TitaniumXMLNode;
-    lastChild : TitaniumXMLNode;
+    firstChild : ITitaniumXMLNode;
+    lastChild : ITitaniumXMLNode;
     length : number;
     localName : string;
     namespaceURI : string;
-    nextSibling : TitaniumXMLNode;
+    nextSibling : ITitaniumXMLNode;
     nodeName : string;
     nodeType : number;
     nodeValue : string;
-    ownerDocument : TitaniumXMLDocument;
-    parentNode : TitaniumXMLNode;
+    ownerDocument : ITitaniumXMLDocument;
+    parentNode : ITitaniumXMLNode;
     prefix : string;
-    previousSibling : TitaniumXMLNode;
+    previousSibling : ITitaniumXMLNode;
     text : string;
     textContent : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    appendChild (newChild : TitaniumXMLNode) : TitaniumXMLNode;
+    appendChild (newChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     appendData (arg : string) : void;
     applyProperties (props : any) : void;
-    cloneNode (deep : boolean) : TitaniumXMLNode;
+    cloneNode (deep : boolean) : ITitaniumXMLNode;
     deleteData (offset : number, count : number) : void;
     fireEvent (name : string, event : any) : void;
-    getAttributes () : TitaniumXMLNamedNodeMap;
+    getAttributes () : ITitaniumXMLNamedNodeMap;
     getBubbleParent () : boolean;
-    getChildNodes () : TitaniumXMLNodeList;
+    getChildNodes () : ITitaniumXMLNodeList;
     getData () : string;
-    getFirstChild () : TitaniumXMLNode;
-    getLastChild () : TitaniumXMLNode;
+    getFirstChild () : ITitaniumXMLNode;
+    getLastChild () : ITitaniumXMLNode;
     getLength () : number;
     getLocalName () : string;
     getNamespaceURI () : string;
-    getNextSibling () : TitaniumXMLNode;
+    getNextSibling () : ITitaniumXMLNode;
     getNodeName () : string;
     getNodeType () : number;
     getNodeValue () : string;
-    getOwnerDocument () : TitaniumXMLDocument;
-    getParentNode () : TitaniumXMLNode;
+    getOwnerDocument () : ITitaniumXMLDocument;
+    getParentNode () : ITitaniumXMLNode;
     getPrefix () : string;
-    getPreviousSibling () : TitaniumXMLNode;
+    getPreviousSibling () : ITitaniumXMLNode;
     getText () : string;
     getTextContent () : string;
     hasAttributes () : boolean;
     hasChildNodes () : boolean;
-    insertBefore (newChild : TitaniumXMLNode, refChild : TitaniumXMLNode) : TitaniumXMLNode;
+    insertBefore (newChild : ITitaniumXMLNode, refChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     insertData (offset : number, arg : string) : void;
     isSupported (feature : string, version : string) : boolean;
     normalize () : void;
-    removeChild (oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    removeChild (oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceChild (newChild : TitaniumXMLNode, oldChild : TitaniumXMLNode) : TitaniumXMLNode;
+    replaceChild (newChild : ITitaniumXMLNode, oldChild : ITitaniumXMLNode) : ITitaniumXMLNode;
     replaceData (offset : number, count : number, arg : string) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setData (data : string) : void;
     setLocalName (localName : string) : void;
     setNodeValue (nodeValue : string) : void;
     setPrefix (prefix : string) : void;
-    splitText (offset : number) : TitaniumXMLText;
+    splitText (offset : number) : ITitaniumXMLText;
     substringData (offset : number, count : number) : string;
 }
-declare interface TitaniumXML {
-    Entity : TitaniumXMLEntity;
-    Node : TitaniumXMLNode;
-    Notation : TitaniumXMLNotation;
-    EntityReference : TitaniumXMLEntityReference;
-    CDATASection : TitaniumXMLCDATASection;
-    Document : TitaniumXMLDocument;
-    ProcessingInstruction : TitaniumXMLProcessingInstruction;
-    Comment : TitaniumXMLComment;
-    Attr : TitaniumXMLAttr;
-    DOMImplementation : TitaniumXMLDOMImplementation;
-    NodeList : TitaniumXMLNodeList;
-    NamedNodeMap : TitaniumXMLNamedNodeMap;
-    DocumentType : TitaniumXMLDocumentType;
-    Element : TitaniumXMLElement;
-    CharacterData : TitaniumXMLCharacterData;
-    DocumentFragment : TitaniumXMLDocumentFragment;
-    Text : TitaniumXMLText;
+interface ITitaniumXML {
+    Entity : ITitaniumXMLEntity;
+    Node : ITitaniumXMLNode;
+    Notation : ITitaniumXMLNotation;
+    EntityReference : ITitaniumXMLEntityReference;
+    CDATASection : ITitaniumXMLCDATASection;
+    Document : ITitaniumXMLDocument;
+    ProcessingInstruction : ITitaniumXMLProcessingInstruction;
+    Comment : ITitaniumXMLComment;
+    Attr : ITitaniumXMLAttr;
+    DOMImplementation : ITitaniumXMLDOMImplementation;
+    NodeList : ITitaniumXMLNodeList;
+    NamedNodeMap : ITitaniumXMLNamedNodeMap;
+    DocumentType : ITitaniumXMLDocumentType;
+    Element : ITitaniumXMLElement;
+    CharacterData : ITitaniumXMLCharacterData;
+    DocumentFragment : ITitaniumXMLDocumentFragment;
+    Text : ITitaniumXMLText;
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    parseString (xml : string) : TitaniumXMLDocument;
+    parseString (xml : string) : ITitaniumXMLDocument;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    serializeToString (node : TitaniumXMLNode) : string;
+    serializeToString (node : ITitaniumXMLNode) : string;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAndroidNotificationManager {
+interface ITitaniumAndroidNotificationManager {
     DEFAULT_ALL : number;
     DEFAULT_LIGHTS : number;
     DEFAULT_SOUND : number;
@@ -1006,11 +1006,11 @@ declare interface TitaniumAndroidNotificationManager {
     cancelAll () : void;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    notify (id : number, notification : TitaniumAndroidNotification) : void;
+    notify (id : number, notification : ITitaniumAndroidNotification) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAndroidCalendarCalendar {
+interface ITitaniumAndroidCalendarCalendar {
     bubbleParent : boolean;
     hidden : boolean;
     id : string;
@@ -1018,10 +1018,10 @@ declare interface TitaniumAndroidCalendarCalendar {
     selected : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createEvent (properties : TitaniumAndroidCalendarEvent) : TitaniumAndroidCalendarEvent;
+    createEvent (properties : ITitaniumAndroidCalendarEvent) : ITitaniumAndroidCalendarEvent;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    getEventById (id : number) : TitaniumAndroidCalendarEvent;
+    getEventById (id : number) : ITitaniumAndroidCalendarEvent;
     getEventsBetweenDates (date1 : Date, date2 : Date) : any[];
     getEventsInDate (year : number, month : number, day : number) : any[];
     getEventsInMonth (year : number, month : number) : any[];
@@ -1033,7 +1033,7 @@ declare interface TitaniumAndroidCalendarCalendar {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAndroidCalendarReminder {
+interface ITitaniumAndroidCalendarReminder {
     bubbleParent : boolean;
     id : string;
     method : number;
@@ -1048,7 +1048,7 @@ declare interface TitaniumAndroidCalendarReminder {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAndroidCalendarEvent {
+interface ITitaniumAndroidCalendarEvent {
     alerts : any[];
     allDay : boolean;
     begin : Date;
@@ -1066,8 +1066,8 @@ declare interface TitaniumAndroidCalendarEvent {
     visibility : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createAlert (data : TitaniumAndroidCalendarAlert) : TitaniumAndroidCalendarAlert;
-    createReminder (data : TitaniumAndroidCalendarReminder) : TitaniumAndroidCalendarReminder;
+    createAlert (data : ITitaniumAndroidCalendarAlert) : ITitaniumAndroidCalendarAlert;
+    createReminder (data : ITitaniumAndroidCalendarReminder) : ITitaniumAndroidCalendarReminder;
     fireEvent (name : string, event : any) : void;
     getAlerts () : any[];
     getAllDay () : boolean;
@@ -1089,7 +1089,7 @@ declare interface TitaniumAndroidCalendarEvent {
     setBubbleParent (bubbleParent : boolean) : void;
     setExtendedProperty (name : string, value : string) : void;
 }
-declare interface TitaniumAndroidCalendarAlert {
+interface ITitaniumAndroidCalendarAlert {
     alarmTime : Date;
     begin : Date;
     bubbleParent : boolean;
@@ -1112,11 +1112,11 @@ declare interface TitaniumAndroidCalendarAlert {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAndroidCalendar {
-    Calendar : TitaniumAndroidCalendarCalendar;
-    Reminder : TitaniumAndroidCalendarReminder;
-    Event : TitaniumAndroidCalendarEvent;
-    Alert : TitaniumAndroidCalendarAlert;
+interface ITitaniumAndroidCalendar {
+    Calendar : ITitaniumAndroidCalendarCalendar;
+    Reminder : ITitaniumAndroidCalendarReminder;
+    Event : ITitaniumAndroidCalendarEvent;
+    Alert : ITitaniumAndroidCalendarAlert;
     METHOD_ALERT : number;
     METHOD_DEFAULT : number;
     METHOD_EMAIL : number;
@@ -1141,20 +1141,20 @@ declare interface TitaniumAndroidCalendar {
     getAllAlerts () : any[];
     getAllCalendars () : any[];
     getBubbleParent () : boolean;
-    getCalendarById (id : number) : TitaniumAndroidCalendarCalendar;
+    getCalendarById (id : number) : ITitaniumAndroidCalendarCalendar;
     getSelectableCalendars () : any[];
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAndroidNotification {
+interface ITitaniumAndroidNotification {
     audioStreamType : number;
     bubbleParent : boolean;
-    contentIntent : TitaniumAndroidPendingIntent;
+    contentIntent : ITitaniumAndroidPendingIntent;
     contentText : string;
     contentTitle : string;
-    contentView : TitaniumAndroidRemoteViews;
+    contentView : ITitaniumAndroidRemoteViews;
     defaults : number;
-    deleteIntent : TitaniumAndroidPendingIntent;
+    deleteIntent : ITitaniumAndroidPendingIntent;
     flags : number;
     icon : number;
     ledARGB : number;
@@ -1169,11 +1169,11 @@ declare interface TitaniumAndroidNotification {
     fireEvent (name : string, event : any) : void;
     getAudioStreamType () : number;
     getBubbleParent () : boolean;
-    getContentIntent () : TitaniumAndroidPendingIntent;
+    getContentIntent () : ITitaniumAndroidPendingIntent;
     getContentText () : string;
     getContentTitle () : string;
     getDefaults () : number;
-    getDeleteIntent () : TitaniumAndroidPendingIntent;
+    getDeleteIntent () : ITitaniumAndroidPendingIntent;
     getFlags () : number;
     getIcon () : any;
     getLedARGB () : number;
@@ -1186,15 +1186,15 @@ declare interface TitaniumAndroidNotification {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAudioStreamType (audioStreamType : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setContentIntent (contentIntent : TitaniumAndroidPendingIntent) : void;
+    setContentIntent (contentIntent : ITitaniumAndroidPendingIntent) : void;
     setContentText (contentText : string) : void;
     setContentTitle (contentTitle : string) : void;
-    setContentView (contentView : TitaniumAndroidRemoteViews) : void;
+    setContentView (contentView : ITitaniumAndroidRemoteViews) : void;
     setDefaults (defaults : number) : void;
-    setDeleteIntent (deleteIntent : TitaniumAndroidPendingIntent) : void;
+    setDeleteIntent (deleteIntent : ITitaniumAndroidPendingIntent) : void;
     setFlags (flags : number) : void;
     setIcon (icon : number) : void;
-    setLatestEventInfo (contentTitle : string, contentText : string, contentIntent : TitaniumAndroidPendingIntent) : void;
+    setLatestEventInfo (contentTitle : string, contentText : string, contentIntent : ITitaniumAndroidPendingIntent) : void;
     setLedARGB (ledARGB : number) : void;
     setLedOffMS (ledOffMS : number) : void;
     setLedOnMS (ledOnMS : number) : void;
@@ -1203,7 +1203,7 @@ declare interface TitaniumAndroidNotification {
     setTickerText (tickerText : string) : void;
     setWhen (when : Date) : void;
 }
-declare interface TitaniumAndroidIntent {
+interface ITitaniumAndroidIntent {
     action : string;
     bubbleParent : boolean;
     className : string;
@@ -1218,7 +1218,7 @@ declare interface TitaniumAndroidIntent {
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
     getAction () : string;
-    getBlobExtra (name : string) : TitaniumBlob;
+    getBlobExtra (name : string) : ITitaniumBlob;
     getBooleanExtra (name : string) : boolean;
     getBubbleParent () : boolean;
     getClassName () : string;
@@ -1238,7 +1238,7 @@ declare interface TitaniumAndroidIntent {
     setBubbleParent (bubbleParent : boolean) : void;
     setFlags (flags : number) : void;
 }
-declare interface TitaniumAndroidR {
+interface ITitaniumAndroidR {
     anim : any;
     array : any;
     attr : any;
@@ -1259,10 +1259,10 @@ declare interface TitaniumAndroidR {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAndroidActivity {
-    actionBar : TitaniumAndroidActionBar;
+interface ITitaniumAndroidActivity {
+    actionBar : ITitaniumAndroidActionBar;
     bubbleParent : boolean;
-    intent : TitaniumAndroidIntent;
+    intent : ITitaniumAndroidIntent;
     onCreateOptionsMenu : (...args : any[]) => any;
     onPrepareOptionsMenu : (...args : any[]) => any;
     requestedOrientation : number;
@@ -1270,9 +1270,9 @@ declare interface TitaniumAndroidActivity {
     applyProperties (props : any) : void;
     finish () : void;
     fireEvent (name : string, event : any) : void;
-    getActionBar () : TitaniumAndroidActionBar;
+    getActionBar () : ITitaniumAndroidActionBar;
     getBubbleParent () : boolean;
-    getIntent () : TitaniumAndroidIntent;
+    getIntent () : ITitaniumAndroidIntent;
     getOnCreateOptionsMenu () : (...args : any[]) => any;
     getOnPrepareOptionsMenu () : (...args : any[]) => any;
     getString (resourceId : number, format : any) : string;
@@ -1283,22 +1283,22 @@ declare interface TitaniumAndroidActivity {
     setOnCreateOptionsMenu (onCreateOptionsMenu : (...args : any[]) => any) : void;
     setOnPrepareOptionsMenu (onPrepareOptionsMenu : (...args : any[]) => any) : void;
     setRequestedOrientation (orientation : number) : void;
-    setResult (resultCode : number, intent? : TitaniumAndroidIntent) : void;
-    startActivity (intent : TitaniumAndroidIntent) : void;
-    startActivityForResult (intent : TitaniumAndroidIntent, callback : (...args : any[]) => any) : void;
+    setResult (resultCode : number, intent? : ITitaniumAndroidIntent) : void;
+    startActivity (intent : ITitaniumAndroidIntent) : void;
+    startActivityForResult (intent : ITitaniumAndroidIntent, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumAndroidMenu {
+interface ITitaniumAndroidMenu {
     bubbleParent : boolean;
     items : any[];
-    add (options : any) : TitaniumAndroidMenuItem;
+    add (options : any) : ITitaniumAndroidMenuItem;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     clear () : void;
     close () : void;
-    findItem (item : number) : TitaniumAndroidMenuItem;
+    findItem (item : number) : ITitaniumAndroidMenuItem;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    getItem (index : number) : TitaniumAndroidMenuItem;
+    getItem (index : number) : ITitaniumAndroidMenuItem;
     getItems () : any[];
     hasVisibleItems () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
@@ -1309,7 +1309,7 @@ declare interface TitaniumAndroidMenu {
     setGroupVisible (groupId : number, visible : boolean) : void;
     size () : number;
 }
-declare interface TitaniumAndroidActionBar {
+interface ITitaniumAndroidActionBar {
     backgroundImage : string;
     bubbleParent : boolean;
     displayHomeAsUp : boolean;
@@ -1333,7 +1333,7 @@ declare interface TitaniumAndroidActionBar {
     setTitle (title : string) : void;
     show () : void;
 }
-declare interface TitaniumAndroidBroadcastReceiver {
+interface ITitaniumAndroidBroadcastReceiver {
     bubbleParent : boolean;
     onReceived : (...args : any[]) => any;
     url : string;
@@ -1348,7 +1348,7 @@ declare interface TitaniumAndroidBroadcastReceiver {
     setOnReceived (onReceived : (...args : any[]) => any) : void;
     setUrl (url : string) : void;
 }
-declare interface TitaniumAndroidRemoteViews {
+interface ITitaniumAndroidRemoteViews {
     bubbleParent : boolean;
     layoutId : number;
     packageName : string;
@@ -1366,7 +1366,7 @@ declare interface TitaniumAndroidRemoteViews {
     setImageViewResource (viewId : number, srcId : number) : void;
     setImageViewUri (viewId : number, uri : string) : void;
     setInt (viewId : number, methodName : string, value : number) : void;
-    setOnClickPendingIntent (viewId : number, pendingIntent : TitaniumAndroidPendingIntent) : void;
+    setOnClickPendingIntent (viewId : number, pendingIntent : ITitaniumAndroidPendingIntent) : void;
     setProgressBar (viewId : number, max : number, progress : number, indeterminate : boolean) : void;
     setString (viewId : number, methodName : string, value : string) : void;
     setTextColor (viewId : number, color : number) : void;
@@ -1374,23 +1374,23 @@ declare interface TitaniumAndroidRemoteViews {
     setUri (viewId : number, methodName : string, value : string) : void;
     setViewVisibility (viewId : number, visibility : number) : void;
 }
-declare interface TitaniumAndroidPendingIntent {
+interface ITitaniumAndroidPendingIntent {
     bubbleParent : boolean;
     flags : number;
-    intent : TitaniumAndroidIntent;
+    intent : ITitaniumAndroidIntent;
     updateCurrentIntent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     getFlags () : number;
-    getIntent () : TitaniumAndroidIntent;
+    getIntent () : ITitaniumAndroidIntent;
     getUpdateCurrentIntent () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAndroidMenuItem {
-    actionView : TitaniumUIView;
+interface ITitaniumAndroidMenuItem {
+    actionView : ITitaniumUIView;
     actionViewExpanded : boolean;
     bubbleParent : boolean;
     checkable : boolean;
@@ -1409,7 +1409,7 @@ declare interface TitaniumAndroidMenuItem {
     collapseActionView () : void;
     expandActionView () : void;
     fireEvent (name : string, event : any) : void;
-    getActionView () : TitaniumUIView;
+    getActionView () : ITitaniumUIView;
     getBubbleParent () : boolean;
     getGroupId () : number;
     getItemId () : number;
@@ -1422,7 +1422,7 @@ declare interface TitaniumAndroidMenuItem {
     isEnabled () : boolean;
     isVisible () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    setActionView (actionView : TitaniumUIView) : void;
+    setActionView (actionView : ITitaniumUIView) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setCheckable (checkable : boolean) : void;
     setChecked (enabled : boolean) : void;
@@ -1433,35 +1433,35 @@ declare interface TitaniumAndroidMenuItem {
     setTitleCondensed (titleCondensed : string) : void;
     setVisible (visible : boolean) : void;
 }
-declare interface TitaniumAndroidService {
+interface ITitaniumAndroidService {
     bubbleParent : boolean;
-    intent : TitaniumAndroidIntent;
+    intent : ITitaniumAndroidIntent;
     serviceInstanceId : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    getIntent () : TitaniumAndroidIntent;
+    getIntent () : ITitaniumAndroidIntent;
     getServiceInstanceId () : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     start () : void;
     stop () : void;
 }
-declare interface TitaniumAndroid {
-    NotificationManager : TitaniumAndroidNotificationManager;
-    Calendar : TitaniumAndroidCalendar;
-    Notification : TitaniumAndroidNotification;
-    Intent : TitaniumAndroidIntent;
-    R : TitaniumAndroidR;
-    Activity : TitaniumAndroidActivity;
-    Menu : TitaniumAndroidMenu;
-    ActionBar : TitaniumAndroidActionBar;
-    BroadcastReceiver : TitaniumAndroidBroadcastReceiver;
-    RemoteViews : TitaniumAndroidRemoteViews;
-    PendingIntent : TitaniumAndroidPendingIntent;
-    MenuItem : TitaniumAndroidMenuItem;
-    Service : TitaniumAndroidService;
+interface ITitaniumAndroid {
+    NotificationManager : ITitaniumAndroidNotificationManager;
+    Calendar : ITitaniumAndroidCalendar;
+    Notification : ITitaniumAndroidNotification;
+    Intent : ITitaniumAndroidIntent;
+    R : ITitaniumAndroidR;
+    Activity : ITitaniumAndroidActivity;
+    Menu : ITitaniumAndroidMenu;
+    ActionBar : ITitaniumAndroidActionBar;
+    BroadcastReceiver : ITitaniumAndroidBroadcastReceiver;
+    RemoteViews : ITitaniumAndroidRemoteViews;
+    PendingIntent : ITitaniumAndroidPendingIntent;
+    MenuItem : ITitaniumAndroidMenuItem;
+    Service : ITitaniumAndroidService;
     ACTION_AIRPLANE_MODE_CHANGED : string;
     ACTION_ALL_APPS : string;
     ACTION_ANSWER : string;
@@ -1649,43 +1649,43 @@ declare interface TitaniumAndroid {
     STREAM_VOICE_CALL : number;
     URI_INTENT_SCHEME : number;
     bubbleParent : boolean;
-    currentActivity : TitaniumAndroidActivity;
-    currentService : TitaniumAndroidService;
+    currentActivity : ITitaniumAndroidActivity;
+    currentService : ITitaniumAndroidService;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createBroadcastReceiver (parameters? : TitaniumAndroidBroadcastReceiver) : TitaniumAndroidBroadcastReceiver;
-    createIntent (parameters? : TitaniumAndroidIntent) : TitaniumAndroidIntent;
-    createIntentChooser (intent : TitaniumAndroidIntent, title : string) : TitaniumAndroidIntent;
-    createNotification (parameters? : TitaniumAndroidNotification) : TitaniumAndroidNotification;
-    createPendingIntent (parameters? : TitaniumAndroidPendingIntent) : TitaniumAndroidPendingIntent;
-    createRemoteViews (parameters? : TitaniumAndroidRemoteViews) : TitaniumAndroidRemoteViews;
-    createService (intent : TitaniumAndroidIntent) : TitaniumAndroidService;
-    createServiceIntent (options : ServiceIntentOptions) : TitaniumAndroidIntent;
+    createBroadcastReceiver (parameters? : ITitaniumAndroidBroadcastReceiver) : ITitaniumAndroidBroadcastReceiver;
+    createIntent (parameters? : ITitaniumAndroidIntent) : ITitaniumAndroidIntent;
+    createIntentChooser (intent : ITitaniumAndroidIntent, title : string) : ITitaniumAndroidIntent;
+    createNotification (parameters? : ITitaniumAndroidNotification) : ITitaniumAndroidNotification;
+    createPendingIntent (parameters? : ITitaniumAndroidPendingIntent) : ITitaniumAndroidPendingIntent;
+    createRemoteViews (parameters? : ITitaniumAndroidRemoteViews) : ITitaniumAndroidRemoteViews;
+    createService (intent : ITitaniumAndroidIntent) : ITitaniumAndroidService;
+    createServiceIntent (options : IServiceIntentOptions) : ITitaniumAndroidIntent;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    getCurrentActivity () : TitaniumAndroidActivity;
-    getCurrentService () : TitaniumAndroidService;
-    isServiceRunning (intent : TitaniumAndroidIntent) : boolean;
-    registerBroadcastReceiver (broadcastReceiver : TitaniumAndroidBroadcastReceiver, actions : any[]) : void;
+    getCurrentActivity () : ITitaniumAndroidActivity;
+    getCurrentService () : ITitaniumAndroidService;
+    isServiceRunning (intent : ITitaniumAndroidIntent) : boolean;
+    registerBroadcastReceiver (broadcastReceiver : ITitaniumAndroidBroadcastReceiver, actions : any[]) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    startService (intent : TitaniumAndroidIntent) : void;
-    stopService (intent : TitaniumAndroidIntent) : void;
-    unregisterBroadcastReceiver (broadcastReceiver : TitaniumAndroidBroadcastReceiver) : void;
+    startService (intent : ITitaniumAndroidIntent) : void;
+    stopService (intent : ITitaniumAndroidIntent) : void;
+    unregisterBroadcastReceiver (broadcastReceiver : ITitaniumAndroidBroadcastReceiver) : void;
 }
-declare interface TitaniumFacebookLoginButton {
+interface ITitaniumFacebookLoginButton {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -1697,7 +1697,7 @@ declare interface TitaniumFacebookLoginButton {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     enabled : boolean;
     focusable : boolean;
@@ -1707,36 +1707,36 @@ declare interface TitaniumFacebookLoginButton {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     style : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -1748,7 +1748,7 @@ declare interface TitaniumFacebookLoginButton {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getEnabled () : boolean;
     getFocusable () : boolean;
@@ -1758,9 +1758,9 @@ declare interface TitaniumFacebookLoginButton {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getStyle () : string;
     getTop () : any;
@@ -1770,20 +1770,20 @@ declare interface TitaniumFacebookLoginButton {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -1795,7 +1795,7 @@ declare interface TitaniumFacebookLoginButton {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
@@ -1809,17 +1809,17 @@ declare interface TitaniumFacebookLoginButton {
     setStyle (style : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumFacebook {
-    LoginButton : TitaniumFacebookLoginButton;
+interface ITitaniumFacebook {
+    LoginButton : ITitaniumFacebookLoginButton;
     BUTTON_STYLE_NORMAL : number;
     BUTTON_STYLE_WIDE : number;
     accessToken : string;
@@ -1833,7 +1833,7 @@ declare interface TitaniumFacebook {
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     authorize () : void;
-    createLoginButton (parameters? : TitaniumFacebookLoginButton) : TitaniumFacebookLoginButton;
+    createLoginButton (parameters? : ITitaniumFacebookLoginButton) : ITitaniumFacebookLoginButton;
     dialog (action : string, params : any, callback : (...args : any[]) => any) : void;
     fireEvent (name : string, event : any) : void;
     getAccessToken () : string;
@@ -1857,7 +1857,7 @@ declare interface TitaniumFacebook {
     setPermissions (permissions : any[]) : void;
     setUid (uid : string) : void;
 }
-declare interface TitaniumBlobStream {
+interface ITitaniumBlobStream {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -1866,16 +1866,16 @@ declare interface TitaniumBlobStream {
     getBubbleParent () : boolean;
     isReadable () : boolean;
     isWriteable () : boolean;
-    read (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    read (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    write (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    write (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
 }
-declare interface TitaniumUIIPhoneListViewStyle {
+interface ITitaniumUIIPhoneListViewStyle {
     GROUPED : number;
     PLAIN : number;
 }
-declare interface TitaniumUIIPhoneScrollIndicatorStyle {
+interface ITitaniumUIIPhoneScrollIndicatorStyle {
     BLACK : number;
     DEFAULT : number;
     WHITE : number;
@@ -1887,7 +1887,7 @@ declare interface TitaniumUIIPhoneScrollIndicatorStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneActivityIndicatorStyle {
+interface ITitaniumUIIPhoneActivityIndicatorStyle {
     BIG : number;
     DARK : number;
     PLAIN : number;
@@ -1899,15 +1899,15 @@ declare interface TitaniumUIIPhoneActivityIndicatorStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneNavigationGroup {
+interface ITitaniumUIIPhoneNavigationGroup {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -1917,39 +1917,39 @@ declare interface TitaniumUIIPhoneNavigationGroup {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
-    window : TitaniumUIWindow;
+    window : ITitaniumUIWindow;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    close (window : TitaniumUIWindow, options : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    close (window : ITitaniumUIWindow, options : any) : void;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -1959,34 +1959,34 @@ declare interface TitaniumUIIPhoneNavigationGroup {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
     getVisible () : boolean;
     getWidth () : any;
-    getWindow () : TitaniumUIWindow;
+    getWindow () : ITitaniumUIWindow;
     getZIndex () : number;
     hide () : void;
-    open (window : TitaniumUIWindow, options : any) : void;
-    remove (view : TitaniumUIView) : void;
+    open (window : ITitaniumUIWindow, options : any) : void;
+    remove (view : ITitaniumUIView) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -1996,7 +1996,7 @@ declare interface TitaniumUIIPhoneNavigationGroup {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setLayout (layout : string) : void;
@@ -2005,16 +2005,16 @@ declare interface TitaniumUIIPhoneNavigationGroup {
     setRight (right : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIPhoneAlertDialogStyle {
+interface ITitaniumUIIPhoneAlertDialogStyle {
     DEFAULT : number;
     LOGIN_AND_PASSWORD_INPUT : number;
     PLAIN_TEXT_INPUT : number;
@@ -2027,13 +2027,13 @@ declare interface TitaniumUIIPhoneAlertDialogStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneListViewScrollPosition {
+interface ITitaniumUIIPhoneListViewScrollPosition {
     BOTTOM : number;
     MIDDLE : number;
     NONE : number;
     TOP : number;
 }
-declare interface TitaniumUIIPhoneTableViewCellSelectionStyle {
+interface ITitaniumUIIPhoneTableViewCellSelectionStyle {
     BLUE : number;
     GRAY : number;
     NONE : number;
@@ -2045,12 +2045,12 @@ declare interface TitaniumUIIPhoneTableViewCellSelectionStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneListViewCellSelectionStyle {
+interface ITitaniumUIIPhoneListViewCellSelectionStyle {
     BLUE : number;
     GRAY : number;
     NONE : number;
 }
-declare interface TitaniumUIIPhoneProgressBarStyle {
+interface ITitaniumUIIPhoneProgressBarStyle {
     BAR : number;
     DEFAULT : number;
     PLAIN : number;
@@ -2062,7 +2062,7 @@ declare interface TitaniumUIIPhoneProgressBarStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneTableViewSeparatorStyle {
+interface ITitaniumUIIPhoneTableViewSeparatorStyle {
     NONE : number;
     SINGLE_LINE : number;
     bubbleParent : boolean;
@@ -2073,7 +2073,7 @@ declare interface TitaniumUIIPhoneTableViewSeparatorStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneTableViewStyle {
+interface ITitaniumUIIPhoneTableViewStyle {
     GROUPED : number;
     PLAIN : number;
     bubbleParent : boolean;
@@ -2084,7 +2084,7 @@ declare interface TitaniumUIIPhoneTableViewStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneSystemButton {
+interface ITitaniumUIIPhoneSystemButton {
     ACTION : number;
     ACTIVITY : number;
     ADD : number;
@@ -2119,7 +2119,7 @@ declare interface TitaniumUIIPhoneSystemButton {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneRowAnimationStyle {
+interface ITitaniumUIIPhoneRowAnimationStyle {
     BOTTOM : number;
     FADE : number;
     LEFT : number;
@@ -2134,7 +2134,7 @@ declare interface TitaniumUIIPhoneRowAnimationStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneSystemButtonStyle {
+interface ITitaniumUIIPhoneSystemButtonStyle {
     BAR : number;
     BORDERED : number;
     DONE : number;
@@ -2147,7 +2147,7 @@ declare interface TitaniumUIIPhoneSystemButtonStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneAnimationStyle {
+interface ITitaniumUIIPhoneAnimationStyle {
     CURL_DOWN : number;
     CURL_UP : number;
     FLIP_FROM_LEFT : number;
@@ -2161,7 +2161,7 @@ declare interface TitaniumUIIPhoneAnimationStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneSystemIcon {
+interface ITitaniumUIIPhoneSystemIcon {
     BOOKMARKS : number;
     CONTACTS : number;
     DOWNLOADS : number;
@@ -2182,7 +2182,7 @@ declare interface TitaniumUIIPhoneSystemIcon {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneStatusBar {
+interface ITitaniumUIIPhoneStatusBar {
     ANIMATION_STYLE_FADE : number;
     ANIMATION_STYLE_NONE : number;
     ANIMATION_STYLE_SLIDE : number;
@@ -2199,7 +2199,7 @@ declare interface TitaniumUIIPhoneStatusBar {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhoneTableViewScrollPosition {
+interface ITitaniumUIIPhoneTableViewScrollPosition {
     BOTTOM : number;
     MIDDLE : number;
     NONE : number;
@@ -2212,25 +2212,25 @@ declare interface TitaniumUIIPhoneTableViewScrollPosition {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIIPhone {
-    ListViewStyle : TitaniumUIIPhoneListViewStyle;
-    ScrollIndicatorStyle : TitaniumUIIPhoneScrollIndicatorStyle;
-    ActivityIndicatorStyle : TitaniumUIIPhoneActivityIndicatorStyle;
-    NavigationGroup : TitaniumUIIPhoneNavigationGroup;
-    AlertDialogStyle : TitaniumUIIPhoneAlertDialogStyle;
-    ListViewScrollPosition : TitaniumUIIPhoneListViewScrollPosition;
-    TableViewCellSelectionStyle : TitaniumUIIPhoneTableViewCellSelectionStyle;
-    ListViewCellSelectionStyle : TitaniumUIIPhoneListViewCellSelectionStyle;
-    ProgressBarStyle : TitaniumUIIPhoneProgressBarStyle;
-    TableViewSeparatorStyle : TitaniumUIIPhoneTableViewSeparatorStyle;
-    TableViewStyle : TitaniumUIIPhoneTableViewStyle;
-    SystemButton : TitaniumUIIPhoneSystemButton;
-    RowAnimationStyle : TitaniumUIIPhoneRowAnimationStyle;
-    SystemButtonStyle : TitaniumUIIPhoneSystemButtonStyle;
-    AnimationStyle : TitaniumUIIPhoneAnimationStyle;
-    SystemIcon : TitaniumUIIPhoneSystemIcon;
-    StatusBar : TitaniumUIIPhoneStatusBar;
-    TableViewScrollPosition : TitaniumUIIPhoneTableViewScrollPosition;
+interface ITitaniumUIIPhone {
+    ListViewStyle : ITitaniumUIIPhoneListViewStyle;
+    ScrollIndicatorStyle : ITitaniumUIIPhoneScrollIndicatorStyle;
+    ActivityIndicatorStyle : ITitaniumUIIPhoneActivityIndicatorStyle;
+    NavigationGroup : ITitaniumUIIPhoneNavigationGroup;
+    AlertDialogStyle : ITitaniumUIIPhoneAlertDialogStyle;
+    ListViewScrollPosition : ITitaniumUIIPhoneListViewScrollPosition;
+    TableViewCellSelectionStyle : ITitaniumUIIPhoneTableViewCellSelectionStyle;
+    ListViewCellSelectionStyle : ITitaniumUIIPhoneListViewCellSelectionStyle;
+    ProgressBarStyle : ITitaniumUIIPhoneProgressBarStyle;
+    TableViewSeparatorStyle : ITitaniumUIIPhoneTableViewSeparatorStyle;
+    TableViewStyle : ITitaniumUIIPhoneTableViewStyle;
+    SystemButton : ITitaniumUIIPhoneSystemButton;
+    RowAnimationStyle : ITitaniumUIIPhoneRowAnimationStyle;
+    SystemButtonStyle : ITitaniumUIIPhoneSystemButtonStyle;
+    AnimationStyle : ITitaniumUIIPhoneAnimationStyle;
+    SystemIcon : ITitaniumUIIPhoneSystemIcon;
+    StatusBar : ITitaniumUIIPhoneStatusBar;
+    TableViewScrollPosition : ITitaniumUIIPhoneTableViewScrollPosition;
     MODAL_PRESENTATION_CURRENT_CONTEXT : number;
     MODAL_PRESENTATION_FORMSHEET : number;
     MODAL_PRESENTATION_FULLSCREEN : number;
@@ -2246,33 +2246,33 @@ declare interface TitaniumUIIPhone {
     statusBarStyle : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createNavigationGroup (parameters? : TitaniumUIIPhoneNavigationGroup) : TitaniumUIIPhoneNavigationGroup;
+    createNavigationGroup (parameters? : ITitaniumUIIPhoneNavigationGroup) : ITitaniumUIIPhoneNavigationGroup;
     fireEvent (name : string, event : any) : void;
     getAppBadge () : number;
     getAppSupportsShakeToEdit () : boolean;
     getBubbleParent () : boolean;
     getStatusBarHidden () : boolean;
     getStatusBarStyle () : number;
-    hideStatusBar (params? : HideStatusBarParams) : void;
+    hideStatusBar (params? : IHideStatusBarParams) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAppBadge (appBadge : number) : void;
     setAppSupportsShakeToEdit (appSupportsShakeToEdit : boolean) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setStatusBarHidden (statusBarHidden : boolean) : void;
     setStatusBarStyle (statusBarStyle : number) : void;
-    showStatusBar (params? : ShowStatusBarParams) : void;
+    showStatusBar (params? : IShowStatusBarParams) : void;
 }
-declare interface TitaniumUIIPadSplitWindow {
+interface ITitaniumUIIPadSplitWindow {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backButtonTitle : string;
     backButtonTitleImage : string;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -2284,29 +2284,29 @@ declare interface TitaniumUIIPadSplitWindow {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
-    detailView : TitaniumUIView;
+    detailView : ITitaniumUIView;
     fullscreen : boolean;
     height : number;
     horizontalWrap : boolean;
     layout : string;
     left : number;
-    leftNavButton : TitaniumUIView;
-    masterView : TitaniumUIView;
+    leftNavButton : ITitaniumUIView;
+    masterView : ITitaniumUIView;
     modal : boolean;
     navBarHidden : boolean;
     opacity : number;
     orientation : number;
     orientationModes : any[];
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    rightNavButton : TitaniumUIView;
+    rightNavButton : ITitaniumUIView;
     showMasterInPortrait : boolean;
-    size : Dimension;
+    size : IDimension;
     tabBarHidden : boolean;
     title : string;
-    titleControl : TitaniumUIView;
+    titleControl : ITitaniumUIView;
     titleImage : string;
     titlePrompt : string;
     titleid : string;
@@ -2314,30 +2314,30 @@ declare interface TitaniumUIIPadSplitWindow {
     toolbar : any[];
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     translucent : boolean;
     url : string;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    close (params? : TitaniumUIAnimation) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    close (params? : ITitaniumUIAnimation) : void;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackButtonTitle () : string;
     getBackButtonTitleImage () : any;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -2349,29 +2349,29 @@ declare interface TitaniumUIIPadSplitWindow {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
-    getDetailView () : TitaniumUIView;
+    getDetailView () : ITitaniumUIView;
     getFullscreen () : boolean;
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getLayout () : string;
     getLeft () : any;
-    getLeftNavButton () : TitaniumUIView;
-    getMasterView () : TitaniumUIView;
+    getLeftNavButton () : ITitaniumUIView;
+    getMasterView () : ITitaniumUIView;
     getModal () : boolean;
     getNavBarHidden () : boolean;
     getOpacity () : number;
     getOrientation () : number;
     getOrientationModes () : any[];
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getRightNavButton () : TitaniumUIView;
+    getRightNavButton () : ITitaniumUIView;
     getShowMasterInPortrait () : boolean;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTabBarHidden () : boolean;
     getTitle () : string;
-    getTitleControl () : TitaniumUIView;
+    getTitleControl () : ITitaniumUIView;
     getTitleImage () : string;
     getTitlePrompt () : string;
     getTitleid () : string;
@@ -2387,19 +2387,19 @@ declare interface TitaniumUIIPadSplitWindow {
     getZIndex () : number;
     hide () : void;
     hideTabBar () : void;
-    open (params? : OpenWindowParams) : void;
-    remove (view : TitaniumUIView) : void;
+    open (params? : IOpenWindowParams) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackButtonTitle (backButtonTitle : string) : void;
     setBackButtonTitleImage (backButtonTitleImage : string) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -2411,23 +2411,23 @@ declare interface TitaniumUIIPadSplitWindow {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setFullscreen (fullscreen : boolean) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setLayout (layout : string) : void;
     setLeft (left : number) : void;
-    setLeftNavButton (leftNavButton : TitaniumUIView) : void;
+    setLeftNavButton (leftNavButton : ITitaniumUIView) : void;
     setModal (modal : boolean) : void;
     setNavBarHidden (navBarHidden : boolean) : void;
     setOpacity (opacity : number) : void;
     setOrientationModes (orientationModes : any[]) : void;
     setRight (right : number) : void;
-    setRightNavButton (rightNavButton : TitaniumUIView) : void;
+    setRightNavButton (rightNavButton : ITitaniumUIView) : void;
     setShowMasterInPortrait (showMasterInPortrait : boolean) : void;
     setTabBarHidden (tabBarHidden : boolean) : void;
     setTitle (title : string) : void;
-    setTitleControl (titleControl : TitaniumUIView) : void;
+    setTitleControl (titleControl : ITitaniumUIView) : void;
     setTitleImage (titleImage : string) : void;
     setTitlePrompt (titlePrompt : string) : void;
     setTitleid (titleid : string) : void;
@@ -2435,25 +2435,25 @@ declare interface TitaniumUIIPadSplitWindow {
     setToolbar (toolbar : any[]) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setTranslucent (translucent : boolean) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIPadDocumentViewer {
+interface ITitaniumUIIPadDocumentViewer {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -2463,37 +2463,37 @@ declare interface TitaniumUIIPadDocumentViewer {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -2503,16 +2503,16 @@ declare interface TitaniumUIIPadDocumentViewer {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
@@ -2520,16 +2520,16 @@ declare interface TitaniumUIIPadDocumentViewer {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -2539,7 +2539,7 @@ declare interface TitaniumUIIPadDocumentViewer {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setLayout (layout : string) : void;
@@ -2548,26 +2548,26 @@ declare interface TitaniumUIIPadDocumentViewer {
     setRight (right : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setUrl (url : string) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show (animated : boolean, view : any) : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIPadPopover {
+interface ITitaniumUIIPadPopover {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     arrowDirection : number;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -2577,7 +2577,7 @@ declare interface TitaniumUIIPadPopover {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
@@ -2585,33 +2585,33 @@ declare interface TitaniumUIIPadPopover {
     left : number;
     leftNavButton : any;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     rightNavButton : any;
-    size : Dimension;
+    size : IDimension;
     title : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getArrowDirection () : number;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -2621,7 +2621,7 @@ declare interface TitaniumUIIPadPopover {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -2629,10 +2629,10 @@ declare interface TitaniumUIIPadPopover {
     getLeft () : any;
     getLeftNavButton () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getRightNavButton () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTitle () : string;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -2641,16 +2641,16 @@ declare interface TitaniumUIIPadPopover {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -2660,7 +2660,7 @@ declare interface TitaniumUIIPadPopover {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setLayout (layout : string) : void;
@@ -2673,19 +2673,19 @@ declare interface TitaniumUIIPadPopover {
     setTitle (title : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIPad {
-    SplitWindow : TitaniumUIIPadSplitWindow;
-    DocumentViewer : TitaniumUIIPadDocumentViewer;
-    Popover : TitaniumUIIPadPopover;
+interface ITitaniumUIIPad {
+    SplitWindow : ITitaniumUIIPadSplitWindow;
+    DocumentViewer : ITitaniumUIIPadDocumentViewer;
+    Popover : ITitaniumUIIPadPopover;
     POPOVER_ARROW_DIRECTION_ANY : number;
     POPOVER_ARROW_DIRECTION_DOWN : number;
     POPOVER_ARROW_DIRECTION_LEFT : number;
@@ -2695,15 +2695,15 @@ declare interface TitaniumUIIPad {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createDocumentViewer (parameters? : TitaniumUIIPadDocumentViewer) : TitaniumUIIPadDocumentViewer;
-    createPopover (parameters? : TitaniumUIIPadPopover) : TitaniumUIIPadPopover;
-    createSplitWindow (parameters? : TitaniumUIIPadSplitWindow) : TitaniumUIIPadSplitWindow;
+    createDocumentViewer (parameters? : ITitaniumUIIPadDocumentViewer) : ITitaniumUIIPadDocumentViewer;
+    createPopover (parameters? : ITitaniumUIIPadPopover) : ITitaniumUIIPadPopover;
+    createSplitWindow (parameters? : ITitaniumUIIPadSplitWindow) : ITitaniumUIIPadSplitWindow;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIEmailDialog {
+interface ITitaniumUIEmailDialog {
     CANCELLED : number;
     FAILED : number;
     SAVED : number;
@@ -2716,7 +2716,7 @@ declare interface TitaniumUIEmailDialog {
     messageBody : string;
     subject : string;
     toRecipients : any[];
-    addAttachment (attachment : TitaniumBlob) : void;
+    addAttachment (attachment : ITitaniumBlob) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
@@ -2740,15 +2740,15 @@ declare interface TitaniumUIEmailDialog {
     setSubject (subject : string) : void;
     setToRecipients (toRecipients : any[]) : void;
 }
-declare interface TitaniumUICoverFlowView {
+interface ITitaniumUICoverFlowView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -2758,7 +2758,7 @@ declare interface TitaniumUICoverFlowView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
@@ -2766,31 +2766,31 @@ declare interface TitaniumUICoverFlowView {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     selected : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -2800,7 +2800,7 @@ declare interface TitaniumUICoverFlowView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -2808,10 +2808,10 @@ declare interface TitaniumUICoverFlowView {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getSelected () : number;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
@@ -2819,16 +2819,16 @@ declare interface TitaniumUICoverFlowView {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -2838,7 +2838,7 @@ declare interface TitaniumUICoverFlowView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setImage (index : number, image : string) : void;
@@ -2850,22 +2850,22 @@ declare interface TitaniumUICoverFlowView {
     setSelected (selected : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIImageView {
+interface ITitaniumUIImageView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     animating : boolean;
     autorotate : boolean;
     backgroundColor : string;
@@ -2873,7 +2873,7 @@ declare interface TitaniumUIImageView {
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -2885,7 +2885,7 @@ declare interface TitaniumUIImageView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     decodeRetries : number;
     defaultImage : string;
@@ -2904,32 +2904,32 @@ declare interface TitaniumUIImageView {
     opacity : number;
     paused : boolean;
     preventDefaultImage : boolean;
-    rect : Dimension;
+    rect : IDimension;
     repeatCount : number;
     reverse : boolean;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     url : string;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getAnimating () : boolean;
     getAutorotate () : boolean;
     getBackgroundColor () : string;
@@ -2937,7 +2937,7 @@ declare interface TitaniumUIImageView {
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -2949,7 +2949,7 @@ declare interface TitaniumUIImageView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getDecodeRetries () : number;
     getDefaultImage () : string;
@@ -2968,11 +2968,11 @@ declare interface TitaniumUIImageView {
     getOpacity () : number;
     getPaused () : boolean;
     getPreventDefaultImage () : boolean;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRepeatCount () : number;
     getReverse () : boolean;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -2983,7 +2983,7 @@ declare interface TitaniumUIImageView {
     getZIndex () : number;
     hide () : void;
     pause () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     resume () : void;
@@ -2991,13 +2991,13 @@ declare interface TitaniumUIImageView {
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -3009,7 +3009,7 @@ declare interface TitaniumUIImageView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setDecodeRetries (decodeRetries : number) : void;
     setDefaultImage (defaultImage : string) : void;
     setDuration (duration : number) : void;
@@ -3032,7 +3032,7 @@ declare interface TitaniumUIImageView {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setUrl (url : string) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
@@ -3042,18 +3042,18 @@ declare interface TitaniumUIImageView {
     startLayout () : void;
     stop () : void;
     toBlob () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIMaskedImage {
+interface ITitaniumUIMaskedImage {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -3063,7 +3063,7 @@ declare interface TitaniumUIMaskedImage {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
@@ -3073,31 +3073,31 @@ declare interface TitaniumUIMaskedImage {
     mask : string;
     mode : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     tint : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -3107,7 +3107,7 @@ declare interface TitaniumUIMaskedImage {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -3117,9 +3117,9 @@ declare interface TitaniumUIMaskedImage {
     getMask () : string;
     getMode () : number;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTint () : string;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -3128,16 +3128,16 @@ declare interface TitaniumUIMaskedImage {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -3147,7 +3147,7 @@ declare interface TitaniumUIMaskedImage {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setImage (image : string) : void;
@@ -3160,16 +3160,16 @@ declare interface TitaniumUIMaskedImage {
     setTint (tint : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIMobileWebTableViewSeparatorStyle {
+interface ITitaniumUIMobileWebTableViewSeparatorStyle {
     NONE : number;
     SINGLE_LINE : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
@@ -3177,9 +3177,9 @@ declare interface TitaniumUIMobileWebTableViewSeparatorStyle {
     fireEvent (name : string, event : any) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumUIMobileWebNavigationGroup {
+interface ITitaniumUIMobileWebNavigationGroup {
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundSelectedColor : string;
     backgroundSelectedImage : string;
@@ -3187,7 +3187,7 @@ declare interface TitaniumUIMobileWebNavigationGroup {
     borderRadius : number;
     borderWidth : number;
     bottom : number;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
@@ -3195,27 +3195,27 @@ declare interface TitaniumUIMobileWebNavigationGroup {
     left : number;
     navBarAtTop : boolean;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
-    window : TitaniumUIWindow;
+    window : ITitaniumUIWindow;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    close (window : TitaniumUIWindow, options : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    close (window : ITitaniumUIWindow, options : any) : void;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundSelectedColor () : string;
     getBackgroundSelectedImage () : string;
@@ -3223,7 +3223,7 @@ declare interface TitaniumUIMobileWebNavigationGroup {
     getBorderRadius () : number;
     getBorderWidth () : number;
     getBottom () : any;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -3231,23 +3231,23 @@ declare interface TitaniumUIMobileWebNavigationGroup {
     getLeft () : any;
     getNavBarAtTop () : boolean;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
     getVisible () : boolean;
     getWidth () : any;
-    getWindow () : TitaniumUIWindow;
+    getWindow () : ITitaniumUIWindow;
     getZIndex () : number;
     hide () : void;
-    open (window : TitaniumUIWindow, options : any) : void;
-    remove (view : TitaniumUIView) : void;
+    open (window : ITitaniumUIWindow, options : any) : void;
+    remove (view : ITitaniumUIView) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundSelectedColor (backgroundSelectedColor : string) : void;
     setBackgroundSelectedImage (backgroundSelectedImage : string) : void;
@@ -3255,7 +3255,7 @@ declare interface TitaniumUIMobileWebNavigationGroup {
     setBorderRadius (borderRadius : number) : void;
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setLayout (layout : string) : void;
@@ -3266,31 +3266,31 @@ declare interface TitaniumUIMobileWebNavigationGroup {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIMobileWeb {
-    TableViewSeparatorStyle : TitaniumUIMobileWebTableViewSeparatorStyle;
-    NavigationGroup : TitaniumUIMobileWebNavigationGroup;
+interface ITitaniumUIMobileWeb {
+    TableViewSeparatorStyle : ITitaniumUIMobileWebTableViewSeparatorStyle;
+    NavigationGroup : ITitaniumUIMobileWebNavigationGroup;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createNavigationGroup (parameters? : TitaniumUIMobileWebNavigationGroup) : TitaniumUIMobileWebNavigationGroup;
+    createNavigationGroup (parameters? : ITitaniumUIMobileWebNavigationGroup) : ITitaniumUIMobileWebNavigationGroup;
     fireEvent (name : string, event : any) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumUITextField {
+interface ITitaniumUITextField {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     appearance : number;
     autoLink : number;
     autocapitalization : number;
@@ -3300,7 +3300,7 @@ declare interface TitaniumUITextField {
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -3313,7 +3313,7 @@ declare interface TitaniumUITextField {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     clearButtonMode : number;
     clearOnEdit : boolean;
@@ -3323,7 +3323,7 @@ declare interface TitaniumUITextField {
     enableReturnKey : boolean;
     enabled : boolean;
     focusable : boolean;
-    font : Font;
+    font : IFont;
     height : number;
     hintText : string;
     horizontalWrap : boolean;
@@ -3343,30 +3343,30 @@ declare interface TitaniumUITextField {
     paddingLeft : number;
     paddingRight : number;
     passwordMask : boolean;
-    rect : Dimension;
+    rect : IDimension;
     returnKeyType : number;
     right : number;
     rightButton : any;
     rightButtonMode : number;
     rightButtonPadding : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     suppressReturn : boolean;
     textAlign : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     value : string;
     verticalAlign : number;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     blur () : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     focus () : void;
@@ -3374,8 +3374,8 @@ declare interface TitaniumUITextField {
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getAppearance () : number;
     getAutoLink () : number;
     getAutocapitalization () : number;
@@ -3385,7 +3385,7 @@ declare interface TitaniumUITextField {
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -3398,7 +3398,7 @@ declare interface TitaniumUITextField {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getClearButtonMode () : number;
     getClearOnEdit () : boolean;
@@ -3408,7 +3408,7 @@ declare interface TitaniumUITextField {
     getEnableReturnKey () : boolean;
     getEnabled () : boolean;
     getFocusable () : boolean;
-    getFont () : Font;
+    getFont () : IFont;
     getHeight () : any;
     getHintText () : string;
     getHorizontalWrap () : boolean;
@@ -3428,13 +3428,13 @@ declare interface TitaniumUITextField {
     getPaddingLeft () : number;
     getPaddingRight () : number;
     getPasswordMask () : boolean;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getReturnKeyType () : number;
     getRight () : any;
     getRightButton () : any;
     getRightButtonMode () : number;
     getRightButtonPadding () : number;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getSuppressReturn () : boolean;
     getTextAlign () : any;
@@ -3448,14 +3448,14 @@ declare interface TitaniumUITextField {
     getZIndex () : number;
     hasText () : boolean;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setAppearance (appearance : number) : void;
     setAutoLink (autoLink : number) : void;
     setAutocapitalization (autocapitalization : number) : void;
@@ -3465,7 +3465,7 @@ declare interface TitaniumUITextField {
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -3478,7 +3478,7 @@ declare interface TitaniumUITextField {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setClearButtonMode (clearButtonMode : number) : void;
     setClearOnEdit (clearOnEdit : boolean) : void;
     setColor (color : string) : void;
@@ -3487,7 +3487,7 @@ declare interface TitaniumUITextField {
     setEnableReturnKey (enableReturnKey : boolean) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setHeight (height : number) : void;
     setHintText (hintText : string) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
@@ -3518,7 +3518,7 @@ declare interface TitaniumUITextField {
     setTextAlign (textAlign : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setValue (value : string) : void;
     setVerticalAlign (verticalAlign : number) : void;
     setVisible (visible : boolean) : void;
@@ -3526,16 +3526,16 @@ declare interface TitaniumUITextField {
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUITextArea {
+interface ITitaniumUITextArea {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     appearance : number;
     autoLink : number;
     autocapitalization : number;
@@ -3545,7 +3545,7 @@ declare interface TitaniumUITextArea {
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -3557,7 +3557,7 @@ declare interface TitaniumUITextArea {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     clearOnEdit : boolean;
     color : string;
@@ -3566,7 +3566,7 @@ declare interface TitaniumUITextArea {
     enableReturnKey : boolean;
     enabled : boolean;
     focusable : boolean;
-    font : Font;
+    font : IFont;
     height : number;
     hintText : string;
     horizontalWrap : boolean;
@@ -3579,29 +3579,29 @@ declare interface TitaniumUITextArea {
     left : number;
     maxLength : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     returnKeyType : number;
     right : number;
     scrollable : boolean;
     scrollsToTop : boolean;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     suppressReturn : boolean;
     textAlign : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     value : string;
     verticalAlign : number;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     blur () : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     focus () : void;
@@ -3609,8 +3609,8 @@ declare interface TitaniumUITextArea {
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getAppearance () : number;
     getAutoLink () : number;
     getAutocapitalization () : number;
@@ -3620,7 +3620,7 @@ declare interface TitaniumUITextArea {
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -3632,7 +3632,7 @@ declare interface TitaniumUITextArea {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getClearOnEdit () : boolean;
     getColor () : string;
@@ -3641,7 +3641,7 @@ declare interface TitaniumUITextArea {
     getEnableReturnKey () : boolean;
     getEnabled () : boolean;
     getFocusable () : boolean;
-    getFont () : Font;
+    getFont () : IFont;
     getHeight () : any;
     getHintText () : string;
     getHorizontalWrap () : boolean;
@@ -3654,12 +3654,12 @@ declare interface TitaniumUITextArea {
     getLeft () : any;
     getMaxLength () : number;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getReturnKeyType () : number;
     getRight () : any;
     getScrollable () : boolean;
     getScrollsToTop () : boolean;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getSuppressReturn () : boolean;
     getTextAlign () : any;
@@ -3673,14 +3673,14 @@ declare interface TitaniumUITextArea {
     getZIndex () : number;
     hasText () : boolean;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setAppearance (appearance : number) : void;
     setAutoLink (autoLink : number) : void;
     setAutocapitalization (autocapitalization : number) : void;
@@ -3690,7 +3690,7 @@ declare interface TitaniumUITextArea {
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -3702,7 +3702,7 @@ declare interface TitaniumUITextArea {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setClearOnEdit (clearOnEdit : boolean) : void;
     setColor (color : string) : void;
     setEditable (editable : boolean) : void;
@@ -3710,7 +3710,7 @@ declare interface TitaniumUITextArea {
     setEnableReturnKey (enableReturnKey : boolean) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setHeight (height : number) : void;
     setHintText (hintText : string) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
@@ -3733,7 +3733,7 @@ declare interface TitaniumUITextArea {
     setTextAlign (textAlign : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setValue (value : string) : void;
     setVerticalAlign (verticalAlign : number) : void;
     setVisible (visible : boolean) : void;
@@ -3741,10 +3741,10 @@ declare interface TitaniumUITextArea {
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIActivityIndicatorStyle {
+interface ITitaniumUIActivityIndicatorStyle {
     BIG : number;
     BIG_DARK : number;
     DARK : number;
@@ -3757,19 +3757,19 @@ declare interface TitaniumUIActivityIndicatorStyle {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUISwitch {
+interface ITitaniumUISwitch {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -3781,21 +3781,21 @@ declare interface TitaniumUISwitch {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     color : string;
     enabled : boolean;
     focusable : boolean;
-    font : Font;
+    font : IFont;
     height : number;
     horizontalWrap : boolean;
     keepScreenOn : boolean;
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     style : number;
     textAlign : string;
@@ -3804,31 +3804,31 @@ declare interface TitaniumUISwitch {
     titleOn : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     value : boolean;
     verticalAlign : number;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -3840,21 +3840,21 @@ declare interface TitaniumUISwitch {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getColor () : string;
     getEnabled () : boolean;
     getFocusable () : boolean;
-    getFont () : Font;
+    getFont () : IFont;
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getKeepScreenOn () : boolean;
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getStyle () : number;
     getTextAlign () : any;
@@ -3870,20 +3870,20 @@ declare interface TitaniumUISwitch {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -3895,11 +3895,11 @@ declare interface TitaniumUISwitch {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setColor (color : string) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setKeepScreenOn (keepScreenOn : boolean) : void;
@@ -3915,7 +3915,7 @@ declare interface TitaniumUISwitch {
     setTitleOn (titleOn : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setValue (value : boolean) : void;
     setVerticalAlign (verticalAlign : number) : void;
     setVisible (visible : boolean) : void;
@@ -3923,18 +3923,18 @@ declare interface TitaniumUISwitch {
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIOSTabbedBar {
+interface ITitaniumUIIOSTabbedBar {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -3944,7 +3944,7 @@ declare interface TitaniumUIIOSTabbedBar {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
@@ -3953,31 +3953,31 @@ declare interface TitaniumUIIOSTabbedBar {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     style : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -3987,7 +3987,7 @@ declare interface TitaniumUIIOSTabbedBar {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -3996,9 +3996,9 @@ declare interface TitaniumUIIOSTabbedBar {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getStyle () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -4007,16 +4007,16 @@ declare interface TitaniumUIIOSTabbedBar {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -4026,7 +4026,7 @@ declare interface TitaniumUIIOSTabbedBar {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setIndex (index : number) : void;
@@ -4038,23 +4038,23 @@ declare interface TitaniumUIIOSTabbedBar {
     setStyle (style : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIOSToolbar {
+interface ITitaniumUIIOSToolbar {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
-    backgroundGradient : Gradient;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     barColor : string;
     borderBottom : boolean;
@@ -4064,37 +4064,37 @@ declare interface TitaniumUIIOSToolbar {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
     items : any[];
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     translucent : boolean;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
-    getBackgroundGradient () : Gradient;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBarColor () : string;
     getBorderBottom () : boolean;
@@ -4104,16 +4104,16 @@ declare interface TitaniumUIIOSToolbar {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getItems () : any[];
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
@@ -4122,15 +4122,15 @@ declare interface TitaniumUIIOSToolbar {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBarColor (barColor : string) : void;
     setBorderBottom (borderBottom : boolean) : void;
@@ -4140,7 +4140,7 @@ declare interface TitaniumUIIOSToolbar {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setItems (items : any[]) : void;
@@ -4149,25 +4149,25 @@ declare interface TitaniumUIIOSToolbar {
     setRight (right : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setTranslucent (translucent : boolean) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIOSDocumentViewer {
+interface ITitaniumUIIOSDocumentViewer {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -4177,37 +4177,37 @@ declare interface TitaniumUIIOSDocumentViewer {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -4217,16 +4217,16 @@ declare interface TitaniumUIIOSDocumentViewer {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
@@ -4234,16 +4234,16 @@ declare interface TitaniumUIIOSDocumentViewer {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -4253,7 +4253,7 @@ declare interface TitaniumUIIOSDocumentViewer {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setLayout (layout : string) : void;
@@ -4262,25 +4262,25 @@ declare interface TitaniumUIIOSDocumentViewer {
     setRight (right : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setUrl (url : string) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show (animated : boolean, view : any) : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIOSCoverFlowView {
+interface ITitaniumUIIOSCoverFlowView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -4290,7 +4290,7 @@ declare interface TitaniumUIIOSCoverFlowView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
@@ -4298,31 +4298,31 @@ declare interface TitaniumUIIOSCoverFlowView {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     selected : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -4332,7 +4332,7 @@ declare interface TitaniumUIIOSCoverFlowView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -4340,10 +4340,10 @@ declare interface TitaniumUIIOSCoverFlowView {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getSelected () : number;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
@@ -4351,16 +4351,16 @@ declare interface TitaniumUIIOSCoverFlowView {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -4370,7 +4370,7 @@ declare interface TitaniumUIIOSCoverFlowView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setImage (index : number, image : string) : void;
@@ -4382,16 +4382,16 @@ declare interface TitaniumUIIOSCoverFlowView {
     setSelected (selected : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIOS_3DMatrix {
+interface ITitaniumUIIOS_3DMatrix {
     bubbleParent : boolean;
     m11 : number;
     m12 : number;
@@ -4429,11 +4429,11 @@ declare interface TitaniumUIIOS_3DMatrix {
     getM42 () : number;
     getM43 () : number;
     getM44 () : number;
-    invert () : TitaniumUI_3DMatrix;
-    multiply (t2 : TitaniumUI_3DMatrix) : TitaniumUI_3DMatrix;
+    invert () : ITitaniumUI_3DMatrix;
+    multiply (t2 : ITitaniumUI_3DMatrix) : ITitaniumUI_3DMatrix;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    rotate (angle : number, x : number, y : number, z : number) : TitaniumUI_3DMatrix;
-    scale (sx : number, sy : number, sz : number) : TitaniumUI_3DMatrix;
+    rotate (angle : number, x : number, y : number, z : number) : ITitaniumUI_3DMatrix;
+    scale (sx : number, sy : number, sz : number) : ITitaniumUI_3DMatrix;
     setBubbleParent (bubbleParent : boolean) : void;
     setM11 (m11 : number) : void;
     setM12 (m12 : number) : void;
@@ -4451,18 +4451,18 @@ declare interface TitaniumUIIOS_3DMatrix {
     setM42 (m42 : number) : void;
     setM43 (m43 : number) : void;
     setM44 (m44 : number) : void;
-    translate (tx : number, ty : number, tz : number) : TitaniumUI_3DMatrix;
+    translate (tx : number, ty : number, tz : number) : ITitaniumUI_3DMatrix;
 }
-declare interface TitaniumUIIOSAdView {
+interface ITitaniumUIIOSAdView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
     adSize : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -4472,28 +4472,28 @@ declare interface TitaniumUIIOSAdView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     cancelAction () : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
@@ -4501,10 +4501,10 @@ declare interface TitaniumUIIOSAdView {
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
     getAdSize () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -4514,16 +4514,16 @@ declare interface TitaniumUIIOSAdView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
@@ -4531,7 +4531,7 @@ declare interface TitaniumUIIOSAdView {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
@@ -4539,9 +4539,9 @@ declare interface TitaniumUIIOSAdView {
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
     setAdSize (adSize : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -4551,7 +4551,7 @@ declare interface TitaniumUIIOSAdView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setLayout (layout : string) : void;
@@ -4560,22 +4560,22 @@ declare interface TitaniumUIIOSAdView {
     setRight (right : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIIOS {
-    TabbedBar : TitaniumUIIOSTabbedBar;
-    Toolbar : TitaniumUIIOSToolbar;
-    DocumentViewer : TitaniumUIIOSDocumentViewer;
-    CoverFlowView : TitaniumUIIOSCoverFlowView;
-    _3DMatrix : TitaniumUIIOS_3DMatrix;
-    AdView : TitaniumUIIOSAdView;
+interface ITitaniumUIIOS {
+    TabbedBar : ITitaniumUIIOSTabbedBar;
+    Toolbar : ITitaniumUIIOSToolbar;
+    DocumentViewer : ITitaniumUIIOSDocumentViewer;
+    CoverFlowView : ITitaniumUIIOSCoverFlowView;
+    _3DMatrix : ITitaniumUIIOS_3DMatrix;
+    AdView : ITitaniumUIIOSAdView;
     AD_SIZE_LANDSCAPE : string;
     AD_SIZE_PORTRAIT : string;
     ANIMATION_CURVE_EASE_IN : number;
@@ -4629,18 +4629,18 @@ declare interface TitaniumUIIOS {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    create3DMatrix (parameters? : TitaniumUIIOS_3DMatrix) : TitaniumUIIOS_3DMatrix;
-    createAdView (parameters? : TitaniumUIIOSAdView) : TitaniumUIIOSAdView;
-    createCoverFlowView (parameters? : TitaniumUIIOSCoverFlowView) : TitaniumUIIOSCoverFlowView;
-    createDocumentViewer (parameters? : TitaniumUIIOSDocumentViewer) : TitaniumUIIOSDocumentViewer;
-    createTabbedBar (parameters? : TitaniumUIIOSTabbedBar) : TitaniumUIIOSTabbedBar;
-    createToolbar (parameters? : TitaniumUIIOSToolbar) : TitaniumUIIOSToolbar;
+    create3DMatrix (parameters? : ITitaniumUIIOS_3DMatrix) : ITitaniumUIIOS_3DMatrix;
+    createAdView (parameters? : ITitaniumUIIOSAdView) : ITitaniumUIIOSAdView;
+    createCoverFlowView (parameters? : ITitaniumUIIOSCoverFlowView) : ITitaniumUIIOSCoverFlowView;
+    createDocumentViewer (parameters? : ITitaniumUIIOSDocumentViewer) : ITitaniumUIIOSDocumentViewer;
+    createTabbedBar (parameters? : ITitaniumUIIOSTabbedBar) : ITitaniumUIIOSTabbedBar;
+    createToolbar (parameters? : ITitaniumUIIOSToolbar) : ITitaniumUIIOSToolbar;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIClipboard {
+interface ITitaniumUIClipboard {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -4657,21 +4657,21 @@ declare interface TitaniumUIClipboard {
     setData (type : string, data : any) : void;
     setText (text : string) : void;
 }
-declare interface TitaniumUITab {
+interface ITitaniumUITab {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
     active : boolean;
     activeIcon : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -4684,7 +4684,7 @@ declare interface TitaniumUITab {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     focusable : boolean;
     height : number;
@@ -4694,25 +4694,25 @@ declare interface TitaniumUITab {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     title : string;
     titleid : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
-    window : TitaniumUIWindow;
+    window : ITitaniumUIWindow;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    close (window : TitaniumUIWindow, options? : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    close (window : ITitaniumUIWindow, options? : any) : void;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
@@ -4721,14 +4721,14 @@ declare interface TitaniumUITab {
     getAccessibilityValue () : string;
     getActive () : boolean;
     getActiveIcon () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -4741,7 +4741,7 @@ declare interface TitaniumUITab {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getFocusable () : boolean;
     getHeight () : any;
@@ -4751,9 +4751,9 @@ declare interface TitaniumUITab {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTitle () : string;
     getTitleid () : string;
@@ -4762,11 +4762,11 @@ declare interface TitaniumUITab {
     getTransform () : any;
     getVisible () : boolean;
     getWidth () : any;
-    getWindow () : TitaniumUIWindow;
+    getWindow () : ITitaniumUIWindow;
     getZIndex () : number;
     hide () : void;
-    open (window : TitaniumUIWindow, options : any) : void;
-    remove (view : TitaniumUIView) : void;
+    open (window : ITitaniumUIWindow, options : any) : void;
+    remove (view : ITitaniumUIView) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
@@ -4774,13 +4774,13 @@ declare interface TitaniumUITab {
     setAccessibilityValue (accessibilityValue : string) : void;
     setActive (active : boolean) : void;
     setActiveIcon (activeIcon : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -4793,7 +4793,7 @@ declare interface TitaniumUITab {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
@@ -4808,29 +4808,29 @@ declare interface TitaniumUITab {
     setTitleid (titleid : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
-    setWindow (window : TitaniumUIWindow) : void;
+    setWindow (window : ITitaniumUIWindow) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUITableViewRow {
+interface ITitaniumUITableViewRow {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -4842,13 +4842,13 @@ declare interface TitaniumUITableViewRow {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     className : string;
     color : string;
     editable : boolean;
     focusable : boolean;
-    font : Font;
+    font : IFont;
     hasCheck : boolean;
     hasChild : boolean;
     hasDetail : boolean;
@@ -4861,40 +4861,40 @@ declare interface TitaniumUITableViewRow {
     leftImage : string;
     moveable : boolean;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     rightImage : string;
     selectedBackgroundColor : string;
     selectedBackgroundImage : string;
     selectedColor : string;
     selectionStyle : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     title : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -4906,13 +4906,13 @@ declare interface TitaniumUITableViewRow {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getClassName () : string;
     getColor () : string;
     getEditable () : boolean;
     getFocusable () : boolean;
-    getFont () : Font;
+    getFont () : IFont;
     getHasCheck () : boolean;
     getHasChild () : boolean;
     getHasDetail () : boolean;
@@ -4925,14 +4925,14 @@ declare interface TitaniumUITableViewRow {
     getLeftImage () : string;
     getMoveable () : boolean;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getRightImage () : string;
     getSelectedBackgroundColor () : string;
     getSelectedBackgroundImage () : string;
     getSelectedColor () : string;
     getSelectionStyle () : number;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTitle () : string;
     getTop () : any;
@@ -4942,20 +4942,20 @@ declare interface TitaniumUITableViewRow {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -4967,12 +4967,12 @@ declare interface TitaniumUITableViewRow {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setClassName (className : string) : void;
     setColor (color : string) : void;
     setEditable (editable : boolean) : void;
     setFocusable (focusable : boolean) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setHasCheck (hasCheck : boolean) : void;
     setHasChild (hasChild : boolean) : void;
     setHasDetail (hasDetail : boolean) : void;
@@ -4995,28 +4995,28 @@ declare interface TitaniumUITableViewRow {
     setTitle (title : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIPickerRow {
+interface ITitaniumUIPickerRow {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -5028,11 +5028,11 @@ declare interface TitaniumUIPickerRow {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     color : string;
     focusable : boolean;
-    font : Font;
+    font : IFont;
     fontSize : number;
     height : number;
     horizontalWrap : boolean;
@@ -5040,36 +5040,36 @@ declare interface TitaniumUIPickerRow {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     title : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -5081,11 +5081,11 @@ declare interface TitaniumUIPickerRow {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getColor () : string;
     getFocusable () : boolean;
-    getFont () : Font;
+    getFont () : IFont;
     getFontSize () : number;
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -5093,9 +5093,9 @@ declare interface TitaniumUIPickerRow {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTitle () : string;
     getTop () : any;
@@ -5105,20 +5105,20 @@ declare interface TitaniumUIPickerRow {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -5130,10 +5130,10 @@ declare interface TitaniumUIPickerRow {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setColor (color : string) : void;
     setFocusable (focusable : boolean) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setFontSize (fontSize : number) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
@@ -5146,28 +5146,28 @@ declare interface TitaniumUIPickerRow {
     setTitle (title : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIProgressBar {
+interface ITitaniumUIProgressBar {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -5179,12 +5179,12 @@ declare interface TitaniumUIProgressBar {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     color : string;
     enabled : boolean;
     focusable : boolean;
-    font : Font;
+    font : IFont;
     height : number;
     horizontalWrap : boolean;
     keepScreenOn : boolean;
@@ -5194,37 +5194,37 @@ declare interface TitaniumUIProgressBar {
     message : string;
     min : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     style : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     value : number;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -5236,12 +5236,12 @@ declare interface TitaniumUIProgressBar {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getColor () : string;
     getEnabled () : boolean;
     getFocusable () : boolean;
-    getFont () : Font;
+    getFont () : IFont;
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getKeepScreenOn () : boolean;
@@ -5251,9 +5251,9 @@ declare interface TitaniumUIProgressBar {
     getMessage () : string;
     getMin () : number;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getStyle () : number;
     getTop () : any;
@@ -5264,20 +5264,20 @@ declare interface TitaniumUIProgressBar {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -5289,11 +5289,11 @@ declare interface TitaniumUIProgressBar {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setColor (color : string) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setKeepScreenOn (keepScreenOn : boolean) : void;
@@ -5308,29 +5308,29 @@ declare interface TitaniumUIProgressBar {
     setStyle (style : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setValue (value : number) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIScrollableView {
+interface ITitaniumUIScrollableView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -5343,14 +5343,14 @@ declare interface TitaniumUIScrollableView {
     bottom : number;
     bubbleParent : boolean;
     cacheSize : number;
-    center : Point;
+    center : IPoint;
     children : any[];
     clipViews : boolean;
     currentPage : number;
     disableBounce : boolean;
     focusable : boolean;
     height : number;
-    hitRect : Dimension;
+    hitRect : IDimension;
     horizontalWrap : boolean;
     keepScreenOn : boolean;
     layout : string;
@@ -5363,39 +5363,39 @@ declare interface TitaniumUIScrollableView {
     pagingControlHeight : number;
     pagingControlOnTop : boolean;
     pagingControlTimeout : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     scrollingEnabled : boolean;
     showPagingControl : boolean;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     views : any[];
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    addView (view : TitaniumUIView) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    addView (view : ITitaniumUIView) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -5408,14 +5408,14 @@ declare interface TitaniumUIScrollableView {
     getBottom () : any;
     getBubbleParent () : boolean;
     getCacheSize () : number;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getClipViews () : boolean;
     getCurrentPage () : number;
     getDisableBounce () : boolean;
     getFocusable () : boolean;
     getHeight () : any;
-    getHitRect () : Dimension;
+    getHitRect () : IDimension;
     getHorizontalWrap () : boolean;
     getKeepScreenOn () : boolean;
     getLayout () : string;
@@ -5428,11 +5428,11 @@ declare interface TitaniumUIScrollableView {
     getPagingControlHeight () : number;
     getPagingControlOnTop () : boolean;
     getPagingControlTimeout () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getScrollingEnabled () : boolean;
     getShowPagingControl () : boolean;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -5444,7 +5444,7 @@ declare interface TitaniumUIScrollableView {
     hide () : void;
     moveNext () : void;
     movePrevious () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     removeView (view : number) : void;
@@ -5453,13 +5453,13 @@ declare interface TitaniumUIScrollableView {
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -5472,12 +5472,12 @@ declare interface TitaniumUIScrollableView {
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setCacheSize (cacheSize : number) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setCurrentPage (currentPage : number) : void;
     setDisableBounce (disableBounce : boolean) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
-    setHitRect (hitRect : Dimension) : void;
+    setHitRect (hitRect : IDimension) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setKeepScreenOn (keepScreenOn : boolean) : void;
     setLayout (layout : string) : void;
@@ -5495,28 +5495,28 @@ declare interface TitaniumUIScrollableView {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setViews (views : any[]) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUINotification {
+interface ITitaniumUINotification {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    animatedCenter : Point;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundRepeat : boolean;
     backgroundSelectedColor : string;
@@ -5526,7 +5526,7 @@ declare interface TitaniumUINotification {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     duration : number;
     enabled : boolean;
@@ -5539,37 +5539,37 @@ declare interface TitaniumUINotification {
     left : number;
     message : string;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     verticalMargin : number;
     visible : boolean;
     width : number;
     xOffset : number;
     yOffset : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnimatedCenter () : Point;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundRepeat () : boolean;
     getBackgroundSelectedColor () : string;
@@ -5579,7 +5579,7 @@ declare interface TitaniumUINotification {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getDuration () : number;
     getEnabled () : boolean;
@@ -5592,9 +5592,9 @@ declare interface TitaniumUINotification {
     getLeft () : any;
     getMessage () : string;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -5606,7 +5606,7 @@ declare interface TitaniumUINotification {
     getYOffset () : number;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
@@ -5618,7 +5618,7 @@ declare interface TitaniumUINotification {
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
     setBackgroundSelectedColor (backgroundSelectedColor : string) : void;
@@ -5628,7 +5628,7 @@ declare interface TitaniumUINotification {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setDuration (duration : number) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
@@ -5644,7 +5644,7 @@ declare interface TitaniumUINotification {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVerticalMargin (verticalMargin : number) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
@@ -5653,22 +5653,22 @@ declare interface TitaniumUINotification {
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIScrollView {
+interface ITitaniumUIScrollView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -5681,7 +5681,7 @@ declare interface TitaniumUIScrollView {
     bottom : number;
     bubbleParent : boolean;
     canCancelEvents : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     contentHeight : number;
     contentOffset : any;
@@ -5698,7 +5698,7 @@ declare interface TitaniumUIScrollView {
     minZoomScale : number;
     opacity : number;
     overScrollMode : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     scrollIndicatorStyle : number;
     scrollType : string;
@@ -5706,35 +5706,35 @@ declare interface TitaniumUIScrollView {
     scrollsToTop : boolean;
     showHorizontalScrollIndicator : boolean;
     showVerticalScrollIndicator : boolean;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     verticalBounce : boolean;
     visible : boolean;
     width : number;
     zIndex : number;
     zoomScale : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -5747,7 +5747,7 @@ declare interface TitaniumUIScrollView {
     getBottom () : any;
     getBubbleParent () : boolean;
     getCanCancelEvents () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getContentHeight () : any;
     getContentOffset () : any;
@@ -5764,7 +5764,7 @@ declare interface TitaniumUIScrollView {
     getMinZoomScale () : number;
     getOpacity () : number;
     getOverScrollMode () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getScrollIndicatorStyle () : number;
     getScrollType () : string;
@@ -5772,7 +5772,7 @@ declare interface TitaniumUIScrollView {
     getScrollsToTop () : boolean;
     getShowHorizontalScrollIndicator () : boolean;
     getShowVerticalScrollIndicator () : boolean;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -5783,7 +5783,7 @@ declare interface TitaniumUIScrollView {
     getZIndex () : number;
     getZoomScale () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     scrollTo (x : number, y : number) : void;
@@ -5792,13 +5792,13 @@ declare interface TitaniumUIScrollView {
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -5811,9 +5811,9 @@ declare interface TitaniumUIScrollView {
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setCanCancelEvents (canCancelEvents : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setContentHeight (contentHeight : number) : void;
-    setContentOffset (contentOffset : any, animated? : ContentOffsetOption) : void;
+    setContentOffset (contentOffset : any, animated? : IContentOffsetOption) : void;
     setContentWidth (contentWidth : number) : void;
     setDisableBounce (disableBounce : boolean) : void;
     setFocusable (focusable : boolean) : void;
@@ -5836,30 +5836,30 @@ declare interface TitaniumUIScrollView {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVerticalBounce (verticalBounce : boolean) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
-    setZoomScale (zoomScale : number, animated? : ZoomScaleOption) : void;
+    setZoomScale (zoomScale : number, animated? : IZoomScaleOption) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUISlider {
+interface ITitaniumUISlider {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -5871,7 +5871,7 @@ declare interface TitaniumUISlider {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     disabledLeftTrackImage : string;
     disabledRightTrackImage : string;
@@ -5894,7 +5894,7 @@ declare interface TitaniumUISlider {
     min : number;
     minRange : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     rightTrackImage : string;
     rightTrackLeftCap : number;
@@ -5902,35 +5902,35 @@ declare interface TitaniumUISlider {
     selectedLeftTrackImage : string;
     selectedRightTrackImage : string;
     selectedThumbImage : string;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     thumbImage : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     value : string;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -5942,7 +5942,7 @@ declare interface TitaniumUISlider {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getDisabledLeftTrackImage () : string;
     getDisabledRightTrackImage () : string;
@@ -5965,7 +5965,7 @@ declare interface TitaniumUISlider {
     getMin () : number;
     getMinRange () : number;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getRightTrackImage () : string;
     getRightTrackLeftCap () : number;
@@ -5973,7 +5973,7 @@ declare interface TitaniumUISlider {
     getSelectedLeftTrackImage () : string;
     getSelectedRightTrackImage () : string;
     getSelectedThumbImage () : string;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getThumbImage () : any;
     getTop () : any;
@@ -5984,20 +5984,20 @@ declare interface TitaniumUISlider {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -6009,7 +6009,7 @@ declare interface TitaniumUISlider {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setDisabledLeftTrackImage (disabledLeftTrackImage : string) : void;
     setDisabledRightTrackImage (disabledRightTrackImage : string) : void;
     setDisabledThumbImage (disabledThumbImage : string) : void;
@@ -6042,28 +6042,28 @@ declare interface TitaniumUISlider {
     setThumbImage (thumbImage : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setValue (value : number, options? : any) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIAndroidSearchView {
+interface ITitaniumUIAndroidSearchView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    animatedCenter : Point;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundRepeat : boolean;
     backgroundSelectedColor : string;
@@ -6073,7 +6073,7 @@ declare interface TitaniumUIAndroidSearchView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     enabled : boolean;
     focusable : boolean;
@@ -6086,23 +6086,23 @@ declare interface TitaniumUIAndroidSearchView {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     submitEnabled : boolean;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     value : string;
     visible : boolean;
     width : number;
     zIndex : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     blur () : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     focus () : void;
@@ -6110,13 +6110,13 @@ declare interface TitaniumUIAndroidSearchView {
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnimatedCenter () : Point;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundRepeat () : boolean;
     getBackgroundSelectedColor () : string;
@@ -6126,7 +6126,7 @@ declare interface TitaniumUIAndroidSearchView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getEnabled () : boolean;
     getFocusable () : boolean;
@@ -6139,9 +6139,9 @@ declare interface TitaniumUIAndroidSearchView {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getSubmitEnabled () : boolean;
     getTop () : any;
@@ -6152,7 +6152,7 @@ declare interface TitaniumUIAndroidSearchView {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
@@ -6164,7 +6164,7 @@ declare interface TitaniumUIAndroidSearchView {
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
     setBackgroundSelectedColor (backgroundSelectedColor : string) : void;
@@ -6174,7 +6174,7 @@ declare interface TitaniumUIAndroidSearchView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
@@ -6191,17 +6191,17 @@ declare interface TitaniumUIAndroidSearchView {
     setSubmitEnabled (submitEnabled : boolean) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setValue (value : string) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIAndroidProgressIndicator {
+interface ITitaniumUIAndroidProgressIndicator {
     bubbleParent : boolean;
     cancelable : boolean;
     location : number;
@@ -6233,9 +6233,9 @@ declare interface TitaniumUIAndroidProgressIndicator {
     setType (type : number) : void;
     show () : void;
 }
-declare interface TitaniumUIAndroid {
-    SearchView : TitaniumUIAndroidSearchView;
-    ProgressIndicator : TitaniumUIAndroidProgressIndicator;
+interface ITitaniumUIAndroid {
+    SearchView : ITitaniumUIAndroidSearchView;
+    ProgressIndicator : ITitaniumUIAndroidProgressIndicator;
     LINKIFY_ALL : number;
     LINKIFY_EMAIL_ADDRESSES : number;
     LINKIFY_MAP_ADDRESSES : number;
@@ -6281,8 +6281,8 @@ declare interface TitaniumUIAndroid {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createProgressIndicator (parameters? : TitaniumUIAndroidProgressIndicator) : TitaniumUIAndroidProgressIndicator;
-    createSearchView (parameters? : TitaniumUIAndroidSearchView) : TitaniumUIAndroidSearchView;
+    createProgressIndicator (parameters? : ITitaniumUIAndroidProgressIndicator) : ITitaniumUIAndroidProgressIndicator;
+    createSearchView (parameters? : ITitaniumUIAndroidSearchView) : ITitaniumUIAndroidSearchView;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     hideSoftKeyboard () : void;
@@ -6290,15 +6290,15 @@ declare interface TitaniumUIAndroid {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUIDashboardView {
+interface ITitaniumUIDashboardView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -6308,7 +6308,7 @@ declare interface TitaniumUIDashboardView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     columnCount : number;
     data : any[];
@@ -6318,32 +6318,32 @@ declare interface TitaniumUIDashboardView {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     rowCount : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     wobble : boolean;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -6353,7 +6353,7 @@ declare interface TitaniumUIDashboardView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getColumnCount () : number;
     getData () : any[];
@@ -6363,10 +6363,10 @@ declare interface TitaniumUIDashboardView {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getRowCount () : number;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
@@ -6375,16 +6375,16 @@ declare interface TitaniumUIDashboardView {
     getWobble () : boolean;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -6394,7 +6394,7 @@ declare interface TitaniumUIDashboardView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setData (data : any[]) : void;
     setEditable (editable : boolean) : void;
     setHeight (height : number) : void;
@@ -6405,7 +6405,7 @@ declare interface TitaniumUIDashboardView {
     setRight (right : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setWobble (wobble : boolean) : void;
@@ -6414,10 +6414,10 @@ declare interface TitaniumUIDashboardView {
     startEditing () : void;
     startLayout () : void;
     stopEditing () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUI_3DMatrix {
+interface ITitaniumUI_3DMatrix {
     bubbleParent : boolean;
     m11 : number;
     m12 : number;
@@ -6455,11 +6455,11 @@ declare interface TitaniumUI_3DMatrix {
     getM42 () : number;
     getM43 () : number;
     getM44 () : number;
-    invert () : TitaniumUI_3DMatrix;
-    multiply (t2 : TitaniumUI_3DMatrix) : TitaniumUI_3DMatrix;
+    invert () : ITitaniumUI_3DMatrix;
+    multiply (t2 : ITitaniumUI_3DMatrix) : ITitaniumUI_3DMatrix;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    rotate (angle : number, x : number, y : number, z : number) : TitaniumUI_3DMatrix;
-    scale (sx : number, sy : number, sz : number) : TitaniumUI_3DMatrix;
+    rotate (angle : number, x : number, y : number, z : number) : ITitaniumUI_3DMatrix;
+    scale (sx : number, sy : number, sz : number) : ITitaniumUI_3DMatrix;
     setBubbleParent (bubbleParent : boolean) : void;
     setM11 (m11 : number) : void;
     setM12 (m12 : number) : void;
@@ -6477,21 +6477,21 @@ declare interface TitaniumUI_3DMatrix {
     setM42 (m42 : number) : void;
     setM43 (m43 : number) : void;
     setM44 (m44 : number) : void;
-    translate (tx : number, ty : number, tz : number) : TitaniumUI_3DMatrix;
+    translate (tx : number, ty : number, tz : number) : ITitaniumUI_3DMatrix;
 }
-declare interface TitaniumUIListView {
+interface ITitaniumUIListView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -6501,7 +6501,7 @@ declare interface TitaniumUIListView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     defaultItemTemplate : string;
     focusable : boolean;
@@ -6513,44 +6513,44 @@ declare interface TitaniumUIListView {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     scrollIndicatorStyle : number;
     sectionCount : number;
     sections : any[];
     showVerticalScrollIndicator : boolean;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     style : number;
     templates : any;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     willScrollOnStatusTap : boolean;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
-    appendSection (section : TitaniumUIListSection, animation? : ListViewAnimationProperties) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    appendSection (section : ITitaniumUIListSection, animation? : IListViewAnimationProperties) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
-    deleteSectionAt (sectionIndex : number, animation? : ListViewAnimationProperties) : void;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
+    deleteSectionAt (sectionIndex : number, animation? : IListViewAnimationProperties) : void;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -6560,7 +6560,7 @@ declare interface TitaniumUIListView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getDefaultItemTemplate () : any;
     getFocusable () : boolean;
@@ -6572,13 +6572,13 @@ declare interface TitaniumUIListView {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getScrollIndicatorStyle () : number;
     getSectionCount () : number;
     getSections () : any[];
     getShowVerticalScrollIndicator () : boolean;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getStyle () : number;
     getTemplates () : any;
@@ -6590,24 +6590,24 @@ declare interface TitaniumUIListView {
     getWillScrollOnStatusTap () : boolean;
     getZIndex () : number;
     hide () : void;
-    insertSectionAt (sectionIndex : number, section : TitaniumUIListSection, animation? : ListViewAnimationProperties) : void;
-    remove (view : TitaniumUIView) : void;
+    insertSectionAt (sectionIndex : number, section : ITitaniumUIListSection, animation? : IListViewAnimationProperties) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    replaceSectionAt (sectionIndex : number, section : TitaniumUIListSection, animation : ListViewAnimationProperties) : void;
-    scrollToItem (sectionIndex : number, itemIndex : number, animation? : ListViewAnimationProperties) : void;
+    replaceSectionAt (sectionIndex : number, section : ITitaniumUIListSection, animation : IListViewAnimationProperties) : void;
+    scrollToItem (sectionIndex : number, itemIndex : number, animation? : IListViewAnimationProperties) : void;
     selectItem (sectionIndex : number, itemIndex : number) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -6617,7 +6617,7 @@ declare interface TitaniumUIListView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setDefaultItemTemplate (defaultItemTemplate : string) : void;
     setFocusable (focusable : boolean) : void;
     setFooterTitle (footerTitle : string) : void;
@@ -6635,17 +6635,17 @@ declare interface TitaniumUIListView {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setWillScrollOnStatusTap (willScrollOnStatusTap : boolean) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIDashboardItem {
+interface ITitaniumUIDashboardItem {
     badge : number;
     bubbleParent : boolean;
     canDelete : boolean;
@@ -6666,14 +6666,14 @@ declare interface TitaniumUIDashboardItem {
     setImage (image : string) : void;
     setSelectedImage (selectedImage : string) : void;
 }
-declare interface TitaniumUIToolbar {
+interface ITitaniumUIToolbar {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
-    backgroundGradient : Gradient;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     barColor : string;
     borderBottom : boolean;
@@ -6683,37 +6683,37 @@ declare interface TitaniumUIToolbar {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
     items : any[];
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     translucent : boolean;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
-    getBackgroundGradient () : Gradient;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBarColor () : string;
     getBorderBottom () : boolean;
@@ -6723,16 +6723,16 @@ declare interface TitaniumUIToolbar {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getItems () : any[];
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getTop () : any;
     getTouchEnabled () : boolean;
     getTransform () : any;
@@ -6741,15 +6741,15 @@ declare interface TitaniumUIToolbar {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBarColor (barColor : string) : void;
     setBorderBottom (borderBottom : boolean) : void;
@@ -6759,7 +6759,7 @@ declare interface TitaniumUIToolbar {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setItems (items : any[]) : void;
@@ -6768,29 +6768,29 @@ declare interface TitaniumUIToolbar {
     setRight (right : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setTranslucent (translucent : boolean) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIView {
+interface ITitaniumUIView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -6802,7 +6802,7 @@ declare interface TitaniumUIView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     enabled : boolean;
     focusable : boolean;
@@ -6812,35 +6812,35 @@ declare interface TitaniumUIView {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -6852,7 +6852,7 @@ declare interface TitaniumUIView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getEnabled () : boolean;
     getFocusable () : boolean;
@@ -6862,9 +6862,9 @@ declare interface TitaniumUIView {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -6873,20 +6873,20 @@ declare interface TitaniumUIView {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -6898,7 +6898,7 @@ declare interface TitaniumUIView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
@@ -6911,21 +6911,21 @@ declare interface TitaniumUIView {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIListItem {
+interface ITitaniumUIListItem {
     accessoryType : number;
     allowsSelection : boolean;
     backgroundColor : string;
     color : string;
-    font : Font;
+    font : IFont;
     height : number;
     image : string;
     itemId : string;
@@ -6933,19 +6933,19 @@ declare interface TitaniumUIListItem {
     subtitle : string;
     title : string;
 }
-declare interface TitaniumUIWebView {
+interface ITitaniumUIWebView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -6957,9 +6957,9 @@ declare interface TitaniumUIWebView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
-    data : TitaniumBlob;
+    data : ITitaniumBlob;
     disableBounce : boolean;
     enableZoomControls : boolean;
     focusable : boolean;
@@ -6975,16 +6975,16 @@ declare interface TitaniumUIWebView {
     opacity : number;
     overScrollMode : number;
     pluginState : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     scalesPageToFit : boolean;
     scrollsToTop : boolean;
     showScrollbars : boolean;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     url : string;
     userAgent : string;
     visible : boolean;
@@ -6992,11 +6992,11 @@ declare interface TitaniumUIWebView {
     willHandleTouches : boolean;
     zIndex : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     canGoBack () : boolean;
     canGoForward () : boolean;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     evalJS (code : string) : string;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
@@ -7004,14 +7004,14 @@ declare interface TitaniumUIWebView {
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -7023,7 +7023,7 @@ declare interface TitaniumUIWebView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getData () : any;
     getDisableBounce () : boolean;
@@ -7041,12 +7041,12 @@ declare interface TitaniumUIWebView {
     getOpacity () : number;
     getOverScrollMode () : number;
     getPluginState () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getScalesPageToFit () : boolean;
     getScrollsToTop () : boolean;
     getShowScrollbars () : boolean;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -7063,7 +7063,7 @@ declare interface TitaniumUIWebView {
     pause () : void;
     release () : void;
     reload () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     repaint () : void;
     resume () : void;
@@ -7071,13 +7071,13 @@ declare interface TitaniumUIWebView {
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -7090,8 +7090,8 @@ declare interface TitaniumUIWebView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
-    setData (data : TitaniumBlob) : void;
+    setCenter (center : IPoint) : void;
+    setData (data : ITitaniumBlob) : void;
     setDisableBounce (disableBounce : boolean) : void;
     setEnableZoomControls (enableZoomControls : boolean) : void;
     setFocusable (focusable : boolean) : void;
@@ -7114,7 +7114,7 @@ declare interface TitaniumUIWebView {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setUrl (url : string) : void;
     setUserAgent (userAgent : string) : void;
     setVisible (visible : boolean) : void;
@@ -7124,43 +7124,43 @@ declare interface TitaniumUIWebView {
     show () : void;
     startLayout () : void;
     stopLoading (hardStop : boolean) : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUITableViewSection {
+interface ITitaniumUITableViewSection {
     bubbleParent : boolean;
     footerTitle : string;
-    footerView : TitaniumUIView;
+    footerView : ITitaniumUIView;
     headerTitle : string;
-    headerView : TitaniumUIView;
+    headerView : ITitaniumUIView;
     rowCount : number;
     rows : any[];
-    add (row : TitaniumUITableViewRow) : void;
+    add (row : ITitaniumUITableViewRow) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     getFooterTitle () : string;
-    getFooterView () : TitaniumUIView;
+    getFooterView () : ITitaniumUIView;
     getHeaderTitle () : string;
-    getHeaderView () : TitaniumUIView;
+    getHeaderView () : ITitaniumUIView;
     getRowCount () : number;
     getRows () : any[];
-    remove (row : TitaniumUITableViewRow) : void;
+    remove (row : ITitaniumUITableViewRow) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    rowAtIndex (index : number) : TitaniumUITableViewRow;
+    rowAtIndex (index : number) : ITitaniumUITableViewRow;
     setBubbleParent (bubbleParent : boolean) : void;
     setFooterTitle (footerTitle : string) : void;
-    setFooterView (footerView : TitaniumUIView) : void;
+    setFooterView (footerView : ITitaniumUIView) : void;
     setHeaderTitle (headerTitle : string) : void;
-    setHeaderView (headerView : TitaniumUIView) : void;
+    setHeaderView (headerView : ITitaniumUIView) : void;
 }
-declare interface TitaniumUITabGroup {
+interface ITitaniumUITabGroup {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    activeTab : TitaniumUITab;
+    activeTab : ITitaniumUITab;
     activeTabBackgroundColor : string;
     activeTabBackgroundDisabledColor : string;
     activeTabBackgroundDisabledImage : string;
@@ -7171,14 +7171,14 @@ declare interface TitaniumUITabGroup {
     activeTabBackgroundSelectedImage : string;
     activeTabIconTint : string;
     allowUserCustomization : boolean;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -7191,7 +7191,7 @@ declare interface TitaniumUITabGroup {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     editButtonTitle : string;
     exitOnClose : boolean;
@@ -7203,10 +7203,10 @@ declare interface TitaniumUITabGroup {
     left : number;
     navBarHidden : boolean;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     shadowImage : string;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     tabDividerColor : string;
     tabDividerWidth : number;
@@ -7223,25 +7223,25 @@ declare interface TitaniumUITabGroup {
     tabsBackgroundSelectedImage : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     windowSoftInputMode : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    addTab (tab : TitaniumUITab) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    addTab (tab : ITitaniumUITab) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     close () : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getActiveTab () : TitaniumUITab;
+    getActiveTab () : ITitaniumUITab;
     getActiveTabBackgroundColor () : string;
     getActiveTabBackgroundDisabledColor () : string;
     getActiveTabBackgroundDisabledImage () : string;
@@ -7251,16 +7251,16 @@ declare interface TitaniumUITabGroup {
     getActiveTabBackgroundSelectedColor () : string;
     getActiveTabBackgroundSelectedImage () : string;
     getActiveTabIconTint () : string;
-    getActivity () : TitaniumAndroidActivity;
+    getActivity () : ITitaniumAndroidActivity;
     getAllowUserCustomization () : boolean;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -7273,7 +7273,7 @@ declare interface TitaniumUITabGroup {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getEditButtonTitle () : string;
     getExitOnClose () : boolean;
@@ -7285,10 +7285,10 @@ declare interface TitaniumUITabGroup {
     getLeft () : any;
     getNavBarHidden () : boolean;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getShadowImage () : string;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTabDividerColor () : string;
     getTabDividerWidth () : any;
@@ -7312,9 +7312,9 @@ declare interface TitaniumUITabGroup {
     getZIndex () : number;
     hide () : void;
     open () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    removeTab (tab : TitaniumUITab) : void;
+    removeTab (tab : ITitaniumUITab) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
@@ -7330,13 +7330,13 @@ declare interface TitaniumUITabGroup {
     setActiveTabBackgroundSelectedImage (activeTabBackgroundSelectedImage : string) : void;
     setActiveTabIconTint (activeTabIconTint : string) : void;
     setAllowUserCustomization (allowUserCustomization : boolean) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -7349,7 +7349,7 @@ declare interface TitaniumUITabGroup {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setEditButtonTitle (editButtonTitle : string) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
@@ -7377,17 +7377,17 @@ declare interface TitaniumUITabGroup {
     setTabsBackgroundSelectedImage (tabsBackgroundSelectedImage : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIAlertDialog {
-    androidView : TitaniumUIView;
+interface ITitaniumUIAlertDialog {
+    androidView : ITitaniumUIView;
     bubbleParent : boolean;
     buttonNames : any[];
     cancel : number;
@@ -7402,7 +7402,7 @@ declare interface TitaniumUIAlertDialog {
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
-    getAndroidView () : TitaniumUIView;
+    getAndroidView () : ITitaniumUIView;
     getBubbleParent () : boolean;
     getButtonNames () : any[];
     getCancel () : number;
@@ -7413,7 +7413,7 @@ declare interface TitaniumUIAlertDialog {
     getTitle () : string;
     hide () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    setAndroidView (androidView : TitaniumUIView) : void;
+    setAndroidView (androidView : ITitaniumUIView) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setCancel (cancel : number) : void;
     setMessage (message : string) : void;
@@ -7423,13 +7423,13 @@ declare interface TitaniumUIAlertDialog {
     setTitle (title : string) : void;
     show () : void;
 }
-declare interface TitaniumUISearchBar {
+interface ITitaniumUISearchBar {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     autocapitalization : number;
     autocorrect : boolean;
     backgroundColor : string;
@@ -7437,7 +7437,7 @@ declare interface TitaniumUISearchBar {
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -7450,7 +7450,7 @@ declare interface TitaniumUISearchBar {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     enabled : boolean;
     focusable : boolean;
@@ -7465,24 +7465,24 @@ declare interface TitaniumUISearchBar {
     opacity : number;
     prompt : string;
     promptid : string;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     showBookmark : boolean;
     showCancel : boolean;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     value : string;
     visible : boolean;
     width : number;
     zIndex : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     blur () : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     focus () : void;
@@ -7490,8 +7490,8 @@ declare interface TitaniumUISearchBar {
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getAutocapitalization () : number;
     getAutocorrect () : boolean;
     getBackgroundColor () : string;
@@ -7499,7 +7499,7 @@ declare interface TitaniumUISearchBar {
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -7512,7 +7512,7 @@ declare interface TitaniumUISearchBar {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getEnabled () : boolean;
     getFocusable () : boolean;
@@ -7527,11 +7527,11 @@ declare interface TitaniumUISearchBar {
     getOpacity () : number;
     getPrompt () : string;
     getPromptid () : string;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getShowBookmark () : boolean;
     getShowCancel () : boolean;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -7541,13 +7541,13 @@ declare interface TitaniumUISearchBar {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setAutocapitalization (autocapitalization : number) : void;
     setAutocorrect (autocorrect : boolean) : void;
     setBackgroundColor (backgroundColor : string) : void;
@@ -7555,7 +7555,7 @@ declare interface TitaniumUISearchBar {
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -7568,7 +7568,7 @@ declare interface TitaniumUISearchBar {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
@@ -7588,29 +7588,29 @@ declare interface TitaniumUISearchBar {
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setValue (value : string) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIButton {
+interface ITitaniumUIButton {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -7622,12 +7622,12 @@ declare interface TitaniumUIButton {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     color : string;
     enabled : boolean;
     focusable : boolean;
-    font : Font;
+    font : IFont;
     height : number;
     horizontalWrap : boolean;
     image : string;
@@ -7635,10 +7635,10 @@ declare interface TitaniumUIButton {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     selectedColor : string;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     style : number;
     systemButton : number;
@@ -7647,30 +7647,30 @@ declare interface TitaniumUIButton {
     titleid : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     verticalAlign : number;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -7682,12 +7682,12 @@ declare interface TitaniumUIButton {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getColor () : string;
     getEnabled () : boolean;
     getFocusable () : boolean;
-    getFont () : Font;
+    getFont () : IFont;
     getHeight () : any;
     getHorizontalWrap () : boolean;
     getImage () : any;
@@ -7695,10 +7695,10 @@ declare interface TitaniumUIButton {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getSelectedColor () : string;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getStyle () : number;
     getSystemButton () : number;
@@ -7713,20 +7713,20 @@ declare interface TitaniumUIButton {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -7738,11 +7738,11 @@ declare interface TitaniumUIButton {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setColor (color : string) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setImage (image : string) : void;
@@ -7760,18 +7760,18 @@ declare interface TitaniumUIButton {
     setTitleid (titleid : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVerticalAlign (verticalAlign : number) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIAnimation {
-    anchorPoint : Point;
+interface ITitaniumUIAnimation {
+    anchorPoint : IPoint;
     autoreverse : boolean;
     backgroundColor : string;
     bottom : number;
@@ -7788,16 +7788,16 @@ declare interface TitaniumUIAnimation {
     repeat : number;
     right : number;
     top : number;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     transition : number;
-    view : TitaniumUIView;
+    view : ITitaniumUIView;
     visible : boolean;
     width : number;
     zIndex : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
-    getAnchorPoint () : Point;
+    getAnchorPoint () : IPoint;
     getAutoreverse () : boolean;
     getBackgroundColor () : string;
     getBottom () : number;
@@ -7816,12 +7816,12 @@ declare interface TitaniumUIAnimation {
     getTop () : number;
     getTransform () : any;
     getTransition () : number;
-    getView () : TitaniumUIView;
+    getView () : ITitaniumUIView;
     getVisible () : boolean;
     getWidth () : number;
     getZIndex () : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setAutoreverse (autoreverse : boolean) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBottom (bottom : number) : void;
@@ -7838,18 +7838,18 @@ declare interface TitaniumUIAnimation {
     setRepeat (repeat : number) : void;
     setRight (right : number) : void;
     setTop (top : number) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setTransition (transition : number) : void;
-    setView (view : TitaniumUIView) : void;
+    setView (view : ITitaniumUIView) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
 }
-declare interface TitaniumUIActivityIndicator {
+interface ITitaniumUIActivityIndicator {
     bottom : number;
     bubbleParent : boolean;
     color : string;
-    font : Font;
+    font : IFont;
     height : string;
     indicatorColor : string;
     indicatorDiameter : string;
@@ -7867,7 +7867,7 @@ declare interface TitaniumUIActivityIndicator {
     getBottom () : any;
     getBubbleParent () : boolean;
     getColor () : string;
-    getFont () : Font;
+    getFont () : IFont;
     getHeight () : string;
     getIndicatorColor () : string;
     getIndicatorDiameter () : string;
@@ -7884,7 +7884,7 @@ declare interface TitaniumUIActivityIndicator {
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setColor (color : string) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setHeight (height : string) : void;
     setIndicatorColor (indicatorColor : string) : void;
     setIndicatorDiameter (indicatorDiameter : string) : void;
@@ -7897,7 +7897,7 @@ declare interface TitaniumUIActivityIndicator {
     setWidth (width : string) : void;
     show () : void;
 }
-declare interface TitaniumUI_2DMatrix {
+interface ITitaniumUI_2DMatrix {
     a : number;
     b : number;
     bubbleParent : boolean;
@@ -7915,11 +7915,11 @@ declare interface TitaniumUI_2DMatrix {
     getD () : number;
     getTx () : number;
     getTy () : number;
-    invert () : TitaniumUI_2DMatrix;
-    multiply (t2 : TitaniumUI_2DMatrix) : TitaniumUI_2DMatrix;
+    invert () : ITitaniumUI_2DMatrix;
+    multiply (t2 : ITitaniumUI_2DMatrix) : ITitaniumUI_2DMatrix;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    rotate (angle : number, toAngle? : number) : TitaniumUI_2DMatrix;
-    scale (sx : number, sy : number, toSx? : number, toSy? : number) : TitaniumUI_2DMatrix;
+    rotate (angle : number, toAngle? : number) : ITitaniumUI_2DMatrix;
+    scale (sx : number, sy : number, toSx? : number, toSy? : number) : ITitaniumUI_2DMatrix;
     setA (a : number) : void;
     setB (b : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
@@ -7927,10 +7927,10 @@ declare interface TitaniumUI_2DMatrix {
     setD (d : number) : void;
     setTx (tx : number) : void;
     setTy (ty : number) : void;
-    translate (tx : number, ty : number) : TitaniumUI_2DMatrix;
+    translate (tx : number, ty : number) : ITitaniumUI_2DMatrix;
 }
-declare interface TitaniumUIOptionDialog {
-    androidView : TitaniumUIView;
+interface ITitaniumUIOptionDialog {
+    androidView : ITitaniumUIView;
     bubbleParent : boolean;
     cancel : number;
     destructive : number;
@@ -7939,11 +7939,11 @@ declare interface TitaniumUIOptionDialog {
     selectedIndex : number;
     title : string;
     titleid : string;
-    tizenView : TitaniumUIView;
+    tizenView : ITitaniumUIView;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
-    getAndroidView () : TitaniumUIView;
+    getAndroidView () : ITitaniumUIView;
     getBubbleParent () : boolean;
     getCancel () : number;
     getDestructive () : number;
@@ -7952,27 +7952,27 @@ declare interface TitaniumUIOptionDialog {
     getSelectedIndex () : number;
     getTitle () : string;
     getTitleid () : string;
-    getTizenView () : TitaniumUIView;
-    hide (params? : HideParams) : void;
+    getTizenView () : ITitaniumUIView;
+    hide (params? : IHideParams) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    setAndroidView (androidView : TitaniumUIView) : void;
+    setAndroidView (androidView : ITitaniumUIView) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setCancel (cancel : number) : void;
     setPersistent (persistent : boolean) : void;
     setTitle (title : string) : void;
     setTitleid (titleid : string) : void;
-    setTizenView (tizenView : TitaniumUIView) : void;
-    show (params? : ShowParams) : void;
+    setTizenView (tizenView : ITitaniumUIView) : void;
+    show (params? : IShowParams) : void;
 }
-declare interface TitaniumUIButtonBar {
+interface ITitaniumUIButtonBar {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -7982,7 +7982,7 @@ declare interface TitaniumUIButtonBar {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
@@ -7991,31 +7991,31 @@ declare interface TitaniumUIButtonBar {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     style : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -8025,7 +8025,7 @@ declare interface TitaniumUIButtonBar {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -8034,9 +8034,9 @@ declare interface TitaniumUIButtonBar {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getStyle () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -8045,16 +8045,16 @@ declare interface TitaniumUIButtonBar {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -8064,7 +8064,7 @@ declare interface TitaniumUIButtonBar {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setIndex (index : number) : void;
@@ -8076,29 +8076,29 @@ declare interface TitaniumUIButtonBar {
     setStyle (style : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUILabel {
+interface ITitaniumUILabel {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     autoLink : number;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundPaddingBottom : number;
@@ -8114,13 +8114,13 @@ declare interface TitaniumUILabel {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     color : string;
     ellipsize : boolean;
     enabled : boolean;
     focusable : boolean;
-    font : Font;
+    font : IFont;
     height : number;
     highlightedColor : string;
     horizontalWrap : boolean;
@@ -8130,43 +8130,43 @@ declare interface TitaniumUILabel {
     left : number;
     minimumFontSize : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     shadowColor : string;
     shadowOffset : any;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     text : string;
     textAlign : string;
     textid : string;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     verticalAlign : number;
     visible : boolean;
     width : number;
     wordWrap : boolean;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getAutoLink () : number;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundPaddingBottom () : number;
@@ -8182,13 +8182,13 @@ declare interface TitaniumUILabel {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getColor () : string;
     getEllipsize () : boolean;
     getEnabled () : boolean;
     getFocusable () : boolean;
-    getFont () : Font;
+    getFont () : IFont;
     getHeight () : any;
     getHighlightedColor () : string;
     getHorizontalWrap () : boolean;
@@ -8198,11 +8198,11 @@ declare interface TitaniumUILabel {
     getLeft () : any;
     getMinimumFontSize () : number;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getShadowColor () : string;
     getShadowOffset () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getText () : string;
     getTextAlign () : any;
@@ -8216,21 +8216,21 @@ declare interface TitaniumUILabel {
     getWordWrap () : boolean;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setAutoLink (autoLink : number) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundPaddingBottom (backgroundPaddingBottom : number) : void;
@@ -8246,12 +8246,12 @@ declare interface TitaniumUILabel {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setColor (color : string) : void;
     setEllipsize (ellipsize : boolean) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
-    setFont (font : Font) : void;
+    setFont (font : IFont) : void;
     setHeight (height : number) : void;
     setHighlightedColor (highlightedColor : string) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
@@ -8270,7 +8270,7 @@ declare interface TitaniumUILabel {
     setTextid (textid : string) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVerticalAlign (verticalAlign : number) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
@@ -8278,18 +8278,18 @@ declare interface TitaniumUILabel {
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUITabbedBar {
+interface ITitaniumUITabbedBar {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -8299,7 +8299,7 @@ declare interface TitaniumUITabbedBar {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     height : number;
     horizontalWrap : boolean;
@@ -8308,31 +8308,31 @@ declare interface TitaniumUITabbedBar {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    size : Dimension;
+    size : IDimension;
     style : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -8342,7 +8342,7 @@ declare interface TitaniumUITabbedBar {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getHeight () : any;
     getHorizontalWrap () : boolean;
@@ -8351,9 +8351,9 @@ declare interface TitaniumUITabbedBar {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getStyle () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -8362,16 +8362,16 @@ declare interface TitaniumUITabbedBar {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -8381,7 +8381,7 @@ declare interface TitaniumUITabbedBar {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
     setIndex (index : number) : void;
@@ -8393,30 +8393,30 @@ declare interface TitaniumUITabbedBar {
     setStyle (style : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUITableView {
+interface ITitaniumUITableView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
     allowsSelection : boolean;
     allowsSelectionDuringEditing : boolean;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -8426,7 +8426,7 @@ declare interface TitaniumUITableView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     data : any;
     editable : boolean;
@@ -8435,10 +8435,10 @@ declare interface TitaniumUITableView {
     filterCaseInsensitive : boolean;
     focusable : boolean;
     footerTitle : string;
-    footerView : TitaniumUIView;
-    headerPullView : TitaniumUIView;
+    footerView : ITitaniumUIView;
+    headerPullView : ITitaniumUIView;
     headerTitle : string;
-    headerView : TitaniumUIView;
+    headerView : ITitaniumUIView;
     height : number;
     hideSearchOnSelection : boolean;
     horizontalWrap : boolean;
@@ -8452,13 +8452,13 @@ declare interface TitaniumUITableView {
     moving : boolean;
     opacity : number;
     overScrollMode : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     rowHeight : number;
     scrollIndicatorStyle : number;
     scrollable : boolean;
     scrollsToTop : boolean;
-    search : TitaniumUISearchBar;
+    search : ITitaniumUISearchBar;
     searchAsChild : boolean;
     searchHidden : boolean;
     sectionCount : number;
@@ -8466,24 +8466,24 @@ declare interface TitaniumUITableView {
     separatorColor : string;
     separatorStyle : number;
     showVerticalScrollIndicator : boolean;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     style : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
-    appendRow (row : TitaniumUITableViewRow, animation? : TableViewAnimationProperties) : void;
-    appendSection (section : TitaniumUITableViewSection, animation? : TableViewAnimationProperties) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    appendRow (row : ITitaniumUITableViewRow, animation? : ITableViewAnimationProperties) : void;
+    appendSection (section : ITitaniumUITableViewSection, animation? : ITableViewAnimationProperties) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
-    deleteRow (row : number, animation? : TableViewAnimationProperties) : void;
-    deleteSection (section : number, animation? : TableViewAnimationProperties) : void;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
+    deleteRow (row : number, animation? : ITableViewAnimationProperties) : void;
+    deleteSection (section : number, animation? : ITableViewAnimationProperties) : void;
     deselectRow (row : number) : void;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
@@ -8493,14 +8493,14 @@ declare interface TitaniumUITableView {
     getAccessibilityValue () : string;
     getAllowsSelection () : boolean;
     getAllowsSelectionDuringEditing () : boolean;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -8510,7 +8510,7 @@ declare interface TitaniumUITableView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getData () : any;
     getEditable () : boolean;
@@ -8519,10 +8519,10 @@ declare interface TitaniumUITableView {
     getFilterCaseInsensitive () : boolean;
     getFocusable () : boolean;
     getFooterTitle () : string;
-    getFooterView () : TitaniumUIView;
-    getHeaderPullView () : TitaniumUIView;
+    getFooterView () : ITitaniumUIView;
+    getHeaderPullView () : ITitaniumUIView;
     getHeaderTitle () : string;
-    getHeaderView () : TitaniumUIView;
+    getHeaderView () : ITitaniumUIView;
     getHeight () : any;
     getHideSearchOnSelection () : boolean;
     getHorizontalWrap () : boolean;
@@ -8536,7 +8536,7 @@ declare interface TitaniumUITableView {
     getMoving () : boolean;
     getOpacity () : number;
     getOverScrollMode () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getRowHeight () : number;
     getScrollIndicatorStyle () : number;
@@ -8550,7 +8550,7 @@ declare interface TitaniumUITableView {
     getSeparatorColor () : string;
     getSeparatorStyle () : number;
     getShowVerticalScrollIndicator () : boolean;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getStyle () : number;
     getTop () : any;
@@ -8560,15 +8560,15 @@ declare interface TitaniumUITableView {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    insertRowAfter (index : number, row : TitaniumUITableViewRow, animation? : TableViewAnimationProperties) : void;
-    insertRowBefore (index : number, row : TitaniumUITableViewRow, animation? : TableViewAnimationProperties) : void;
-    insertSectionAfter (index : number, section : TitaniumUITableViewSection, animation? : TableViewAnimationProperties) : void;
-    insertSectionBefore (index : number, section : TitaniumUITableViewSection, animation? : TableViewAnimationProperties) : void;
-    remove (view : TitaniumUIView) : void;
+    insertRowAfter (index : number, row : ITitaniumUITableViewRow, animation? : ITableViewAnimationProperties) : void;
+    insertRowBefore (index : number, row : ITitaniumUITableViewRow, animation? : ITableViewAnimationProperties) : void;
+    insertSectionAfter (index : number, section : ITitaniumUITableViewSection, animation? : ITableViewAnimationProperties) : void;
+    insertSectionBefore (index : number, section : ITitaniumUITableViewSection, animation? : ITableViewAnimationProperties) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    scrollToIndex (index : number, animation? : TableViewAnimationProperties) : void;
-    scrollToTop (top : number, animation? : TableViewAnimationProperties) : void;
+    scrollToIndex (index : number, animation? : ITableViewAnimationProperties) : void;
+    scrollToTop (top : number, animation? : ITableViewAnimationProperties) : void;
     selectRow (row : number) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
@@ -8576,13 +8576,13 @@ declare interface TitaniumUITableView {
     setAccessibilityValue (accessibilityValue : string) : void;
     setAllowsSelection (allowsSelection : boolean) : void;
     setAllowsSelectionDuringEditing (allowsSelectionDuringEditing : boolean) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -8592,19 +8592,19 @@ declare interface TitaniumUITableView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
-    setContentInsets (edgeInsets : TableViewEdgeInsets, animated? : TableViewContentInsetOption) : void;
-    setData (data : any[], animation : TableViewAnimationProperties) : void;
+    setCenter (center : IPoint) : void;
+    setContentInsets (edgeInsets : ITableViewEdgeInsets, animated? : ITableViewContentInsetOption) : void;
+    setData (data : any[], animation : ITableViewAnimationProperties) : void;
     setEditable (editable : boolean) : void;
     setEditing (editing : boolean) : void;
     setFilterAttribute (filterAttribute : string) : void;
     setFilterCaseInsensitive (filterCaseInsensitive : boolean) : void;
     setFocusable (focusable : boolean) : void;
     setFooterTitle (footerTitle : string) : void;
-    setFooterView (footerView : TitaniumUIView) : void;
-    setHeaderPullView (view : TitaniumUIView) : void;
+    setFooterView (footerView : ITitaniumUIView) : void;
+    setHeaderPullView (view : ITitaniumUIView) : void;
     setHeaderTitle (headerTitle : string) : void;
-    setHeaderView (headerView : TitaniumUIView) : void;
+    setHeaderView (headerView : ITitaniumUIView) : void;
     setHeight (height : number) : void;
     setHideSearchOnSelection (hideSearchOnSelection : boolean) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
@@ -8623,7 +8623,7 @@ declare interface TitaniumUITableView {
     setScrollIndicatorStyle (scrollIndicatorStyle : number) : void;
     setScrollable (scrollable : boolean) : void;
     setScrollsToTop (scrollsToTop : boolean) : void;
-    setSearch (search : TitaniumUISearchBar) : void;
+    setSearch (search : ITitaniumUISearchBar) : void;
     setSearchAsChild (searchAsChild : boolean) : void;
     setSearchHidden (searchHidden : boolean) : void;
     setSections (sections : any[]) : void;
@@ -8634,25 +8634,25 @@ declare interface TitaniumUITableView {
     setStyle (style : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
-    updateRow (index : number, row : TitaniumUITableViewRow, animation : TableViewAnimationProperties) : void;
-    updateSection (index : number, section : TitaniumUITableViewSection, animation : TableViewAnimationProperties) : void;
+    updateRow (index : number, row : ITitaniumUITableViewRow, animation : ITableViewAnimationProperties) : void;
+    updateSection (index : number, section : ITitaniumUITableViewSection, animation : ITableViewAnimationProperties) : void;
 }
-declare interface TitaniumUIWindow {
+interface ITitaniumUIWindow {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    activity : TitaniumAndroidActivity;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    activity : ITitaniumAndroidActivity;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backButtonTitle : string;
     backButtonTitleImage : string;
     backgroundColor : string;
@@ -8660,7 +8660,7 @@ declare interface TitaniumUIWindow {
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -8674,7 +8674,7 @@ declare interface TitaniumUIWindow {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     enabled : boolean;
     exitOnClose : boolean;
@@ -8685,20 +8685,20 @@ declare interface TitaniumUIWindow {
     keepScreenOn : boolean;
     layout : string;
     left : number;
-    leftNavButton : TitaniumUIView;
+    leftNavButton : ITitaniumUIView;
     modal : boolean;
     navBarHidden : boolean;
     opacity : number;
     orientation : number;
     orientationModes : any[];
-    rect : Dimension;
+    rect : IDimension;
     right : number;
-    rightNavButton : TitaniumUIView;
-    size : Dimension;
+    rightNavButton : ITitaniumUIView;
+    size : IDimension;
     softKeyboardOnFocus : number;
     tabBarHidden : boolean;
     title : string;
-    titleControl : TitaniumUIView;
+    titleControl : ITitaniumUIView;
     titleImage : string;
     titlePrompt : string;
     titleid : string;
@@ -8706,7 +8706,7 @@ declare interface TitaniumUIWindow {
     toolbar : any[];
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     translucent : boolean;
     url : string;
     visible : boolean;
@@ -8714,21 +8714,21 @@ declare interface TitaniumUIWindow {
     windowPixelFormat : number;
     windowSoftInputMode : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    close (params? : TitaniumUIAnimation) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    close (params? : ITitaniumUIAnimation) : void;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getActivity () : TitaniumAndroidActivity;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getActivity () : ITitaniumAndroidActivity;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackButtonTitle () : string;
     getBackButtonTitleImage () : any;
     getBackgroundColor () : string;
@@ -8736,7 +8736,7 @@ declare interface TitaniumUIWindow {
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -8750,7 +8750,7 @@ declare interface TitaniumUIWindow {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getEnabled () : boolean;
     getExitOnClose () : boolean;
@@ -8761,20 +8761,20 @@ declare interface TitaniumUIWindow {
     getKeepScreenOn () : boolean;
     getLayout () : string;
     getLeft () : any;
-    getLeftNavButton () : TitaniumUIView;
+    getLeftNavButton () : ITitaniumUIView;
     getModal () : boolean;
     getNavBarHidden () : boolean;
     getOpacity () : number;
     getOrientation () : number;
     getOrientationModes () : any[];
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
-    getRightNavButton () : TitaniumUIView;
-    getSize () : Dimension;
+    getRightNavButton () : ITitaniumUIView;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTabBarHidden () : boolean;
     getTitle () : string;
-    getTitleControl () : TitaniumUIView;
+    getTitleControl () : ITitaniumUIView;
     getTitleImage () : string;
     getTitlePrompt () : string;
     getTitleid () : string;
@@ -8792,15 +8792,15 @@ declare interface TitaniumUIWindow {
     getZIndex () : number;
     hide () : void;
     hideTabBar () : void;
-    open (params? : OpenWindowParams) : void;
-    remove (view : TitaniumUIView) : void;
+    open (params? : IOpenWindowParams) : void;
+    remove (view : ITitaniumUIView) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setActivity (activity : TitaniumAndroidActivity) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setActivity (activity : ITitaniumAndroidActivity) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackButtonTitle (backButtonTitle : string) : void;
     setBackButtonTitleImage (backButtonTitleImage : string) : void;
     setBackgroundColor (backgroundColor : string) : void;
@@ -8808,7 +8808,7 @@ declare interface TitaniumUIWindow {
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -8822,7 +8822,7 @@ declare interface TitaniumUIWindow {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setEnabled (enabled : boolean) : void;
     setFocusable (focusable : boolean) : void;
     setFullscreen (fullscreen : boolean) : void;
@@ -8831,17 +8831,17 @@ declare interface TitaniumUIWindow {
     setKeepScreenOn (keepScreenOn : boolean) : void;
     setLayout (layout : string) : void;
     setLeft (left : number) : void;
-    setLeftNavButton (leftNavButton : TitaniumUIView) : void;
+    setLeftNavButton (leftNavButton : ITitaniumUIView) : void;
     setModal (modal : boolean) : void;
     setNavBarHidden (navBarHidden : boolean) : void;
     setOpacity (opacity : number) : void;
     setOrientationModes (orientationModes : any[]) : void;
     setRight (right : number) : void;
-    setRightNavButton (rightNavButton : TitaniumUIView) : void;
+    setRightNavButton (rightNavButton : ITitaniumUIView) : void;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTabBarHidden (tabBarHidden : boolean) : void;
     setTitle (title : string) : void;
-    setTitleControl (titleControl : TitaniumUIView) : void;
+    setTitleControl (titleControl : ITitaniumUIView) : void;
     setTitleImage (titleImage : string) : void;
     setTitlePrompt (titlePrompt : string) : void;
     setTitleid (titleid : string) : void;
@@ -8849,7 +8849,7 @@ declare interface TitaniumUIWindow {
     setToolbar (toolbar : any[]) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setTranslucent (translucent : boolean) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
@@ -8857,40 +8857,40 @@ declare interface TitaniumUIWindow {
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIListSection {
+interface ITitaniumUIListSection {
     footerTitle : string;
     headerTitle : string;
     items : any[];
-    appendItems (dataItems : any[], animation? : ListViewAnimationProperties) : void;
+    appendItems (dataItems : any[], animation? : IListViewAnimationProperties) : void;
     applyProperties (props : any) : void;
-    deleteItemsAt (itemIndex : number, count : number, animation? : ListViewAnimationProperties) : void;
+    deleteItemsAt (itemIndex : number, count : number, animation? : IListViewAnimationProperties) : void;
     getFooterTitle () : string;
     getHeaderTitle () : string;
-    getItemAt (itemIndex : number) : ListDataItem;
+    getItemAt (itemIndex : number) : IListDataItem;
     getItems () : any[];
-    insertItemsAt (itemIndex : number, dataItems : any[], animation? : ListViewAnimationProperties) : void;
-    replaceItemsAt (index : number, count : number, dataItems : any[], animation? : ListViewAnimationProperties) : void;
+    insertItemsAt (itemIndex : number, dataItems : any[], animation? : IListViewAnimationProperties) : void;
+    replaceItemsAt (index : number, count : number, dataItems : any[], animation? : IListViewAnimationProperties) : void;
     setFooterTitle (footerTitle : string) : void;
     setHeaderTitle (headerTitle : string) : void;
-    setItems (dataItems : any[], animation? : ListViewAnimationProperties) : void;
-    updateItemAt (index : number, dataItem : ListDataItem, animation? : ListViewAnimationProperties) : void;
+    setItems (dataItems : any[], animation? : IListViewAnimationProperties) : void;
+    updateItemAt (index : number, dataItem : IListDataItem, animation? : IListViewAnimationProperties) : void;
 }
-declare interface TitaniumUIPickerColumn {
+interface ITitaniumUIPickerColumn {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -8902,7 +8902,7 @@ declare interface TitaniumUIPickerColumn {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     focusable : boolean;
     height : number;
@@ -8911,39 +8911,39 @@ declare interface TitaniumUIPickerColumn {
     layout : string;
     left : number;
     opacity : number;
-    rect : Dimension;
+    rect : IDimension;
     right : number;
     rowCount : number;
     rows : any[];
-    selectedRow : TitaniumUIPickerRow;
-    size : Dimension;
+    selectedRow : ITitaniumUIPickerRow;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    addRow (row : TitaniumUIPickerRow) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    addRow (row : ITitaniumUIPickerRow) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -8955,7 +8955,7 @@ declare interface TitaniumUIPickerColumn {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getFocusable () : boolean;
     getHeight () : any;
@@ -8964,12 +8964,12 @@ declare interface TitaniumUIPickerColumn {
     getLayout () : string;
     getLeft () : any;
     getOpacity () : number;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRight () : any;
     getRowCount () : number;
     getRows () : any[];
-    getSelectedRow () : TitaniumUIPickerRow;
-    getSize () : Dimension;
+    getSelectedRow () : ITitaniumUIPickerRow;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -8978,21 +8978,21 @@ declare interface TitaniumUIPickerColumn {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    removeRow (row : TitaniumUIPickerRow) : void;
+    removeRow (row : ITitaniumUIPickerRow) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -9004,7 +9004,7 @@ declare interface TitaniumUIPickerColumn {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
     setHorizontalWrap (horizontalWrap : boolean) : void;
@@ -9013,20 +9013,20 @@ declare interface TitaniumUIPickerColumn {
     setLeft (left : number) : void;
     setOpacity (opacity : number) : void;
     setRight (right : number) : void;
-    setSelectedRow (selectedRow : TitaniumUIPickerRow) : void;
+    setSelectedRow (selectedRow : ITitaniumUIPickerRow) : void;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumUIPicker {
+interface ITitaniumUIPicker {
     bubbleParent : boolean;
     columns : any[];
     countDownDuration : number;
@@ -9052,13 +9052,13 @@ declare interface TitaniumUIPicker {
     getMaxDate () : Date;
     getMinDate () : Date;
     getMinuteInterval () : number;
-    getSelectedRow (index : number) : TitaniumUIPickerRow;
+    getSelectedRow (index : number) : ITitaniumUIPickerRow;
     getSelectionIndicator () : boolean;
     getType () : number;
     getUseSpinner () : boolean;
     getValue () : Date;
     getVisibleItems () : number;
-    reloadColumn (column : TitaniumUIPickerColumn) : void;
+    reloadColumn (column : ITitaniumUIPickerColumn) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setColumns (columns : any[]) : void;
@@ -9072,59 +9072,59 @@ declare interface TitaniumUIPicker {
     setSelectionIndicator (selectionIndicator : boolean) : void;
     setType (type : number) : void;
     setUseSpinner (useSpinner : boolean) : void;
-    setValue (date : any, suppressEvent : boolean) : TitaniumUIPickerRow;
+    setValue (date : any, suppressEvent : boolean) : ITitaniumUIPickerRow;
     setVisibleItems (visibleItems : number) : void;
     showDatePickerDialog (dictObj : any) : void;
     showTimePickerDialog (dictObj : any) : void;
 }
-declare interface TitaniumUI {
-    iPhone : TitaniumUIIPhone;
-    iPad : TitaniumUIIPad;
-    EmailDialog : TitaniumUIEmailDialog;
-    CoverFlowView : TitaniumUICoverFlowView;
-    ImageView : TitaniumUIImageView;
-    MaskedImage : TitaniumUIMaskedImage;
-    MobileWeb : TitaniumUIMobileWeb;
-    TextField : TitaniumUITextField;
-    TextArea : TitaniumUITextArea;
-    ActivityIndicatorStyle : TitaniumUIActivityIndicatorStyle;
-    Switch : TitaniumUISwitch;
-    iOS : TitaniumUIIOS;
-    Clipboard : TitaniumUIClipboard;
-    Tab : TitaniumUITab;
-    TableViewRow : TitaniumUITableViewRow;
-    PickerRow : TitaniumUIPickerRow;
-    ProgressBar : TitaniumUIProgressBar;
-    ScrollableView : TitaniumUIScrollableView;
-    Notification : TitaniumUINotification;
-    ScrollView : TitaniumUIScrollView;
-    Slider : TitaniumUISlider;
-    Android : TitaniumUIAndroid;
-    DashboardView : TitaniumUIDashboardView;
-    _3DMatrix : TitaniumUI_3DMatrix;
-    ListView : TitaniumUIListView;
-    DashboardItem : TitaniumUIDashboardItem;
-    Toolbar : TitaniumUIToolbar;
-    View : TitaniumUIView;
-    ListItem : TitaniumUIListItem;
-    WebView : TitaniumUIWebView;
-    TableViewSection : TitaniumUITableViewSection;
-    TabGroup : TitaniumUITabGroup;
-    AlertDialog : TitaniumUIAlertDialog;
-    SearchBar : TitaniumUISearchBar;
-    Button : TitaniumUIButton;
-    Animation : TitaniumUIAnimation;
-    ActivityIndicator : TitaniumUIActivityIndicator;
-    _2DMatrix : TitaniumUI_2DMatrix;
-    OptionDialog : TitaniumUIOptionDialog;
-    ButtonBar : TitaniumUIButtonBar;
-    Label : TitaniumUILabel;
-    TabbedBar : TitaniumUITabbedBar;
-    TableView : TitaniumUITableView;
-    Window : TitaniumUIWindow;
-    ListSection : TitaniumUIListSection;
-    PickerColumn : TitaniumUIPickerColumn;
-    Picker : TitaniumUIPicker;
+interface ITitaniumUI {
+    iPhone : ITitaniumUIIPhone;
+    iPad : ITitaniumUIIPad;
+    EmailDialog : ITitaniumUIEmailDialog;
+    CoverFlowView : ITitaniumUICoverFlowView;
+    ImageView : ITitaniumUIImageView;
+    MaskedImage : ITitaniumUIMaskedImage;
+    MobileWeb : ITitaniumUIMobileWeb;
+    TextField : ITitaniumUITextField;
+    TextArea : ITitaniumUITextArea;
+    ActivityIndicatorStyle : ITitaniumUIActivityIndicatorStyle;
+    Switch : ITitaniumUISwitch;
+    iOS : ITitaniumUIIOS;
+    Clipboard : ITitaniumUIClipboard;
+    Tab : ITitaniumUITab;
+    TableViewRow : ITitaniumUITableViewRow;
+    PickerRow : ITitaniumUIPickerRow;
+    ProgressBar : ITitaniumUIProgressBar;
+    ScrollableView : ITitaniumUIScrollableView;
+    Notification : ITitaniumUINotification;
+    ScrollView : ITitaniumUIScrollView;
+    Slider : ITitaniumUISlider;
+    Android : ITitaniumUIAndroid;
+    DashboardView : ITitaniumUIDashboardView;
+    _3DMatrix : ITitaniumUI_3DMatrix;
+    ListView : ITitaniumUIListView;
+    DashboardItem : ITitaniumUIDashboardItem;
+    Toolbar : ITitaniumUIToolbar;
+    View : ITitaniumUIView;
+    ListItem : ITitaniumUIListItem;
+    WebView : ITitaniumUIWebView;
+    TableViewSection : ITitaniumUITableViewSection;
+    TabGroup : ITitaniumUITabGroup;
+    AlertDialog : ITitaniumUIAlertDialog;
+    SearchBar : ITitaniumUISearchBar;
+    Button : ITitaniumUIButton;
+    Animation : ITitaniumUIAnimation;
+    ActivityIndicator : ITitaniumUIActivityIndicator;
+    _2DMatrix : ITitaniumUI_2DMatrix;
+    OptionDialog : ITitaniumUIOptionDialog;
+    ButtonBar : ITitaniumUIButtonBar;
+    Label : ITitaniumUILabel;
+    TabbedBar : ITitaniumUITabbedBar;
+    TableView : ITitaniumUITableView;
+    Window : ITitaniumUIWindow;
+    ListSection : ITitaniumUIListSection;
+    PickerColumn : ITitaniumUIPickerColumn;
+    Picker : ITitaniumUIPicker;
     ANIMATION_CURVE_EASE_IN : number;
     ANIMATION_CURVE_EASE_IN_OUT : number;
     ANIMATION_CURVE_EASE_OUT : number;
@@ -9254,66 +9254,66 @@ declare interface TitaniumUI {
     backgroundColor : string;
     backgroundImage : string;
     bubbleParent : boolean;
-    currentTab : TitaniumUITab;
-    currentWindow : TitaniumUIWindow;
+    currentTab : ITitaniumUITab;
+    currentWindow : ITitaniumUIWindow;
     orientation : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     convertUnits (convertFromValue : string, convertToUnits : string) : number;
-    create2DMatrix (parameters? : MatrixCreationDict) : TitaniumUI_2DMatrix;
-    create3DMatrix (parameters? : TitaniumUI_3DMatrix) : TitaniumUI_3DMatrix;
-    createActivityIndicator (parameters? : TitaniumUIActivityIndicator) : TitaniumUIActivityIndicator;
-    createAlertDialog (parameters? : TitaniumUIAlertDialog) : TitaniumUIAlertDialog;
-    createAnimation (parameters? : TitaniumUIAnimation) : TitaniumUIAnimation;
-    createButton (parameters? : TitaniumUIButton) : TitaniumUIButton;
-    createButtonBar (parameters? : TitaniumUIButtonBar) : TitaniumUIButtonBar;
-    createCoverFlowView (parameters? : TitaniumUICoverFlowView) : TitaniumUICoverFlowView;
-    createDashboardItem (parameters? : TitaniumUIDashboardItem) : TitaniumUIDashboardItem;
-    createDashboardView (parameters? : TitaniumUIDashboardView) : TitaniumUIDashboardView;
-    createEmailDialog (parameters? : TitaniumUIEmailDialog) : TitaniumUIEmailDialog;
-    createImageView (parameters? : TitaniumUIImageView) : TitaniumUIImageView;
-    createLabel (parameters? : TitaniumUILabel) : TitaniumUILabel;
-    createListSection (parameters? : TitaniumUIListSection) : TitaniumUIListSection;
-    createListView (parameters? : TitaniumUIListView) : TitaniumUIListView;
-    createMaskedImage (parameters? : TitaniumUIMaskedImage) : TitaniumUIMaskedImage;
-    createNotification (parameters? : TitaniumUINotification) : TitaniumUINotification;
-    createOptionDialog (parameters? : TitaniumUIOptionDialog) : TitaniumUIOptionDialog;
-    createPicker (parameters? : TitaniumUIPicker) : TitaniumUIPicker;
-    createPickerColumn (parameters? : TitaniumUIPickerColumn) : TitaniumUIPickerColumn;
-    createPickerRow (parameters? : TitaniumUIPickerRow) : TitaniumUIPickerRow;
-    createProgressBar (parameters? : TitaniumUIProgressBar) : TitaniumUIProgressBar;
-    createScrollView (parameters? : TitaniumUIScrollView) : TitaniumUIScrollView;
-    createScrollableView (parameters? : TitaniumUIScrollableView) : TitaniumUIScrollableView;
-    createSearchBar (parameters? : TitaniumUISearchBar) : TitaniumUISearchBar;
-    createSlider (parameters? : TitaniumUISlider) : TitaniumUISlider;
-    createSwitch (parameters? : TitaniumUISwitch) : TitaniumUISwitch;
-    createTab (parameters? : TitaniumUITab) : TitaniumUITab;
-    createTabGroup (parameters? : TitaniumUITabGroup) : TitaniumUITabGroup;
-    createTabbedBar (parameters? : TitaniumUITabbedBar) : TitaniumUITabbedBar;
-    createTableView (parameters? : TitaniumUITableView) : TitaniumUITableView;
-    createTableViewRow (parameters? : TitaniumUITableViewRow) : TitaniumUITableViewRow;
-    createTableViewSection (parameters? : TitaniumUITableViewSection) : TitaniumUITableViewSection;
-    createTextArea (parameters? : TitaniumUITextArea) : TitaniumUITextArea;
-    createTextField (parameters? : TitaniumUITextField) : TitaniumUITextField;
-    createToolbar (parameters? : TitaniumUIToolbar) : TitaniumUIToolbar;
-    createView (parameters? : TitaniumUIView) : TitaniumUIView;
-    createWebView (parameters? : TitaniumUIWebView) : TitaniumUIWebView;
-    createWindow (parameters? : TitaniumUIWindow) : TitaniumUIWindow;
+    create2DMatrix (parameters? : IMatrixCreationDict) : ITitaniumUI_2DMatrix;
+    create3DMatrix (parameters? : ITitaniumUI_3DMatrix) : ITitaniumUI_3DMatrix;
+    createActivityIndicator (parameters? : ITitaniumUIActivityIndicator) : ITitaniumUIActivityIndicator;
+    createAlertDialog (parameters? : ITitaniumUIAlertDialog) : ITitaniumUIAlertDialog;
+    createAnimation (parameters? : ITitaniumUIAnimation) : ITitaniumUIAnimation;
+    createButton (parameters? : ITitaniumUIButton) : ITitaniumUIButton;
+    createButtonBar (parameters? : ITitaniumUIButtonBar) : ITitaniumUIButtonBar;
+    createCoverFlowView (parameters? : ITitaniumUICoverFlowView) : ITitaniumUICoverFlowView;
+    createDashboardItem (parameters? : ITitaniumUIDashboardItem) : ITitaniumUIDashboardItem;
+    createDashboardView (parameters? : ITitaniumUIDashboardView) : ITitaniumUIDashboardView;
+    createEmailDialog (parameters? : ITitaniumUIEmailDialog) : ITitaniumUIEmailDialog;
+    createImageView (parameters? : ITitaniumUIImageView) : ITitaniumUIImageView;
+    createLabel (parameters? : ITitaniumUILabel) : ITitaniumUILabel;
+    createListSection (parameters? : ITitaniumUIListSection) : ITitaniumUIListSection;
+    createListView (parameters? : ITitaniumUIListView) : ITitaniumUIListView;
+    createMaskedImage (parameters? : ITitaniumUIMaskedImage) : ITitaniumUIMaskedImage;
+    createNotification (parameters? : ITitaniumUINotification) : ITitaniumUINotification;
+    createOptionDialog (parameters? : ITitaniumUIOptionDialog) : ITitaniumUIOptionDialog;
+    createPicker (parameters? : ITitaniumUIPicker) : ITitaniumUIPicker;
+    createPickerColumn (parameters? : ITitaniumUIPickerColumn) : ITitaniumUIPickerColumn;
+    createPickerRow (parameters? : ITitaniumUIPickerRow) : ITitaniumUIPickerRow;
+    createProgressBar (parameters? : ITitaniumUIProgressBar) : ITitaniumUIProgressBar;
+    createScrollView (parameters? : ITitaniumUIScrollView) : ITitaniumUIScrollView;
+    createScrollableView (parameters? : ITitaniumUIScrollableView) : ITitaniumUIScrollableView;
+    createSearchBar (parameters? : ITitaniumUISearchBar) : ITitaniumUISearchBar;
+    createSlider (parameters? : ITitaniumUISlider) : ITitaniumUISlider;
+    createSwitch (parameters? : ITitaniumUISwitch) : ITitaniumUISwitch;
+    createTab (parameters? : ITitaniumUITab) : ITitaniumUITab;
+    createTabGroup (parameters? : ITitaniumUITabGroup) : ITitaniumUITabGroup;
+    createTabbedBar (parameters? : ITitaniumUITabbedBar) : ITitaniumUITabbedBar;
+    createTableView (parameters? : ITitaniumUITableView) : ITitaniumUITableView;
+    createTableViewRow (parameters? : ITitaniumUITableViewRow) : ITitaniumUITableViewRow;
+    createTableViewSection (parameters? : ITitaniumUITableViewSection) : ITitaniumUITableViewSection;
+    createTextArea (parameters? : ITitaniumUITextArea) : ITitaniumUITextArea;
+    createTextField (parameters? : ITitaniumUITextField) : ITitaniumUITextField;
+    createToolbar (parameters? : ITitaniumUIToolbar) : ITitaniumUIToolbar;
+    createView (parameters? : ITitaniumUIView) : ITitaniumUIView;
+    createWebView (parameters? : ITitaniumUIWebView) : ITitaniumUIWebView;
+    createWindow (parameters? : ITitaniumUIWindow) : ITitaniumUIWindow;
     fireEvent (name : string, event : any) : void;
     getBackgroundColor () : string;
     getBackgroundImage () : string;
     getBubbleParent () : boolean;
-    getCurrentTab () : TitaniumUITab;
-    getCurrentWindow () : TitaniumUIWindow;
+    getCurrentTab () : ITitaniumUITab;
+    getCurrentWindow () : ITitaniumUIWindow;
     getOrientation () : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCurrentTab (currentTab : TitaniumUITab) : void;
+    setCurrentTab (currentTab : ITitaniumUITab) : void;
     setOrientation (orientation : number) : void;
 }
-declare interface TitaniumCloudCheckins {
+interface ITitaniumCloudCheckins {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9323,7 +9323,7 @@ declare interface TitaniumCloudCheckins {
     setBubbleParent (bubbleParent : boolean) : void;
     show (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudPhotoCollections {
+interface ITitaniumCloudPhotoCollections {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9336,7 +9336,7 @@ declare interface TitaniumCloudPhotoCollections {
     showSubCollections (parameters : any, callback : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudFriends {
+interface ITitaniumCloudFriends {
     bubbleParent : boolean;
     add (parameters : any, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -9347,7 +9347,7 @@ declare interface TitaniumCloudFriends {
     search (parameters : any, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCloudObjects {
+interface ITitaniumCloudObjects {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9358,7 +9358,7 @@ declare interface TitaniumCloudObjects {
     show (parameters? : any, callback? : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudStatuses {
+interface ITitaniumCloudStatuses {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9367,7 +9367,7 @@ declare interface TitaniumCloudStatuses {
     search (parameters : any, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCloudPosts {
+interface ITitaniumCloudPosts {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9378,7 +9378,7 @@ declare interface TitaniumCloudPosts {
     show (parameters : any, callback : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudPhotos {
+interface ITitaniumCloudPhotos {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9390,7 +9390,7 @@ declare interface TitaniumCloudPhotos {
     show (parameters : any, callback : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudEvents {
+interface ITitaniumCloudEvents {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9405,7 +9405,7 @@ declare interface TitaniumCloudEvents {
     showOccurrences (parameters? : any, callback? : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudPushNotifications {
+interface ITitaniumCloudPushNotifications {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     getBubbleParent () : boolean;
@@ -9414,7 +9414,7 @@ declare interface TitaniumCloudPushNotifications {
     subscribe (parameters : any, callback : (...args : any[]) => any) : void;
     unsubscribe (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudSocialIntegrations {
+interface ITitaniumCloudSocialIntegrations {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     externalAccountLink (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9424,14 +9424,14 @@ declare interface TitaniumCloudSocialIntegrations {
     searchFacebookFriends (callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCloudEmails {
+interface ITitaniumCloudEmails {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     getBubbleParent () : boolean;
     send (parameters : any, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCloudReviews {
+interface ITitaniumCloudReviews {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9442,7 +9442,7 @@ declare interface TitaniumCloudReviews {
     show (parameters : any, callback : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudMessages {
+interface ITitaniumCloudMessages {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9457,7 +9457,7 @@ declare interface TitaniumCloudMessages {
     showThread (parameters : any, callback : (...args : any[]) => any) : void;
     showThreads (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudACLs {
+interface ITitaniumCloudACLs {
     bubbleParent : boolean;
     addUser (parameters : any, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -9470,7 +9470,7 @@ declare interface TitaniumCloudACLs {
     show (parameters : any, callback : (...args : any[]) => any) : void;
     update (parameters? : any, callback? : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudFiles {
+interface ITitaniumCloudFiles {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9481,7 +9481,7 @@ declare interface TitaniumCloudFiles {
     show (parameters : any, callback : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudPlaces {
+interface ITitaniumCloudPlaces {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9493,7 +9493,7 @@ declare interface TitaniumCloudPlaces {
     show (parameters : any, callback : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloudChats {
+interface ITitaniumCloudChats {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9502,14 +9502,14 @@ declare interface TitaniumCloudChats {
     query (parameters : any, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCloudClients {
+interface ITitaniumCloudClients {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     geolocate (parameters? : any, callback? : (...args : any[]) => any) : void;
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCloudKeyValues {
+interface ITitaniumCloudKeyValues {
     bubbleParent : boolean;
     append (parameters : any, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -9520,7 +9520,7 @@ declare interface TitaniumCloudKeyValues {
     set (parameters : any, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCloudUsers {
+interface ITitaniumCloudUsers {
     bubbleParent : boolean;
     applyProperties (props : any) : void;
     create (parameters : any, callback : (...args : any[]) => any) : void;
@@ -9531,35 +9531,35 @@ declare interface TitaniumCloudUsers {
     remove (parameters : any, callback : (...args : any[]) => any) : void;
     requestResetPassword (parameters : any, callback : (...args : any[]) => any) : void;
     search (parameters? : any, callback? : (...args : any[]) => any) : void;
-    secureCreate (parameters? : CloudUsersSecureDialog, callback? : (...args : any[]) => any) : void;
-    secureLogin (parameters? : CloudUsersSecureDialog, callback? : (...args : any[]) => any) : void;
+    secureCreate (parameters? : ICloudUsersSecureDialog, callback? : (...args : any[]) => any) : void;
+    secureLogin (parameters? : ICloudUsersSecureDialog, callback? : (...args : any[]) => any) : void;
     secureStatus () : boolean;
     setBubbleParent (bubbleParent : boolean) : void;
     show (parameters : any, callback : (...args : any[]) => any) : void;
     showMe (callback : (...args : any[]) => any) : void;
     update (parameters : any, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumCloud {
-    Checkins : TitaniumCloudCheckins;
-    PhotoCollections : TitaniumCloudPhotoCollections;
-    Friends : TitaniumCloudFriends;
-    Objects : TitaniumCloudObjects;
-    Statuses : TitaniumCloudStatuses;
-    Posts : TitaniumCloudPosts;
-    Photos : TitaniumCloudPhotos;
-    Events : TitaniumCloudEvents;
-    PushNotifications : TitaniumCloudPushNotifications;
-    SocialIntegrations : TitaniumCloudSocialIntegrations;
-    Emails : TitaniumCloudEmails;
-    Reviews : TitaniumCloudReviews;
-    Messages : TitaniumCloudMessages;
-    ACLs : TitaniumCloudACLs;
-    Files : TitaniumCloudFiles;
-    Places : TitaniumCloudPlaces;
-    Chats : TitaniumCloudChats;
-    Clients : TitaniumCloudClients;
-    KeyValues : TitaniumCloudKeyValues;
-    Users : TitaniumCloudUsers;
+interface ITitaniumCloud {
+    Checkins : ITitaniumCloudCheckins;
+    PhotoCollections : ITitaniumCloudPhotoCollections;
+    Friends : ITitaniumCloudFriends;
+    Objects : ITitaniumCloudObjects;
+    Statuses : ITitaniumCloudStatuses;
+    Posts : ITitaniumCloudPosts;
+    Photos : ITitaniumCloudPhotos;
+    Events : ITitaniumCloudEvents;
+    PushNotifications : ITitaniumCloudPushNotifications;
+    SocialIntegrations : ITitaniumCloudSocialIntegrations;
+    Emails : ITitaniumCloudEmails;
+    Reviews : ITitaniumCloudReviews;
+    Messages : ITitaniumCloudMessages;
+    ACLs : ITitaniumCloudACLs;
+    Files : ITitaniumCloudFiles;
+    Places : ITitaniumCloudPlaces;
+    Chats : ITitaniumCloudChats;
+    Clients : ITitaniumCloudClients;
+    KeyValues : ITitaniumCloudKeyValues;
+    Users : ITitaniumCloudUsers;
     accessToken : string;
     bubbleParent : boolean;
     debug : boolean;
@@ -9587,7 +9587,7 @@ declare interface TitaniumCloud {
     setSessionId (sessionId : string) : void;
     setUseSecure (useSecure : boolean) : void;
 }
-declare interface TitaniumMediaAudioPlayer {
+interface ITitaniumMediaAudioPlayer {
     STATE_BUFFERING : number;
     STATE_INITIALIZED : number;
     STATE_PAUSED : number;
@@ -9642,7 +9642,7 @@ declare interface TitaniumMediaAudioPlayer {
     stateDescription (state : number) : string;
     stop () : void;
 }
-declare interface TitaniumMediaAndroid {
+interface ITitaniumMediaAndroid {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -9651,9 +9651,9 @@ declare interface TitaniumMediaAndroid {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     scanMediaFiles (paths : any[], mimeTypes : any[], callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setSystemWallpaper (image : TitaniumBlob, scale : boolean) : void;
+    setSystemWallpaper (image : ITitaniumBlob, scale : boolean) : void;
 }
-declare interface TitaniumMediaAudioRecorder {
+interface ITitaniumMediaAudioRecorder {
     bubbleParent : boolean;
     compression : number;
     format : number;
@@ -9676,9 +9676,9 @@ declare interface TitaniumMediaAudioRecorder {
     setCompression (compression : number) : void;
     setFormat (format : number) : void;
     start () : void;
-    stop () : TitaniumFilesystemFile;
+    stop () : ITitaniumFilesystemFile;
 }
-declare interface TitaniumMediaSound {
+interface ITitaniumMediaSound {
     allowBackground : boolean;
     bubbleParent : boolean;
     duration : number;
@@ -9712,13 +9712,13 @@ declare interface TitaniumMediaSound {
     setVolume (volume : number) : void;
     stop () : void;
 }
-declare interface TitaniumMediaItem {
+interface ITitaniumMediaItem {
     albumArtist : string;
     albumTitle : string;
     albumTrackCount : number;
     albumTrackNumber : number;
     artist : string;
-    artwork : TitaniumBlob;
+    artwork : ITitaniumBlob;
     bubbleParent : boolean;
     composer : string;
     discCount : number;
@@ -9741,7 +9741,7 @@ declare interface TitaniumMediaItem {
     getAlbumTrackCount () : number;
     getAlbumTrackNumber () : number;
     getArtist () : string;
-    getArtwork () : TitaniumBlob;
+    getArtwork () : ITitaniumBlob;
     getBubbleParent () : boolean;
     getComposer () : string;
     getDiscCount () : number;
@@ -9759,21 +9759,21 @@ declare interface TitaniumMediaItem {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumMediaVideoPlayer {
+interface ITitaniumMediaVideoPlayer {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
     allowsAirPlay : boolean;
-    anchorPoint : Point;
-    animatedCenter : Point;
+    anchorPoint : IPoint;
+    animatedCenter : IPoint;
     autoplay : boolean;
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -9785,7 +9785,7 @@ declare interface TitaniumMediaVideoPlayer {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     contentURL : string;
     currentPlaybackTime : number;
@@ -9800,37 +9800,37 @@ declare interface TitaniumMediaVideoPlayer {
     layout : string;
     left : number;
     loadState : number;
-    media : TitaniumBlob;
+    media : ITitaniumBlob;
     mediaControlStyle : number;
     mediaTypes : number;
     movieControlMode : number;
-    naturalSize : MovieSize;
+    naturalSize : IMovieSize;
     opacity : number;
     playableDuration : number;
     playbackState : number;
     playing : boolean;
-    rect : Dimension;
+    rect : IDimension;
     repeatMode : number;
     right : number;
     scalingMode : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     sourceType : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     url : string;
     useApplicationAudioSession : boolean;
     visible : boolean;
     volume : number;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
+    add (view : ITitaniumUIView) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     cancelAllThumbnailImageRequests () : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
     getAccessibilityHidden () : boolean;
@@ -9838,15 +9838,15 @@ declare interface TitaniumMediaVideoPlayer {
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
     getAllowsAirPlay () : boolean;
-    getAnchorPoint () : Point;
-    getAnimatedCenter () : Point;
+    getAnchorPoint () : IPoint;
+    getAnimatedCenter () : IPoint;
     getAutoplay () : boolean;
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -9858,7 +9858,7 @@ declare interface TitaniumMediaVideoPlayer {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getContentURL () : string;
     getCurrentPlaybackTime () : number;
@@ -9876,16 +9876,16 @@ declare interface TitaniumMediaVideoPlayer {
     getMediaControlStyle () : number;
     getMediaTypes () : number;
     getMovieControlMode () : number;
-    getNaturalSize () : MovieSize;
+    getNaturalSize () : IMovieSize;
     getOpacity () : number;
     getPlayableDuration () : number;
     getPlaybackState () : number;
     getPlaying () : boolean;
-    getRect () : Dimension;
+    getRect () : IDimension;
     getRepeatMode () : number;
     getRight () : any;
     getScalingMode () : number;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getSourceType () : number;
     getTop () : any;
@@ -9901,7 +9901,7 @@ declare interface TitaniumMediaVideoPlayer {
     pause () : void;
     play () : void;
     release () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllChildren () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     requestThumbnailImagesAtTimes (times : any[], option : number, callback : (...args : any[]) => any) : void;
@@ -9910,27 +9910,27 @@ declare interface TitaniumMediaVideoPlayer {
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
     setAllowsAirPlay (allowsAirPlay : boolean) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setAutoplay (autoplay : boolean) : void;
     setBackgroundColor (backgroundColor : string) : void;
     setBackgroundDisabledColor (backgroundDisabledColor : string) : void;
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
     setBackgroundSelectedColor (backgroundSelectedColor : string) : void;
     setBackgroundSelectedImage (backgroundSelectedImage : string) : void;
     setBackgroundTopCap (backgroundTopCap : number) : void;
-    setBackgroundView (view : TitaniumUIView) : void;
+    setBackgroundView (view : ITitaniumUIView) : void;
     setBorderColor (borderColor : string) : void;
     setBorderRadius (borderRadius : number) : void;
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setContentURL (contentURL : string) : void;
     setCurrentPlaybackTime (currentPlaybackTime : number) : void;
     setDuration (duration : number) : void;
@@ -9943,11 +9943,11 @@ declare interface TitaniumMediaVideoPlayer {
     setKeepScreenOn (keepScreenOn : boolean) : void;
     setLayout (layout : string) : void;
     setLeft (left : number) : void;
-    setMedia (media : TitaniumBlob) : void;
+    setMedia (media : ITitaniumBlob) : void;
     setMediaControlStyle (mediaControlStyle : number) : void;
     setMediaTypes (mediaTypes : number) : void;
     setMovieControlMode (movieControlMode : number) : void;
-    setNaturalSize (naturalSize : MovieSize) : void;
+    setNaturalSize (naturalSize : IMovieSize) : void;
     setOpacity (opacity : number) : void;
     setRepeatMode (repeatMode : number) : void;
     setRight (right : number) : void;
@@ -9956,7 +9956,7 @@ declare interface TitaniumMediaVideoPlayer {
     setSourceType (sourceType : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setUrl (url : string) : void;
     setUseApplicationAudioSession (useApplicationAudioSession : boolean) : void;
     setVisible (visible : boolean) : void;
@@ -9966,14 +9966,14 @@ declare interface TitaniumMediaVideoPlayer {
     show () : void;
     startLayout () : void;
     stop () : void;
-    thumbnailImageAtTime (time : number, option : number) : TitaniumBlob;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    thumbnailImageAtTime (time : number, option : number) : ITitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
 }
-declare interface TitaniumMediaMusicPlayer {
+interface ITitaniumMediaMusicPlayer {
     bubbleParent : boolean;
     currentPlaybackTime : number;
-    nowPlaying : TitaniumMediaItem;
+    nowPlaying : ITitaniumMediaItem;
     playbackState : number;
     repeatMode : number;
     shuffleMode : number;
@@ -9983,7 +9983,7 @@ declare interface TitaniumMediaMusicPlayer {
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     getCurrentPlaybackTime () : number;
-    getNowPlaying () : TitaniumMediaItem;
+    getNowPlaying () : ITitaniumMediaItem;
     getPlaybackState () : number;
     getRepeatMode () : number;
     getShuffleMode () : number;
@@ -9995,7 +9995,7 @@ declare interface TitaniumMediaMusicPlayer {
     seekForward () : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setCurrentPlaybackTime (currentPlaybackTime : number) : void;
-    setQueue (queue : TitaniumMediaItem) : void;
+    setQueue (queue : ITitaniumMediaItem) : void;
     setRepeatMode (repeatMode : number) : void;
     setShuffleMode (shuffleMode : number) : void;
     setVolume (volume : number) : void;
@@ -10005,14 +10005,14 @@ declare interface TitaniumMediaMusicPlayer {
     stop () : void;
     stopSeeking () : void;
 }
-declare interface TitaniumMedia {
-    AudioPlayer : TitaniumMediaAudioPlayer;
-    Android : TitaniumMediaAndroid;
-    AudioRecorder : TitaniumMediaAudioRecorder;
-    Sound : TitaniumMediaSound;
-    Item : TitaniumMediaItem;
-    VideoPlayer : TitaniumMediaVideoPlayer;
-    MusicPlayer : TitaniumMediaMusicPlayer;
+interface ITitaniumMedia {
+    AudioPlayer : ITitaniumMediaAudioPlayer;
+    Android : ITitaniumMediaAndroid;
+    AudioRecorder : ITitaniumMediaAudioRecorder;
+    Sound : ITitaniumMediaSound;
+    Item : ITitaniumMediaItem;
+    VideoPlayer : ITitaniumMediaVideoPlayer;
+    MusicPlayer : ITitaniumMediaMusicPlayer;
     AUDIO_FILEFORMAT_3GP2 : number;
     AUDIO_FILEFORMAT_3GPP : number;
     AUDIO_FILEFORMAT_AIFF : number;
@@ -10113,7 +10113,7 @@ declare interface TitaniumMedia {
     VIDEO_SOURCE_TYPE_UNKNOWN : number;
     VIDEO_TIME_OPTION_EXACT : number;
     VIDEO_TIME_OPTION_NEAREST_KEYFRAME : number;
-    appMusicPlayer : TitaniumMediaMusicPlayer;
+    appMusicPlayer : ITitaniumMediaMusicPlayer;
     audioLineType : number;
     audioPlaying : boolean;
     audioSessionMode : number;
@@ -10125,19 +10125,19 @@ declare interface TitaniumMedia {
     canRecord : boolean;
     isCameraSupported : boolean;
     peakMicrophonePower : number;
-    systemMusicPlayer : TitaniumMediaMusicPlayer;
+    systemMusicPlayer : ITitaniumMediaMusicPlayer;
     volume : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     beep () : void;
-    createAudioPlayer (parameters? : TitaniumMediaAudioPlayer) : TitaniumMediaAudioPlayer;
-    createAudioRecorder (parameters? : TitaniumMediaAudioRecorder) : TitaniumMediaAudioRecorder;
-    createItem (parameters? : TitaniumMediaItem) : TitaniumMediaItem;
-    createMusicPlayer (parameters? : TitaniumMediaMusicPlayer) : TitaniumMediaMusicPlayer;
-    createSound (parameters? : TitaniumMediaSound) : TitaniumMediaSound;
-    createVideoPlayer (parameters? : TitaniumMediaVideoPlayer) : TitaniumMediaVideoPlayer;
+    createAudioPlayer (parameters? : ITitaniumMediaAudioPlayer) : ITitaniumMediaAudioPlayer;
+    createAudioRecorder (parameters? : ITitaniumMediaAudioRecorder) : ITitaniumMediaAudioRecorder;
+    createItem (parameters? : ITitaniumMediaItem) : ITitaniumMediaItem;
+    createMusicPlayer (parameters? : ITitaniumMediaMusicPlayer) : ITitaniumMediaMusicPlayer;
+    createSound (parameters? : ITitaniumMediaSound) : ITitaniumMediaSound;
+    createVideoPlayer (parameters? : ITitaniumMediaVideoPlayer) : ITitaniumMediaVideoPlayer;
     fireEvent (name : string, event : any) : void;
-    getAppMusicPlayer () : TitaniumMediaMusicPlayer;
+    getAppMusicPlayer () : ITitaniumMediaMusicPlayer;
     getAudioLineType () : number;
     getAudioPlaying () : boolean;
     getAudioSessionMode () : number;
@@ -10149,31 +10149,31 @@ declare interface TitaniumMedia {
     getCanRecord () : boolean;
     getIsCameraSupported () : boolean;
     getPeakMicrophonePower () : number;
-    getSystemMusicPlayer () : TitaniumMediaMusicPlayer;
+    getSystemMusicPlayer () : ITitaniumMediaMusicPlayer;
     getVolume () : number;
     hideCamera () : void;
     hideMusicLibrary () : void;
     isMediaTypeSupported (source : string, type : string) : boolean;
-    openMusicLibrary (options : MusicLibraryOptionsType) : void;
-    openPhotoGallery (options : PhotoGalleryOptionsType) : void;
-    previewImage (options : PreviewImageOptions) : void;
-    queryMusicLibrary (query : MediaQueryType) : any[];
+    openMusicLibrary (options : IMusicLibraryOptionsType) : void;
+    openPhotoGallery (options : IPhotoGalleryOptionsType) : void;
+    previewImage (options : IPreviewImageOptions) : void;
+    queryMusicLibrary (query : IMediaQueryType) : any[];
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    saveToPhotoGallery (media : TitaniumBlob, callbacks : any) : void;
+    saveToPhotoGallery (media : ITitaniumBlob, callbacks : any) : void;
     setAudioSessionMode (audioSessionMode : number) : void;
     setAvailableCameraMediaTypes (availableCameraMediaTypes : any[]) : void;
     setAvailablePhotoGalleryMediaTypes (availablePhotoGalleryMediaTypes : any[]) : void;
     setAvailablePhotoMediaTypes (availablePhotoMediaTypes : any[]) : void;
     setAverageMicrophonePower (averageMicrophonePower : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    showCamera (options : CameraOptionsType) : void;
+    showCamera (options : ICameraOptionsType) : void;
     startMicrophoneMonitor () : void;
     stopMicrophoneMonitor () : void;
     takePicture () : void;
     takeScreenshot (callback : (...args : any[]) => any) : void;
     vibrate (pattern? : any[]) : void;
 }
-declare interface TitaniumAnalytics {
+interface ITitaniumAnalytics {
     bubbleParent : boolean;
     addEvent (type : string, name : string, data? : any) : void;
     featureEvent (name : string, data? : any) : void;
@@ -10184,7 +10184,7 @@ declare interface TitaniumAnalytics {
     timedEvent (name : string, start : Date, stop : Date, duration : number, data? : any) : void;
     userEvent (name : string, data? : any) : void;
 }
-declare interface TitaniumAPI {
+interface ITitaniumAPI {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -10200,7 +10200,7 @@ declare interface TitaniumAPI {
     trace (message : any[]) : void;
     warn (message : any[]) : void;
 }
-declare interface TitaniumGeolocationAndroidLocationProvider {
+interface ITitaniumGeolocationAndroidLocationProvider {
     bubbleParent : boolean;
     minUpdateDistance : number;
     minUpdateTime : number;
@@ -10218,7 +10218,7 @@ declare interface TitaniumGeolocationAndroidLocationProvider {
     setMinUpdateTime (minUpdateTime : number) : void;
     setName (name : string) : void;
 }
-declare interface TitaniumGeolocationAndroidLocationRule {
+interface ITitaniumGeolocationAndroidLocationRule {
     accuracy : number;
     bubbleParent : boolean;
     maxAge : number;
@@ -10239,27 +10239,27 @@ declare interface TitaniumGeolocationAndroidLocationRule {
     setMinAge (minAge : number) : void;
     setName (name : string) : void;
 }
-declare interface TitaniumGeolocationAndroid {
-    LocationProvider : TitaniumGeolocationAndroidLocationProvider;
-    LocationRule : TitaniumGeolocationAndroidLocationRule;
+interface ITitaniumGeolocationAndroid {
+    LocationProvider : ITitaniumGeolocationAndroidLocationProvider;
+    LocationRule : ITitaniumGeolocationAndroidLocationRule;
     bubbleParent : boolean;
     manualMode : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    addLocationProvider (provider : TitaniumGeolocationAndroidLocationProvider) : void;
-    addLocationRule (rule : TitaniumGeolocationAndroidLocationRule) : void;
+    addLocationProvider (provider : ITitaniumGeolocationAndroidLocationProvider) : void;
+    addLocationRule (rule : ITitaniumGeolocationAndroidLocationRule) : void;
     applyProperties (props : any) : void;
-    createLocationProvider (parameters? : TitaniumGeolocationAndroidLocationProvider) : TitaniumGeolocationAndroidLocationProvider;
-    createLocationRule (parameters? : TitaniumGeolocationAndroidLocationRule) : TitaniumGeolocationAndroidLocationRule;
+    createLocationProvider (parameters? : ITitaniumGeolocationAndroidLocationProvider) : ITitaniumGeolocationAndroidLocationProvider;
+    createLocationRule (parameters? : ITitaniumGeolocationAndroidLocationRule) : ITitaniumGeolocationAndroidLocationRule;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     getManualMode () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    removeLocationProvider (provider : TitaniumGeolocationAndroidLocationProvider) : void;
-    removeLocationRule (rule : TitaniumGeolocationAndroidLocationRule) : void;
+    removeLocationProvider (provider : ITitaniumGeolocationAndroidLocationProvider) : void;
+    removeLocationRule (rule : ITitaniumGeolocationAndroidLocationRule) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setManualMode (manualMode : boolean) : void;
 }
-declare interface TitaniumGeolocationMobileWeb {
+interface ITitaniumGeolocationMobileWeb {
     forwardGeocoderTimeout : number;
     locationTimeout : number;
     maximumHeadingAge : number;
@@ -10280,9 +10280,9 @@ declare interface TitaniumGeolocationMobileWeb {
     setMaximumLocationAge (maximumLocationAge : number) : void;
     setReverseGeocoderTimeout (reverseGeocoderTimeout : number) : void;
 }
-declare interface TitaniumGeolocation {
-    Android : TitaniumGeolocationAndroid;
-    MobileWeb : TitaniumGeolocationMobileWeb;
+interface ITitaniumGeolocation {
+    Android : ITitaniumGeolocationAndroid;
+    MobileWeb : ITitaniumGeolocationMobileWeb;
     ACCURACY_BEST : number;
     ACCURACY_BEST_FOR_NAVIGATION : number;
     ACCURACY_HIGH : number;
@@ -10359,7 +10359,7 @@ declare interface TitaniumGeolocation {
     setShowCalibration (showCalibration : boolean) : void;
     setTrackSignificantLocationChange (trackSignificantLocationChange : boolean) : void;
 }
-declare interface TitaniumAppIOSLocalNotification {
+interface ITitaniumAppIOSLocalNotification {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -10369,7 +10369,7 @@ declare interface TitaniumAppIOSLocalNotification {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAppIOSBackgroundService {
+interface ITitaniumAppIOSBackgroundService {
     bubbleParent : boolean;
     url : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
@@ -10382,9 +10382,9 @@ declare interface TitaniumAppIOSBackgroundService {
     stop () : void;
     unregister () : void;
 }
-declare interface TitaniumAppIOS {
-    LocalNotification : TitaniumAppIOSLocalNotification;
-    BackgroundService : TitaniumAppIOSBackgroundService;
+interface ITitaniumAppIOS {
+    LocalNotification : ITitaniumAppIOSLocalNotification;
+    BackgroundService : ITitaniumAppIOSBackgroundService;
     EVENT_ACCESSIBILITY_LAYOUT_CHANGED : string;
     EVENT_ACCESSIBILITY_SCREEN_CHANGED : string;
     bubbleParent : boolean;
@@ -10392,15 +10392,15 @@ declare interface TitaniumAppIOS {
     applyProperties (props : any) : void;
     cancelAllLocalNotifications () : void;
     cancelLocalNotification (id : number) : void;
-    createLocalNotification (parameters? : TitaniumAppIOSLocalNotification) : TitaniumAppIOSLocalNotification;
+    createLocalNotification (parameters? : ITitaniumAppIOSLocalNotification) : ITitaniumAppIOSLocalNotification;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    registerBackgroundService (params : any) : TitaniumAppIOSBackgroundService;
+    registerBackgroundService (params : any) : ITitaniumAppIOSBackgroundService;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    scheduleLocalNotification (params : NotificationParams) : TitaniumAppIOSLocalNotification;
+    scheduleLocalNotification (params : INotificationParams) : ITitaniumAppIOSLocalNotification;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAppAndroidR {
+interface ITitaniumAppAndroidR {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -10409,8 +10409,8 @@ declare interface TitaniumAppAndroidR {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAppAndroid {
-    R : TitaniumAppAndroidR;
+interface ITitaniumAppAndroid {
+    R : ITitaniumAppAndroidR;
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -10419,7 +10419,7 @@ declare interface TitaniumAppAndroid {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumAppTizen {
+interface ITitaniumAppTizen {
     categories : any[];
     iconPath : string;
     id : string;
@@ -10441,7 +10441,7 @@ declare interface TitaniumAppTizen {
     hide () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumAppProperties {
+interface ITitaniumAppProperties {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -10465,11 +10465,11 @@ declare interface TitaniumAppProperties {
     setObject (property : string, value : any) : void;
     setString (property : string, value : string) : void;
 }
-declare interface TitaniumApp {
-    iOS : TitaniumAppIOS;
-    Android : TitaniumAppAndroid;
-    Tizen : TitaniumAppTizen;
-    Properties : TitaniumAppProperties;
+interface ITitaniumApp {
+    iOS : ITitaniumAppIOS;
+    Android : ITitaniumAppAndroid;
+    Tizen : ITitaniumAppTizen;
+    Properties : ITitaniumAppProperties;
     EVENT_ACCESSIBILITY_ANNOUNCEMENT : string;
     EVENT_ACCESSIBILITY_CHANGED : string;
     accessibilityEnabled : boolean;
@@ -10497,7 +10497,7 @@ declare interface TitaniumApp {
     fireSystemEvent (eventName : string, param? : any) : void;
     getAccessibilityEnabled () : boolean;
     getAnalytics () : boolean;
-    getArguments () : LaunchOptions;
+    getArguments () : ILaunchOptions;
     getBubbleParent () : boolean;
     getCopyright () : string;
     getDeployType () : string;
@@ -10521,18 +10521,18 @@ declare interface TitaniumApp {
     setIdleTimerDisabled (idleTimerDisabled : boolean) : void;
     setProximityDetection (proximityDetection : boolean) : void;
 }
-declare interface TitaniumBuffer {
+interface ITitaniumBuffer {
     bubbleParent : boolean;
     byteOrder : number;
     length : number;
     type : string;
     value : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    append (sourceBuffer : TitaniumBuffer, sourceOffset? : number, sourceLength? : number) : number;
+    append (sourceBuffer : ITitaniumBuffer, sourceOffset? : number, sourceLength? : number) : number;
     applyProperties (props : any) : void;
     clear () : void;
-    clone (offset? : number, length? : number) : TitaniumBuffer;
-    copy (sourceBuffer : TitaniumBuffer, offset : number, sourceOffset? : number, sourceLength? : number) : number;
+    clone (offset? : number, length? : number) : ITitaniumBuffer;
+    copy (sourceBuffer : ITitaniumBuffer, offset : number, sourceOffset? : number, sourceLength? : number) : number;
     fill (fillByte : number, offset? : number, length? : number) : void;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
@@ -10540,17 +10540,17 @@ declare interface TitaniumBuffer {
     getLength () : number;
     getType () : string;
     getValue () : any;
-    insert (sourceBuffer : TitaniumBuffer, offset : number, sourceOffset? : number, sourceLength? : number) : number;
+    insert (sourceBuffer : ITitaniumBuffer, offset : number, sourceOffset? : number, sourceLength? : number) : number;
     release () : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setLength (length : number) : void;
-    toBlob () : TitaniumBlob;
+    toBlob () : ITitaniumBlob;
     toString () : string;
 }
-declare interface TitaniumBlob {
+interface ITitaniumBlob {
     bubbleParent : boolean;
-    file : TitaniumFilesystemFile;
+    file : ITitaniumFilesystemFile;
     height : number;
     length : number;
     mimeType : string;
@@ -10559,11 +10559,11 @@ declare interface TitaniumBlob {
     text : string;
     width : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    append (blob : TitaniumBlob) : void;
+    append (blob : ITitaniumBlob) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    getFile () : TitaniumFilesystemFile;
+    getFile () : ITitaniumFilesystemFile;
     getHeight () : number;
     getLength () : number;
     getMimeType () : string;
@@ -10571,17 +10571,17 @@ declare interface TitaniumBlob {
     getSize () : number;
     getText () : string;
     getWidth () : number;
-    imageAsCropped (options : ImageAsCroppedDict) : TitaniumBlob;
-    imageAsResized (width : number, height : number) : TitaniumBlob;
-    imageAsThumbnail (size : number, borderSize? : number, cornerRadius? : number) : TitaniumBlob;
-    imageWithAlpha () : TitaniumBlob;
-    imageWithRoundedCorner (cornerSize : number, borderSize? : number) : TitaniumBlob;
-    imageWithTransparentBorder (size : number) : TitaniumBlob;
+    imageAsCropped (options : IImageAsCroppedDict) : ITitaniumBlob;
+    imageAsResized (width : number, height : number) : ITitaniumBlob;
+    imageAsThumbnail (size : number, borderSize? : number, cornerRadius? : number) : ITitaniumBlob;
+    imageWithAlpha () : ITitaniumBlob;
+    imageWithRoundedCorner (cornerSize : number, borderSize? : number) : ITitaniumBlob;
+    imageWithTransparentBorder (size : number) : ITitaniumBlob;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     toString () : string;
 }
-declare interface TitaniumCalendarEvent {
+interface ITitaniumCalendarEvent {
     alerts : any[];
     allDay : boolean;
     availability : number;
@@ -10595,18 +10595,18 @@ declare interface TitaniumCalendarEvent {
     isDetached : boolean;
     location : string;
     notes : string;
-    recurenceRule : TitaniumCalendarRecurrenceRule;
+    recurenceRule : ITitaniumCalendarRecurrenceRule;
     recurenceRules : any[];
     reminders : any[];
     status : number;
     title : string;
     visibility : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    addRecurrenceRule (rule : TitaniumCalendarRecurrenceRule) : void;
+    addRecurrenceRule (rule : ITitaniumCalendarRecurrenceRule) : void;
     applyProperties (props : any) : void;
-    createAlert (data : TitaniumCalendarAlert) : TitaniumCalendarAlert;
-    createRecurenceRule (data : TitaniumCalendarRecurrenceRule) : TitaniumCalendarRecurrenceRule;
-    createReminder (data : TitaniumCalendarReminder) : TitaniumCalendarReminder;
+    createAlert (data : ITitaniumCalendarAlert) : ITitaniumCalendarAlert;
+    createRecurenceRule (data : ITitaniumCalendarRecurrenceRule) : ITitaniumCalendarRecurrenceRule;
+    createReminder (data : ITitaniumCalendarReminder) : ITitaniumCalendarReminder;
     fireEvent (name : string, event : any) : void;
     getAlerts () : any[];
     getAllDay () : boolean;
@@ -10622,7 +10622,7 @@ declare interface TitaniumCalendarEvent {
     getIsDetached () : boolean;
     getLocation () : string;
     getNotes () : string;
-    getRecurenceRule () : TitaniumCalendarRecurrenceRule;
+    getRecurenceRule () : ITitaniumCalendarRecurrenceRule;
     getRecurenceRules () : any[];
     getReminders () : any[];
     getStatus () : number;
@@ -10631,7 +10631,7 @@ declare interface TitaniumCalendarEvent {
     refresh () : boolean;
     remove (span : number) : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    removeRecurenceRule (rule : TitaniumCalendarRecurrenceRule) : void;
+    removeRecurenceRule (rule : ITitaniumCalendarRecurrenceRule) : void;
     save (span : number) : boolean;
     setAlerts (alerts : any[]) : void;
     setAllDay (allDay : boolean) : void;
@@ -10641,17 +10641,17 @@ declare interface TitaniumCalendarEvent {
     setExtendedProperty (name : string, value : string) : void;
     setLocation (location : string) : void;
     setNotes (notes : string) : void;
-    setRecurenceRule (recurenceRule : TitaniumCalendarRecurrenceRule) : void;
+    setRecurenceRule (recurenceRule : ITitaniumCalendarRecurrenceRule) : void;
     setRecurenceRules (recurenceRules : any[]) : void;
     setTitle (title : string) : void;
 }
-declare interface TitaniumCalendarRecurrenceRule {
+interface ITitaniumCalendarRecurrenceRule {
     bubbleParent : boolean;
     calendarID : string;
     daysOfTheMonth : any[];
-    daysOfTheWeek : DaysOfTheWeekDictionary;
+    daysOfTheWeek : IDaysOfTheWeekDictionary;
     daysOfTheYear : any[];
-    end : RecurrenceEndDictionary;
+    end : IRecurrenceEndDictionary;
     frequency : number;
     interval : number;
     monthsOfTheYear : any[];
@@ -10663,9 +10663,9 @@ declare interface TitaniumCalendarRecurrenceRule {
     getBubbleParent () : boolean;
     getCalendarID () : string;
     getDaysOfTheMonth () : any[];
-    getDaysOfTheWeek () : DaysOfTheWeekDictionary;
+    getDaysOfTheWeek () : IDaysOfTheWeekDictionary;
     getDaysOfTheYear () : any[];
-    getEnd () : RecurrenceEndDictionary;
+    getEnd () : IRecurrenceEndDictionary;
     getFrequency () : number;
     getInterval () : number;
     getMonthsOfTheYear () : any[];
@@ -10674,7 +10674,7 @@ declare interface TitaniumCalendarRecurrenceRule {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCalendarReminder {
+interface ITitaniumCalendarReminder {
     bubbleParent : boolean;
     id : string;
     method : number;
@@ -10689,7 +10689,7 @@ declare interface TitaniumCalendarReminder {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCalendarCalendar {
+interface ITitaniumCalendarCalendar {
     bubbleParent : boolean;
     hidden : boolean;
     id : string;
@@ -10697,10 +10697,10 @@ declare interface TitaniumCalendarCalendar {
     selected : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createEvent (properties : TitaniumCalendarEvent) : TitaniumCalendarEvent;
+    createEvent (properties : ITitaniumCalendarEvent) : ITitaniumCalendarEvent;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    getEventById (id : number) : TitaniumCalendarEvent;
+    getEventById (id : number) : ITitaniumCalendarEvent;
     getEventsBetweenDates (date1 : Date, date2 : Date) : any[];
     getEventsInDate (year : number, month : number, day : number) : any[];
     getEventsInMonth (year : number, month : number) : any[];
@@ -10712,7 +10712,7 @@ declare interface TitaniumCalendarCalendar {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCalendarAlert {
+interface ITitaniumCalendarAlert {
     absoluteDate : Date;
     alarmTime : Date;
     begin : Date;
@@ -10741,12 +10741,12 @@ declare interface TitaniumCalendarAlert {
     setBubbleParent (bubbleParent : boolean) : void;
     setRelativeOffset (relativeOffset : number) : void;
 }
-declare interface TitaniumCalendar {
-    Event : TitaniumCalendarEvent;
-    RecurrenceRule : TitaniumCalendarRecurrenceRule;
-    Reminder : TitaniumCalendarReminder;
-    Calendar : TitaniumCalendarCalendar;
-    Alert : TitaniumCalendarAlert;
+interface ITitaniumCalendar {
+    Event : ITitaniumCalendarEvent;
+    RecurrenceRule : ITitaniumCalendarRecurrenceRule;
+    Reminder : ITitaniumCalendarReminder;
+    Calendar : ITitaniumCalendarCalendar;
+    Alert : ITitaniumCalendarAlert;
     AUTHORIZATION_AUTHORIZED : number;
     AUTHORIZATION_DENIED : number;
     AUTHORIZATION_RESTRICTED : number;
@@ -10781,7 +10781,7 @@ declare interface TitaniumCalendar {
     allCalendars : any[];
     allEditableCalendars : any[];
     bubbleParent : boolean;
-    defaultCalendar : TitaniumCalendarCalendar;
+    defaultCalendar : ITitaniumCalendarCalendar;
     eventsAuthorization : number;
     selectableCalendars : any[];
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
@@ -10791,15 +10791,15 @@ declare interface TitaniumCalendar {
     getAllCalendars () : any[];
     getAllEditableCalendars () : any[];
     getBubbleParent () : boolean;
-    getCalendarById (id : number) : TitaniumCalendarCalendar;
-    getDefaultCalendar () : TitaniumCalendarCalendar;
+    getCalendarById (id : number) : ITitaniumCalendarCalendar;
+    getDefaultCalendar () : ITitaniumCalendarCalendar;
     getEventsAuthorization () : number;
     getSelectableCalendars () : any[];
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     requestEventsAuthorization (callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCodec {
+interface ITitaniumCodec {
     BIG_ENDIAN : number;
     CHARSET_ASCII : string;
     CHARSET_ISO_LATIN_1 : string;
@@ -10817,17 +10817,17 @@ declare interface TitaniumCodec {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    decodeNumber (options : DecodeNumberDict) : number;
-    decodeString (options : DecodeStringDict) : string;
-    encodeNumber (options : EncodeNumberDict) : number;
-    encodeString (options : EncodeStringDict) : number;
+    decodeNumber (options : IDecodeNumberDict) : number;
+    decodeString (options : IDecodeStringDict) : string;
+    encodeNumber (options : IEncodeNumberDict) : number;
+    encodeString (options : IEncodeStringDict) : number;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     getNativeByteOrder () : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumNetworkBonjourService {
+interface ITitaniumNetworkBonjourService {
     bubbleParent : boolean;
     domain : string;
     isLocal : boolean;
@@ -10854,7 +10854,7 @@ declare interface TitaniumNetworkBonjourService {
     setType (type : string) : void;
     stop () : void;
 }
-declare interface TitaniumNetworkSocketTCP {
+interface ITitaniumNetworkSocketTCP {
     accepted : (...args : any[]) => any;
     bubbleParent : boolean;
     connected : (...args : any[]) => any;
@@ -10864,7 +10864,7 @@ declare interface TitaniumNetworkSocketTCP {
     port : number;
     state : number;
     timeout : number;
-    accept (options : AcceptDict) : void;
+    accept (options : IAcceptDict) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     close () : void;
@@ -10882,7 +10882,7 @@ declare interface TitaniumNetworkSocketTCP {
     isReadable () : boolean;
     isWriteable () : boolean;
     listen () : void;
-    read (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    read (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAccepted (accepted : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
@@ -10892,10 +10892,10 @@ declare interface TitaniumNetworkSocketTCP {
     setListenQueueSize (listenQueueSize : number) : void;
     setPort (port : number) : void;
     setTimeout (timeout : number) : void;
-    write (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    write (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
 }
-declare interface TitaniumNetworkSocket {
-    TCP : TitaniumNetworkSocketTCP;
+interface ITitaniumNetworkSocket {
+    TCP : ITitaniumNetworkSocketTCP;
     CLOSED : number;
     CONNECTED : number;
     ERROR : number;
@@ -10904,13 +10904,13 @@ declare interface TitaniumNetworkSocket {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createTCP (params? : TitaniumNetworkSocketTCP) : TitaniumNetworkSocketTCP;
+    createTCP (params? : ITitaniumNetworkSocketTCP) : ITitaniumNetworkSocketTCP;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumNetworkTCPSocket {
+interface ITitaniumNetworkTCPSocket {
     bubbleParent : boolean;
     hostName : string;
     isValid : boolean;
@@ -10938,7 +10938,7 @@ declare interface TitaniumNetworkTCPSocket {
     setStripTerminator (stripTerminator : boolean) : void;
     write (data : any, sendTo : number) : void;
 }
-declare interface TitaniumNetworkBonjourBrowser {
+interface ITitaniumNetworkBonjourBrowser {
     bubbleParent : boolean;
     domain : string;
     isSearching : boolean;
@@ -10958,7 +10958,7 @@ declare interface TitaniumNetworkBonjourBrowser {
     setServiceType (serviceType : string) : void;
     stopSearch () : void;
 }
-declare interface TitaniumNetworkHTTPClient {
+interface ITitaniumNetworkHTTPClient {
     DONE : number;
     HEADERS_RECEIVED : number;
     LOADING : number;
@@ -10982,9 +10982,9 @@ declare interface TitaniumNetworkHTTPClient {
     onsendstream : (...args : any[]) => any;
     password : string;
     readyState : number;
-    responseData : TitaniumBlob;
+    responseData : ITitaniumBlob;
     responseText : string;
-    responseXML : TitaniumXMLDocument;
+    responseXML : ITitaniumXMLDocument;
     status : number;
     statusText : string;
     timeout : number;
@@ -11016,10 +11016,10 @@ declare interface TitaniumNetworkHTTPClient {
     getOnsendstream () : (...args : any[]) => any;
     getPassword () : string;
     getReadyState () : number;
-    getResponseData () : TitaniumBlob;
+    getResponseData () : ITitaniumBlob;
     getResponseHeader (name : string) : string;
     getResponseText () : string;
-    getResponseXML () : TitaniumXMLDocument;
+    getResponseXML () : ITitaniumXMLDocument;
     getStatus () : number;
     getStatusText () : string;
     getTimeout () : number;
@@ -11050,12 +11050,12 @@ declare interface TitaniumNetworkHTTPClient {
     setValidatesSecureCertificate (validatesSecureCertificate : boolean) : void;
     setWithCredentials (withCredentials : boolean) : void;
 }
-declare interface TitaniumNetwork {
-    BonjourService : TitaniumNetworkBonjourService;
-    Socket : TitaniumNetworkSocket;
-    TCPSocket : TitaniumNetworkTCPSocket;
-    BonjourBrowser : TitaniumNetworkBonjourBrowser;
-    HTTPClient : TitaniumNetworkHTTPClient;
+interface ITitaniumNetwork {
+    BonjourService : ITitaniumNetworkBonjourService;
+    Socket : ITitaniumNetworkSocket;
+    TCPSocket : ITitaniumNetworkTCPSocket;
+    BonjourBrowser : ITitaniumNetworkBonjourBrowser;
+    HTTPClient : ITitaniumNetworkHTTPClient;
     INADDR_ANY : string;
     NETWORK_LAN : number;
     NETWORK_MOBILE : number;
@@ -11088,10 +11088,10 @@ declare interface TitaniumNetwork {
     addConnectivityListener (callback : (...args : any[]) => any) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createBonjourBrowser (serviceType : string, domain : string, parameters? : TitaniumNetworkBonjourBrowser) : TitaniumNetworkBonjourBrowser;
-    createBonjourService (name : string, type : string, domain : string, parameters? : TitaniumNetworkBonjourService) : TitaniumNetworkBonjourService;
-    createHTTPClient (parameters? : TitaniumNetworkHTTPClient) : TitaniumNetworkHTTPClient;
-    createTCPSocket (hostName : string, port : number, mode : number, parameters : TitaniumNetworkTCPSocket) : TitaniumNetworkTCPSocket;
+    createBonjourBrowser (serviceType : string, domain : string, parameters? : ITitaniumNetworkBonjourBrowser) : ITitaniumNetworkBonjourBrowser;
+    createBonjourService (name : string, type : string, domain : string, parameters? : ITitaniumNetworkBonjourService) : ITitaniumNetworkBonjourService;
+    createHTTPClient (parameters? : ITitaniumNetworkHTTPClient) : ITitaniumNetworkHTTPClient;
+    createTCPSocket (hostName : string, port : number, mode : number, parameters : ITitaniumNetworkTCPSocket) : ITitaniumNetworkTCPSocket;
     decodeURIComponent (value : string) : string;
     encodeURIComponent (value : string) : string;
     fireEvent (name : string, event : any) : void;
@@ -11103,18 +11103,18 @@ declare interface TitaniumNetwork {
     getRemoteDeviceUUID () : string;
     getRemoteNotificationTypes () : any[];
     getRemoteNotificationsEnabled () : boolean;
-    registerForPushNotifications (config : PushNotificationConfig) : void;
+    registerForPushNotifications (config : IPushNotificationConfig) : void;
     removeConnectivityListener (callback : (...args : any[]) => any) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setHttpURLFormatter (httpURLFormatter : (...args : any[]) => any) : void;
     unregisterForPushNotifications () : void;
 }
-declare interface TitaniumContactsGroup {
+interface ITitaniumContactsGroup {
     bubbleParent : boolean;
     name : string;
     recordId : number;
-    add (person : TitaniumContactsPerson) : void;
+    add (person : ITitaniumContactsPerson) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
@@ -11122,23 +11122,23 @@ declare interface TitaniumContactsGroup {
     getName () : string;
     getRecordId () : number;
     members () : any[];
-    remove (person : TitaniumContactsPerson) : void;
+    remove (person : ITitaniumContactsPerson) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setName (name : string) : void;
     setRecordId (recordId : number) : void;
     sortedMembers (sortBy : number) : any[];
 }
-declare interface TitaniumContactsTizenGroup {
+interface ITitaniumContactsTizenGroup {
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
-    members (group : TitaniumContactsGroup, successCallback : (...args : any[]) => any, errorCallback : (...args : any[]) => any) : void;
+    members (group : ITitaniumContactsGroup, successCallback : (...args : any[]) => any, errorCallback : (...args : any[]) => any) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    sortedMembers (sortBy : number, group : TitaniumContactsGroup, successCallback : (...args : any[]) => any, errorCallback : (...args : any[]) => any) : void;
+    sortedMembers (sortBy : number, group : ITitaniumContactsGroup, successCallback : (...args : any[]) => any, errorCallback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumContactsTizen {
-    Group : TitaniumContactsTizenGroup;
+interface ITitaniumContactsTizen {
+    Group : ITitaniumContactsTizenGroup;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
@@ -11146,7 +11146,7 @@ declare interface TitaniumContactsTizen {
     getPeopleWithName (name : string, successCallback : (...args : any[]) => any, errorCallback : (...args : any[]) => any) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumContactsPerson {
+interface ITitaniumContactsPerson {
     address : any;
     birthday : string;
     bubbleParent : boolean;
@@ -11158,7 +11158,7 @@ declare interface TitaniumContactsPerson {
     firstPhonetic : string;
     fullName : string;
     id : number;
-    image : TitaniumBlob;
+    image : ITitaniumBlob;
     instantMessage : any;
     jobTitle : string;
     kind : number;
@@ -11190,7 +11190,7 @@ declare interface TitaniumContactsPerson {
     getFirstPhonetic () : string;
     getFullName () : string;
     getId () : number;
-    getImage () : TitaniumBlob;
+    getImage () : ITitaniumBlob;
     getInstantMessage () : any;
     getJobTitle () : string;
     getKind () : number;
@@ -11217,7 +11217,7 @@ declare interface TitaniumContactsPerson {
     setEmail (email : any) : void;
     setFirstName (firstName : string) : void;
     setFirstPhonetic (firstPhonetic : string) : void;
-    setImage (image : TitaniumBlob) : void;
+    setImage (image : ITitaniumBlob) : void;
     setInstantMessage (instantMessage : any) : void;
     setJobTitle (jobTitle : string) : void;
     setKind (kind : number) : void;
@@ -11233,10 +11233,10 @@ declare interface TitaniumContactsPerson {
     setRelatedNames (relatedNames : any) : void;
     setUrl (url : any) : void;
 }
-declare interface TitaniumContacts {
-    Group : TitaniumContactsGroup;
-    Tizen : TitaniumContactsTizen;
-    Person : TitaniumContactsPerson;
+interface ITitaniumContacts {
+    Group : ITitaniumContactsGroup;
+    Tizen : ITitaniumContactsTizen;
+    Person : ITitaniumContactsPerson;
     AUTHORIZATION_AUTHORIZED : number;
     AUTHORIZATION_DENIED : number;
     AUTHORIZATION_RESTRICTED : number;
@@ -11249,26 +11249,26 @@ declare interface TitaniumContacts {
     contactsAuthorization : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createGroup (parameters? : TitaniumContactsGroup) : TitaniumContactsGroup;
-    createPerson (parameters? : TitaniumContactsPerson) : TitaniumContactsPerson;
+    createGroup (parameters? : ITitaniumContactsGroup) : ITitaniumContactsGroup;
+    createPerson (parameters? : ITitaniumContactsPerson) : ITitaniumContactsPerson;
     fireEvent (name : string, event : any) : void;
     getAllGroups () : any[];
     getAllPeople (limit : number) : any[];
     getBubbleParent () : boolean;
     getContactsAuthorization () : number;
-    getGroupByID (id : number) : TitaniumContactsGroup;
+    getGroupByID (id : number) : ITitaniumContactsGroup;
     getPeopleWithName (name : string) : any[];
-    getPersonByID (id : number) : TitaniumContactsPerson;
+    getPersonByID (id : number) : ITitaniumContactsPerson;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    removeGroup (group : TitaniumContactsGroup) : void;
-    removePerson (person : TitaniumContactsPerson) : void;
+    removeGroup (group : ITitaniumContactsGroup) : void;
+    removePerson (person : ITitaniumContactsPerson) : void;
     requestAuthorization (callback : (...args : any[]) => any) : void;
     revert () : void;
     save (contacts : any[]) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    showContacts (params : ShowContactsParams) : void;
+    showContacts (params : IShowContactsParams) : void;
 }
-declare interface TitaniumLocale {
+interface ITitaniumLocale {
     bubbleParent : boolean;
     currentCountry : string;
     currentLanguage : string;
@@ -11288,21 +11288,21 @@ declare interface TitaniumLocale {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumMapView {
+interface ITitaniumMapView {
     accessibilityHidden : boolean;
     accessibilityHint : string;
     accessibilityLabel : string;
     accessibilityValue : string;
-    anchorPoint : Point;
+    anchorPoint : IPoint;
     animated : boolean;
-    animatedCenter : Point;
+    animatedCenter : IPoint;
     annotations : any[];
     backgroundColor : string;
     backgroundDisabledColor : string;
     backgroundDisabledImage : string;
     backgroundFocusedColor : string;
     backgroundFocusedImage : string;
-    backgroundGradient : Gradient;
+    backgroundGradient : IGradient;
     backgroundImage : string;
     backgroundLeftCap : number;
     backgroundRepeat : boolean;
@@ -11314,7 +11314,7 @@ declare interface TitaniumMapView {
     borderWidth : number;
     bottom : number;
     bubbleParent : boolean;
-    center : Point;
+    center : IPoint;
     children : any[];
     focusable : boolean;
     height : number;
@@ -11327,27 +11327,27 @@ declare interface TitaniumMapView {
     longitudeDelta : number;
     mapType : number;
     opacity : number;
-    rect : Dimension;
-    region : MapRegionType;
+    rect : IDimension;
+    region : IMapRegionType;
     regionFit : boolean;
     right : number;
-    size : Dimension;
+    size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
     touchEnabled : boolean;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     userLocation : boolean;
     visible : boolean;
     width : number;
     zIndex : number;
-    add (view : TitaniumUIView) : void;
-    addAnnotation (annotation : TitaniumMapAnnotation) : void;
+    add (view : ITitaniumUIView) : void;
+    addAnnotation (annotation : ITitaniumMapAnnotation) : void;
     addAnnotations (annotations : any[]) : void;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
-    addRoute (route : MapRouteType) : void;
-    animate (animation : TitaniumUIAnimation, callback : (...args : any[]) => any) : void;
+    addRoute (route : IMapRouteType) : void;
+    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    convertPointToView (point : Point, destinationView : TitaniumUIView) : Point;
+    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
     deselectAnnotation (annotation : string) : void;
     finishLayout () : void;
     fireEvent (name : string, event : any) : void;
@@ -11355,17 +11355,17 @@ declare interface TitaniumMapView {
     getAccessibilityHint () : string;
     getAccessibilityLabel () : string;
     getAccessibilityValue () : string;
-    getAnchorPoint () : Point;
+    getAnchorPoint () : IPoint;
     getAnimate () : boolean;
     getAnimated () : boolean;
-    getAnimatedCenter () : Point;
+    getAnimatedCenter () : IPoint;
     getAnnotations () : any[];
     getBackgroundColor () : string;
     getBackgroundDisabledColor () : string;
     getBackgroundDisabledImage () : string;
     getBackgroundFocusedColor () : string;
     getBackgroundFocusedImage () : string;
-    getBackgroundGradient () : Gradient;
+    getBackgroundGradient () : IGradient;
     getBackgroundImage () : string;
     getBackgroundLeftCap () : number;
     getBackgroundRepeat () : boolean;
@@ -11377,7 +11377,7 @@ declare interface TitaniumMapView {
     getBorderWidth () : number;
     getBottom () : any;
     getBubbleParent () : boolean;
-    getCenter () : Point;
+    getCenter () : IPoint;
     getChildren () : any[];
     getFocusable () : boolean;
     getHeight () : any;
@@ -11390,11 +11390,11 @@ declare interface TitaniumMapView {
     getLongitudeDelta () : number;
     getMapType () : number;
     getOpacity () : number;
-    getRect () : Dimension;
-    getRegion () : MapRegionType;
+    getRect () : IDimension;
+    getRegion () : IMapRegionType;
     getRegionFit () : boolean;
     getRight () : any;
-    getSize () : Dimension;
+    getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     getTop () : any;
     getTouchEnabled () : boolean;
@@ -11404,19 +11404,19 @@ declare interface TitaniumMapView {
     getWidth () : any;
     getZIndex () : number;
     hide () : void;
-    remove (view : TitaniumUIView) : void;
+    remove (view : ITitaniumUIView) : void;
     removeAllAnnotations () : void;
     removeAllChildren () : void;
     removeAnnotation (annotation : string) : void;
     removeAnnotations (annotations : any[]) : void;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    removeRoute (route : MapRouteType) : void;
+    removeRoute (route : IMapRouteType) : void;
     selectAnnotation (annotation : string) : void;
     setAccessibilityHidden (accessibilityHidden : boolean) : void;
     setAccessibilityHint (accessibilityHint : string) : void;
     setAccessibilityLabel (accessibilityLabel : string) : void;
     setAccessibilityValue (accessibilityValue : string) : void;
-    setAnchorPoint (anchorPoint : Point) : void;
+    setAnchorPoint (anchorPoint : IPoint) : void;
     setAnimate (animate : boolean) : void;
     setAnimated (animated : boolean) : void;
     setAnnotations (annotations : any[]) : void;
@@ -11425,7 +11425,7 @@ declare interface TitaniumMapView {
     setBackgroundDisabledImage (backgroundDisabledImage : string) : void;
     setBackgroundFocusedColor (backgroundFocusedColor : string) : void;
     setBackgroundFocusedImage (backgroundFocusedImage : string) : void;
-    setBackgroundGradient (backgroundGradient : Gradient) : void;
+    setBackgroundGradient (backgroundGradient : IGradient) : void;
     setBackgroundImage (backgroundImage : string) : void;
     setBackgroundLeftCap (backgroundLeftCap : number) : void;
     setBackgroundRepeat (backgroundRepeat : boolean) : void;
@@ -11437,7 +11437,7 @@ declare interface TitaniumMapView {
     setBorderWidth (borderWidth : number) : void;
     setBottom (bottom : number) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCenter (center : Point) : void;
+    setCenter (center : IPoint) : void;
     setFocusable (focusable : boolean) : void;
     setHeight (height : number) : void;
     setHideAnnotationWhenTouchMap (hideAnnotationWhenTouchMap : boolean) : void;
@@ -11445,40 +11445,40 @@ declare interface TitaniumMapView {
     setKeepScreenOn (keepScreenOn : boolean) : void;
     setLayout (layout : string) : void;
     setLeft (left : number) : void;
-    setLocation (location : MapLocationType) : void;
+    setLocation (location : IMapLocationType) : void;
     setMapType (mapType : number) : void;
     setOpacity (opacity : number) : void;
-    setRegion (region : MapRegionType) : void;
+    setRegion (region : IMapRegionType) : void;
     setRegionFit (regionFit : boolean) : void;
     setRight (right : number) : void;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : void;
     setTop (top : number) : void;
     setTouchEnabled (touchEnabled : boolean) : void;
-    setTransform (transform : TitaniumUI_2DMatrix) : void;
+    setTransform (transform : ITitaniumUI_2DMatrix) : void;
     setUserLocation (userLocation : boolean) : void;
     setVisible (visible : boolean) : void;
     setWidth (width : number) : void;
     setZIndex (zIndex : number) : void;
     show () : void;
     startLayout () : void;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : TitaniumBlob;
+    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : void;
     zoom (level : number) : void;
 }
-declare interface TitaniumMapAnnotation {
+interface ITitaniumMapAnnotation {
     animate : boolean;
     bubbleParent : boolean;
-    customView : TitaniumUIView;
+    customView : ITitaniumUIView;
     draggable : boolean;
     image : string;
     latitude : number;
     leftButton : number;
-    leftView : TitaniumUIView;
+    leftView : ITitaniumUIView;
     longitude : number;
     pinImage : string;
     pincolor : number;
     rightButton : number;
-    rightView : TitaniumUIView;
+    rightView : ITitaniumUIView;
     subtitle : string;
     subtitleid : string;
     title : string;
@@ -11488,17 +11488,17 @@ declare interface TitaniumMapAnnotation {
     fireEvent (name : string, event : any) : void;
     getAnimate () : boolean;
     getBubbleParent () : boolean;
-    getCustomView () : TitaniumUIView;
+    getCustomView () : ITitaniumUIView;
     getDraggable () : boolean;
     getImage () : any;
     getLatitude () : number;
     getLeftButton () : any;
-    getLeftView () : TitaniumUIView;
+    getLeftView () : ITitaniumUIView;
     getLongitude () : number;
     getPinImage () : string;
     getPincolor () : number;
     getRightButton () : any;
-    getRightView () : TitaniumUIView;
+    getRightView () : ITitaniumUIView;
     getSubtitle () : string;
     getSubtitleid () : string;
     getTitle () : string;
@@ -11506,25 +11506,25 @@ declare interface TitaniumMapAnnotation {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setAnimate (animate : boolean) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    setCustomView (customView : TitaniumUIView) : void;
+    setCustomView (customView : ITitaniumUIView) : void;
     setDraggable (draggable : boolean) : void;
     setImage (image : string) : void;
     setLatitude (latitude : number) : void;
     setLeftButton (leftButton : number) : void;
-    setLeftView (leftView : TitaniumUIView) : void;
+    setLeftView (leftView : ITitaniumUIView) : void;
     setLongitude (longitude : number) : void;
     setPinImage (pinImage : string) : void;
     setPincolor (pincolor : number) : void;
     setRightButton (rightButton : number) : void;
-    setRightView (rightView : TitaniumUIView) : void;
+    setRightView (rightView : ITitaniumUIView) : void;
     setSubtitle (subtitle : string) : void;
     setSubtitleid (subtitleid : string) : void;
     setTitle (title : string) : void;
     setTitleid (titleid : string) : void;
 }
-declare interface TitaniumMap {
-    View : TitaniumMapView;
-    Annotation : TitaniumMapAnnotation;
+interface ITitaniumMap {
+    View : ITitaniumMapView;
+    Annotation : ITitaniumMapAnnotation;
     ANNOTATION_DRAG_STATE_CANCEL : number;
     ANNOTATION_DRAG_STATE_DRAG : number;
     ANNOTATION_DRAG_STATE_END : number;
@@ -11540,32 +11540,32 @@ declare interface TitaniumMap {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createAnnotation (parameters? : TitaniumMapAnnotation) : TitaniumMapAnnotation;
-    createView (parameters? : TitaniumMapView) : TitaniumMapView;
+    createAnnotation (parameters? : ITitaniumMapAnnotation) : ITitaniumMapAnnotation;
+    createView (parameters? : ITitaniumMapView) : ITitaniumMapView;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumStream {
+interface ITitaniumStream {
     MODE_APPEND : number;
     MODE_READ : number;
     MODE_WRITE : number;
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createStream (params : CreateStreamArgs) : TitaniumIOStream;
+    createStream (params : ICreateStreamArgs) : ITitaniumIOStream;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    pump (inputStream : TitaniumIOStream, handler : (...args : any[]) => any, maxChunkSize : number, isAsync? : boolean) : void;
-    read (sourceStream : TitaniumIOStream, buffer : TitaniumBuffer, offset? : number, length? : number, resultsCallback? : (...args : any[]) => any) : void;
-    readAll (sourceStream : TitaniumIOStream, buffer? : TitaniumBuffer, resultsCallback? : (...args : any[]) => any) : any;
+    pump (inputStream : ITitaniumIOStream, handler : (...args : any[]) => any, maxChunkSize : number, isAsync? : boolean) : void;
+    read (sourceStream : ITitaniumIOStream, buffer : ITitaniumBuffer, offset? : number, length? : number, resultsCallback? : (...args : any[]) => any) : void;
+    readAll (sourceStream : ITitaniumIOStream, buffer? : ITitaniumBuffer, resultsCallback? : (...args : any[]) => any) : any;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    write (outputStream : TitaniumIOStream, buffer : TitaniumBuffer, offset? : number, length? : number, resultsCallback? : (...args : any[]) => any) : void;
-    writeStream (inputStream : TitaniumIOStream, outputStream : TitaniumIOStream, maxChunkSize : number, resultsCallback? : (...args : any[]) => any) : void;
+    write (outputStream : ITitaniumIOStream, buffer : ITitaniumBuffer, offset? : number, length? : number, resultsCallback? : (...args : any[]) => any) : void;
+    writeStream (inputStream : ITitaniumIOStream, outputStream : ITitaniumIOStream, maxChunkSize : number, resultsCallback? : (...args : any[]) => any) : void;
 }
-declare interface TitaniumAccelerometer {
+interface ITitaniumAccelerometer {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -11574,7 +11574,7 @@ declare interface TitaniumAccelerometer {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumYahoo {
+interface ITitaniumYahoo {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -11584,7 +11584,7 @@ declare interface TitaniumYahoo {
     setBubbleParent (bubbleParent : boolean) : void;
     yql (yql : string, callback : (...args : any[]) => any) : void;
 }
-declare interface TitaniumIOStream {
+interface ITitaniumIOStream {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -11593,12 +11593,12 @@ declare interface TitaniumIOStream {
     getBubbleParent () : boolean;
     isReadable () : boolean;
     isWriteable () : boolean;
-    read (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    read (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    write (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    write (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
 }
-declare interface TitaniumDatabaseResultSet {
+interface ITitaniumDatabaseResultSet {
     bubbleParent : boolean;
     rowCount : number;
     validRow : boolean;
@@ -11620,19 +11620,19 @@ declare interface TitaniumDatabaseResultSet {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumDatabaseDB {
+interface ITitaniumDatabaseDB {
     bubbleParent : boolean;
-    file : TitaniumFilesystemFile;
+    file : ITitaniumFilesystemFile;
     lastInsertRowId : number;
     name : string;
     rowsAffected : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
     close () : void;
-    execute (sql : string, vararg? : any) : TitaniumDatabaseResultSet;
+    execute (sql : string, vararg? : any) : ITitaniumDatabaseResultSet;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    getFile () : TitaniumFilesystemFile;
+    getFile () : ITitaniumFilesystemFile;
     getLastInsertRowId () : number;
     getName () : string;
     getRowsAffected () : number;
@@ -11643,9 +11643,9 @@ declare interface TitaniumDatabaseDB {
     setName (name : string) : void;
     setRowsAffected (rowsAffected : number) : void;
 }
-declare interface TitaniumDatabase {
-    ResultSet : TitaniumDatabaseResultSet;
-    DB : TitaniumDatabaseDB;
+interface ITitaniumDatabase {
+    ResultSet : ITitaniumDatabaseResultSet;
+    DB : ITitaniumDatabaseDB;
     FIELD_TYPE_DOUBLE : number;
     FIELD_TYPE_FLOAT : number;
     FIELD_TYPE_INT : number;
@@ -11655,12 +11655,12 @@ declare interface TitaniumDatabase {
     applyProperties (props : any) : void;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
-    install (path : string, dbName : string) : TitaniumDatabaseDB;
-    open (dbName : string) : TitaniumDatabaseDB;
+    install (path : string, dbName : string) : ITitaniumDatabaseDB;
+    open (dbName : string) : ITitaniumDatabaseDB;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumPlatformAndroid {
+interface ITitaniumPlatformAndroid {
     API_LEVEL : number;
     PHYSICAL_SIZE_CATEGORY_LARGE : number;
     PHYSICAL_SIZE_CATEGORY_NORMAL : number;
@@ -11677,7 +11677,7 @@ declare interface TitaniumPlatformAndroid {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumPlatformDisplayCaps {
+interface ITitaniumPlatformDisplayCaps {
     bubbleParent : boolean;
     density : string;
     dpi : number;
@@ -11707,9 +11707,9 @@ declare interface TitaniumPlatformDisplayCaps {
     setXdpi (xdpi : number) : void;
     setYdpi (ydpi : number) : void;
 }
-declare interface TitaniumPlatform {
-    Android : TitaniumPlatformAndroid;
-    DisplayCaps : TitaniumPlatformDisplayCaps;
+interface ITitaniumPlatform {
+    Android : ITitaniumPlatformAndroid;
+    DisplayCaps : ITitaniumPlatformDisplayCaps;
     BATTERY_STATE_CHARGING : number;
     BATTERY_STATE_FULL : number;
     BATTERY_STATE_UNKNOWN : number;
@@ -11721,7 +11721,7 @@ declare interface TitaniumPlatform {
     batteryMonitoring : boolean;
     batteryState : number;
     bubbleParent : boolean;
-    displayCaps : TitaniumPlatformDisplayCaps;
+    displayCaps : ITitaniumPlatformDisplayCaps;
     id : string;
     locale : string;
     macaddress : string;
@@ -11747,7 +11747,7 @@ declare interface TitaniumPlatform {
     getBatteryMonitoring () : boolean;
     getBatteryState () : number;
     getBubbleParent () : boolean;
-    getDisplayCaps () : TitaniumPlatformDisplayCaps;
+    getDisplayCaps () : ITitaniumPlatformDisplayCaps;
     getId () : string;
     getLocale () : string;
     getMacaddress () : string;
@@ -11767,7 +11767,7 @@ declare interface TitaniumPlatform {
     setBatteryMonitoring (batteryMonitoring : boolean) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumCloudPush {
+interface ITitaniumCloudPush {
     bubbleParent : boolean;
     enabled : boolean;
     focusAppOnPush : boolean;
@@ -11786,7 +11786,7 @@ declare interface TitaniumCloudPush {
     getShowTrayNotificationsWhenFocused () : boolean;
     getSingleCallback () : boolean;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
-    retrieveDeviceToken (config : CloudPushNotificationConfig) : void;
+    retrieveDeviceToken (config : ICloudPushNotificationConfig) : void;
     setBubbleParent (bubbleParent : boolean) : void;
     setEnabled (enabled : boolean) : void;
     setFocusAppOnPush (focusAppOnPush : boolean) : void;
@@ -11795,13 +11795,13 @@ declare interface TitaniumCloudPush {
     setShowTrayNotificationsWhenFocused (showTrayNotificationsWhenFocused : boolean) : void;
     setSingleCallback (singleCallback : boolean) : void;
 }
-declare interface TitaniumFilesystemFile {
+interface ITitaniumFilesystemFile {
     bubbleParent : boolean;
     executable : boolean;
     hidden : boolean;
     name : string;
     nativePath : string;
-    parent : TitaniumFilesystemFile;
+    parent : ITitaniumFilesystemFile;
     readonly : boolean;
     remoteBackup : boolean;
     size : number;
@@ -11837,8 +11837,8 @@ declare interface TitaniumFilesystemFile {
     isFile () : boolean;
     modificationTimestamp () : number;
     move (newpath : string) : boolean;
-    open (mode : number) : TitaniumFilesystemFileStream;
-    read () : TitaniumBlob;
+    open (mode : number) : ITitaniumFilesystemFileStream;
+    read () : ITitaniumBlob;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     rename (newname : string) : boolean;
     resolve () : string;
@@ -11848,7 +11848,7 @@ declare interface TitaniumFilesystemFile {
     spaceAvailable () : number;
     write (data : string, append? : boolean) : boolean;
 }
-declare interface TitaniumFilesystemFileStream {
+interface ITitaniumFilesystemFileStream {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -11857,14 +11857,14 @@ declare interface TitaniumFilesystemFileStream {
     getBubbleParent () : boolean;
     isReadable () : boolean;
     isWriteable () : boolean;
-    read (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    read (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    write (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    write (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
 }
-declare interface TitaniumFilesystem {
-    File : TitaniumFilesystemFile;
-    FileStream : TitaniumFilesystemFileStream;
+interface ITitaniumFilesystem {
+    File : ITitaniumFilesystemFile;
+    FileStream : ITitaniumFilesystemFileStream;
     MODE_APPEND : number;
     MODE_READ : number;
     MODE_WRITE : number;
@@ -11881,8 +11881,8 @@ declare interface TitaniumFilesystem {
     tempDirectory : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createTempDirectory () : TitaniumFilesystemFile;
-    createTempFile () : TitaniumFilesystemFile;
+    createTempDirectory () : ITitaniumFilesystemFile;
+    createTempFile () : ITitaniumFilesystemFile;
     fireEvent (name : string, event : any) : void;
     getApplicationCacheDirectory () : string;
     getApplicationDataDirectory () : string;
@@ -11890,23 +11890,23 @@ declare interface TitaniumFilesystem {
     getApplicationSupportDirectory () : string;
     getBubbleParent () : boolean;
     getExternalStorageDirectory () : string;
-    getFile (path : string) : TitaniumFilesystemFile;
+    getFile (path : string) : ITitaniumFilesystemFile;
     getLineEnding () : string;
     getResRawDirectory () : string;
     getResourcesDirectory () : string;
     getSeparator () : string;
     getTempDirectory () : string;
     isExternalStoragePresent () : boolean;
-    openStream (mode : number, path : string) : TitaniumFilesystemFileStream;
+    openStream (mode : number, path : string) : ITitaniumFilesystemFileStream;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumUtils {
+interface ITitaniumUtils {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    base64decode (obj : string) : TitaniumBlob;
-    base64encode (obj : string) : TitaniumBlob;
+    base64decode (obj : string) : ITitaniumBlob;
+    base64encode (obj : string) : ITitaniumBlob;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     md5HexDigest (obj : string) : string;
@@ -11915,7 +11915,7 @@ declare interface TitaniumUtils {
     sha1 (obj : string) : string;
     sha256 (obj : string) : string;
 }
-declare interface TitaniumGesture {
+interface ITitaniumGesture {
     bubbleParent : boolean;
     landscape : boolean;
     orientation : number;
@@ -11932,7 +11932,7 @@ declare interface TitaniumGesture {
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
 }
-declare interface TitaniumBufferStream {
+interface ITitaniumBufferStream {
     bubbleParent : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
@@ -11941,42 +11941,42 @@ declare interface TitaniumBufferStream {
     getBubbleParent () : boolean;
     isReadable () : boolean;
     isWriteable () : boolean;
-    read (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    read (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
     removeEventListener (name : string, callback : (...args : any[]) => any) : void;
     setBubbleParent (bubbleParent : boolean) : void;
-    write (buffer : TitaniumBuffer, offset? : number, length? : number) : number;
+    write (buffer : ITitaniumBuffer, offset? : number, length? : number) : number;
 }
-declare interface Titanium {
-    XML : TitaniumXML;
-    Android : TitaniumAndroid;
-    Facebook : TitaniumFacebook;
-    BlobStream : TitaniumBlobStream;
-    UI : TitaniumUI;
-    Cloud : TitaniumCloud;
-    Media : TitaniumMedia;
-    Analytics : TitaniumAnalytics;
-    API : TitaniumAPI;
-    Geolocation : TitaniumGeolocation;
-    App : TitaniumApp;
-    Buffer : TitaniumBuffer;
-    Blob : TitaniumBlob;
-    Calendar : TitaniumCalendar;
-    Codec : TitaniumCodec;
-    Network : TitaniumNetwork;
-    Contacts : TitaniumContacts;
-    Locale : TitaniumLocale;
-    Map : TitaniumMap;
-    Stream : TitaniumStream;
-    Accelerometer : TitaniumAccelerometer;
-    Yahoo : TitaniumYahoo;
-    IOStream : TitaniumIOStream;
-    Database : TitaniumDatabase;
-    Platform : TitaniumPlatform;
-    CloudPush : TitaniumCloudPush;
-    Filesystem : TitaniumFilesystem;
-    Utils : TitaniumUtils;
-    Gesture : TitaniumGesture;
-    BufferStream : TitaniumBufferStream;
+interface ITitanium {
+    XML : ITitaniumXML;
+    Android : ITitaniumAndroid;
+    Facebook : ITitaniumFacebook;
+    BlobStream : ITitaniumBlobStream;
+    UI : ITitaniumUI;
+    Cloud : ITitaniumCloud;
+    Media : ITitaniumMedia;
+    Analytics : ITitaniumAnalytics;
+    API : ITitaniumAPI;
+    Geolocation : ITitaniumGeolocation;
+    App : ITitaniumApp;
+    Buffer : ITitaniumBuffer;
+    Blob : ITitaniumBlob;
+    Calendar : ITitaniumCalendar;
+    Codec : ITitaniumCodec;
+    Network : ITitaniumNetwork;
+    Contacts : ITitaniumContacts;
+    Locale : ITitaniumLocale;
+    Map : ITitaniumMap;
+    Stream : ITitaniumStream;
+    Accelerometer : ITitaniumAccelerometer;
+    Yahoo : ITitaniumYahoo;
+    IOStream : ITitaniumIOStream;
+    Database : ITitaniumDatabase;
+    Platform : ITitaniumPlatform;
+    CloudPush : ITitaniumCloudPush;
+    Filesystem : ITitaniumFilesystem;
+    Utils : ITitaniumUtils;
+    Gesture : ITitaniumGesture;
+    BufferStream : ITitaniumBufferStream;
     bubbleParent : boolean;
     buildDate : string;
     buildHash : string;
@@ -11984,7 +11984,7 @@ declare interface Titanium {
     version : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : void;
     applyProperties (props : any) : void;
-    createBuffer (params : CreateBufferArgs) : TitaniumBuffer;
+    createBuffer (params : ICreateBufferArgs) : ITitaniumBuffer;
     fireEvent (name : string, event : any) : void;
     getBubbleParent () : boolean;
     getBuildDate () : string;
@@ -11996,7 +11996,7 @@ declare interface Titanium {
     setBubbleParent (bubbleParent : boolean) : void;
     setUserAgent (userAgent : string) : void;
 }
-declare interface CloudPostsResponse {
+interface ICloudPostsResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12004,7 +12004,7 @@ declare interface CloudPostsResponse {
     posts : any[];
     success : boolean;
 }
-declare interface CloudSocialIntegrationsResponse {
+interface ICloudSocialIntegrationsResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12012,12 +12012,12 @@ declare interface CloudSocialIntegrationsResponse {
     success : boolean;
     users : any[];
 }
-declare interface SuccessResponse {
+interface ISuccessResponse {
     code : number;
     error : string;
     success : boolean;
 }
-declare interface CloudChatsResponse {
+interface ICloudChatsResponse {
     chats : any[];
     code : number;
     error : boolean;
@@ -12025,7 +12025,7 @@ declare interface CloudChatsResponse {
     meta : any;
     success : boolean;
 }
-declare interface CloudEventsResponse {
+interface ICloudEventsResponse {
     code : number;
     error : boolean;
     events : any[];
@@ -12033,23 +12033,23 @@ declare interface CloudEventsResponse {
     meta : any;
     success : boolean;
 }
-declare interface BarItemType {
+interface IBarItemType {
     accessibilityLabel : string;
     enabled : boolean;
     image : string;
     title : string;
     width : number;
 }
-declare interface ContactsAuthorizationResponse {
+interface IContactsAuthorizationResponse {
     code : number;
     error : string;
     success : boolean;
 }
-declare interface HideStatusBarParams {
+interface IHideStatusBarParams {
     animated : boolean;
     animationStyle : number;
 }
-declare interface CloudACLsResponse {
+interface ICloudACLsResponse {
     acls : any[];
     code : number;
     error : boolean;
@@ -12057,17 +12057,17 @@ declare interface CloudACLsResponse {
     meta : any;
     success : boolean;
 }
-declare interface TableViewIndexEntry {
+interface ITableViewIndexEntry {
     index : number;
     title : string;
 }
-declare interface FacebookRESTResponsev1 {
+interface IFacebookRESTResponsev1 {
     error : string;
     method : string;
     result : string;
     success : boolean;
 }
-declare interface MapLocationType {
+interface IMapLocationType {
     animate : boolean;
     latitude : number;
     latitudeDelta : number;
@@ -12075,113 +12075,113 @@ declare interface MapLocationType {
     longitudeDelta : number;
     regionFit : boolean;
 }
-declare interface ListDataItem {
-    properties : TitaniumUIListItem;
+interface IListDataItem {
+    properties : ITitaniumUIListItem;
     template : string;
 }
-declare interface WriteCallbackArgs {
+interface IWriteCallbackArgs {
     bytesProcessed : number;
     code : number;
     error : string;
     errorDescription : string;
     errorState : number;
-    source : TitaniumIOStream;
+    source : ITitaniumIOStream;
     success : boolean;
 }
-declare interface PushNotificationErrorArg {
+interface IPushNotificationErrorArg {
     code : number;
     error : string;
     success : boolean;
     type : string;
 }
-declare interface WriteStreamCallbackArgs {
+interface IWriteStreamCallbackArgs {
     bytesProcessed : number;
     code : number;
     error : string;
     errorDescription : string;
     errorState : number;
-    fromStream : TitaniumIOStream;
+    fromStream : ITitaniumIOStream;
     success : boolean;
-    toStream : TitaniumIOStream;
+    toStream : ITitaniumIOStream;
 }
-declare interface MapRegionType {
+interface IMapRegionType {
     latitude : number;
     latitudeDelta : number;
     longitude : number;
     longitudeDelta : number;
 }
-declare interface CameraMediaItemType {
+interface ICameraMediaItemType {
     code : number;
-    cropRect : CropRectType;
+    cropRect : ICropRectType;
     error : string;
-    media : TitaniumBlob;
+    media : ITitaniumBlob;
     mediaType : string;
     success : boolean;
 }
-declare interface CropRectType {
+interface ICropRectType {
     height : number;
     width : number;
     x : number;
     y : number;
 }
-declare interface LocationResults {
+interface ILocationResults {
     code : number;
-    coords : LocationCoordinates;
+    coords : ILocationCoordinates;
     error : string;
-    provider : LocationProviderDict;
+    provider : ILocationProviderDict;
     success : boolean;
 }
-declare interface HeadingResponse {
+interface IHeadingResponse {
     code : number;
     error : string;
-    heading : HeadingData;
+    heading : IHeadingData;
     success : boolean;
 }
-declare interface CloudStreamProgress {
+interface ICloudStreamProgress {
     progress : number;
     url : string;
 }
-declare interface CloudPushNotificationsResponse {
+interface ICloudPushNotificationsResponse {
     code : number;
     error : boolean;
     message : string;
     meta : any;
     success : boolean;
 }
-declare interface EncodeNumberDict {
+interface IEncodeNumberDict {
     byteOrder : number;
-    dest : TitaniumBuffer;
+    dest : ITitaniumBuffer;
     position : number;
     source : number;
     type : string;
 }
-declare interface MusicLibraryResponseType {
+interface IMusicLibraryResponseType {
     items : any[];
-    representative : TitaniumMediaItem;
+    representative : ITitaniumMediaItem;
     types : number;
 }
-declare interface CloudEmailsResponse {
+interface ICloudEmailsResponse {
     code : number;
     error : boolean;
     message : string;
     meta : any;
     success : boolean;
 }
-declare interface RecurrenceEndDictionary {
+interface IRecurrenceEndDictionary {
     endDate : Date;
     occurrenceCount : number;
 }
-declare interface GradientColorRef {
+interface IGradientColorRef {
     color : string;
     offset : number;
 }
-declare interface Font {
+interface IFont {
     fontFamily : string;
     fontSize : number;
     fontStyle : string;
     fontWeight : string;
 }
-declare interface CloudPhotoCollectionsPhotosResponse {
+interface ICloudPhotoCollectionsPhotosResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12189,7 +12189,7 @@ declare interface CloudPhotoCollectionsPhotosResponse {
     photos : any[];
     success : boolean;
 }
-declare interface CloudEventOccurrencesResponse {
+interface ICloudEventOccurrencesResponse {
     code : number;
     error : boolean;
     event_occurrences : any[];
@@ -12197,7 +12197,7 @@ declare interface CloudEventOccurrencesResponse {
     meta : any;
     success : boolean;
 }
-declare interface CloudPlacesResponse {
+interface ICloudPlacesResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12205,13 +12205,13 @@ declare interface CloudPlacesResponse {
     places : any[];
     success : boolean;
 }
-declare interface DecodeStringDict {
+interface IDecodeStringDict {
     charset : string;
     length : number;
     position : number;
-    source : TitaniumBuffer;
+    source : ITitaniumBuffer;
 }
-declare interface CloudUsersResponse {
+interface ICloudUsersResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12219,15 +12219,15 @@ declare interface CloudUsersResponse {
     success : boolean;
     users : any[];
 }
-declare interface TextAreaSelectedParams {
+interface ITextAreaSelectedParams {
     length : number;
     location : number;
 }
-declare interface TableViewContentInsetOption {
+interface ITableViewContentInsetOption {
     animated : boolean;
     duration : number;
 }
-declare interface CloudCheckinsResponse {
+interface ICloudCheckinsResponse {
     checkins : any[];
     code : number;
     error : boolean;
@@ -12235,14 +12235,14 @@ declare interface CloudCheckinsResponse {
     meta : any;
     success : boolean;
 }
-declare interface ShowContactsParams {
+interface IShowContactsParams {
     animated : boolean;
     cancel : (...args : any[]) => any;
     fields : any[];
     selectedPerson : (...args : any[]) => any;
     selectedProperty : (...args : any[]) => any;
 }
-declare interface CloudFriendRequestsResponse {
+interface ICloudFriendRequestsResponse {
     code : number;
     error : boolean;
     friend_requests : any[];
@@ -12250,17 +12250,17 @@ declare interface CloudFriendRequestsResponse {
     meta : any;
     success : boolean;
 }
-declare interface JSON {
+interface IJSON {
     parse (text : string, reviver : (...args : any[]) => any) : any;
     stringify (value : any, replacer? : (...args : any[]) => any, space? : number) : string;
 }
-declare interface CreateBufferArgs {
+interface ICreateBufferArgs {
     byteOrder : number;
     length : number;
     type : string;
     value : string;
 }
-declare interface CameraOptionsType {
+interface ICameraOptionsType {
     allowEditing : boolean;
     animated : boolean;
     arrowDirection : number;
@@ -12269,16 +12269,16 @@ declare interface CameraOptionsType {
     error : (...args : any[]) => any;
     inPopOver : boolean;
     mediaTypes : any[];
-    overlay : TitaniumUIView;
-    popoverView : TitaniumUIView;
+    overlay : ITitaniumUIView;
+    popoverView : ITitaniumUIView;
     saveToPhotoGallery : boolean;
     showControls : boolean;
     success : (...args : any[]) => any;
-    transform : TitaniumUI_2DMatrix;
+    transform : ITitaniumUI_2DMatrix;
     videoMaximumDuration : number;
     videoQuality : number;
 }
-declare interface HeadingData {
+interface IHeadingData {
     accuracy : number;
     magneticHeading : number;
     timestamp : number;
@@ -12287,7 +12287,7 @@ declare interface HeadingData {
     y : number;
     z : number;
 }
-declare interface CloudChatGroupsResponse {
+interface ICloudChatGroupsResponse {
     chat_groups : any[];
     code : number;
     error : boolean;
@@ -12295,23 +12295,23 @@ declare interface CloudChatGroupsResponse {
     meta : any;
     success : boolean;
 }
-declare interface FacebookDialogResponsev1 {
+interface IFacebookDialogResponsev1 {
     cancelled : boolean;
     error : string;
     result : string;
     success : boolean;
 }
-declare interface CloudPushNotificationConfig {
+interface ICloudPushNotificationConfig {
     error : (...args : any[]) => any;
     success : (...args : any[]) => any;
 }
-declare interface FacebookGraphResponsev1 {
+interface IFacebookGraphResponsev1 {
     error : string;
     path : string;
     result : string;
     success : boolean;
 }
-declare interface CloudFilesResponse {
+interface ICloudFilesResponse {
     code : number;
     error : boolean;
     files : any[];
@@ -12319,7 +12319,7 @@ declare interface CloudFilesResponse {
     meta : any;
     success : boolean;
 }
-declare interface CloudReviewsResponse {
+interface ICloudReviewsResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12327,12 +12327,12 @@ declare interface CloudReviewsResponse {
     reviews : any[];
     success : boolean;
 }
-declare interface ItemTemplate {
+interface IItemTemplate {
     childTemplates : any[];
     events : any;
-    properties : TitaniumUIListItem;
+    properties : ITitaniumUIListItem;
 }
-declare interface NotificationParams {
+interface INotificationParams {
     alertAction : string;
     alertBody : string;
     alertLaunchImage : string;
@@ -12343,15 +12343,15 @@ declare interface NotificationParams {
     timezone : string;
     userInfo : any;
 }
-declare interface EventsAuthorizationResponse {
+interface IEventsAuthorizationResponse {
     code : number;
     error : string;
     success : boolean;
 }
-declare interface PlayerQueue {
+interface IPlayerQueue {
     items : any[];
 }
-declare interface OpenWindowParams {
+interface IOpenWindowParams {
     activityEnterAnimation : number;
     activityExitAnimation : number;
     animated : boolean;
@@ -12368,19 +12368,19 @@ declare interface OpenWindowParams {
     transition : number;
     width : number;
 }
-declare interface String {
+interface IString {
     format (formatString : string, ...value : string[]) : string;
     formatCurrency (value : number) : string;
     formatDate (date : Date, format? : string) : string;
     formatDecimal (value : number, locale? : string, pattern? : string) : string;
     formatTime (date : Date, format? : string) : string;
 }
-declare interface CoverFlowImageType {
+interface ICoverFlowImageType {
     height : number;
     image : string;
     width : number;
 }
-declare interface CloudPhotosResponse {
+interface ICloudPhotosResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12388,27 +12388,27 @@ declare interface CloudPhotosResponse {
     photos : any[];
     success : boolean;
 }
-declare interface PushNotificationConfig {
+interface IPushNotificationConfig {
     callback : (...args : any[]) => any;
     error : (...args : any[]) => any;
     success : (...args : any[]) => any;
     types : any[];
 }
-declare interface MatrixCreationDict {
+interface IMatrixCreationDict {
     anchorPoint : any;
     rotate : number;
     scale : number;
 }
-declare interface ReadCallbackArgs {
+interface IReadCallbackArgs {
     bytesProcessed : number;
     code : number;
     error : string;
     errorDescription : string;
     errorState : number;
-    source : TitaniumIOStream;
+    source : ITitaniumIOStream;
     success : boolean;
 }
-declare interface CloudACLsCheckResponse {
+interface ICloudACLsCheckResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12416,43 +12416,43 @@ declare interface CloudACLsCheckResponse {
     permission : any;
     success : boolean;
 }
-declare interface ViewTemplate {
+interface IViewTemplate {
     bindId : string;
     childTemplates : any[];
     events : any;
     properties : any;
     type : string;
 }
-declare interface MediaQueryType {
-    albumArtist : MediaQueryInfoType;
-    albumTitle : MediaQueryInfoType;
-    artist : MediaQueryInfoType;
-    composer : MediaQueryInfoType;
-    genre : MediaQueryInfoType;
+interface IMediaQueryType {
+    albumArtist : IMediaQueryInfoType;
+    albumTitle : IMediaQueryInfoType;
+    artist : IMediaQueryInfoType;
+    composer : IMediaQueryInfoType;
+    genre : IMediaQueryInfoType;
     grouping : number;
-    isCompilation : MediaQueryInfoType;
-    mediaType : MediaQueryInfoType;
-    title : MediaQueryInfoType;
+    isCompilation : IMediaQueryInfoType;
+    mediaType : IMediaQueryInfoType;
+    title : IMediaQueryInfoType;
 }
-declare interface WebAPIError {
+interface IWebAPIError {
     code : number;
     message : string;
     name : string;
 }
-declare interface Gradient {
+interface IGradient {
     backfillEnd : boolean;
     backfillStart : boolean;
     colors : any[];
-    endPoint : Point;
+    endPoint : IPoint;
     endRadius : number;
-    startPoint : Point;
+    startPoint : IPoint;
     startRadius : number;
     type : string;
 }
-declare interface HideParams {
+interface IHideParams {
     animated : boolean;
 }
-declare interface CloudObjectsResponse {
+interface ICloudObjectsResponse {
     classname : any[];
     code : number;
     error : boolean;
@@ -12460,7 +12460,7 @@ declare interface CloudObjectsResponse {
     meta : any;
     success : boolean;
 }
-declare interface CloudPhotoCollectionsResponse {
+interface ICloudPhotoCollectionsResponse {
     code : number;
     collections : any[];
     error : boolean;
@@ -12468,7 +12468,7 @@ declare interface CloudPhotoCollectionsResponse {
     meta : any;
     success : boolean;
 }
-declare interface CloudUsersSecureResponse {
+interface ICloudUsersSecureResponse {
     accessToken : string;
     code : number;
     error : boolean;
@@ -12477,11 +12477,11 @@ declare interface CloudUsersSecureResponse {
     meta : any;
     success : boolean;
 }
-declare interface ShowStatusBarParams {
+interface IShowStatusBarParams {
     animated : boolean;
     animationStyle : number;
 }
-declare interface CloudClientsResponse {
+interface ICloudClientsResponse {
     code : number;
     error : boolean;
     ip_address : string;
@@ -12490,11 +12490,11 @@ declare interface CloudClientsResponse {
     meta : any;
     success : boolean;
 }
-declare interface AcceptDict {
+interface IAcceptDict {
     error : (...args : any[]) => any;
     timeout : number;
 }
-declare interface CloudStatusesResponse {
+interface ICloudStatusesResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12502,13 +12502,13 @@ declare interface CloudStatusesResponse {
     statuses : any[];
     success : boolean;
 }
-declare interface Dictionary {
+interface IDictionary {
 }
-declare interface MapPointType {
+interface IMapPointType {
     latitude : number;
     longitude : number;
 }
-declare interface CloudKeyValuesResponse {
+interface ICloudKeyValuesResponse {
     code : number;
     error : boolean;
     keyvalues : any[];
@@ -12516,24 +12516,24 @@ declare interface CloudKeyValuesResponse {
     meta : any;
     success : boolean;
 }
-declare interface MediaQueryInfoType {
+interface IMediaQueryInfoType {
     exact : boolean;
     value : number;
 }
-declare interface Dimension {
+interface IDimension {
     height : number;
     width : number;
     x : number;
     y : number;
 }
-declare interface CloudResponse {
+interface ICloudResponse {
     code : number;
     error : boolean;
     message : string;
     meta : any;
     success : boolean;
 }
-declare interface GeocodedAddress {
+interface IGeocodedAddress {
     address : string;
     city : string;
     country : string;
@@ -12549,24 +12549,24 @@ declare interface GeocodedAddress {
     street1 : string;
     zipcode : string;
 }
-declare interface PumpCallbackArgs {
-    buffer : TitaniumBuffer;
+interface IPumpCallbackArgs {
+    buffer : ITitaniumBuffer;
     bytesProcessed : number;
     code : number;
     error : string;
     errorDescription : string;
     errorState : number;
-    source : TitaniumIOStream;
+    source : ITitaniumIOStream;
     success : boolean;
     totalBytesProcessed : number;
 }
-declare interface ReverseGeocodeResponse {
+interface IReverseGeocodeResponse {
     code : number;
     error : string;
     places : any[];
     success : boolean;
 }
-declare interface MusicLibraryOptionsType {
+interface IMusicLibraryOptionsType {
     allowMultipleSelections : boolean;
     animated : boolean;
     autohide : boolean;
@@ -12575,18 +12575,18 @@ declare interface MusicLibraryOptionsType {
     mediaTypes : number;
     success : (...args : any[]) => any;
 }
-declare interface LaunchOptions {
+interface ILaunchOptions {
     launchOptionsLocationKey : boolean;
     source : string;
     url : string;
 }
-declare interface CloudPushNotificationErrorArg {
+interface ICloudPushNotificationErrorArg {
     error : string;
 }
-declare interface ZoomScaleOption {
+interface IZoomScaleOption {
     animated : boolean;
 }
-declare interface LocationCoordinates {
+interface ILocationCoordinates {
     accuracy : number;
     altitude : number;
     altitudeAccuracy : number;
@@ -12596,19 +12596,19 @@ declare interface LocationCoordinates {
     speed : number;
     timestamp : number;
 }
-declare interface ActivityResult {
-    intent : TitaniumAndroidIntent;
+interface IActivityResult {
+    intent : ITitaniumAndroidIntent;
     requestCode : number;
     resultCode : number;
 }
-declare interface Point {
+interface IPoint {
     x : number;
     y : number;
 }
-declare interface CloudUsersSecureDialog {
+interface ICloudUsersSecureDialog {
     title : string;
 }
-declare interface PhotoGalleryOptionsType {
+interface IPhotoGalleryOptionsType {
     allowEditing : boolean;
     animated : boolean;
     arrowDirection : number;
@@ -12616,61 +12616,61 @@ declare interface PhotoGalleryOptionsType {
     cancel : (...args : any[]) => any;
     error : (...args : any[]) => any;
     mediaTypes : any[];
-    popoverView : TitaniumUIView;
+    popoverView : ITitaniumUIView;
     success : (...args : any[]) => any;
 }
-declare interface ThumbnailResponse {
+interface IThumbnailResponse {
     code : number;
     error : string;
-    image : TitaniumBlob;
+    image : ITitaniumBlob;
     success : boolean;
     time : number;
 }
-declare interface CloudPushNotificationSuccessArg {
+interface ICloudPushNotificationSuccessArg {
     deviceToken : string;
 }
-declare interface YQLResponse {
+interface IYQLResponse {
     code : number;
     data : any;
     error : string;
     message : string;
     success : boolean;
 }
-declare interface ListViewAnimationProperties {
+interface IListViewAnimationProperties {
     animated : boolean;
     animationStyle : number;
     position : number;
 }
-declare interface PreviewImageError {
+interface IPreviewImageError {
     code : number;
     error : string;
     message : string;
     success : boolean;
 }
-declare interface ErrorResponse {
+interface IErrorResponse {
     code : number;
     error : string;
     success : boolean;
 }
-declare interface ShowParams {
+interface IShowParams {
     animated : boolean;
     rect : any;
-    view : TitaniumUIView;
+    view : ITitaniumUIView;
 }
-declare interface AcceptedCallbackArgs {
-    inbound : TitaniumNetworkSocketTCP;
-    socket : TitaniumNetworkSocketTCP;
+interface IAcceptedCallbackArgs {
+    inbound : ITitaniumNetworkSocketTCP;
+    socket : ITitaniumNetworkSocketTCP;
 }
-declare interface CreateStreamArgs {
+interface ICreateStreamArgs {
     mode : number;
-    source : TitaniumBlob;
+    source : ITitaniumBlob;
 }
-declare interface FailureResponse {
+interface IFailureResponse {
     code : number;
     error : string;
     success : boolean;
 }
-declare interface ForwardGeocodeResponse {
+interface IForwardGeocodeResponse {
     accuracy : number;
     address : string;
     city : string;
@@ -12689,24 +12689,24 @@ declare interface ForwardGeocodeResponse {
     street1 : string;
     success : boolean;
 }
-declare interface TableViewEdgeInsets {
+interface ITableViewEdgeInsets {
     bottom : number;
     left : number;
     right : number;
     top : number;
 }
-declare interface PushNotificationData {
+interface IPushNotificationData {
     data : any;
     inBackground : boolean;
 }
-declare interface MovieSize {
+interface IMovieSize {
     height : number;
     width : number;
 }
-declare interface ConnectedCallbackArgs {
-    socket : TitaniumNetworkSocketTCP;
+interface IConnectedCallbackArgs {
+    socket : ITitaniumNetworkSocketTCP;
 }
-declare interface CloudMessagesResponse {
+interface ICloudMessagesResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12714,80 +12714,80 @@ declare interface CloudMessagesResponse {
     meta : any;
     success : boolean;
 }
-declare interface MapRouteType {
+interface IMapRouteType {
     color : string;
     name : string;
     points : any[];
     width : number;
 }
-declare interface ImageAsCroppedDict {
+interface IImageAsCroppedDict {
     height : number;
     width : number;
     x : number;
     y : number;
 }
-declare interface DaysOfTheWeekDictionary {
+interface IDaysOfTheWeekDictionary {
     daysOfWeek : number;
     week : number;
 }
-declare interface Modules {
+interface IModules {
 }
-declare interface PreviewImageOptions {
+interface IPreviewImageOptions {
     error : (...args : any[]) => any;
-    image : TitaniumBlob;
+    image : ITitaniumBlob;
     success : (...args : any[]) => any;
 }
-declare interface PushNotificationSuccessArg {
+interface IPushNotificationSuccessArg {
     code : number;
     deviceToken : string;
     error : string;
     success : boolean;
     type : string;
 }
-declare interface ScreenshotResult {
-    media : TitaniumBlob;
+interface IScreenshotResult {
+    media : ITitaniumBlob;
 }
-declare interface Console {
+interface IConsole {
     debug (message : any) : void;
     error (message : any) : void;
     info (message : any) : void;
     log (message : any) : void;
     warn (message : any) : void;
 }
-declare interface ErrorCallbackArgs {
+interface IErrorCallbackArgs {
     code : number;
     error : string;
     errorCode : number;
-    socket : TitaniumNetworkSocketTCP;
+    socket : ITitaniumNetworkSocketTCP;
     success : boolean;
 }
-declare interface DecodeNumberDict {
+interface IDecodeNumberDict {
     byteOrder : number;
     position : number;
-    source : TitaniumBuffer;
+    source : ITitaniumBuffer;
     type : string;
 }
-declare interface ContentOffsetOption {
+interface IContentOffsetOption {
     animated : boolean;
 }
-declare interface TableViewAnimationProperties {
+interface ITableViewAnimationProperties {
     animated : boolean;
     animationStyle : number;
     position : number;
 }
-declare interface ServiceIntentOptions {
+interface IServiceIntentOptions {
     startMode : number;
     url : string;
 }
-declare interface EncodeStringDict {
+interface IEncodeStringDict {
     charset : string;
-    dest : TitaniumBuffer;
+    dest : ITitaniumBuffer;
     destPosition : number;
     source : string;
     sourceLength : number;
     sourcePosition : number;
 }
-declare interface CloudFriendsResponse {
+interface ICloudFriendsResponse {
     code : number;
     error : boolean;
     message : string;
@@ -12795,141 +12795,138 @@ declare interface CloudFriendsResponse {
     success : boolean;
     users : any[];
 }
-declare interface MediaScannerResponse {
+interface IMediaScannerResponse {
     path : string;
     uri : string;
 }
-declare interface LocationProviderDict {
+interface ILocationProviderDict {
     accuracy : number;
     name : string;
     power : number;
 }
-declare var Titanium : Titanium;
-declare var CloudPostsResponse : CloudPostsResponse;
-declare var CloudSocialIntegrationsResponse : CloudSocialIntegrationsResponse;
-declare var SuccessResponse : SuccessResponse;
-declare var CloudChatsResponse : CloudChatsResponse;
-declare var CloudEventsResponse : CloudEventsResponse;
-declare var BarItemType : BarItemType;
-declare var ContactsAuthorizationResponse : ContactsAuthorizationResponse;
-declare var hideStatusBarParams : HideStatusBarParams;
-declare var CloudACLsResponse : CloudACLsResponse;
-declare var TableViewIndexEntry : TableViewIndexEntry;
-declare var FacebookRESTResponsev1 : FacebookRESTResponsev1;
-declare var MapLocationType : MapLocationType;
-declare var ListDataItem : ListDataItem;
-declare var WriteCallbackArgs : WriteCallbackArgs;
-declare var PushNotificationErrorArg : PushNotificationErrorArg;
-declare var WriteStreamCallbackArgs : WriteStreamCallbackArgs;
-declare var MapRegionType : MapRegionType;
-declare var CameraMediaItemType : CameraMediaItemType;
-declare var CropRectType : CropRectType;
-declare var LocationResults : LocationResults;
-declare var HeadingResponse : HeadingResponse;
-declare var CloudStreamProgress : CloudStreamProgress;
-declare var CloudPushNotificationsResponse : CloudPushNotificationsResponse;
-declare var EncodeNumberDict : EncodeNumberDict;
-declare var MusicLibraryResponseType : MusicLibraryResponseType;
-declare var CloudEmailsResponse : CloudEmailsResponse;
-declare var recurrenceEndDictionary : RecurrenceEndDictionary;
-declare var GradientColorRef : GradientColorRef;
-declare var Font : Font;
-declare var CloudPhotoCollectionsPhotosResponse : CloudPhotoCollectionsPhotosResponse;
-declare var CloudEventOccurrencesResponse : CloudEventOccurrencesResponse;
-declare var CloudPlacesResponse : CloudPlacesResponse;
-declare var DecodeStringDict : DecodeStringDict;
-declare var CloudUsersResponse : CloudUsersResponse;
-declare var textAreaSelectedParams : TextAreaSelectedParams;
-declare var TableViewContentInsetOption : TableViewContentInsetOption;
-declare var CloudCheckinsResponse : CloudCheckinsResponse;
-declare var showContactsParams : ShowContactsParams;
-declare var CloudFriendRequestsResponse : CloudFriendRequestsResponse;
-declare var JSON : JSON;
-declare var CreateBufferArgs : CreateBufferArgs;
-declare var CameraOptionsType : CameraOptionsType;
-declare var HeadingData : HeadingData;
-declare var CloudChatGroupsResponse : CloudChatGroupsResponse;
-declare var FacebookDialogResponsev1 : FacebookDialogResponsev1;
-declare var CloudPushNotificationConfig : CloudPushNotificationConfig;
-declare var FacebookGraphResponsev1 : FacebookGraphResponsev1;
-declare var CloudFilesResponse : CloudFilesResponse;
-declare var CloudReviewsResponse : CloudReviewsResponse;
-declare var ItemTemplate : ItemTemplate;
-declare var NotificationParams : NotificationParams;
-declare var EventsAuthorizationResponse : EventsAuthorizationResponse;
-declare var PlayerQueue : PlayerQueue;
-declare var openWindowParams : OpenWindowParams;
-declare var String : String;
-declare var CoverFlowImageType : CoverFlowImageType;
-declare var CloudPhotosResponse : CloudPhotosResponse;
-declare var PushNotificationConfig : PushNotificationConfig;
-declare var MatrixCreationDict : MatrixCreationDict;
-declare var ReadCallbackArgs : ReadCallbackArgs;
-declare var CloudACLsCheckResponse : CloudACLsCheckResponse;
-declare var ViewTemplate : ViewTemplate;
-declare var MediaQueryType : MediaQueryType;
-declare var WebAPIError : WebAPIError;
-declare var Gradient : Gradient;
-declare var hideParams : HideParams;
-declare var CloudObjectsResponse : CloudObjectsResponse;
-declare var CloudPhotoCollectionsResponse : CloudPhotoCollectionsResponse;
-declare var CloudUsersSecureResponse : CloudUsersSecureResponse;
-declare var showStatusBarParams : ShowStatusBarParams;
-declare var CloudClientsResponse : CloudClientsResponse;
-declare var AcceptDict : AcceptDict;
-declare var CloudStatusesResponse : CloudStatusesResponse;
-declare var Dictionary : Dictionary;
-declare var MapPointType : MapPointType;
-declare var CloudKeyValuesResponse : CloudKeyValuesResponse;
-declare var MediaQueryInfoType : MediaQueryInfoType;
-declare var Dimension : Dimension;
-declare var CloudResponse : CloudResponse;
-declare var GeocodedAddress : GeocodedAddress;
-declare var PumpCallbackArgs : PumpCallbackArgs;
-declare var ReverseGeocodeResponse : ReverseGeocodeResponse;
-declare var MusicLibraryOptionsType : MusicLibraryOptionsType;
-declare var launchOptions : LaunchOptions;
-declare var CloudPushNotificationErrorArg : CloudPushNotificationErrorArg;
-declare var zoomScaleOption : ZoomScaleOption;
-declare var LocationCoordinates : LocationCoordinates;
-declare var ActivityResult : ActivityResult;
-declare var Point : Point;
-declare var CloudUsersSecureDialog : CloudUsersSecureDialog;
-declare var PhotoGalleryOptionsType : PhotoGalleryOptionsType;
-declare var ThumbnailResponse : ThumbnailResponse;
-declare var CloudPushNotificationSuccessArg : CloudPushNotificationSuccessArg;
-declare var YQLResponse : YQLResponse;
-declare var ListViewAnimationProperties : ListViewAnimationProperties;
-declare var PreviewImageError : PreviewImageError;
-declare var ErrorResponse : ErrorResponse;
-declare var showParams : ShowParams;
-declare var AcceptedCallbackArgs : AcceptedCallbackArgs;
-declare var CreateStreamArgs : CreateStreamArgs;
-declare var FailureResponse : FailureResponse;
-declare var ForwardGeocodeResponse : ForwardGeocodeResponse;
-declare var TableViewEdgeInsets : TableViewEdgeInsets;
-declare var PushNotificationData : PushNotificationData;
-declare var MovieSize : MovieSize;
-declare var ConnectedCallbackArgs : ConnectedCallbackArgs;
-declare var CloudMessagesResponse : CloudMessagesResponse;
-declare var MapRouteType : MapRouteType;
-declare var ImageAsCroppedDict : ImageAsCroppedDict;
-declare var daysOfTheWeekDictionary : DaysOfTheWeekDictionary;
-declare var Modules : Modules;
-declare var PreviewImageOptions : PreviewImageOptions;
-declare var PushNotificationSuccessArg : PushNotificationSuccessArg;
-declare var ScreenshotResult : ScreenshotResult;
-declare var console : Console;
-declare var ErrorCallbackArgs : ErrorCallbackArgs;
-declare var DecodeNumberDict : DecodeNumberDict;
-declare var contentOffsetOption : ContentOffsetOption;
-declare var TableViewAnimationProperties : TableViewAnimationProperties;
-declare var ServiceIntentOptions : ServiceIntentOptions;
-declare var EncodeStringDict : EncodeStringDict;
-declare var CloudFriendsResponse : CloudFriendsResponse;
-declare var MediaScannerResponse : MediaScannerResponse;
-declare var LocationProviderDict : LocationProviderDict;
+declare var Titanium : ITitanium;
+declare var CloudPostsResponse : ICloudPostsResponse;
+declare var CloudSocialIntegrationsResponse : ICloudSocialIntegrationsResponse;
+declare var SuccessResponse : ISuccessResponse;
+declare var CloudChatsResponse : ICloudChatsResponse;
+declare var CloudEventsResponse : ICloudEventsResponse;
+declare var BarItemType : IBarItemType;
+declare var ContactsAuthorizationResponse : IContactsAuthorizationResponse;
+declare var hideStatusBarParams : IHideStatusBarParams;
+declare var CloudACLsResponse : ICloudACLsResponse;
+declare var TableViewIndexEntry : ITableViewIndexEntry;
+declare var FacebookRESTResponsev1 : IFacebookRESTResponsev1;
+declare var MapLocationType : IMapLocationType;
+declare var ListDataItem : IListDataItem;
+declare var WriteCallbackArgs : IWriteCallbackArgs;
+declare var PushNotificationErrorArg : IPushNotificationErrorArg;
+declare var WriteStreamCallbackArgs : IWriteStreamCallbackArgs;
+declare var MapRegionType : IMapRegionType;
+declare var CameraMediaItemType : ICameraMediaItemType;
+declare var CropRectType : ICropRectType;
+declare var LocationResults : ILocationResults;
+declare var HeadingResponse : IHeadingResponse;
+declare var CloudStreamProgress : ICloudStreamProgress;
+declare var CloudPushNotificationsResponse : ICloudPushNotificationsResponse;
+declare var EncodeNumberDict : IEncodeNumberDict;
+declare var MusicLibraryResponseType : IMusicLibraryResponseType;
+declare var CloudEmailsResponse : ICloudEmailsResponse;
+declare var recurrenceEndDictionary : IRecurrenceEndDictionary;
+declare var GradientColorRef : IGradientColorRef;
+declare var Font : IFont;
+declare var CloudPhotoCollectionsPhotosResponse : ICloudPhotoCollectionsPhotosResponse;
+declare var CloudEventOccurrencesResponse : ICloudEventOccurrencesResponse;
+declare var CloudPlacesResponse : ICloudPlacesResponse;
+declare var DecodeStringDict : IDecodeStringDict;
+declare var CloudUsersResponse : ICloudUsersResponse;
+declare var textAreaSelectedParams : ITextAreaSelectedParams;
+declare var TableViewContentInsetOption : ITableViewContentInsetOption;
+declare var CloudCheckinsResponse : ICloudCheckinsResponse;
+declare var showContactsParams : IShowContactsParams;
+declare var CloudFriendRequestsResponse : ICloudFriendRequestsResponse;
+declare var CreateBufferArgs : ICreateBufferArgs;
+declare var CameraOptionsType : ICameraOptionsType;
+declare var HeadingData : IHeadingData;
+declare var CloudChatGroupsResponse : ICloudChatGroupsResponse;
+declare var FacebookDialogResponsev1 : IFacebookDialogResponsev1;
+declare var CloudPushNotificationConfig : ICloudPushNotificationConfig;
+declare var FacebookGraphResponsev1 : IFacebookGraphResponsev1;
+declare var CloudFilesResponse : ICloudFilesResponse;
+declare var CloudReviewsResponse : ICloudReviewsResponse;
+declare var ItemTemplate : IItemTemplate;
+declare var NotificationParams : INotificationParams;
+declare var EventsAuthorizationResponse : IEventsAuthorizationResponse;
+declare var PlayerQueue : IPlayerQueue;
+declare var openWindowParams : IOpenWindowParams;
+declare var CoverFlowImageType : ICoverFlowImageType;
+declare var CloudPhotosResponse : ICloudPhotosResponse;
+declare var PushNotificationConfig : IPushNotificationConfig;
+declare var MatrixCreationDict : IMatrixCreationDict;
+declare var ReadCallbackArgs : IReadCallbackArgs;
+declare var CloudACLsCheckResponse : ICloudACLsCheckResponse;
+declare var ViewTemplate : IViewTemplate;
+declare var MediaQueryType : IMediaQueryType;
+declare var WebAPIError : IWebAPIError;
+declare var Gradient : IGradient;
+declare var hideParams : IHideParams;
+declare var CloudObjectsResponse : ICloudObjectsResponse;
+declare var CloudPhotoCollectionsResponse : ICloudPhotoCollectionsResponse;
+declare var CloudUsersSecureResponse : ICloudUsersSecureResponse;
+declare var showStatusBarParams : IShowStatusBarParams;
+declare var CloudClientsResponse : ICloudClientsResponse;
+declare var AcceptDict : IAcceptDict;
+declare var CloudStatusesResponse : ICloudStatusesResponse;
+declare var Dictionary : IDictionary;
+declare var MapPointType : IMapPointType;
+declare var CloudKeyValuesResponse : ICloudKeyValuesResponse;
+declare var MediaQueryInfoType : IMediaQueryInfoType;
+declare var Dimension : IDimension;
+declare var CloudResponse : ICloudResponse;
+declare var GeocodedAddress : IGeocodedAddress;
+declare var PumpCallbackArgs : IPumpCallbackArgs;
+declare var ReverseGeocodeResponse : IReverseGeocodeResponse;
+declare var MusicLibraryOptionsType : IMusicLibraryOptionsType;
+declare var launchOptions : ILaunchOptions;
+declare var CloudPushNotificationErrorArg : ICloudPushNotificationErrorArg;
+declare var zoomScaleOption : IZoomScaleOption;
+declare var LocationCoordinates : ILocationCoordinates;
+declare var ActivityResult : IActivityResult;
+declare var Point : IPoint;
+declare var CloudUsersSecureDialog : ICloudUsersSecureDialog;
+declare var PhotoGalleryOptionsType : IPhotoGalleryOptionsType;
+declare var ThumbnailResponse : IThumbnailResponse;
+declare var CloudPushNotificationSuccessArg : ICloudPushNotificationSuccessArg;
+declare var YQLResponse : IYQLResponse;
+declare var ListViewAnimationProperties : IListViewAnimationProperties;
+declare var PreviewImageError : IPreviewImageError;
+declare var ErrorResponse : IErrorResponse;
+declare var showParams : IShowParams;
+declare var AcceptedCallbackArgs : IAcceptedCallbackArgs;
+declare var CreateStreamArgs : ICreateStreamArgs;
+declare var FailureResponse : IFailureResponse;
+declare var ForwardGeocodeResponse : IForwardGeocodeResponse;
+declare var TableViewEdgeInsets : ITableViewEdgeInsets;
+declare var PushNotificationData : IPushNotificationData;
+declare var MovieSize : IMovieSize;
+declare var ConnectedCallbackArgs : IConnectedCallbackArgs;
+declare var CloudMessagesResponse : ICloudMessagesResponse;
+declare var MapRouteType : IMapRouteType;
+declare var ImageAsCroppedDict : IImageAsCroppedDict;
+declare var daysOfTheWeekDictionary : IDaysOfTheWeekDictionary;
+declare var Modules : IModules;
+declare var PreviewImageOptions : IPreviewImageOptions;
+declare var PushNotificationSuccessArg : IPushNotificationSuccessArg;
+declare var ScreenshotResult : IScreenshotResult;
+declare var ErrorCallbackArgs : IErrorCallbackArgs;
+declare var DecodeNumberDict : IDecodeNumberDict;
+declare var contentOffsetOption : IContentOffsetOption;
+declare var TableViewAnimationProperties : ITableViewAnimationProperties;
+declare var ServiceIntentOptions : IServiceIntentOptions;
+declare var EncodeStringDict : IEncodeStringDict;
+declare var CloudFriendsResponse : ICloudFriendsResponse;
+declare var MediaScannerResponse : IMediaScannerResponse;
+declare var LocationProviderDict : ILocationProviderDict;
 declare function L (key : string, hint? : string) : string;
 declare function alert (message : string) : void;
-declare var Ti : Titanium;
+declare var Ti : ITitanium;
 

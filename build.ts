@@ -14,7 +14,7 @@ import _s = module("underscore.string");
 
 var excludeGlobalTypes = [
     "clearInterval", "clearTimeout", "decodeURIComponent", "encodeURIComponent",
-    "require", "setInterval", "setTimeout"
+    "require", "setInterval", "setTimeout", "JSON", "String", "console"
 ];
 
 var info = _.template("/*\n" +
@@ -114,7 +114,9 @@ class Type {
         var props = this.renderProperties();
         var funcs = this.renderFunctions();
         _.each(this.subtypes, (type : Type, name : string) => {
-            vars += "declare var " + name + " : " + type.staticTypename + ";\n"
+            if (!_.contains(excludeGlobalTypes, name)) {
+                vars += "declare var " + name + " : " + type.staticTypename + ";\n"
+            }
             defs += type.renderInterface();
         });
         return defs + vars + props + funcs;
@@ -125,7 +127,7 @@ class Type {
         var str = _.reduce(context, (prefix : string, current : string) => {
             return prefix + _s.capitalize(current);
         }, "");
-        return str;
+        return "I" + str;
     }
 
     public static convertTypename (type : string) : string {
@@ -256,7 +258,7 @@ class Type {
             defs += "    " + name + " : " + type.staticTypename + ";\n";
         });
         var inner = defs + this.renderInterfaceProperties() + this.renderInterfaceFunctions();
-        return ifaces + "declare interface " + this.staticTypename + " {\n" + inner + "}\n";
+        return ifaces + "interface " + this.staticTypename + " {\n" + inner + "}\n";
     }
 
     private renderProperties () : string {
