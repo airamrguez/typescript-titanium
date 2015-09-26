@@ -7,6 +7,14 @@ This repository contains ambient declarations files of
 ([Appcelerator](http://www.appcelerator.com/)) for
 [TypeScript](http://www.typescriptlang.org/).
 
+- Updated to Support TypeScript 1.6.2
+
+To Build
+--------
+```
+tsc build.ts --module commonjs
+```
+
 Current Version
 ---------
 
