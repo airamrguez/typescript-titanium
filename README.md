@@ -10,7 +10,7 @@ This repository contains ambient declarations files of
 Current Version
 ---------
 
-**Titanium Mobile - 3.1.1.GA**
+**Titanium Mobile - 5.0.0.GA**
 
 Creating Your Own Ambient Declaration File
 ------------------------------------------
