@@ -1,7 +1,7 @@
 /*
-   Typescript Titanium - info-text
+   Typescript Titanium - Alloy 1.7.8
    Typescipt-Titanium may be freely distributed under the MIT license.
-   This source code was auto-generated (Sat Sep 26 2015 13:54:58 GMT-0400 (EDT)}}).
+   This source code was auto-generated (Sat Sep 26 2015 20:52:34 GMT-0400 (EDT)}}).
    More information at https://github.com/alvivi/typescript-titanium.
  */
 interface IAlloyControllerUI {

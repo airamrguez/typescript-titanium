@@ -19,6 +19,7 @@ Current Version
 ---------
 
 **Titanium Mobile - 5.0.0.GA**
+
 **Alloy - 1.7.8**
 
 Creating Your Own Ambient Declaration File
