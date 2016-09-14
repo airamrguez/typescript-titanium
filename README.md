@@ -18,7 +18,7 @@ tsc build.ts --module commonjs
 Current Version
 ---------
 
-**Titanium Mobile - 5.4.0.GA**
+**Titanium Mobile - 5.5.0.GA**
 
 **Alloy - 1.7.8**
 
