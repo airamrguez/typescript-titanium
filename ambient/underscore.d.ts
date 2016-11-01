@@ -29,7 +29,7 @@
 }
 
  interface UnderscorePredicate {
-    (value : any) : bool;
+    (value : any) :boolean;
 }
 
  interface UnderscoreIterator {
@@ -129,7 +129,7 @@
 
     compact () : UnderscoreWrappedObject;
 
-    flatten (shallow? : bool) : UnderscoreWrappedObject;
+    flatten (shallow? :boolean) : UnderscoreWrappedObject;
 
     without (...values : any[]) : UnderscoreWrappedObject;
 
@@ -139,14 +139,14 @@
 
     difference (...arrays : any[][]) : UnderscoreWrappedObject;
 
-    uniq (isSorted? : bool, UnderscoreIterator? : UnderscoreIterator) : UnderscoreWrappedObject;
-    unique (isSorted? : bool, UnderscoreIterator? : UnderscoreIterator) : UnderscoreWrappedObject;
+    uniq (isSorted? :boolean, UnderscoreIterator? : UnderscoreIterator) : UnderscoreWrappedObject;
+    unique (isSorted? :boolean, UnderscoreIterator? : UnderscoreIterator) : UnderscoreWrappedObject;
 
     zip (...arrays : any[][]) : UnderscoreWrappedObject;
 
     object (value? : any) : UnderscoreWrappedObject;
 
-    indexOf (value : any, isSorted? : bool) : UnderscoreWrappedObject;
+    indexOf (value : any, isSorted? :boolean) : UnderscoreWrappedObject;
 
     lastIndexOf (value : any, fromIndex? : number) : UnderscoreWrappedObject;
 
@@ -164,7 +164,7 @@
 
     throttle (wait : number) : UnderscoreWrappedObject;
 
-    debounce (wait : number, immediate? : bool) : UnderscoreWrappedObject;
+    debounce (wait : number, immediate? :boolean) : UnderscoreWrappedObject;
 
     once () : UnderscoreWrappedObject;
 
@@ -290,8 +290,8 @@
     any (predicate? : UnderscorePredicate, context? : any) : any;
     some (predicate? : UnderscorePredicate, context? : any) : any;
 
-    contains (value : any) : bool;
-    include (value : any) : bool;
+    contains (value : any) :boolean;
+    include (value : any) :boolean;
 
     invoke (methodName : string, ...arguments: any[]) : any;
 
@@ -332,7 +332,7 @@
 
     compact () : any[];
 
-    flatten (shallow? : bool) : any[];
+    flatten (shallow? :boolean) : any[];
 
     without (...values : any[]) : any[];
 
@@ -342,14 +342,14 @@
 
     difference (...arrays : any[][]) : any[];
 
-    uniq (isSorted? : bool, UnderscoreIterator? : UnderscoreIterator) : any[];
-    unique (isSorted? : bool, UnderscoreIterator? : UnderscoreIterator) : any[];
+    uniq (isSorted? :boolean, UnderscoreIterator? : UnderscoreIterator) : any[];
+    unique (isSorted? :boolean, UnderscoreIterator? : UnderscoreIterator) : any[];
 
     zip (...arrays : any[][]) : any[];
 
     object (value? : any) : any;
 
-    indexOf (value : any, isSorted? : bool) : number;
+    indexOf (value : any, isSorted? :boolean) : number;
 
     lastIndexOf (value : any, fromIndex? : number) : number;
 
@@ -367,7 +367,7 @@
 
     throttle (wait : number) : (...args : any[]) => any;
 
-    debounce (wait : number, immediate? : bool) : (...args : any[]) => any;
+    debounce (wait : number, immediate? :boolean) : (...args : any[]) => any;
 
     once () : (...args : any[]) => any;
 
@@ -402,39 +402,39 @@
 
     tap (interceptor : (...as : any[]) => any) : any;
 
-    has (key : any) : bool;
+    has (key : any) :boolean;
 
-    isEqual (other : any) : bool;
+    isEqual (other : any) :boolean;
 
-    isEmpty () : bool;
+    isEmpty () :boolean;
 
-    isElement () : bool;
+    isElement () :boolean;
 
-    isArray () : bool;
+    isArray () :boolean;
 
-    isObject () : bool;
+    isObject () :boolean;
 
-    isArguments () : bool;
+    isArguments () :boolean;
 
-    isFunction () : bool;
+    isFunction () :boolean;
 
-    isString () : bool;
+    isString () :boolean;
 
-    isNumber () : bool;
+    isNumber () :boolean;
 
-    isFinite () : bool;
+    isFinite () :boolean;
 
-    isBoolean () : bool;
+    isBoolean () :boolean;
 
-    isDate () : bool;
+    isDate () :boolean;
 
-    isRegExp () : bool;
+    isRegExp () :boolean;
 
-    isNaN () : bool;
+    isNaN () :boolean;
 
-    isNull () : bool;
+    isNull () :boolean;
 
-    isUndefined () : bool;
+    isUndefined () :boolean;
 
 
     // Utility Functions
@@ -494,8 +494,8 @@ declare module "underscore" {
     export function any (list : any, predicate? : UnderscorePredicate, context? : any) : any;
     export function some (list : any, predicate? : UnderscorePredicate, context? : any) : any;
 
-    export function contains (list : any, value : any) : bool;
-    export function include (list : any, value : any) : bool;
+    export function contains (list : any, value : any) :boolean;
+    export function include (list : any, value : any) :boolean;
 
     export function invoke (list : any, methodName : string, ...arguments: any[]) : any;
 
@@ -536,7 +536,7 @@ declare module "underscore" {
 
     export function compact (array : any[]) : any[];
 
-    export function flatten (array : any[], shallow? : bool) : any[];
+    export function flatten (array : any[], shallow? :boolean) : any[];
 
     export function without (array : any[], ...values : any[]) : any[];
 
@@ -546,14 +546,14 @@ declare module "underscore" {
 
     export function difference (...arrays : any[][]) : any[];
 
-    export function uniq (array : any[], isSorted? : bool, UnderscoreIterator? : UnderscoreIterator) : any[];
-    export function unique (array : any[], isSorted? : bool, UnderscoreIterator? : UnderscoreIterator) : any[];
+    export function uniq (array : any[], isSorted? :boolean, UnderscoreIterator? : UnderscoreIterator) : any[];
+    export function unique (array : any[], isSorted? :boolean, UnderscoreIterator? : UnderscoreIterator) : any[];
 
     export function zip (...arrays : any[][]) : any[];
 
     export function object (list : any, value? : any) : any;
 
-    export function indexOf (array : any[], value : any, isSorted? : bool) : number;
+    export function indexOf (array : any[], value : any, isSorted? :boolean) : number;
 
     export function lastIndexOf (array : any[], value : any, fromIndex? : number) : number;
 
@@ -577,7 +577,7 @@ declare module "underscore" {
 
     export function throttle (fn : (...args : any[]) => any, wait : number) : (...args : any[]) => any;
 
-    export function debounce (fn : (...args : any[]) => any, wait : number, immediate? : bool) : (...args : any[]) => any;
+    export function debounce (fn : (...args : any[]) => any, wait : number, immediate? :boolean) : (...args : any[]) => any;
 
     export function once (fn : (...args : any[]) => any) : (...args : any[]) => any;
 
@@ -613,39 +613,39 @@ declare module "underscore" {
 
     export function tap (object : any, interceptor : (...as : any[]) => any) : any;
 
-    export function has (object : any, key : any) : bool;
+    export function has (object : any, key : any) :boolean;
 
-    export function isEqual (object : any, other : any) : bool;
+    export function isEqual (object : any, other : any) :boolean;
 
-    export function isEmpty (object : any) : bool;
+    export function isEmpty (object : any) :boolean;
 
-    export function isElement (object : any) : bool;
+    export function isElement (object : any) :boolean;
 
-    export function isArray (object : any) : bool;
+    export function isArray (object : any) :boolean;
 
-    export function isObject (value : any) : bool;
+    export function isObject (value : any) :boolean;
 
-    export function isArguments (object : any) : bool;
+    export function isArguments (object : any) :boolean;
 
-    export function isFunction (object : any) : bool;
+    export function isFunction (object : any) :boolean;
 
-    export function isString (object : any) : bool;
+    export function isString (object : any) :boolean;
 
-    export function isNumber (object : any) : bool;
+    export function isNumber (object : any) :boolean;
 
-    export function isFinite (object : any) : bool;
+    export function isFinite (object : any) :boolean;
 
-    export function isBoolean (object : any) : bool;
+    export function isBoolean (object : any) :boolean;
 
-    export function isDate (object : any) : bool;
+    export function isDate (object : any) :boolean;
 
-    export function isRegExp (object : any) : bool;
+    export function isRegExp (object : any) :boolean;
 
-    export function isNaN (object : any) : bool;
+    export function isNaN (object : any) :boolean;
 
-    export function isNull (object : any) : bool;
+    export function isNull (object : any) :boolean;
 
-    export function isUndefined (object : any) : bool;
+    export function isUndefined (object : any) :boolean;
 
 
     // Utility Functions

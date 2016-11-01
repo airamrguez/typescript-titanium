@@ -7,10 +7,20 @@ This repository contains ambient declarations files of
 ([Appcelerator](http://www.appcelerator.com/)) for
 [TypeScript](http://www.typescriptlang.org/).
 
+- Updated to Support TypeScript 1.6.2
+
+To Build
+--------
+```
+tsc build.ts --module commonjs
+```
+
 Current Version
 ---------
 
-**Titanium Mobile - 3.1.1.GA**
+**Titanium Mobile - 5.5.0.GA**
+
+**Alloy - 1.7.8**
 
 Creating Your Own Ambient Declaration File
 ------------------------------------------

@@ -1,7 +1,7 @@
 /*
-   Typescript Titanium - 5.5.0.GA
+   Typescript Titanium - 5.4.0.GA
    Typescipt-Titanium may be freely distributed under the MIT license.
-   This source code was auto-generated (Wed Sep 14 2016 07:13:48 GMT-0400 (EDT)}}).
+   This source code was auto-generated (Thu Aug 11 2016 08:09:03 GMT-0400 (EDT)}}).
    More information at https://github.com/alvivi/typescript-titanium.
  */
 interface ITitaniumProxy {
@@ -1562,14 +1562,9 @@ interface ITitaniumUIClipboard {
     getData (type : string) : any;
     getText () : string;
     hasData (type : string) : boolean;
-    hasText () : boolean;
-    hasURLs () : boolean;
-    hasImages () : boolean;
-    hasColors () : boolean;
+    hasText () : any;
     setData (type : string, data : any) : IVoid;
     setText (text : string) : IVoid;
-    setItems (items : IClipboardItemsType) : IVoid;
-    getItems () : any[];
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
@@ -4194,7 +4189,6 @@ interface ITitaniumUIScrollView {
     maxZoomScale : number;
     minZoomScale : number;
     overScrollMode : number;
-    refreshControl : ITitaniumUIRefreshControl;
     scrollsToTop : boolean;
     scrollIndicatorStyle : number;
     scrollType : string;
@@ -4352,8 +4346,6 @@ interface ITitaniumUIScrollView {
     setMinZoomScale (minZoomScale : number) : IVoid;
     getOverScrollMode () : number;
     setOverScrollMode (overScrollMode : number) : IVoid;
-    getRefreshControl () : ITitaniumUIRefreshControl;
-    setRefreshControl (refreshControl : ITitaniumUIRefreshControl) : IVoid;
     getScrollsToTop () : boolean;
     setScrollsToTop (scrollsToTop : boolean) : IVoid;
     getScrollIndicatorStyle () : number;
@@ -5834,7 +5826,7 @@ interface ITitaniumUITableView {
     keepScreenOn : boolean;
     allowsSelection : boolean;
     allowsSelectionDuringEditing : boolean;
-    data : any[];
+    data : any;
     editable : boolean;
     editing : boolean;
     filterAttribute : string;
@@ -5903,7 +5895,7 @@ interface ITitaniumUITableView {
     setContentInsets (edgeInsets : ITableViewEdgeInsets, animated? : ITableViewContentInsetOption) : IVoid;
     setContentOffset (contentOffset : any) : IVoid;
     selectRow (row : number) : IVoid;
-    setData (data : any[]) : IVoid;
+    setData (data : any) : IVoid;
     setHeaderPullView (headerPullView : ITitaniumUIView) : IVoid;
     updateRow (index : number, row : ITitaniumUITableViewRow, animation : ITableViewAnimationProperties) : IVoid;
     updateSection (index : number, section : ITitaniumUITableViewSection, animation : ITableViewAnimationProperties) : IVoid;
@@ -6016,7 +6008,7 @@ interface ITitaniumUITableView {
     setAllowsSelection (allowsSelection : boolean) : IVoid;
     getAllowsSelectionDuringEditing () : boolean;
     setAllowsSelectionDuringEditing (allowsSelectionDuringEditing : boolean) : IVoid;
-    getData () : any[];
+    getData () : any;
     getEditable () : boolean;
     setEditable (editable : boolean) : IVoid;
     getEditing () : boolean;
@@ -10024,8 +10016,6 @@ interface ITitaniumUIIOS {
     BLUR_EFFECT_STYLE_EXTRA_LIGHT : number;
     BLUR_EFFECT_STYLE_LIGHT : number;
     BLUR_EFFECT_STYLE_DARK : number;
-    BLUR_EFFECT_STYLE_REGULAR : number;
-    BLUR_EFFECT_STYLE_PROMINENT : number;
     AD_SIZE_PORTRAIT : string;
     AD_SIZE_LANDSCAPE : string;
     CLIP_MODE_DEFAULT : number;
@@ -11247,8 +11237,6 @@ interface ITitaniumUI {
     LIST_ITEM_TEMPLATE_SUBTITLE : number;
     NOTIFICATION_DURATION_LONG : number;
     NOTIFICATION_DURATION_SHORT : number;
-    CLIPBOARD_OPTION_LOCAL_ONLY : string;
-    CLIPBOARD_OPTION_EXPIRATION_DATE : string;
     PICKER_TYPE_COUNT_DOWN_TIMER : number;
     PICKER_TYPE_DATE : number;
     PICKER_TYPE_DATE_AND_TIME : number;
@@ -12387,22 +12375,6 @@ interface ITitaniumAppIOSLocalNotification {
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
 }
-interface ITitaniumAppIOSSearchQuery {
-    bubbleParent : boolean;
-    apiName : string;
-    queryString : string;
-    attributes : any[];
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    start () : IVoid;
-    cancel () : IVoid;
-    isCancelled () : boolean;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
 interface ITitaniumAppIOSSearchableIndex {
     bubbleParent : boolean;
     apiName : string;
@@ -12533,10 +12505,6 @@ interface ITitaniumAppIOSSearchableItemAttributeSet {
     local : number;
     contentRating : number;
     url : string;
-    fullyFormattedAddress : string;
-    subThoroughfare : string;
-    thoroughfare : string;
-    postalCode : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -12722,14 +12690,6 @@ interface ITitaniumAppIOSSearchableItemAttributeSet {
     setContentRating (contentRating : number) : IVoid;
     getUrl () : string;
     setUrl (url : string) : IVoid;
-    getFullyFormattedAddress () : string;
-    setFullyFormattedAddress (fullyFormattedAddress : string) : IVoid;
-    getSubThoroughfare () : string;
-    setSubThoroughfare (subThoroughfare : string) : IVoid;
-    getThoroughfare () : string;
-    setThoroughfare (thoroughfare : string) : IVoid;
-    getPostalCode () : string;
-    setPostalCode (postalCode : string) : IVoid;
 }
 interface ITitaniumAppIOSUserActivity {
     bubbleParent : boolean;
@@ -12836,7 +12796,6 @@ interface ITitaniumAppIOSUserNotificationCategory {
 interface ITitaniumAppIOS {
     BackgroundService : ITitaniumAppIOSBackgroundService;
     LocalNotification : ITitaniumAppIOSLocalNotification;
-    SearchQuery : ITitaniumAppIOSSearchQuery;
     SearchableIndex : ITitaniumAppIOSSearchableIndex;
     SearchableItem : ITitaniumAppIOSSearchableItem;
     SearchableItemAttributeSet : ITitaniumAppIOSSearchableItemAttributeSet;
@@ -12907,7 +12866,6 @@ interface ITitaniumAppIOS {
     setMinimumBackgroundFetchInterval (fetchInterval : number) : IVoid;
     endBackgroundHandler (handlerID : string) : IVoid;
     sendWatchExtensionReply (handlerId : string, userInfo : any) : IVoid;
-    createSearchQuery (parameters? : ITitaniumAppIOSSearchQuery) : ITitaniumAppIOSSearchQuery;
     createSearchableIndex (parameters? : ITitaniumAppIOSSearchableIndex) : ITitaniumAppIOSSearchableIndex;
     createSearchableItem (parameters? : ITitaniumAppIOSSearchableItem) : ITitaniumAppIOSSearchableItem;
     createSearchableItemAttributeSet (parameters? : ITitaniumAppIOSSearchableItemAttributeSet) : ITitaniumAppIOSSearchableItemAttributeSet;
@@ -15258,8 +15216,6 @@ interface ITitaniumMedia {
     takeScreenshot (callback : (...args : any[]) => any) : IVoid;
     vibrate (pattern? : any[]) : IVoid;
     requestAuthorization (callback : (...args : any[]) => any) : IVoid;
-    hasAudioPermissions () : boolean;
-    requestAudioPermissions (callback : (...args : any[]) => any) : IVoid;
     createAudioPlayer (parameters? : ITitaniumMediaAudioPlayer) : ITitaniumMediaAudioPlayer;
     createAudioRecorder (parameters? : ITitaniumMediaAudioRecorder) : ITitaniumMediaAudioRecorder;
     getBubbleParent () : boolean;
@@ -15836,8 +15792,6 @@ interface ITitaniumWatchSession {
     ACTIVATION_STATE_NOT_ACTIVATED : number;
     ACTIVATION_STATE_INACTIVE : number;
     ACTIVATION_STATE_ACTIVATED : number;
-    hasContentPending : boolean;
-    remainingComplicationUserInfoTransfers : number;
     isSupported : boolean;
     isPaired : boolean;
     isWatchAppInstalled : boolean;
@@ -15862,8 +15816,6 @@ interface ITitaniumWatchSession {
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
     getActivationState () : number;
-    getHasContentPending () : boolean;
-    getRemainingComplicationUserInfoTransfers () : number;
     getIsSupported () : boolean;
     getIsPaired () : boolean;
     getIsWatchAppInstalled () : boolean;
@@ -17838,10 +17790,6 @@ interface INotificationParams {
     userInfo : any;
     region : any;
 }
-interface ILaunchOptionsType {
-    source : string;
-    url : string;
-}
 interface IUserNotificationSettings {
     types : any[];
     categories : any[];
@@ -18290,10 +18238,6 @@ interface IAttribute {
     value : number;
     range : any[];
 }
-interface IClipboardItemsType {
-    items : any[];
-    options : any;
-}
 interface IFont {
     fontFamily : string;
     fontSize : number;
@@ -18579,7 +18523,6 @@ declare var RequestPermissionAccessResult : IRequestPermissionAccessResult;
 declare var CalendarPermissionResponse : ICalendarPermissionResponse;
 declare var launchOptions : ILaunchOptions;
 declare var NotificationParams : INotificationParams;
-declare var LaunchOptionsType : ILaunchOptionsType;
 declare var UserNotificationSettings : IUserNotificationSettings;
 declare var ImageAsCroppedDict : IImageAsCroppedDict;
 declare var EventsAuthorizationResponse : IEventsAuthorizationResponse;
@@ -18650,7 +18593,6 @@ declare var PumpCallbackArgs : IPumpCallbackArgs;
 declare var CreateBufferArgs : ICreateBufferArgs;
 declare var MatrixCreationDict : IMatrixCreationDict;
 declare var Attribute : IAttribute;
-declare var ClipboardItemsType : IClipboardItemsType;
 declare var Font : IFont;
 declare var ItemTemplate : IItemTemplate;
 declare var ViewTemplate : IViewTemplate;

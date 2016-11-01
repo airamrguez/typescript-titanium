@@ -8,9 +8,9 @@
 /// <reference path="ambient/underscore.string.d.ts" />
 /// <reference path="ambient/node.d.ts" />
 
-import fs = module("fs");
-import  _ = module("underscore");
-import _s = module("underscore.string");
+import fs = require("fs");
+import  _ = require("underscore");
+import _s = require("underscore.string");
 
 var excludeGlobalTypes = [
     "clearInterval", "clearTimeout", "decodeURIComponent", "encodeURIComponent",
@@ -47,7 +47,7 @@ interface JSCAFunction {
 
 interface JSCAType {
     name        : string;
-    isInternal? : bool;
+    isInternal? :boolean;
     properties? : JSCAProperty[];
     functions?  : JSCAFunction[];
 }
@@ -167,7 +167,7 @@ class Type {
         }
     }
 
-    private static computeParameter (param : JSCAParameter, optional? : bool) {
+    private static computeParameter (param : JSCAParameter, optional? : boolean) {
         var required = "";
         var vararg = "";
         var varargext = "";

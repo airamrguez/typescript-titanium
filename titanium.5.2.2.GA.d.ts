@@ -1,7 +1,7 @@
 /*
-   Typescript Titanium - 5.5.0.GA
+   Typescript Titanium - 5.2.2.GA
    Typescipt-Titanium may be freely distributed under the MIT license.
-   This source code was auto-generated (Wed Sep 14 2016 07:13:48 GMT-0400 (EDT)}}).
+   This source code was auto-generated (Fri Apr 08 2016 22:01:17 GMT-0400 (EDT)}}).
    More information at https://github.com/alvivi/typescript-titanium.
  */
 interface ITitaniumProxy {
@@ -433,7 +433,6 @@ interface ITitaniumUIAlertDialog {
     keyboardType : number;
     keyboardAppearance : number;
     loginPlaceholder : string;
-    loginHintText : string;
     loginReturnKeyType : number;
     loginKeyboardType : number;
     message : string;
@@ -441,11 +440,9 @@ interface ITitaniumUIAlertDialog {
     ok : string;
     okid : string;
     passwordPlaceholder : string;
-    passwordHintText : string;
     passwordReturnKeyType : number;
     passwordKeyboardType : number;
     placeholder : string;
-    hintText : string;
     persistent : boolean;
     returnKeyType : number;
     style : number;
@@ -491,8 +488,6 @@ interface ITitaniumUIAlertDialog {
     setKeyboardAppearance (keyboardAppearance : number) : IVoid;
     getLoginPlaceholder () : string;
     setLoginPlaceholder (loginPlaceholder : string) : IVoid;
-    getLoginHintText () : string;
-    setLoginHintText (loginHintText : string) : IVoid;
     getLoginReturnKeyType () : number;
     setLoginReturnKeyType (loginReturnKeyType : number) : IVoid;
     getLoginKeyboardType () : number;
@@ -503,16 +498,12 @@ interface ITitaniumUIAlertDialog {
     setOk (ok : string) : IVoid;
     getPasswordPlaceholder () : string;
     setPasswordPlaceholder (passwordPlaceholder : string) : IVoid;
-    getPasswordHintText () : string;
-    setPasswordHintText (passwordHintText : string) : IVoid;
     getPasswordReturnKeyType () : number;
     setPasswordReturnKeyType (passwordReturnKeyType : number) : IVoid;
     getPasswordKeyboardType () : number;
     setPasswordKeyboardType (passwordKeyboardType : number) : IVoid;
     getPlaceholder () : string;
     setPlaceholder (placeholder : string) : IVoid;
-    getHintText () : string;
-    setHintText (hintText : string) : IVoid;
     getPersistent () : boolean;
     setPersistent (persistent : boolean) : IVoid;
     getReturnKeyType () : number;
@@ -971,33 +962,6 @@ interface ITitaniumUIAndroid {
     bubbleParent : boolean;
     apiName : string;
     lifecycleContainer : ITitaniumUIWindow;
-    GRAVITY_AXIS_CLIP : number;
-    GRAVITY_AXIS_PULL_AFTER : number;
-    GRAVITY_AXIS_PULL_BEFORE : number;
-    GRAVITY_AXIS_SPECIFIED : number;
-    GRAVITY_AXIS_X_SHIFT : number;
-    GRAVITY_AXIS_Y_SHIFT : number;
-    GRAVITY_BOTTOM : number;
-    GRAVITY_CENTER : number;
-    GRAVITY_CENTER_HORIZONTAL : number;
-    GRAVITY_CENTER_VERTICAL : number;
-    GRAVITY_CLIP_HORIZONTAL : number;
-    GRAVITY_CLIP_VERTICAL : number;
-    GRAVITY_DISPLAY_CLIP_HORIZONTAL : number;
-    GRAVITY_DISPLAY_CLIP_VERTICAL : number;
-    GRAVITY_END : number;
-    GRAVITY_FILL : number;
-    GRAVITY_FILL_HORIZONTAL : number;
-    GRAVITY_FILL_VERTICAL : number;
-    GRAVITY_HORIZONTAL_GRAVITY_MASK : number;
-    GRAVITY_LEFT : number;
-    GRAVITY_NO_GRAVITY : number;
-    GRAVITY_RELATIVE_HORIZONTAL_GRAVITY_MASK : number;
-    GRAVITY_RELATIVE_LAYOUT_DIRECTION : number;
-    GRAVITY_RIGHT : number;
-    GRAVITY_START : number;
-    GRAVITY_TOP : number;
-    GRAVITY_VERTICAL_GRAVITY_MASK : number;
     LINKIFY_ALL : number;
     LINKIFY_EMAIL_ADDRESSES : number;
     LINKIFY_MAP_ADDRESSES : number;
@@ -1562,14 +1526,9 @@ interface ITitaniumUIClipboard {
     getData (type : string) : any;
     getText () : string;
     hasData (type : string) : boolean;
-    hasText () : boolean;
-    hasURLs () : boolean;
-    hasImages () : boolean;
-    hasColors () : boolean;
+    hasText () : any;
     setData (type : string, data : any) : IVoid;
     setText (text : string) : IVoid;
-    setItems (items : IClipboardItemsType) : IVoid;
-    getItems () : any[];
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
@@ -2265,7 +2224,6 @@ interface ITitaniumUILabel {
     html : string;
     includeFontPadding : boolean;
     lines : number;
-    lineSpacing : any;
     maxLines : number;
     minimumFontSize : number;
     shadowColor : string;
@@ -2428,8 +2386,6 @@ interface ITitaniumUILabel {
     setIncludeFontPadding (includeFontPadding : boolean) : IVoid;
     getLines () : number;
     setLines (lines : number) : IVoid;
-    getLineSpacing () : any;
-    setLineSpacing (lineSpacing : any) : IVoid;
     getMaxLines () : number;
     setMaxLines (maxLines : number) : IVoid;
     getMinimumFontSize () : number;
@@ -2567,9 +2523,7 @@ interface ITitaniumUIListView {
     keepScreenOn : boolean;
     allowsSelection : boolean;
     canScroll : boolean;
-    disableBounce : boolean;
     editing : boolean;
-    allowsSelectionDuringEditing : boolean;
     lazyLoadingEnabled : boolean;
     pruneSectionsOnEdit : boolean;
     templates : any;
@@ -2598,7 +2552,6 @@ interface ITitaniumUIListView {
     separatorStyle : number;
     style : number;
     tableSeparatorInsets : any;
-    listSeparatorInsets : any;
     rowSeparatorInsets : any;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
@@ -2737,12 +2690,8 @@ interface ITitaniumUIListView {
     setAllowsSelection (allowsSelection : boolean) : IVoid;
     getCanScroll () : boolean;
     setCanScroll (canScroll : boolean) : IVoid;
-    getDisableBounce () : boolean;
-    setDisableBounce (disableBounce : boolean) : IVoid;
     getEditing () : boolean;
     setEditing (editing : boolean) : IVoid;
-    getAllowsSelectionDuringEditing () : boolean;
-    setAllowsSelectionDuringEditing (allowsSelectionDuringEditing : boolean) : IVoid;
     getLazyLoadingEnabled () : boolean;
     setLazyLoadingEnabled (lazyLoadingEnabled : boolean) : IVoid;
     getPruneSectionsOnEdit () : boolean;
@@ -2798,8 +2747,6 @@ interface ITitaniumUIListView {
     setStyle (style : number) : IVoid;
     getTableSeparatorInsets () : any;
     setTableSeparatorInsets (tableSeparatorInsets : any) : IVoid;
-    getListSeparatorInsets () : any;
-    setListSeparatorInsets (listSeparatorInsets : any) : IVoid;
     getRowSeparatorInsets () : any;
     setRowSeparatorInsets (rowSeparatorInsets : any) : IVoid;
 }
@@ -3119,7 +3066,6 @@ interface ITitaniumUINotification {
     keepScreenOn : boolean;
     message : string;
     duration : number;
-    gravity : number;
     xOffset : number;
     yOffset : number;
     horizontalMargin : number;
@@ -3233,8 +3179,6 @@ interface ITitaniumUINotification {
     setMessage (message : string) : IVoid;
     getDuration () : number;
     setDuration (duration : number) : IVoid;
-    getGravity () : number;
-    setGravity (gravity : number) : IVoid;
     getXOffset () : number;
     setXOffset (xOffset : number) : IVoid;
     getYOffset () : number;
@@ -3250,7 +3194,6 @@ interface ITitaniumUIOptionDialog {
     lifecycleContainer : ITitaniumUIWindow;
     elevation : number;
     previewContext : ITitaniumUIView;
-    tintColor : string;
     translationX : number;
     translationY : number;
     translationZ : number;
@@ -3285,8 +3228,6 @@ interface ITitaniumUIOptionDialog {
     setElevation (elevation : number) : IVoid;
     getPreviewContext () : ITitaniumUIView;
     setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
-    getTintColor () : string;
-    setTintColor (tintColor : string) : IVoid;
     getTranslationX () : number;
     setTranslationX (translationX : number) : IVoid;
     getTranslationY () : number;
@@ -3370,7 +3311,6 @@ interface ITitaniumUIPicker {
     selectionOpens : boolean;
     type : number;
     useSpinner : boolean;
-    nativeSpinner : boolean;
     value : Date;
     visibleItems : number;
     calendarViewShown : boolean;
@@ -3497,8 +3437,6 @@ interface ITitaniumUIPicker {
     setType (type : number) : IVoid;
     getUseSpinner () : boolean;
     setUseSpinner (useSpinner : boolean) : IVoid;
-    getNativeSpinner () : boolean;
-    setNativeSpinner (nativeSpinner : boolean) : IVoid;
     getValue () : Date;
     getVisibleItems () : number;
     setVisibleItems (visibleItems : number) : IVoid;
@@ -4194,7 +4132,6 @@ interface ITitaniumUIScrollView {
     maxZoomScale : number;
     minZoomScale : number;
     overScrollMode : number;
-    refreshControl : ITitaniumUIRefreshControl;
     scrollsToTop : boolean;
     scrollIndicatorStyle : number;
     scrollType : string;
@@ -4352,8 +4289,6 @@ interface ITitaniumUIScrollView {
     setMinZoomScale (minZoomScale : number) : IVoid;
     getOverScrollMode () : number;
     setOverScrollMode (overScrollMode : number) : IVoid;
-    getRefreshControl () : ITitaniumUIRefreshControl;
-    setRefreshControl (refreshControl : ITitaniumUIRefreshControl) : IVoid;
     getScrollsToTop () : boolean;
     setScrollsToTop (scrollsToTop : boolean) : IVoid;
     getScrollIndicatorStyle () : number;
@@ -4430,12 +4365,10 @@ interface ITitaniumUIScrollableView {
     keepScreenOn : boolean;
     cacheSize : number;
     currentPage : number;
-    currentPageIndicatorColor : string;
     disableBounce : boolean;
     overScrollMode : number;
     pagingControlColor : string;
     pagingControlHeight : number;
-    pageIndicatorColor : string;
     showPagingControl : boolean;
     pagingControlTimeout : number;
     pagingControlAlpha : number;
@@ -4462,7 +4395,6 @@ interface ITitaniumUIScrollableView {
     toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
     updateLayout (params : any) : IVoid;
     convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
-    insertViewsAt (position : number, views : any[]) : IVoid;
     addView (view : ITitaniumUIView) : IVoid;
     moveNext () : IVoid;
     movePrevious () : IVoid;
@@ -4581,8 +4513,6 @@ interface ITitaniumUIScrollableView {
     setCacheSize (cacheSize : number) : IVoid;
     getCurrentPage () : number;
     setCurrentPage (currentPage : number) : IVoid;
-    getCurrentPageIndicatorColor () : string;
-    setCurrentPageIndicatorColor (currentPageIndicatorColor : string) : IVoid;
     getDisableBounce () : boolean;
     setDisableBounce (disableBounce : boolean) : IVoid;
     getOverScrollMode () : number;
@@ -4591,8 +4521,6 @@ interface ITitaniumUIScrollableView {
     setPagingControlColor (pagingControlColor : string) : IVoid;
     getPagingControlHeight () : number;
     setPagingControlHeight (pagingControlHeight : number) : IVoid;
-    getPageIndicatorColor () : string;
-    setPageIndicatorColor (pageIndicatorColor : string) : IVoid;
     getShowPagingControl () : boolean;
     setShowPagingControl (showPagingControl : boolean) : IVoid;
     getPagingControlTimeout () : number;
@@ -4673,7 +4601,6 @@ interface ITitaniumUISearchBar {
     autocapitalization : number;
     autocorrect : boolean;
     barColor : string;
-    cancelButtonTitle : string;
     hintText : string;
     hinttextid : string;
     keyboardType : number;
@@ -4682,7 +4609,6 @@ interface ITitaniumUISearchBar {
     promptid : string;
     showBookmark : boolean;
     showCancel : boolean;
-    style : number;
     value : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
@@ -4817,8 +4743,6 @@ interface ITitaniumUISearchBar {
     setAutocorrect (autocorrect : boolean) : IVoid;
     getBarColor () : string;
     setBarColor (barColor : string) : IVoid;
-    getCancelButtonTitle () : string;
-    setCancelButtonTitle (cancelButtonTitle : string) : IVoid;
     getHintText () : string;
     setHintText (hintText : string) : IVoid;
     getHinttextid () : string;
@@ -4834,8 +4758,6 @@ interface ITitaniumUISearchBar {
     getShowBookmark () : boolean;
     setShowBookmark (showBookmark : boolean) : IVoid;
     getShowCancel () : boolean;
-    getStyle () : number;
-    setStyle (style : number) : IVoid;
     getValue () : string;
     setValue (value : string) : IVoid;
 }
@@ -5468,6 +5390,7 @@ interface ITitaniumUITabGroup {
     navTintColor : string;
     editButtonTitle : string;
     exitOnClose : boolean;
+    navBarHidden : boolean;
     swipeable : boolean;
     smoothScrollOnTabClick : boolean;
     tabs : any[];
@@ -5574,6 +5497,8 @@ interface ITitaniumUITabGroup {
     setEditButtonTitle (editButtonTitle : string) : IVoid;
     getExitOnClose () : boolean;
     setExitOnClose (exitOnClose : boolean) : IVoid;
+    getNavBarHidden () : boolean;
+    setNavBarHidden (navBarHidden : boolean) : IVoid;
     getSwipeable () : boolean;
     setSwipeable (swipeable : boolean) : IVoid;
     getSmoothScrollOnTabClick () : boolean;
@@ -5834,7 +5759,7 @@ interface ITitaniumUITableView {
     keepScreenOn : boolean;
     allowsSelection : boolean;
     allowsSelectionDuringEditing : boolean;
-    data : any[];
+    data : any;
     editable : boolean;
     editing : boolean;
     filterAttribute : string;
@@ -5903,7 +5828,7 @@ interface ITitaniumUITableView {
     setContentInsets (edgeInsets : ITableViewEdgeInsets, animated? : ITableViewContentInsetOption) : IVoid;
     setContentOffset (contentOffset : any) : IVoid;
     selectRow (row : number) : IVoid;
-    setData (data : any[]) : IVoid;
+    setData (data : any) : IVoid;
     setHeaderPullView (headerPullView : ITitaniumUIView) : IVoid;
     updateRow (index : number, row : ITitaniumUITableViewRow, animation : ITableViewAnimationProperties) : IVoid;
     updateSection (index : number, section : ITitaniumUITableViewSection, animation : ITableViewAnimationProperties) : IVoid;
@@ -6016,7 +5941,7 @@ interface ITitaniumUITableView {
     setAllowsSelection (allowsSelection : boolean) : IVoid;
     getAllowsSelectionDuringEditing () : boolean;
     setAllowsSelectionDuringEditing (allowsSelectionDuringEditing : boolean) : IVoid;
-    getData () : any[];
+    getData () : any;
     getEditable () : boolean;
     setEditable (editable : boolean) : IVoid;
     getEditing () : boolean;
@@ -7142,8 +7067,6 @@ interface ITitaniumUIWebView {
     horizontalWrap : boolean;
     zIndex : number;
     keepScreenOn : boolean;
-    allowsLinkPreview : boolean;
-    blacklistedURLs : any[];
     data : ITitaniumBlob;
     disableBounce : boolean;
     enableJavascriptInterface : boolean;
@@ -7301,10 +7224,6 @@ interface ITitaniumUIWebView {
     setZIndex (zIndex : number) : IVoid;
     getKeepScreenOn () : boolean;
     setKeepScreenOn (keepScreenOn : boolean) : IVoid;
-    getAllowsLinkPreview () : boolean;
-    setAllowsLinkPreview (allowsLinkPreview : boolean) : IVoid;
-    getBlacklistedURLs () : any[];
-    setBlacklistedURLs (blacklistedURLs : any[]) : IVoid;
     getData () : ITitaniumBlob;
     setData (data : ITitaniumBlob) : IVoid;
     getDisableBounce () : boolean;
@@ -7444,14 +7363,6 @@ interface ITitaniumUIWindow {
     windowFlags : number;
     windowSoftInputMode : number;
     windowPixelFormat : number;
-    activityExitTransition : number;
-    activityEnterTransition : number;
-    activityReturnTransition : number;
-    activityReenterTransition : number;
-    activitySharedElementExitTransition : number;
-    activitySharedElementEnterTransition : number;
-    activitySharedElementReturnTransition : number;
-    activitySharedElementReenterTransition : number;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -7476,8 +7387,6 @@ interface ITitaniumUIWindow {
     removeAllSharedElements () : IVoid;
     setToolbar (toolbar : any[]) : IVoid;
     showNavBar (options? : any) : IVoid;
-    showToolbar (options? : any) : IVoid;
-    hideToolbar (options? : any) : IVoid;
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
@@ -7666,22 +7575,6 @@ interface ITitaniumUIWindow {
     setWindowSoftInputMode (windowSoftInputMode : number) : IVoid;
     getWindowPixelFormat () : number;
     setWindowPixelFormat (windowPixelFormat : number) : IVoid;
-    getActivityExitTransition () : number;
-    setActivityExitTransition (activityExitTransition : number) : IVoid;
-    getActivityEnterTransition () : number;
-    setActivityEnterTransition (activityEnterTransition : number) : IVoid;
-    getActivityReturnTransition () : number;
-    setActivityReturnTransition (activityReturnTransition : number) : IVoid;
-    getActivityReenterTransition () : number;
-    setActivityReenterTransition (activityReenterTransition : number) : IVoid;
-    getActivitySharedElementExitTransition () : number;
-    setActivitySharedElementExitTransition (activitySharedElementExitTransition : number) : IVoid;
-    getActivitySharedElementEnterTransition () : number;
-    setActivitySharedElementEnterTransition (activitySharedElementEnterTransition : number) : IVoid;
-    getActivitySharedElementReturnTransition () : number;
-    setActivitySharedElementReturnTransition (activitySharedElementReturnTransition : number) : IVoid;
-    getActivitySharedElementReenterTransition () : number;
-    setActivitySharedElementReenterTransition (activitySharedElementReenterTransition : number) : IVoid;
 }
 interface ITitaniumUIIOS_3DMatrix {
     bubbleParent : boolean;
@@ -7888,21 +7781,6 @@ interface ITitaniumUIIOSAdView {
     getAdSize () : string;
     setAdSize (adSize : string) : IVoid;
 }
-interface ITitaniumUIIOSAlertDialogStyle {
-    bubbleParent : boolean;
-    apiName : string;
-    DEFAULT : number;
-    PLAIN_TEXT_INPUT : number;
-    SECURE_TEXT_INPUT : number;
-    LOGIN_AND_PASSWORD_INPUT : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
 interface ITitaniumUIIOSAnchorAttachmentBehavior {
     bubbleParent : boolean;
     apiName : string;
@@ -7931,22 +7809,6 @@ interface ITitaniumUIIOSAnchorAttachmentBehavior {
     setItem (item : ITitaniumUIView) : IVoid;
     getOffset () : IPoint;
     setOffset (offset : IPoint) : IVoid;
-}
-interface ITitaniumUIIOSAnimationStyle {
-    bubbleParent : boolean;
-    apiName : string;
-    CURL_DOWN : number;
-    CURL_UP : number;
-    FLIP_FROM_LEFT : number;
-    FLIP_FROM_RIGHT : number;
-    NONE : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
 }
 interface ITitaniumUIIOSAnimator {
     bubbleParent : boolean;
@@ -8028,146 +7890,6 @@ interface ITitaniumUIIOSAttributedString {
     setText (text : string) : IVoid;
     getAttributes () : any[];
     setAttributes (attributes : any[]) : IVoid;
-}
-interface ITitaniumUIIOSBlurView {
-    bubbleParent : boolean;
-    apiName : string;
-    accessibilityHidden : boolean;
-    accessibilityHint : string;
-    accessibilityLabel : string;
-    accessibilityValue : string;
-    anchorPoint : IPoint;
-    animatedCenter : IPoint;
-    backgroundColor : string;
-    backgroundGradient : IGradient;
-    backgroundImage : string;
-    backgroundRepeat : boolean;
-    backgroundLeftCap : number;
-    backgroundTopCap : number;
-    borderColor : string;
-    borderRadius : number;
-    borderWidth : number;
-    bottom : number;
-    center : IPoint;
-    children : any[];
-    clipMode : number;
-    height : number;
-    left : number;
-    layout : string;
-    opacity : number;
-    pullBackgroundColor : string;
-    previewContext : ITitaniumUIView;
-    right : number;
-    rect : IDimension;
-    size : IDimension;
-    tintColor : string;
-    top : number;
-    touchEnabled : boolean;
-    transform : ITitaniumUI_2DMatrix;
-    viewShadowRadius : number;
-    viewShadowColor : string;
-    viewShadowOffset : IPoint;
-    visible : boolean;
-    width : number;
-    horizontalWrap : boolean;
-    zIndex : number;
-    effect : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    add (view : ITitaniumUIView) : IVoid;
-    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : IVoid;
-    finishLayout () : IVoid;
-    hide (options? : IAnimationOption) : IVoid;
-    insertAt (params : any) : IVoid;
-    remove (view : ITitaniumUIView) : IVoid;
-    removeAllChildren () : IVoid;
-    replaceAt (params : any) : IVoid;
-    show (options? : IAnimationOption) : IVoid;
-    startLayout () : IVoid;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
-    updateLayout (params : any) : IVoid;
-    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-    getAccessibilityHidden () : boolean;
-    setAccessibilityHidden (accessibilityHidden : boolean) : IVoid;
-    getAccessibilityHint () : string;
-    setAccessibilityHint (accessibilityHint : string) : IVoid;
-    getAccessibilityLabel () : string;
-    setAccessibilityLabel (accessibilityLabel : string) : IVoid;
-    getAccessibilityValue () : string;
-    setAccessibilityValue (accessibilityValue : string) : IVoid;
-    getAnchorPoint () : IPoint;
-    setAnchorPoint (anchorPoint : IPoint) : IVoid;
-    getAnimatedCenter () : IPoint;
-    getBackgroundColor () : string;
-    setBackgroundColor (backgroundColor : string) : IVoid;
-    getBackgroundGradient () : IGradient;
-    setBackgroundGradient (backgroundGradient : IGradient) : IVoid;
-    getBackgroundImage () : string;
-    setBackgroundImage (backgroundImage : string) : IVoid;
-    getBackgroundRepeat () : boolean;
-    setBackgroundRepeat (backgroundRepeat : boolean) : IVoid;
-    getBackgroundLeftCap () : number;
-    setBackgroundLeftCap (backgroundLeftCap : number) : IVoid;
-    getBackgroundTopCap () : number;
-    setBackgroundTopCap (backgroundTopCap : number) : IVoid;
-    getBorderColor () : string;
-    setBorderColor (borderColor : string) : IVoid;
-    getBorderRadius () : number;
-    setBorderRadius (borderRadius : number) : IVoid;
-    getBorderWidth () : number;
-    setBorderWidth (borderWidth : number) : IVoid;
-    getBottom () : number;
-    setBottom (bottom : number) : IVoid;
-    getCenter () : IPoint;
-    setCenter (center : IPoint) : IVoid;
-    getChildren () : any[];
-    getClipMode () : number;
-    setClipMode (clipMode : number) : IVoid;
-    getHeight () : number;
-    setHeight (height : number) : IVoid;
-    getLeft () : number;
-    setLeft (left : number) : IVoid;
-    getLayout () : string;
-    setLayout (layout : string) : IVoid;
-    getOpacity () : number;
-    setOpacity (opacity : number) : IVoid;
-    getPullBackgroundColor () : string;
-    setPullBackgroundColor (pullBackgroundColor : string) : IVoid;
-    getPreviewContext () : ITitaniumUIView;
-    setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
-    getRight () : number;
-    setRight (right : number) : IVoid;
-    getRect () : IDimension;
-    getSize () : IDimension;
-    getTintColor () : string;
-    setTintColor (tintColor : string) : IVoid;
-    getTop () : number;
-    setTop (top : number) : IVoid;
-    getTouchEnabled () : boolean;
-    setTouchEnabled (touchEnabled : boolean) : IVoid;
-    getTransform () : ITitaniumUI_2DMatrix;
-    setTransform (transform : ITitaniumUI_2DMatrix) : IVoid;
-    getViewShadowRadius () : number;
-    setViewShadowRadius (viewShadowRadius : number) : IVoid;
-    getViewShadowColor () : string;
-    setViewShadowColor (viewShadowColor : string) : IVoid;
-    getViewShadowOffset () : IPoint;
-    setViewShadowOffset (viewShadowOffset : IPoint) : IVoid;
-    getVisible () : boolean;
-    setVisible (visible : boolean) : IVoid;
-    getWidth () : number;
-    setWidth (width : number) : IVoid;
-    getHorizontalWrap () : boolean;
-    setHorizontalWrap (horizontalWrap : boolean) : IVoid;
-    getZIndex () : number;
-    setZIndex (zIndex : number) : IVoid;
-    getEffect () : number;
-    setEffect (effect : number) : IVoid;
 }
 interface ITitaniumUIIOSCollisionBehavior {
     bubbleParent : boolean;
@@ -8545,27 +8267,6 @@ interface ITitaniumUIIOSGravityBehavior {
     getMagnitude () : number;
     setMagnitude (magnitude : number) : IVoid;
 }
-interface ITitaniumUIIOSListViewCellSelectionStyle {
-    apiName : string;
-    BLUE : number;
-    GRAY : number;
-    NONE : number;
-    getApiName () : string;
-}
-interface ITitaniumUIIOSListViewScrollPosition {
-    apiName : string;
-    BOTTOM : number;
-    MIDDLE : number;
-    NONE : number;
-    TOP : number;
-    getApiName () : string;
-}
-interface ITitaniumUIIOSListViewStyle {
-    apiName : string;
-    GROUPED : number;
-    PLAIN : number;
-    getApiName () : string;
-}
 interface ITitaniumUIIOSLivePhoto {
 }
 interface ITitaniumUIIOSLivePhotoView {
@@ -8611,7 +8312,6 @@ interface ITitaniumUIIOSLivePhotoView {
     horizontalWrap : boolean;
     zIndex : number;
     livePhoto : ITitaniumUIIOSLivePhoto;
-    muted : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -8710,8 +8410,6 @@ interface ITitaniumUIIOSLivePhotoView {
     setZIndex (zIndex : number) : IVoid;
     getLivePhoto () : ITitaniumUIIOSLivePhoto;
     setLivePhoto (livePhoto : ITitaniumUIIOSLivePhoto) : IVoid;
-    getMuted () : boolean;
-    setMuted (muted : boolean) : IVoid;
 }
 interface ITitaniumUIIOSMenuPopup {
     items : string;
@@ -8771,6 +8469,7 @@ interface ITitaniumUIIOSNavigationWindow {
     orientation : number;
     rightNavButtons : any[];
     statusBarStyle : number;
+    swipeToClose : boolean;
     titleAttributes : ITitleAttributesParams;
     window : ITitaniumUIWindow;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
@@ -8793,8 +8492,6 @@ interface ITitaniumUIIOSNavigationWindow {
     hideNavBar (options? : any) : IVoid;
     open (params? : IOpenWindowParams) : IVoid;
     showNavBar (options? : any) : IVoid;
-    showToolbar (options? : any) : IVoid;
-    hideToolbar (options? : any) : IVoid;
     closeWindow (window : ITitaniumUIWindow, options : any) : IVoid;
     openWindow (window : ITitaniumUIWindow, options : any) : IVoid;
     getBubbleParent () : boolean;
@@ -8893,6 +8590,8 @@ interface ITitaniumUIIOSNavigationWindow {
     setRightNavButtons (rightNavButtons : any[]) : IVoid;
     getStatusBarStyle () : number;
     setStatusBarStyle (statusBarStyle : number) : IVoid;
+    getSwipeToClose () : boolean;
+    setSwipeToClose (swipeToClose : boolean) : IVoid;
     getTitleAttributes () : ITitleAttributesParams;
     setTitleAttributes (titleAttributes : ITitleAttributesParams) : IVoid;
     getWindow () : ITitaniumUIWindow;
@@ -8955,20 +8654,6 @@ interface ITitaniumUIIOSPreviewContext {
     getPreview () : ITitaniumUIView;
     setPreview (preview : ITitaniumUIView) : IVoid;
 }
-interface ITitaniumUIIOSProgressBarStyle {
-    bubbleParent : boolean;
-    apiName : string;
-    BAR : number;
-    DEFAULT : number;
-    PLAIN : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
 interface ITitaniumUIIOSPushBehavior {
     bubbleParent : boolean;
     apiName : string;
@@ -8998,37 +8683,6 @@ interface ITitaniumUIIOSPushBehavior {
     setPushDirection (pushDirection : IPoint) : IVoid;
     getPushMode () : number;
     setPushMode (pushMode : number) : IVoid;
-}
-interface ITitaniumUIIOSRowAnimationStyle {
-    bubbleParent : boolean;
-    apiName : string;
-    BOTTOM : number;
-    FADE : number;
-    LEFT : number;
-    NONE : number;
-    RIGHT : number;
-    TOP : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
-interface ITitaniumUIIOSScrollIndicatorStyle {
-    bubbleParent : boolean;
-    apiName : string;
-    BLACK : number;
-    DEFAULT : number;
-    WHITE : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
 }
 interface ITitaniumUIIOSSnapBehavior {
     bubbleParent : boolean;
@@ -9112,6 +8766,7 @@ interface ITitaniumUIIOSSplitWindow {
     rightNavButtons : any[];
     shadowImage : string;
     statusBarStyle : number;
+    swipeToClose : boolean;
     tabBarHidden : boolean;
     title : string;
     titleAttributes : ITitleAttributesParams;
@@ -9151,8 +8806,6 @@ interface ITitaniumUIIOSSplitWindow {
     open (params? : IOpenWindowParams) : IVoid;
     setToolbar (toolbar : any[]) : IVoid;
     showNavBar (options? : any) : IVoid;
-    showToolbar (options? : any) : IVoid;
-    hideToolbar (options? : any) : IVoid;
     setShowMasterInPortrait (showMasterInPortrait : boolean) : IVoid;
     setMasterIsOverlayed (masterIsOverlayed : boolean) : IVoid;
     getBubbleParent () : boolean;
@@ -9271,6 +8924,8 @@ interface ITitaniumUIIOSSplitWindow {
     setShadowImage (shadowImage : string) : IVoid;
     getStatusBarStyle () : number;
     setStatusBarStyle (statusBarStyle : number) : IVoid;
+    getSwipeToClose () : boolean;
+    setSwipeToClose (swipeToClose : boolean) : IVoid;
     getTabBarHidden () : boolean;
     setTabBarHidden (tabBarHidden : boolean) : IVoid;
     getTitle () : string;
@@ -9302,248 +8957,6 @@ interface ITitaniumUIIOSSplitWindow {
     setPortraitSplit (portraitSplit : number) : IVoid;
     getLandscapeSplit () : number;
     setLandscapeSplit (landscapeSplit : number) : IVoid;
-}
-interface ITitaniumUIIOSStatusBar {
-    bubbleParent : boolean;
-    apiName : string;
-    ANIMATION_STYLE_NONE : number;
-    ANIMATION_STYLE_SLIDE : number;
-    ANIMATION_STYLE_FADE : number;
-    DEFAULT : number;
-    GRAY : number;
-    GREY : number;
-    LIGHT_CONTENT : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
-interface ITitaniumUIIOSStepper {
-    bubbleParent : boolean;
-    apiName : string;
-    accessibilityHidden : boolean;
-    accessibilityHint : string;
-    accessibilityLabel : string;
-    accessibilityValue : string;
-    anchorPoint : IPoint;
-    animatedCenter : IPoint;
-    backgroundColor : string;
-    backgroundGradient : IGradient;
-    backgroundImage : string;
-    backgroundRepeat : boolean;
-    backgroundLeftCap : number;
-    backgroundTopCap : number;
-    borderColor : string;
-    borderRadius : number;
-    borderWidth : number;
-    bottom : number;
-    center : IPoint;
-    children : any[];
-    clipMode : number;
-    height : number;
-    left : number;
-    layout : string;
-    opacity : number;
-    pullBackgroundColor : string;
-    previewContext : ITitaniumUIView;
-    right : number;
-    rect : IDimension;
-    size : IDimension;
-    tintColor : string;
-    top : number;
-    touchEnabled : boolean;
-    transform : ITitaniumUI_2DMatrix;
-    viewShadowRadius : number;
-    viewShadowColor : string;
-    viewShadowOffset : IPoint;
-    visible : boolean;
-    width : number;
-    horizontalWrap : boolean;
-    zIndex : number;
-    enabled : boolean;
-    value : number;
-    continuous : boolean;
-    autorepeat : boolean;
-    wraps : boolean;
-    minimum : number;
-    maximum : number;
-    steps : number;
-    decrementImage : string;
-    decrementDisabledImage : string;
-    incrementImage : string;
-    incrementDisabledImage : string;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    add (view : ITitaniumUIView) : IVoid;
-    animate (animation : ITitaniumUIAnimation, callback : (...args : any[]) => any) : IVoid;
-    finishLayout () : IVoid;
-    hide (options? : IAnimationOption) : IVoid;
-    insertAt (params : any) : IVoid;
-    remove (view : ITitaniumUIView) : IVoid;
-    removeAllChildren () : IVoid;
-    replaceAt (params : any) : IVoid;
-    show (options? : IAnimationOption) : IVoid;
-    startLayout () : IVoid;
-    toImage (callback? : (...args : any[]) => any, honorScaleFactor? : boolean) : ITitaniumBlob;
-    updateLayout (params : any) : IVoid;
-    convertPointToView (point : IPoint, destinationView : ITitaniumUIView) : IPoint;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-    getAccessibilityHidden () : boolean;
-    setAccessibilityHidden (accessibilityHidden : boolean) : IVoid;
-    getAccessibilityHint () : string;
-    setAccessibilityHint (accessibilityHint : string) : IVoid;
-    getAccessibilityLabel () : string;
-    setAccessibilityLabel (accessibilityLabel : string) : IVoid;
-    getAccessibilityValue () : string;
-    setAccessibilityValue (accessibilityValue : string) : IVoid;
-    getAnchorPoint () : IPoint;
-    setAnchorPoint (anchorPoint : IPoint) : IVoid;
-    getAnimatedCenter () : IPoint;
-    getBackgroundColor () : string;
-    setBackgroundColor (backgroundColor : string) : IVoid;
-    getBackgroundGradient () : IGradient;
-    setBackgroundGradient (backgroundGradient : IGradient) : IVoid;
-    getBackgroundImage () : string;
-    setBackgroundImage (backgroundImage : string) : IVoid;
-    getBackgroundRepeat () : boolean;
-    setBackgroundRepeat (backgroundRepeat : boolean) : IVoid;
-    getBackgroundLeftCap () : number;
-    setBackgroundLeftCap (backgroundLeftCap : number) : IVoid;
-    getBackgroundTopCap () : number;
-    setBackgroundTopCap (backgroundTopCap : number) : IVoid;
-    getBorderColor () : string;
-    setBorderColor (borderColor : string) : IVoid;
-    getBorderRadius () : number;
-    setBorderRadius (borderRadius : number) : IVoid;
-    getBorderWidth () : number;
-    setBorderWidth (borderWidth : number) : IVoid;
-    getBottom () : number;
-    setBottom (bottom : number) : IVoid;
-    getCenter () : IPoint;
-    setCenter (center : IPoint) : IVoid;
-    getChildren () : any[];
-    getClipMode () : number;
-    setClipMode (clipMode : number) : IVoid;
-    getHeight () : number;
-    setHeight (height : number) : IVoid;
-    getLeft () : number;
-    setLeft (left : number) : IVoid;
-    getLayout () : string;
-    setLayout (layout : string) : IVoid;
-    getOpacity () : number;
-    setOpacity (opacity : number) : IVoid;
-    getPullBackgroundColor () : string;
-    setPullBackgroundColor (pullBackgroundColor : string) : IVoid;
-    getPreviewContext () : ITitaniumUIView;
-    setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
-    getRight () : number;
-    setRight (right : number) : IVoid;
-    getRect () : IDimension;
-    getSize () : IDimension;
-    getTintColor () : string;
-    setTintColor (tintColor : string) : IVoid;
-    getTop () : number;
-    setTop (top : number) : IVoid;
-    getTouchEnabled () : boolean;
-    setTouchEnabled (touchEnabled : boolean) : IVoid;
-    getTransform () : ITitaniumUI_2DMatrix;
-    setTransform (transform : ITitaniumUI_2DMatrix) : IVoid;
-    getViewShadowRadius () : number;
-    setViewShadowRadius (viewShadowRadius : number) : IVoid;
-    getViewShadowColor () : string;
-    setViewShadowColor (viewShadowColor : string) : IVoid;
-    getViewShadowOffset () : IPoint;
-    setViewShadowOffset (viewShadowOffset : IPoint) : IVoid;
-    getVisible () : boolean;
-    setVisible (visible : boolean) : IVoid;
-    getWidth () : number;
-    setWidth (width : number) : IVoid;
-    getHorizontalWrap () : boolean;
-    setHorizontalWrap (horizontalWrap : boolean) : IVoid;
-    getZIndex () : number;
-    setZIndex (zIndex : number) : IVoid;
-    getEnabled () : boolean;
-    setEnabled (enabled : boolean) : IVoid;
-    getValue () : number;
-    setValue (value : number) : IVoid;
-    getContinuous () : boolean;
-    setContinuous (continuous : boolean) : IVoid;
-    getAutorepeat () : boolean;
-    setAutorepeat (autorepeat : boolean) : IVoid;
-    getWraps () : boolean;
-    setWraps (wraps : boolean) : IVoid;
-    getMinimum () : number;
-    setMinimum (minimum : number) : IVoid;
-    getMaximum () : number;
-    setMaximum (maximum : number) : IVoid;
-    getSteps () : number;
-    setSteps (steps : number) : IVoid;
-    getDecrementImage () : string;
-    setDecrementImage (decrementImage : string) : IVoid;
-    getDecrementDisabledImage () : string;
-    setDecrementDisabledImage (decrementDisabledImage : string) : IVoid;
-    getIncrementImage () : string;
-    setIncrementImage (incrementImage : string) : IVoid;
-    getIncrementDisabledImage () : string;
-    setIncrementDisabledImage (incrementDisabledImage : string) : IVoid;
-}
-interface ITitaniumUIIOSSystemButton {
-    bubbleParent : boolean;
-    apiName : string;
-    ACTION : number;
-    ACTIVITY : number;
-    ADD : number;
-    BOOKMARKS : number;
-    CAMERA : number;
-    CANCEL : number;
-    COMPOSE : number;
-    CONTACT_ADD : number;
-    DISCLOSURE : number;
-    DONE : number;
-    EDIT : number;
-    FAST_FORWARD : number;
-    FIXED_SPACE : number;
-    FLEXIBLE_SPACE : number;
-    INFO_DARK : number;
-    INFO_LIGHT : number;
-    ORGANIZE : number;
-    PAUSE : number;
-    PLAY : number;
-    REFRESH : number;
-    REPLY : number;
-    REWIND : number;
-    SAVE : number;
-    SPINNER : number;
-    STOP : number;
-    TRASH : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
-interface ITitaniumUIIOSSystemButtonStyle {
-    bubbleParent : boolean;
-    apiName : string;
-    BORDERED : number;
-    DONE : number;
-    PLAIN : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
 }
 interface ITitaniumUIIOSTabbedBar {
     bubbleParent : boolean;
@@ -9690,48 +9103,6 @@ interface ITitaniumUIIOSTabbedBar {
     setLabels (labels : any[]) : IVoid;
     getStyle () : number;
     setStyle (style : number) : IVoid;
-}
-interface ITitaniumUIIOSTableViewCellSelectionStyle {
-    bubbleParent : boolean;
-    apiName : string;
-    BLUE : number;
-    GRAY : number;
-    NONE : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
-interface ITitaniumUIIOSTableViewScrollPosition {
-    bubbleParent : boolean;
-    apiName : string;
-    BOTTOM : number;
-    MIDDLE : number;
-    NONE : number;
-    TOP : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
-interface ITitaniumUIIOSTableViewStyle {
-    bubbleParent : boolean;
-    apiName : string;
-    GROUPED : number;
-    PLAIN : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
 }
 interface ITitaniumUIIOSToolbar {
     bubbleParent : boolean;
@@ -9908,22 +9279,16 @@ interface ITitaniumUIIOSViewAttachmentBehavior {
 interface ITitaniumUIIOS {
     _3DMatrix : ITitaniumUIIOS_3DMatrix;
     AdView : ITitaniumUIIOSAdView;
-    AlertDialogStyle : ITitaniumUIIOSAlertDialogStyle;
     AnchorAttachmentBehavior : ITitaniumUIIOSAnchorAttachmentBehavior;
-    AnimationStyle : ITitaniumUIIOSAnimationStyle;
     Animator : ITitaniumUIIOSAnimator;
     ApplicationShortcuts : ITitaniumUIIOSApplicationShortcuts;
     Attribute : ITitaniumUIIOSAttribute;
     AttributedString : ITitaniumUIIOSAttributedString;
-    BlurView : ITitaniumUIIOSBlurView;
     CollisionBehavior : ITitaniumUIIOSCollisionBehavior;
     CoverFlowView : ITitaniumUIIOSCoverFlowView;
     DocumentViewer : ITitaniumUIIOSDocumentViewer;
     DynamicItemBehavior : ITitaniumUIIOSDynamicItemBehavior;
     GravityBehavior : ITitaniumUIIOSGravityBehavior;
-    ListViewCellSelectionStyle : ITitaniumUIIOSListViewCellSelectionStyle;
-    ListViewScrollPosition : ITitaniumUIIOSListViewScrollPosition;
-    ListViewStyle : ITitaniumUIIOSListViewStyle;
     LivePhoto : ITitaniumUIIOSLivePhoto;
     LivePhotoView : ITitaniumUIIOSLivePhotoView;
     MenuPopup : ITitaniumUIIOSMenuPopup;
@@ -9931,20 +9296,10 @@ interface ITitaniumUIIOS {
     PreviewAction : ITitaniumUIIOSPreviewAction;
     PreviewActionGroup : ITitaniumUIIOSPreviewActionGroup;
     PreviewContext : ITitaniumUIIOSPreviewContext;
-    ProgressBarStyle : ITitaniumUIIOSProgressBarStyle;
     PushBehavior : ITitaniumUIIOSPushBehavior;
-    RowAnimationStyle : ITitaniumUIIOSRowAnimationStyle;
-    ScrollIndicatorStyle : ITitaniumUIIOSScrollIndicatorStyle;
     SnapBehavior : ITitaniumUIIOSSnapBehavior;
     SplitWindow : ITitaniumUIIOSSplitWindow;
-    StatusBar : ITitaniumUIIOSStatusBar;
-    Stepper : ITitaniumUIIOSStepper;
-    SystemButton : ITitaniumUIIOSSystemButton;
-    SystemButtonStyle : ITitaniumUIIOSSystemButtonStyle;
     TabbedBar : ITitaniumUIIOSTabbedBar;
-    TableViewCellSelectionStyle : ITitaniumUIIOSTableViewCellSelectionStyle;
-    TableViewScrollPosition : ITitaniumUIIOSTableViewScrollPosition;
-    TableViewStyle : ITitaniumUIIOSTableViewStyle;
     Toolbar : ITitaniumUIIOSToolbar;
     ViewAttachmentBehavior : ITitaniumUIIOSViewAttachmentBehavior;
     bubbleParent : boolean;
@@ -10021,11 +9376,6 @@ interface ITitaniumUIIOS {
     BLEND_MODE_SOURCE_IN : number;
     BLEND_MODE_SOURCE_OUT : number;
     BLEND_MODE_XOR : number;
-    BLUR_EFFECT_STYLE_EXTRA_LIGHT : number;
-    BLUR_EFFECT_STYLE_LIGHT : number;
-    BLUR_EFFECT_STYLE_DARK : number;
-    BLUR_EFFECT_STYLE_REGULAR : number;
-    BLUR_EFFECT_STYLE_PROMINENT : number;
     AD_SIZE_PORTRAIT : string;
     AD_SIZE_LANDSCAPE : string;
     CLIP_MODE_DEFAULT : number;
@@ -10056,8 +9406,6 @@ interface ITitaniumUIIOS {
     ROW_ACTION_STYLE_NORMAL : number;
     SCROLL_DECELERATION_RATE_FAST : number;
     SCROLL_DECELERATION_RATE_NORMAL : number;
-    SEARCH_BAR_STYLE_PROMINENT : number;
-    SEARCH_BAR_STYLE_MINIMAL : number;
     WEBVIEW_NAVIGATIONTYPE_LINK_CLICKED : number;
     WEBVIEW_NAVIGATIONTYPE_FORM_SUBMITTED : number;
     WEBVIEW_NAVIGATIONTYPE_BACK_FORWARD : number;
@@ -10094,8 +9442,6 @@ interface ITitaniumUIIOS {
     SHORTCUT_ICON_TYPE_SHUFFLE : number;
     SHORTCUT_ICON_TYPE_AUDIO : number;
     SHORTCUT_ICON_TYPE_UPDATE : number;
-    appBadge : number;
-    appSupportsShakeToEdit : boolean;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -10108,7 +9454,6 @@ interface ITitaniumUIIOS {
     createApplicationShortcuts (parameters? : ITitaniumUIIOSApplicationShortcuts) : ITitaniumUIIOSApplicationShortcuts;
     createAttribute (parameters? : ITitaniumUIIOSAttribute) : ITitaniumUIIOSAttribute;
     createAttributedString (parameters? : ITitaniumUIIOSAttributedString) : ITitaniumUIIOSAttributedString;
-    createBlurView (parameters? : ITitaniumUIIOSBlurView) : ITitaniumUIIOSBlurView;
     createCollisionBehavior (parameters? : ITitaniumUIIOSCollisionBehavior) : ITitaniumUIIOSCollisionBehavior;
     createCoverFlowView (parameters? : ITitaniumUIIOSCoverFlowView) : ITitaniumUIIOSCoverFlowView;
     createDocumentViewer (parameters? : ITitaniumUIIOSDocumentViewer) : ITitaniumUIIOSDocumentViewer;
@@ -10122,8 +9467,6 @@ interface ITitaniumUIIOS {
     createPushBehavior (parameters? : ITitaniumUIIOSPushBehavior) : ITitaniumUIIOSPushBehavior;
     createSnapBehavior (parameters? : ITitaniumUIIOSSnapBehavior) : ITitaniumUIIOSSnapBehavior;
     createSplitWindow (parameters? : ITitaniumUIIOSSplitWindow) : ITitaniumUIIOSSplitWindow;
-    createStepper (parameters? : ITitaniumUIIOSStepper) : ITitaniumUIIOSStepper;
-    createSystemButton (parameters? : ITitaniumUIIOSSystemButton) : ITitaniumUIIOSSystemButton;
     createTabbedBar (parameters? : ITitaniumUIIOSTabbedBar) : ITitaniumUIIOSTabbedBar;
     createToolbar (parameters? : ITitaniumUIIOSToolbar) : ITitaniumUIIOSToolbar;
     createViewAttachmentBehavior (parameters? : ITitaniumUIIOSViewAttachmentBehavior) : ITitaniumUIIOSViewAttachmentBehavior;
@@ -10131,10 +9474,6 @@ interface ITitaniumUIIOS {
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
     getForceTouchSupported () : boolean;
-    getAppBadge () : number;
-    setAppBadge (appBadge : number) : IVoid;
-    getAppSupportsShakeToEdit () : boolean;
-    setAppSupportsShakeToEdit (appSupportsShakeToEdit : boolean) : IVoid;
 }
 interface ITitaniumUIIPadDocumentViewer {
     bubbleParent : boolean;
@@ -10379,6 +9718,7 @@ interface ITitaniumUIIPadSplitWindow {
     rightNavButtons : any[];
     shadowImage : string;
     statusBarStyle : number;
+    swipeToClose : boolean;
     tabBarHidden : boolean;
     title : string;
     titleAttributes : ITitleAttributesParams;
@@ -10415,8 +9755,6 @@ interface ITitaniumUIIPadSplitWindow {
     open (params? : IOpenWindowParams) : IVoid;
     setToolbar (toolbar : any[]) : IVoid;
     showNavBar (options? : any) : IVoid;
-    showToolbar (options? : any) : IVoid;
-    hideToolbar (options? : any) : IVoid;
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
@@ -10531,6 +9869,8 @@ interface ITitaniumUIIPadSplitWindow {
     setShadowImage (shadowImage : string) : IVoid;
     getStatusBarStyle () : number;
     setStatusBarStyle (statusBarStyle : number) : IVoid;
+    getSwipeToClose () : boolean;
+    setSwipeToClose (swipeToClose : boolean) : IVoid;
     getTabBarHidden () : boolean;
     setTabBarHidden (tabBarHidden : boolean) : IVoid;
     getTitle () : string;
@@ -11247,8 +10587,6 @@ interface ITitaniumUI {
     LIST_ITEM_TEMPLATE_SUBTITLE : number;
     NOTIFICATION_DURATION_LONG : number;
     NOTIFICATION_DURATION_SHORT : number;
-    CLIPBOARD_OPTION_LOCAL_ONLY : string;
-    CLIPBOARD_OPTION_EXPIRATION_DATE : string;
     PICKER_TYPE_COUNT_DOWN_TIMER : number;
     PICKER_TYPE_DATE : number;
     PICKER_TYPE_DATE_AND_TIME : number;
@@ -11411,7 +10749,7 @@ interface ITitaniumAnalytics {
     lifecycleContainer : ITitaniumUIWindow;
     lastEvent : string;
     addEvent (type : string, name : string, data? : any) : IVoid;
-    featureEvent (name : string, data? : any) : number;
+    featureEvent (name : string) : IVoid;
     filterEvents (events : any[]) : IVoid;
     navEvent (from : string, to : string, name? : string, data? : any) : IVoid;
     settingsEvent (name : string, data? : any) : IVoid;
@@ -11518,18 +10856,6 @@ interface ITitaniumAndroidActivity {
     setOnStart (onStart : (...args : any[]) => any) : IVoid;
     getOnStop () : (...args : any[]) => any;
     setOnStop (onStop : (...args : any[]) => any) : IVoid;
-}
-interface ITitaniumAndroidBigPictureStyle {
-    bigLargeIcon : number;
-    bigPicture : number;
-    bigContentTitle : string;
-    decodeRetries : number;
-    summaryText : string;
-}
-interface ITitaniumAndroidBigTextStyle {
-    bigText : string;
-    bigContentTitle : string;
-    summaryText : string;
 }
 interface ITitaniumAndroidBroadcastReceiver {
     bubbleParent : boolean;
@@ -11853,7 +11179,6 @@ interface ITitaniumAndroidNotification {
     number : number;
     priority : number;
     sound : string;
-    style : ITitaniumAndroidBigTextStyle;
     tickerText : string;
     visibility : number;
     when : Date;
@@ -11900,8 +11225,6 @@ interface ITitaniumAndroidNotification {
     setPriority (priority : number) : IVoid;
     getSound () : string;
     setSound (sound : string) : IVoid;
-    getStyle () : ITitaniumAndroidBigTextStyle;
-    setStyle (style : ITitaniumAndroidBigTextStyle) : IVoid;
     getTickerText () : string;
     setTickerText (tickerText : string) : IVoid;
     getVisibility () : number;
@@ -12042,8 +11365,6 @@ interface ITitaniumAndroidService {
 interface ITitaniumAndroid {
     ActionBar : ITitaniumAndroidActionBar;
     Activity : ITitaniumAndroidActivity;
-    BigPictureStyle : ITitaniumAndroidBigPictureStyle;
-    BigTextStyle : ITitaniumAndroidBigTextStyle;
     BroadcastReceiver : ITitaniumAndroidBroadcastReceiver;
     Calendar : ITitaniumAndroidCalendar;
     Intent : ITitaniumAndroidIntent;
@@ -12277,8 +11598,6 @@ interface ITitaniumAndroid {
     createPendingIntent (parameters? : ITitaniumAndroidPendingIntent) : ITitaniumAndroidPendingIntent;
     createService (intent : ITitaniumAndroidIntent) : ITitaniumAndroidService;
     createServiceIntent (options : IServiceIntentOptions) : ITitaniumAndroidIntent;
-    hasPermission (permission : string) : boolean;
-    requestPermissions (permissions : any[], callback? : (...args : any[]) => any) : IVoid;
     isServiceRunning (intent : ITitaniumAndroidIntent) : boolean;
     registerBroadcastReceiver (broadcastReceiver : ITitaniumAndroidBroadcastReceiver, actions : any[]) : IVoid;
     unregisterBroadcastReceiver (broadcastReceiver : ITitaniumAndroidBroadcastReceiver) : IVoid;
@@ -12383,22 +11702,6 @@ interface ITitaniumAppIOSLocalNotification {
     fireEvent (name : string, event : any) : IVoid;
     applyProperties (props : any) : IVoid;
     cancel () : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
-interface ITitaniumAppIOSSearchQuery {
-    bubbleParent : boolean;
-    apiName : string;
-    queryString : string;
-    attributes : any[];
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    start () : IVoid;
-    cancel () : IVoid;
-    isCancelled () : boolean;
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
@@ -12533,10 +11836,6 @@ interface ITitaniumAppIOSSearchableItemAttributeSet {
     local : number;
     contentRating : number;
     url : string;
-    fullyFormattedAddress : string;
-    subThoroughfare : string;
-    thoroughfare : string;
-    postalCode : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -12722,14 +12021,6 @@ interface ITitaniumAppIOSSearchableItemAttributeSet {
     setContentRating (contentRating : number) : IVoid;
     getUrl () : string;
     setUrl (url : string) : IVoid;
-    getFullyFormattedAddress () : string;
-    setFullyFormattedAddress (fullyFormattedAddress : string) : IVoid;
-    getSubThoroughfare () : string;
-    setSubThoroughfare (subThoroughfare : string) : IVoid;
-    getThoroughfare () : string;
-    setThoroughfare (thoroughfare : string) : IVoid;
-    getPostalCode () : string;
-    setPostalCode (postalCode : string) : IVoid;
 }
 interface ITitaniumAppIOSUserActivity {
     bubbleParent : boolean;
@@ -12836,7 +12127,6 @@ interface ITitaniumAppIOSUserNotificationCategory {
 interface ITitaniumAppIOS {
     BackgroundService : ITitaniumAppIOSBackgroundService;
     LocalNotification : ITitaniumAppIOSLocalNotification;
-    SearchQuery : ITitaniumAppIOSSearchQuery;
     SearchableIndex : ITitaniumAppIOSSearchableIndex;
     SearchableItem : ITitaniumAppIOSSearchableItem;
     SearchableItemAttributeSet : ITitaniumAppIOSSearchableItemAttributeSet;
@@ -12907,7 +12197,6 @@ interface ITitaniumAppIOS {
     setMinimumBackgroundFetchInterval (fetchInterval : number) : IVoid;
     endBackgroundHandler (handlerID : string) : IVoid;
     sendWatchExtensionReply (handlerId : string, userInfo : any) : IVoid;
-    createSearchQuery (parameters? : ITitaniumAppIOSSearchQuery) : ITitaniumAppIOSSearchQuery;
     createSearchableIndex (parameters? : ITitaniumAppIOSSearchableIndex) : ITitaniumAppIOSSearchableIndex;
     createSearchableItem (parameters? : ITitaniumAppIOSSearchableItem) : ITitaniumAppIOSSearchableItem;
     createSearchableItemAttributeSet (parameters? : ITitaniumAppIOSSearchableItemAttributeSet) : ITitaniumAppIOSSearchableItemAttributeSet;
@@ -13968,7 +13257,6 @@ interface ITitaniumFilesystem {
     createTempDirectory () : ITitaniumFilesystemFile;
     createTempFile () : ITitaniumFilesystemFile;
     getFile (path : string) : ITitaniumFilesystemFile;
-    getAsset (path : string) : ITitaniumBlob;
     isExternalStoragePresent () : boolean;
     hasStoragePermissions () : boolean;
     requestStoragePermissions (callback : (...args : any[]) => any) : IVoid;
@@ -14621,7 +13909,6 @@ interface ITitaniumMediaAudioPlayer {
     play () : IVoid;
     setPaused (paused : boolean) : IVoid;
     release () : IVoid;
-    getAudioSessionId () : number;
     start () : IVoid;
     stateDescription (state : number) : string;
     stop () : IVoid;
@@ -15258,8 +14545,6 @@ interface ITitaniumMedia {
     takeScreenshot (callback : (...args : any[]) => any) : IVoid;
     vibrate (pattern? : any[]) : IVoid;
     requestAuthorization (callback : (...args : any[]) => any) : IVoid;
-    hasAudioPermissions () : boolean;
-    requestAudioPermissions (callback : (...args : any[]) => any) : IVoid;
     createAudioPlayer (parameters? : ITitaniumMediaAudioPlayer) : ITitaniumMediaAudioPlayer;
     createAudioRecorder (parameters? : ITitaniumMediaAudioRecorder) : ITitaniumMediaAudioRecorder;
     getBubbleParent () : boolean;
@@ -15832,18 +15117,11 @@ interface ITitaniumUtils {
 interface ITitaniumWatchSession {
     bubbleParent : boolean;
     apiName : string;
-    activationState : number;
-    ACTIVATION_STATE_NOT_ACTIVATED : number;
-    ACTIVATION_STATE_INACTIVE : number;
-    ACTIVATION_STATE_ACTIVATED : number;
-    hasContentPending : boolean;
-    remainingComplicationUserInfoTransfers : number;
     isSupported : boolean;
     isPaired : boolean;
     isWatchAppInstalled : boolean;
     isComplicationEnabled : boolean;
     isReachable : boolean;
-    isActivated : boolean;
     recentApplicationContext : any;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
@@ -15861,15 +15139,11 @@ interface ITitaniumWatchSession {
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
-    getActivationState () : number;
-    getHasContentPending () : boolean;
-    getRemainingComplicationUserInfoTransfers () : number;
     getIsSupported () : boolean;
     getIsPaired () : boolean;
     getIsWatchAppInstalled () : boolean;
     getIsComplicationEnabled () : boolean;
     getIsReachable () : boolean;
-    getIsActivated () : boolean;
     getRecentApplicationContext () : any;
 }
 interface ITitaniumXMLAttr {
@@ -17809,11 +17083,6 @@ interface IServiceIntentOptions {
     url : string;
     startMode : number;
 }
-interface IRequestPermissionAccessResult {
-    success : boolean;
-    error : string;
-    code : number;
-}
 interface ICalendarPermissionResponse {
     success : boolean;
     error : string;
@@ -17827,7 +17096,6 @@ interface ILaunchOptions {
 interface INotificationParams {
     alertAction : string;
     alertBody : string;
-    alertTitle : string;
     alertLaunchImage : string;
     badge : number;
     category : string;
@@ -17836,11 +17104,6 @@ interface INotificationParams {
     sound : string;
     timezone : string;
     userInfo : any;
-    region : any;
-}
-interface ILaunchOptionsType {
-    source : string;
-    url : string;
 }
 interface IUserNotificationSettings {
     types : any[];
@@ -18097,7 +17360,6 @@ interface ICameraOptionsType {
     mediaTypes : any[];
     videoMaximumDuration : number;
     videoQuality : number;
-    whichCamera : number;
     showControls : boolean;
     overlay : ITitaniumUIView;
     transform : ITitaniumUI_2DMatrix;
@@ -18290,10 +17552,6 @@ interface IAttribute {
     value : number;
     range : any[];
 }
-interface IClipboardItemsType {
-    items : any[];
-    options : any;
-}
 interface IFont {
     fontFamily : string;
     fontSize : number;
@@ -18433,6 +17691,14 @@ interface IOpenWindowParams {
     width : number;
     activityEnterAnimation : number;
     activityExitAnimation : number;
+    activityExitTransition : number;
+    activityEnterTransition : number;
+    activityReturnTransition : number;
+    activityReenterTransition : number;
+    activitySharedElementExitTransition : number;
+    activitySharedElementEnterTransition : number;
+    activitySharedElementReturnTransition : number;
+    activitySharedElementReenterTransition : number;
 }
 interface IWindowToolbarParam {
     translucent : boolean;
@@ -18575,11 +17841,9 @@ declare var CloudPushNotificationSuccessArg : ICloudPushNotificationSuccessArg;
 declare var CloudPushNotificationErrorArg : ICloudPushNotificationErrorArg;
 declare var ActivityResult : IActivityResult;
 declare var ServiceIntentOptions : IServiceIntentOptions;
-declare var RequestPermissionAccessResult : IRequestPermissionAccessResult;
 declare var CalendarPermissionResponse : ICalendarPermissionResponse;
 declare var launchOptions : ILaunchOptions;
 declare var NotificationParams : INotificationParams;
-declare var LaunchOptionsType : ILaunchOptionsType;
 declare var UserNotificationSettings : IUserNotificationSettings;
 declare var ImageAsCroppedDict : IImageAsCroppedDict;
 declare var EventsAuthorizationResponse : IEventsAuthorizationResponse;
@@ -18650,7 +17914,6 @@ declare var PumpCallbackArgs : IPumpCallbackArgs;
 declare var CreateBufferArgs : ICreateBufferArgs;
 declare var MatrixCreationDict : IMatrixCreationDict;
 declare var Attribute : IAttribute;
-declare var ClipboardItemsType : IClipboardItemsType;
 declare var Font : IFont;
 declare var ItemTemplate : IItemTemplate;
 declare var ViewTemplate : IViewTemplate;
