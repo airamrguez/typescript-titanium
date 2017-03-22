@@ -1,7 +1,7 @@
 /*
    Typescript Titanium - Typescript Titanium - 6.0.2.GA
    Typescipt-Titanium may be freely distributed under the MIT license.
-   This source code was auto-generated (Tue Mar 21 2017 23:16:12 GMT-0400 (EDT)}}).
+   This source code was auto-generated (Tue Mar 21 2017 23:16:04 GMT-0400 (EDT)}}).
    More information at https://github.com/alvivi/typescript-titanium.
  */
 interface ITitaniumProxy {
