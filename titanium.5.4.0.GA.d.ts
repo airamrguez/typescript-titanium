@@ -1,7 +1,7 @@
 /*
-   Typescript Titanium - Typescript Titanium - 6.0.2.GA
+   Typescript Titanium - 5.4.0.GA
    Typescipt-Titanium may be freely distributed under the MIT license.
-   This source code was auto-generated (Tue Mar 21 2017 23:17:59 GMT-0400 (EDT)}}).
+   This source code was auto-generated (Thu Aug 11 2016 08:09:03 GMT-0400 (EDT)}}).
    More information at https://github.com/alvivi/typescript-titanium.
  */
 interface ITitaniumProxy {
@@ -72,11 +72,6 @@ interface ITitaniumUIView {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -186,16 +181,6 @@ interface ITitaniumUIView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -343,11 +328,6 @@ interface ITitaniumUIActivityIndicator {
     left : number;
     previewContext : ITitaniumUIView;
     right : number;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     top : number;
     translationX : number;
     translationY : number;
@@ -391,16 +371,6 @@ interface ITitaniumUIActivityIndicator {
     setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
     getRight () : number;
     setRight (right : number) : IVoid;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getTop () : number;
     setTop (top : number) : IVoid;
     getTranslationX () : number;
@@ -452,11 +422,6 @@ interface ITitaniumUIAlertDialog {
     lifecycleContainer : ITitaniumUIWindow;
     elevation : number;
     previewContext : ITitaniumUIView;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     translationX : number;
     translationY : number;
     translationZ : number;
@@ -464,9 +429,7 @@ interface ITitaniumUIAlertDialog {
     androidView : ITitaniumUIView;
     buttonNames : any[];
     cancel : number;
-    canceledOnTouchOutside : boolean;
     destructive : number;
-    preferred : number;
     keyboardType : number;
     keyboardAppearance : number;
     loginPlaceholder : string;
@@ -508,16 +471,6 @@ interface ITitaniumUIAlertDialog {
     setElevation (elevation : number) : IVoid;
     getPreviewContext () : ITitaniumUIView;
     setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getTranslationX () : number;
     setTranslationX (translationX : number) : IVoid;
     getTranslationY () : number;
@@ -530,12 +483,8 @@ interface ITitaniumUIAlertDialog {
     setButtonNames (buttonNames : any[]) : IVoid;
     getCancel () : number;
     setCancel (cancel : number) : IVoid;
-    getCanceledOnTouchOutside () : boolean;
-    setCanceledOnTouchOutside (canceledOnTouchOutside : boolean) : IVoid;
     getDestructive () : number;
     setDestructive (destructive : number) : IVoid;
-    getPreferred () : number;
-    setPreferred (preferred : number) : IVoid;
     getKeyboardType () : number;
     setKeyboardType (keyboardType : number) : IVoid;
     getKeyboardAppearance () : number;
@@ -550,12 +499,8 @@ interface ITitaniumUIAlertDialog {
     setLoginKeyboardType (loginKeyboardType : number) : IVoid;
     getMessage () : string;
     setMessage (message : string) : IVoid;
-    getMessageid () : string;
-    setMessageid (messageid : string) : IVoid;
     getOk () : string;
     setOk (ok : string) : IVoid;
-    getOkid () : string;
-    setOkid (okid : string) : IVoid;
     getPasswordPlaceholder () : string;
     setPasswordPlaceholder (passwordPlaceholder : string) : IVoid;
     getPasswordHintText () : string;
@@ -576,8 +521,6 @@ interface ITitaniumUIAlertDialog {
     setStyle (style : number) : IVoid;
     getTitle () : string;
     setTitle (title : string) : IVoid;
-    getTitleid () : string;
-    setTitleid (titleid : string) : IVoid;
 }
 interface ITitaniumUIAndroidCardView {
     bubbleParent : boolean;
@@ -612,11 +555,6 @@ interface ITitaniumUIAndroidCardView {
     overrideCurrentAnimation : boolean;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
@@ -728,16 +666,6 @@ interface ITitaniumUIAndroidCardView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -809,11 +737,6 @@ interface ITitaniumUIAndroidProgressIndicator {
     apiName : string;
     lifecycleContainer : ITitaniumUIWindow;
     elevation : number;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     translationX : number;
     translationY : number;
     translationZ : number;
@@ -844,16 +767,6 @@ interface ITitaniumUIAndroidProgressIndicator {
     setLifecycleContainer (lifecycleContainer : ITitaniumUIWindow) : IVoid;
     getElevation () : number;
     setElevation (elevation : number) : IVoid;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getTranslationX () : number;
     setTranslationX (translationX : number) : IVoid;
     getTranslationY () : number;
@@ -912,11 +825,6 @@ interface ITitaniumUIAndroidSearchView {
     overrideCurrentAnimation : boolean;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
@@ -1016,16 +924,6 @@ interface ITitaniumUIAndroidSearchView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -1315,11 +1213,6 @@ interface ITitaniumUIButton {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -1444,16 +1337,6 @@ interface ITitaniumUIButton {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -1679,14 +1562,9 @@ interface ITitaniumUIClipboard {
     getData (type : string) : any;
     getText () : string;
     hasData (type : string) : boolean;
-    hasText () : boolean;
-    hasURLs () : boolean;
-    hasImages () : boolean;
-    hasColors () : boolean;
+    hasText () : any;
     setData (type : string, data : any) : IVoid;
     setText (text : string) : IVoid;
-    setItems (items : IClipboardItemsType) : IVoid;
-    getItems () : any[];
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
@@ -2020,11 +1898,6 @@ interface ITitaniumUIEmailDialog {
     lifecycleContainer : ITitaniumUIWindow;
     elevation : number;
     previewContext : ITitaniumUIView;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     translationX : number;
     translationY : number;
     translationZ : number;
@@ -2063,16 +1936,6 @@ interface ITitaniumUIEmailDialog {
     setElevation (elevation : number) : IVoid;
     getPreviewContext () : ITitaniumUIView;
     setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getTranslationX () : number;
     setTranslationX (translationX : number) : IVoid;
     getTranslationY () : number;
@@ -2136,11 +1999,6 @@ interface ITitaniumUIImageView {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -2269,16 +2127,6 @@ interface ITitaniumUIImageView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -2381,11 +2229,6 @@ interface ITitaniumUILabel {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -2519,16 +2362,6 @@ interface ITitaniumUILabel {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -2630,7 +2463,6 @@ interface ITitaniumUIListItem {
     editActions : any[];
     searchableText : string;
     color : string;
-    selectedColor : string;
     font : IFont;
     height : number;
     image : string;
@@ -2642,8 +2474,6 @@ interface ITitaniumUIListItem {
     setLifecycleContainer (lifecycleContainer : ITitaniumUIWindow) : IVoid;
     getEditActions () : any[];
     setEditActions (editActions : any[]) : IVoid;
-    getSelectedColor () : string;
-    setSelectedColor (selectedColor : string) : IVoid;
 }
 interface ITitaniumUIListSection {
     apiName : string;
@@ -2712,11 +2542,6 @@ interface ITitaniumUIListView {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -2758,7 +2583,6 @@ interface ITitaniumUIListView {
     searchText : string;
     caseInsensitiveSearch : boolean;
     keepSectionsInSearch : boolean;
-    keyboardDismissMode : number;
     sectionIndexTitles : any[];
     scrollIndicatorStyle : number;
     willScrollOnStatusTap : boolean;
@@ -2869,16 +2693,6 @@ interface ITitaniumUIListView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -2960,8 +2774,6 @@ interface ITitaniumUIListView {
     setCaseInsensitiveSearch (caseInsensitiveSearch : boolean) : IVoid;
     getKeepSectionsInSearch () : boolean;
     setKeepSectionsInSearch (keepSectionsInSearch : boolean) : IVoid;
-    getKeyboardDismissMode () : number;
-    setKeyboardDismissMode (keyboardDismissMode : number) : IVoid;
     getSectionIndexTitles () : any[];
     setSectionIndexTitles (sectionIndexTitles : any[]) : IVoid;
     getScrollIndicatorStyle () : number;
@@ -3286,11 +3098,6 @@ interface ITitaniumUINotification {
     overrideCurrentAnimation : boolean;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
@@ -3390,16 +3197,6 @@ interface ITitaniumUINotification {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -3448,11 +3245,6 @@ interface ITitaniumUIOptionDialog {
     lifecycleContainer : ITitaniumUIWindow;
     elevation : number;
     previewContext : ITitaniumUIView;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     tintColor : string;
     translationX : number;
     translationY : number;
@@ -3488,16 +3280,6 @@ interface ITitaniumUIOptionDialog {
     setElevation (elevation : number) : IVoid;
     getPreviewContext () : ITitaniumUIView;
     setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getTintColor () : string;
     setTintColor (tintColor : string) : IVoid;
     getTranslationX () : number;
@@ -3555,11 +3337,6 @@ interface ITitaniumUIPicker {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     top : number;
@@ -3660,16 +3437,6 @@ interface ITitaniumUIPicker {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -3775,11 +3542,6 @@ interface ITitaniumUIPickerColumn {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -3895,16 +3657,6 @@ interface ITitaniumUIPickerColumn {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -3987,11 +3739,6 @@ interface ITitaniumUIPickerRow {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -4104,16 +3851,6 @@ interface ITitaniumUIPickerRow {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -4196,11 +3933,6 @@ interface ITitaniumUIProgressBar {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -4318,16 +4050,6 @@ interface ITitaniumUIProgressBar {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -4439,11 +4161,6 @@ interface ITitaniumUIScrollView {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -4469,11 +4186,9 @@ interface ITitaniumUIScrollView {
     decelerationRate : number;
     disableBounce : boolean;
     horizontalBounce : boolean;
-    keyboardDismissMode : number;
     maxZoomScale : number;
     minZoomScale : number;
     overScrollMode : number;
-    refreshControl : ITitaniumUIRefreshControl;
     scrollsToTop : boolean;
     scrollIndicatorStyle : number;
     scrollType : string;
@@ -4577,16 +4292,6 @@ interface ITitaniumUIScrollView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -4635,16 +4340,12 @@ interface ITitaniumUIScrollView {
     setDisableBounce (disableBounce : boolean) : IVoid;
     getHorizontalBounce () : boolean;
     setHorizontalBounce (horizontalBounce : boolean) : IVoid;
-    getKeyboardDismissMode () : number;
-    setKeyboardDismissMode (keyboardDismissMode : number) : IVoid;
     getMaxZoomScale () : number;
     setMaxZoomScale (maxZoomScale : number) : IVoid;
     getMinZoomScale () : number;
     setMinZoomScale (minZoomScale : number) : IVoid;
     getOverScrollMode () : number;
     setOverScrollMode (overScrollMode : number) : IVoid;
-    getRefreshControl () : ITitaniumUIRefreshControl;
-    setRefreshControl (refreshControl : ITitaniumUIRefreshControl) : IVoid;
     getScrollsToTop () : boolean;
     setScrollsToTop (scrollsToTop : boolean) : IVoid;
     getScrollIndicatorStyle () : number;
@@ -4701,11 +4402,6 @@ interface ITitaniumUIScrollableView {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -4838,16 +4534,6 @@ interface ITitaniumUIScrollableView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -4958,11 +4644,6 @@ interface ITitaniumUISearchBar {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -5087,16 +4768,6 @@ interface ITitaniumUISearchBar {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -5199,11 +4870,6 @@ interface ITitaniumUISlider {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -5334,16 +5000,6 @@ interface ITitaniumUISlider {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -5463,11 +5119,6 @@ interface ITitaniumUISwitch {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -5590,16 +5241,6 @@ interface ITitaniumUISwitch {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -5679,11 +5320,6 @@ interface ITitaniumUITab {
     overrideCurrentAnimation : boolean;
     pullBackgroundColor : string;
     previewContext : ITitaniumUIView;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     tintColor : string;
     touchEnabled : boolean;
     translationX : number;
@@ -5750,16 +5386,6 @@ interface ITitaniumUITab {
     setPullBackgroundColor (pullBackgroundColor : string) : IVoid;
     getPreviewContext () : ITitaniumUIView;
     setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getTintColor () : string;
     setTintColor (tintColor : string) : IVoid;
     getTouchEnabled () : boolean;
@@ -5813,11 +5439,6 @@ interface ITitaniumUITabGroup {
     pullBackgroundColor : string;
     previewContext : ITitaniumUIView;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     tintColor : string;
     touchEnabled : boolean;
@@ -5907,16 +5528,6 @@ interface ITitaniumUITabGroup {
     getPreviewContext () : ITitaniumUIView;
     setPreviewContext (previewContext : ITitaniumUIView) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getTintColor () : string;
     setTintColor (tintColor : string) : IVoid;
@@ -6195,11 +5806,6 @@ interface ITitaniumUITableView {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -6220,7 +5826,7 @@ interface ITitaniumUITableView {
     keepScreenOn : boolean;
     allowsSelection : boolean;
     allowsSelectionDuringEditing : boolean;
-    data : any[];
+    data : any;
     editable : boolean;
     editing : boolean;
     filterAttribute : string;
@@ -6289,7 +5895,7 @@ interface ITitaniumUITableView {
     setContentInsets (edgeInsets : ITableViewEdgeInsets, animated? : ITableViewContentInsetOption) : IVoid;
     setContentOffset (contentOffset : any) : IVoid;
     selectRow (row : number) : IVoid;
-    setData (data : any[]) : IVoid;
+    setData (data : any) : IVoid;
     setHeaderPullView (headerPullView : ITitaniumUIView) : IVoid;
     updateRow (index : number, row : ITitaniumUITableViewRow, animation : ITableViewAnimationProperties) : IVoid;
     updateSection (index : number, section : ITitaniumUITableViewSection, animation : ITableViewAnimationProperties) : IVoid;
@@ -6363,16 +5969,6 @@ interface ITitaniumUITableView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -6412,7 +6008,7 @@ interface ITitaniumUITableView {
     setAllowsSelection (allowsSelection : boolean) : IVoid;
     getAllowsSelectionDuringEditing () : boolean;
     setAllowsSelectionDuringEditing (allowsSelectionDuringEditing : boolean) : IVoid;
-    getData () : any[];
+    getData () : any;
     getEditable () : boolean;
     setEditable (editable : boolean) : IVoid;
     getEditing () : boolean;
@@ -6526,11 +6122,6 @@ interface ITitaniumUITableViewRow {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -6658,16 +6249,6 @@ interface ITitaniumUITableViewRow {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -6815,11 +6396,6 @@ interface ITitaniumUITextArea {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -6858,9 +6434,6 @@ interface ITitaniumUITextArea {
     keyboardToolbarHeight : number;
     keyboardType : number;
     maxLength : number;
-    padding : ITextAreaPadding;
-    paddingLeft : number;
-    paddingRight : number;
     returnKeyType : number;
     scrollsToTop : boolean;
     showUndoRedoActions : boolean;
@@ -6965,16 +6538,6 @@ interface ITitaniumUITextArea {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -7050,12 +6613,6 @@ interface ITitaniumUITextArea {
     setKeyboardType (keyboardType : number) : IVoid;
     getMaxLength () : number;
     setMaxLength (maxLength : number) : IVoid;
-    getPadding () : ITextAreaPadding;
-    setPadding (padding : ITextAreaPadding) : IVoid;
-    getPaddingLeft () : number;
-    setPaddingLeft (paddingLeft : number) : IVoid;
-    getPaddingRight () : number;
-    setPaddingRight (paddingRight : number) : IVoid;
     getReturnKeyType () : number;
     setReturnKeyType (returnKeyType : number) : IVoid;
     getScrollsToTop () : boolean;
@@ -7114,11 +6671,6 @@ interface ITitaniumUITextField {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -7163,7 +6715,6 @@ interface ITitaniumUITextField {
     leftButtonMode : number;
     leftButtonPadding : number;
     minimumFontSize : number;
-    padding : ITextFieldPadding;
     paddingLeft : number;
     paddingRight : number;
     passwordMask : boolean;
@@ -7273,16 +6824,6 @@ interface ITitaniumUITextField {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -7370,8 +6911,6 @@ interface ITitaniumUITextField {
     setLeftButtonPadding (leftButtonPadding : number) : IVoid;
     getMinimumFontSize () : number;
     setMinimumFontSize (minimumFontSize : number) : IVoid;
-    getPadding () : ITextFieldPadding;
-    setPadding (padding : ITextFieldPadding) : IVoid;
     getPaddingLeft () : number;
     setPaddingLeft (paddingLeft : number) : IVoid;
     getPaddingRight () : number;
@@ -7577,11 +7116,6 @@ interface ITitaniumUIWebView {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -7724,16 +7258,6 @@ interface ITitaniumUIWebView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -7853,11 +7377,6 @@ interface ITitaniumUIWindow {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -7888,15 +7407,11 @@ interface ITitaniumUIWindow {
     autoAdjustScrollViewInsets : boolean;
     fullscreen : boolean;
     hideShadow : boolean;
-    hidesBarsOnSwipe : boolean;
-    hidesBarsOnTap : boolean;
-    hidesBarsWhenKeyboardAppears : boolean;
     leftNavButton : ITitaniumUIView;
     leftNavButtons : any[];
     modal : boolean;
     navBarHidden : boolean;
     navTintColor : string;
-    onBack : (...args : any[]) => any;
     orientationModes : any[];
     orientation : number;
     rightNavButton : ITitaniumUIView;
@@ -8029,16 +7544,6 @@ interface ITitaniumUIWindow {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -8097,12 +7602,6 @@ interface ITitaniumUIWindow {
     setFullscreen (fullscreen : boolean) : IVoid;
     getHideShadow () : boolean;
     setHideShadow (hideShadow : boolean) : IVoid;
-    getHidesBarsOnSwipe () : boolean;
-    setHidesBarsOnSwipe (hidesBarsOnSwipe : boolean) : IVoid;
-    getHidesBarsOnTap () : boolean;
-    setHidesBarsOnTap (hidesBarsOnTap : boolean) : IVoid;
-    getHidesBarsWhenKeyboardAppears () : boolean;
-    setHidesBarsWhenKeyboardAppears (hidesBarsWhenKeyboardAppears : boolean) : IVoid;
     getLeftNavButton () : ITitaniumUIView;
     setLeftNavButton (leftNavButton : ITitaniumUIView) : IVoid;
     getLeftNavButtons () : any[];
@@ -8113,8 +7612,6 @@ interface ITitaniumUIWindow {
     setNavBarHidden (navBarHidden : boolean) : IVoid;
     getNavTintColor () : string;
     setNavTintColor (navTintColor : string) : IVoid;
-    getOnBack () : (...args : any[]) => any;
-    setOnBack (onBack : (...args : any[]) => any) : IVoid;
     getOrientationModes () : any[];
     setOrientationModes (orientationModes : any[]) : IVoid;
     getOrientation () : number;
@@ -9016,24 +8513,6 @@ interface ITitaniumUIIOSDynamicItemBehavior {
     getResistance () : number;
     setResistance (resistance : number) : IVoid;
 }
-interface ITitaniumUIIOSFeedbackGenerator {
-    bubbleParent : boolean;
-    apiName : string;
-    type : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    prepare () : IVoid;
-    selectionChanged () : IVoid;
-    impactOccurred () : IVoid;
-    notificationOccurred (notificationType : I) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-    getType () : number;
-    setType (type : number) : IVoid;
-}
 interface ITitaniumUIIOSGravityBehavior {
     bubbleParent : boolean;
     apiName : string;
@@ -9278,12 +8757,8 @@ interface ITitaniumUIIOSNavigationWindow {
     includeOpaqueBars : boolean;
     autoAdjustScrollViewInsets : boolean;
     fullscreen : boolean;
-    hidesBarsOnSwipe : boolean;
-    hidesBarsOnTap : boolean;
-    hidesBarsWhenKeyboardAppears : boolean;
     leftNavButtons : any[];
     modal : boolean;
-    onBack : (...args : any[]) => any;
     orientationModes : any[];
     orientation : number;
     rightNavButtons : any[];
@@ -9314,7 +8789,6 @@ interface ITitaniumUIIOSNavigationWindow {
     hideToolbar (options? : any) : IVoid;
     closeWindow (window : ITitaniumUIWindow, options : any) : IVoid;
     openWindow (window : ITitaniumUIWindow, options : any) : IVoid;
-    popToRootWindow (options : any) : IVoid;
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
@@ -9400,18 +8874,10 @@ interface ITitaniumUIIOSNavigationWindow {
     setAutoAdjustScrollViewInsets (autoAdjustScrollViewInsets : boolean) : IVoid;
     getFullscreen () : boolean;
     setFullscreen (fullscreen : boolean) : IVoid;
-    getHidesBarsOnSwipe () : boolean;
-    setHidesBarsOnSwipe (hidesBarsOnSwipe : boolean) : IVoid;
-    getHidesBarsOnTap () : boolean;
-    setHidesBarsOnTap (hidesBarsOnTap : boolean) : IVoid;
-    getHidesBarsWhenKeyboardAppears () : boolean;
-    setHidesBarsWhenKeyboardAppears (hidesBarsWhenKeyboardAppears : boolean) : IVoid;
     getLeftNavButtons () : any[];
     setLeftNavButtons (leftNavButtons : any[]) : IVoid;
     getModal () : boolean;
     setModal (modal : boolean) : IVoid;
-    getOnBack () : (...args : any[]) => any;
-    setOnBack (onBack : (...args : any[]) => any) : IVoid;
     getOrientationModes () : any[];
     setOrientationModes (orientationModes : any[]) : IVoid;
     getOrientation () : number;
@@ -9627,15 +9093,11 @@ interface ITitaniumUIIOSSplitWindow {
     autoAdjustScrollViewInsets : boolean;
     fullscreen : boolean;
     hideShadow : boolean;
-    hidesBarsOnSwipe : boolean;
-    hidesBarsOnTap : boolean;
-    hidesBarsWhenKeyboardAppears : boolean;
     leftNavButton : ITitaniumUIView;
     leftNavButtons : any[];
     modal : boolean;
     navBarHidden : boolean;
     navTintColor : string;
-    onBack : (...args : any[]) => any;
     orientationModes : any[];
     orientation : number;
     rightNavButton : ITitaniumUIView;
@@ -9780,12 +9242,6 @@ interface ITitaniumUIIOSSplitWindow {
     setFullscreen (fullscreen : boolean) : IVoid;
     getHideShadow () : boolean;
     setHideShadow (hideShadow : boolean) : IVoid;
-    getHidesBarsOnSwipe () : boolean;
-    setHidesBarsOnSwipe (hidesBarsOnSwipe : boolean) : IVoid;
-    getHidesBarsOnTap () : boolean;
-    setHidesBarsOnTap (hidesBarsOnTap : boolean) : IVoid;
-    getHidesBarsWhenKeyboardAppears () : boolean;
-    setHidesBarsWhenKeyboardAppears (hidesBarsWhenKeyboardAppears : boolean) : IVoid;
     getLeftNavButton () : ITitaniumUIView;
     setLeftNavButton (leftNavButton : ITitaniumUIView) : IVoid;
     getLeftNavButtons () : any[];
@@ -9796,8 +9252,6 @@ interface ITitaniumUIIOSSplitWindow {
     setNavBarHidden (navBarHidden : boolean) : IVoid;
     getNavTintColor () : string;
     setNavTintColor (navTintColor : string) : IVoid;
-    getOnBack () : (...args : any[]) => any;
-    setOnBack (onBack : (...args : any[]) => any) : IVoid;
     getOrientationModes () : any[];
     setOrientationModes (orientationModes : any[]) : IVoid;
     getOrientation () : number;
@@ -10458,7 +9912,6 @@ interface ITitaniumUIIOS {
     CoverFlowView : ITitaniumUIIOSCoverFlowView;
     DocumentViewer : ITitaniumUIIOSDocumentViewer;
     DynamicItemBehavior : ITitaniumUIIOSDynamicItemBehavior;
-    FeedbackGenerator : ITitaniumUIIOSFeedbackGenerator;
     GravityBehavior : ITitaniumUIIOSGravityBehavior;
     ListViewCellSelectionStyle : ITitaniumUIIOSListViewCellSelectionStyle;
     ListViewScrollPosition : ITitaniumUIIOSListViewScrollPosition;
@@ -10563,8 +10016,6 @@ interface ITitaniumUIIOS {
     BLUR_EFFECT_STYLE_EXTRA_LIGHT : number;
     BLUR_EFFECT_STYLE_LIGHT : number;
     BLUR_EFFECT_STYLE_DARK : number;
-    BLUR_EFFECT_STYLE_REGULAR : number;
-    BLUR_EFFECT_STYLE_PROMINENT : number;
     AD_SIZE_PORTRAIT : string;
     AD_SIZE_LANDSCAPE : string;
     CLIP_MODE_DEFAULT : number;
@@ -10578,15 +10029,6 @@ interface ITitaniumUIIOS {
     COLOR_VIEW_FLIPSIDE_BACKGROUND : string;
     COLOR_UNDER_PAGE_BACKGROUND : string;
     forceTouchSupported : boolean;
-    FEEDBACK_GENERATOR_TYPE_SELECTION : number;
-    FEEDBACK_GENERATOR_TYPE_IMPACT : number;
-    FEEDBACK_GENERATOR_TYPE_NOTIFICATION : number;
-    FEEDBACK_GENERATOR_NOTIFICATION_TYPE_SUCCESS : number;
-    FEEDBACK_GENERATOR_NOTIFICATION_TYPE_WARNING : number;
-    FEEDBACK_GENERATOR_NOTIFICATION_TYPE_ERROR : number;
-    FEEDBACK_GENERATOR_IMPACT_STYLE_LIGHT : number;
-    FEEDBACK_GENERATOR_IMPACT_STYLE_MEDIUM : number;
-    FEEDBACK_GENERATOR_IMPACT_STYLE_HEAVY : number;
     LIVEPHOTO_PLAYBACK_STYLE_FULL : number;
     LIVEPHOTO_PLAYBACK_STYLE_HINT : number;
     MENU_POPUP_ARROW_DIRECTION_UP : number;
@@ -10604,9 +10046,6 @@ interface ITitaniumUIIOS {
     ROW_ACTION_STYLE_NORMAL : number;
     SCROLL_DECELERATION_RATE_FAST : number;
     SCROLL_DECELERATION_RATE_NORMAL : number;
-    KEYBOARD_DISMISS_MODE_NONE : number;
-    KEYBOARD_DISMISS_MODE_ON_DRAG : number;
-    KEYBOARD_DISMISS_MODE_INTERACTIVE : number;
     SEARCH_BAR_STYLE_PROMINENT : number;
     SEARCH_BAR_STYLE_MINIMAL : number;
     WEBVIEW_NAVIGATIONTYPE_LINK_CLICKED : number;
@@ -10647,7 +10086,6 @@ interface ITitaniumUIIOS {
     SHORTCUT_ICON_TYPE_UPDATE : number;
     appBadge : number;
     appSupportsShakeToEdit : boolean;
-    statusBarBackgroundColor : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -10665,7 +10103,6 @@ interface ITitaniumUIIOS {
     createCoverFlowView (parameters? : ITitaniumUIIOSCoverFlowView) : ITitaniumUIIOSCoverFlowView;
     createDocumentViewer (parameters? : ITitaniumUIIOSDocumentViewer) : ITitaniumUIIOSDocumentViewer;
     createDynamicItemBehavior (parameters? : ITitaniumUIIOSDynamicItemBehavior) : ITitaniumUIIOSDynamicItemBehavior;
-    createFeedbackGenerator (parameters? : ITitaniumUIIOSFeedbackGenerator) : ITitaniumUIIOSFeedbackGenerator;
     createGravityBehavior (parameters? : ITitaniumUIIOSGravityBehavior) : ITitaniumUIIOSGravityBehavior;
     createLivePhotoView (parameters? : ITitaniumUIIOSLivePhotoView) : ITitaniumUIIOSLivePhotoView;
     createNavigationWindow (parameters? : ITitaniumUIIOSNavigationWindow) : ITitaniumUIIOSNavigationWindow;
@@ -10688,8 +10125,6 @@ interface ITitaniumUIIOS {
     setAppBadge (appBadge : number) : IVoid;
     getAppSupportsShakeToEdit () : boolean;
     setAppSupportsShakeToEdit (appSupportsShakeToEdit : boolean) : IVoid;
-    getStatusBarBackgroundColor () : string;
-    setStatusBarBackgroundColor (statusBarBackgroundColor : string) : IVoid;
 }
 interface ITitaniumUIIPadDocumentViewer {
     bubbleParent : boolean;
@@ -10923,15 +10358,11 @@ interface ITitaniumUIIPadSplitWindow {
     autoAdjustScrollViewInsets : boolean;
     fullscreen : boolean;
     hideShadow : boolean;
-    hidesBarsOnSwipe : boolean;
-    hidesBarsOnTap : boolean;
-    hidesBarsWhenKeyboardAppears : boolean;
     leftNavButton : ITitaniumUIView;
     leftNavButtons : any[];
     modal : boolean;
     navBarHidden : boolean;
     navTintColor : string;
-    onBack : (...args : any[]) => any;
     orientationModes : any[];
     orientation : number;
     rightNavButton : ITitaniumUIView;
@@ -11069,12 +10500,6 @@ interface ITitaniumUIIPadSplitWindow {
     setFullscreen (fullscreen : boolean) : IVoid;
     getHideShadow () : boolean;
     setHideShadow (hideShadow : boolean) : IVoid;
-    getHidesBarsOnSwipe () : boolean;
-    setHidesBarsOnSwipe (hidesBarsOnSwipe : boolean) : IVoid;
-    getHidesBarsOnTap () : boolean;
-    setHidesBarsOnTap (hidesBarsOnTap : boolean) : IVoid;
-    getHidesBarsWhenKeyboardAppears () : boolean;
-    setHidesBarsWhenKeyboardAppears (hidesBarsWhenKeyboardAppears : boolean) : IVoid;
     getLeftNavButton () : ITitaniumUIView;
     setLeftNavButton (leftNavButton : ITitaniumUIView) : IVoid;
     getLeftNavButtons () : any[];
@@ -11085,8 +10510,6 @@ interface ITitaniumUIIPadSplitWindow {
     setNavBarHidden (navBarHidden : boolean) : IVoid;
     getNavTintColor () : string;
     setNavTintColor (navTintColor : string) : IVoid;
-    getOnBack () : (...args : any[]) => any;
-    setOnBack (onBack : (...args : any[]) => any) : IVoid;
     getOrientationModes () : any[];
     setOrientationModes (orientationModes : any[]) : IVoid;
     getOrientation () : number;
@@ -11754,14 +11177,10 @@ interface ITitaniumUI {
     BLEND_MODE_SOURCE_IN : number;
     BLEND_MODE_SOURCE_OUT : number;
     BLEND_MODE_XOR : number;
-    TEXT_ELLIPSIZE_TRUNCATE_WORD_WRAP : number;
-    TEXT_ELLIPSIZE_TRUNCATE_CHAR_WRAP : number;
-    TEXT_ELLIPSIZE_TRUNCATE_CLIP : number;
     TEXT_ELLIPSIZE_TRUNCATE_START : number;
     TEXT_ELLIPSIZE_TRUNCATE_MIDDLE : number;
     TEXT_ELLIPSIZE_TRUNCATE_END : number;
     TEXT_ELLIPSIZE_TRUNCATE_MARQUEE : number;
-    TEXT_ELLIPSIZE_TRUNCATE_NONE : number;
     EXTEND_EDGE_TOP : number;
     EXTEND_EDGE_BOTTOM : number;
     EXTEND_EDGE_LEFT : number;
@@ -11818,8 +11237,6 @@ interface ITitaniumUI {
     LIST_ITEM_TEMPLATE_SUBTITLE : number;
     NOTIFICATION_DURATION_LONG : number;
     NOTIFICATION_DURATION_SHORT : number;
-    CLIPBOARD_OPTION_LOCAL_ONLY : string;
-    CLIPBOARD_OPTION_EXPIRATION_DATE : string;
     PICKER_TYPE_COUNT_DOWN_TIMER : number;
     PICKER_TYPE_DATE : number;
     PICKER_TYPE_DATE_AND_TIME : number;
@@ -11854,10 +11271,6 @@ interface ITitaniumUI {
     TEXT_STYLE_FOOTNOTE : string;
     TEXT_STYLE_CAPTION1 : string;
     TEXT_STYLE_CAPTION2 : string;
-    TEXT_STYLE_CALLOUT : string;
-    TEXT_STYLE_TITLE1 : string;
-    TEXT_STYLE_TITLE2 : string;
-    TEXT_STYLE_TITLE3 : string;
     TEXT_VERTICAL_ALIGNMENT_BOTTOM : number;
     TEXT_VERTICAL_ALIGNMENT_CENTER : number;
     TEXT_VERTICAL_ALIGNMENT_TOP : number;
@@ -11884,7 +11297,6 @@ interface ITitaniumUI {
     currentTab : ITitaniumUITab;
     currentWindow : ITitaniumUIWindow;
     orientation : number;
-    tintColor : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -11943,8 +11355,6 @@ interface ITitaniumUI {
     getCurrentWindow () : ITitaniumUIWindow;
     getOrientation () : number;
     setOrientation (orientation : number) : IVoid;
-    getTintColor () : string;
-    setTintColor (tintColor : string) : IVoid;
     createWebView (parameters? : ITitaniumUIWebView) : ITitaniumUIWebView;
     createWindow (parameters? : ITitaniumUIWindow) : ITitaniumUIWindow;
 }
@@ -12925,7 +12335,6 @@ interface ITitaniumAppProperties {
     hasProperty (property : string) : boolean;
     listProperties () : any[];
     removeProperty (property : string) : IVoid;
-    removeAllProperties () : IVoid;
     setBool (property : string, value : boolean) : IVoid;
     setDouble (property : string, value : number) : IVoid;
     setInt (property : string, value : number) : IVoid;
@@ -12962,22 +12371,6 @@ interface ITitaniumAppIOSLocalNotification {
     fireEvent (name : string, event : any) : IVoid;
     applyProperties (props : any) : IVoid;
     cancel () : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-}
-interface ITitaniumAppIOSSearchQuery {
-    bubbleParent : boolean;
-    apiName : string;
-    queryString : string;
-    attributes : any[];
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    start () : IVoid;
-    cancel () : IVoid;
-    isCancelled () : boolean;
     getBubbleParent () : boolean;
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
@@ -13112,10 +12505,6 @@ interface ITitaniumAppIOSSearchableItemAttributeSet {
     local : number;
     contentRating : number;
     url : string;
-    fullyFormattedAddress : string;
-    subThoroughfare : string;
-    thoroughfare : string;
-    postalCode : string;
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -13301,14 +12690,6 @@ interface ITitaniumAppIOSSearchableItemAttributeSet {
     setContentRating (contentRating : number) : IVoid;
     getUrl () : string;
     setUrl (url : string) : IVoid;
-    getFullyFormattedAddress () : string;
-    setFullyFormattedAddress (fullyFormattedAddress : string) : IVoid;
-    getSubThoroughfare () : string;
-    setSubThoroughfare (subThoroughfare : string) : IVoid;
-    getThoroughfare () : string;
-    setThoroughfare (thoroughfare : string) : IVoid;
-    getPostalCode () : string;
-    setPostalCode (postalCode : string) : IVoid;
 }
 interface ITitaniumAppIOSUserActivity {
     bubbleParent : boolean;
@@ -13379,7 +12760,6 @@ interface ITitaniumAppIOSUserDefaults {
     hasProperty (property : string) : boolean;
     listProperties () : any[];
     removeProperty (property : string) : IVoid;
-    removeAllProperties () : IVoid;
     setBool (property : string, value : boolean) : IVoid;
     setDouble (property : string, value : number) : IVoid;
     setInt (property : string, value : number) : IVoid;
@@ -13416,7 +12796,6 @@ interface ITitaniumAppIOSUserNotificationCategory {
 interface ITitaniumAppIOS {
     BackgroundService : ITitaniumAppIOSBackgroundService;
     LocalNotification : ITitaniumAppIOSLocalNotification;
-    SearchQuery : ITitaniumAppIOSSearchQuery;
     SearchableIndex : ITitaniumAppIOSSearchableIndex;
     SearchableItem : ITitaniumAppIOSSearchableItem;
     SearchableItemAttributeSet : ITitaniumAppIOSSearchableItemAttributeSet;
@@ -13487,7 +12866,6 @@ interface ITitaniumAppIOS {
     setMinimumBackgroundFetchInterval (fetchInterval : number) : IVoid;
     endBackgroundHandler (handlerID : string) : IVoid;
     sendWatchExtensionReply (handlerId : string, userInfo : any) : IVoid;
-    createSearchQuery (parameters? : ITitaniumAppIOSSearchQuery) : ITitaniumAppIOSSearchQuery;
     createSearchableIndex (parameters? : ITitaniumAppIOSSearchableIndex) : ITitaniumAppIOSSearchableIndex;
     createSearchableItem (parameters? : ITitaniumAppIOSSearchableItem) : ITitaniumAppIOSSearchableItem;
     createSearchableItemAttributeSet (parameters? : ITitaniumAppIOSSearchableItemAttributeSet) : ITitaniumAppIOSSearchableItemAttributeSet;
@@ -13709,35 +13087,6 @@ interface ITitaniumCalendarAlert {
     getMinutes () : number;
     getState () : number;
 }
-interface ITitaniumCalendarAttendee {
-    bubbleParent : boolean;
-    apiName : string;
-    isOrganizer : boolean;
-    name : string;
-    email : string;
-    role : number;
-    type : number;
-    status : number;
-    addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
-    fireEvent (name : string, event : any) : IVoid;
-    applyProperties (props : any) : IVoid;
-    getBubbleParent () : boolean;
-    setBubbleParent (bubbleParent : boolean) : IVoid;
-    getApiName () : string;
-    getIsOrganizer () : boolean;
-    setIsOrganizer (isOrganizer : boolean) : IVoid;
-    getName () : string;
-    setName (name : string) : IVoid;
-    getEmail () : string;
-    setEmail (email : string) : IVoid;
-    getRole () : number;
-    setRole (role : number) : IVoid;
-    getType () : number;
-    setType (type : number) : IVoid;
-    getStatus () : number;
-    setStatus (status : number) : IVoid;
-}
 interface ITitaniumCalendarCalendar {
     bubbleParent : boolean;
     apiName : string;
@@ -13788,7 +13137,6 @@ interface ITitaniumCalendarEvent {
     recurrenceRule : ITitaniumCalendarRecurrenceRule;
     recurrenceRules : any[];
     visibility : number;
-    attendees : any[];
     addEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
@@ -13835,7 +13183,6 @@ interface ITitaniumCalendarEvent {
     getRecurrenceRules () : any[];
     setRecurrenceRules (recurrenceRules : any[]) : IVoid;
     getVisibility () : number;
-    getAttendees () : any[];
 }
 interface ITitaniumCalendarRecurrenceRule {
     bubbleParent : boolean;
@@ -13890,7 +13237,6 @@ interface ITitaniumCalendarReminder {
 }
 interface ITitaniumCalendar {
     Alert : ITitaniumCalendarAlert;
-    Attendee : ITitaniumCalendarAttendee;
     Calendar : ITitaniumCalendarCalendar;
     Event : ITitaniumCalendarEvent;
     RecurrenceRule : ITitaniumCalendarRecurrenceRule;
@@ -13929,23 +13275,6 @@ interface ITitaniumCalendar {
     VISIBILITY_DEFAULT : number;
     VISIBILITY_PRIVATE : number;
     VISIBILITY_PUBLIC : number;
-    ATTENDEE_STATUS_UNKNOWN : number;
-    ATTENDEE_STATUS_PENDING : number;
-    ATTENDEE_STATUS_ACCEPTED : number;
-    ATTENDEE_STATUS_DECLINED : number;
-    ATTENDEE_STATUS_TENTATIVE : number;
-    ATTENDEE_STATUS_DELEGATED : number;
-    ATTENDEE_STATUS_IN_PROCESS : number;
-    ATTENDEE_ROLE_UNKNOWN : number;
-    ATTENDEE_ROLE_OPTIONAL : number;
-    ATTENDEE_ROLE_REQUIRED : number;
-    ATTENDEE_ROLE_CHAIR : number;
-    ATTENDEE_ROLE_NON_PARTICIPANT : number;
-    ATTENDEE_TYPE_UNKNOWN : number;
-    ATTENDEE_TYPE_PERSON : number;
-    ATTENDEE_TYPE_ROOM : number;
-    ATTENDEE_TYPE_RESOURCE : number;
-    ATTENDEE_TYPE_GROUP : number;
     eventsAuthorization : number;
     calendarAuthorization : number;
     allAlerts : any[];
@@ -14296,11 +13625,6 @@ interface ITitaniumFacebookLoginButton {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -14411,16 +13735,6 @@ interface ITitaniumFacebookLoginButton {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -14998,11 +14312,6 @@ interface ITitaniumMapView {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -15133,16 +14442,6 @@ interface ITitaniumMapView {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -15508,11 +14807,6 @@ interface ITitaniumMediaVideoPlayer {
     previewContext : ITitaniumUIView;
     right : number;
     rect : IDimension;
-    rotation : number;
-    rotationX : number;
-    rotationY : number;
-    scaleX : number;
-    scaleY : number;
     size : IDimension;
     softKeyboardOnFocus : number;
     tintColor : string;
@@ -15533,7 +14827,6 @@ interface ITitaniumMediaVideoPlayer {
     keepScreenOn : boolean;
     allowsAirPlay : boolean;
     autoplay : boolean;
-    backgroundView : ITitaniumUIView;
     contentURL : string;
     currentPlaybackTime : number;
     duration : number;
@@ -15577,6 +14870,7 @@ interface ITitaniumMediaVideoPlayer {
     play () : IVoid;
     release () : IVoid;
     requestThumbnailImagesAtTimes (times : any[], option : number, callback : (...args : any[]) => any) : IVoid;
+    setBackgroundView (view : ITitaniumUIView) : IVoid;
     stop () : IVoid;
     thumbnailImageAtTime (time : number, option : number) : ITitaniumBlob;
     getBubbleParent () : boolean;
@@ -15653,16 +14947,6 @@ interface ITitaniumMediaVideoPlayer {
     getRight () : number;
     setRight (right : number) : IVoid;
     getRect () : IDimension;
-    getRotation () : number;
-    setRotation (rotation : number) : IVoid;
-    getRotationX () : number;
-    setRotationX (rotationX : number) : IVoid;
-    getRotationY () : number;
-    setRotationY (rotationY : number) : IVoid;
-    getScaleX () : number;
-    setScaleX (scaleX : number) : IVoid;
-    getScaleY () : number;
-    setScaleY (scaleY : number) : IVoid;
     getSize () : IDimension;
     getSoftKeyboardOnFocus () : number;
     setSoftKeyboardOnFocus (softKeyboardOnFocus : number) : IVoid;
@@ -15702,8 +14986,6 @@ interface ITitaniumMediaVideoPlayer {
     setAllowsAirPlay (allowsAirPlay : boolean) : IVoid;
     getAutoplay () : boolean;
     setAutoplay (autoplay : boolean) : IVoid;
-    getBackgroundView () : ITitaniumUIView;
-    setBackgroundView (backgroundView : ITitaniumUIView) : IVoid;
     getContentURL () : string;
     setContentURL (contentURL : string) : IVoid;
     getCurrentPlaybackTime () : number;
@@ -15851,9 +15133,6 @@ interface ITitaniumMedia {
     QUALITY_HIGH : number;
     QUALITY_LOW : number;
     QUALITY_MEDIUM : number;
-    QUALITY_640x480 : number;
-    QUALITY_IFRAME_1280x720 : number;
-    QUALITY_IFRAME_960x540 : number;
     UNKNOWN_ERROR : number;
     VIDEO_CONTROL_DEFAULT : number;
     VIDEO_CONTROL_EMBEDDED : number;
@@ -15924,8 +15203,6 @@ interface ITitaniumMedia {
     saveToPhotoGallery (media : ITitaniumBlob, callbacks : any) : IVoid;
     setOverrideAudioRoute (route : number) : IVoid;
     showCamera (options : ICameraOptionsType) : IVoid;
-    hasMusicLibraryPermissions () : boolean;
-    requestMusicLibraryPermissions (callback : (...args : any[]) => any) : IVoid;
     queryMusicLibrary (query : IMediaQueryType) : any[];
     startMicrophoneMonitor () : IVoid;
     stopMicrophoneMonitor () : IVoid;
@@ -15935,14 +15212,10 @@ interface ITitaniumMedia {
     switchCamera (camera : number) : IVoid;
     hasCameraPermissions () : boolean;
     requestCameraPermissions (callback : (...args : any[]) => any) : IVoid;
-    hasPhotoGalleryPermissions () : boolean;
-    requestPhotoGalleryPermissions (callback : (...args : any[]) => any) : IVoid;
     requestCameraAccess (callback : (...args : any[]) => any) : IVoid;
     takeScreenshot (callback : (...args : any[]) => any) : IVoid;
     vibrate (pattern? : any[]) : IVoid;
     requestAuthorization (callback : (...args : any[]) => any) : IVoid;
-    hasAudioPermissions () : boolean;
-    requestAudioPermissions (callback : (...args : any[]) => any) : IVoid;
     createAudioPlayer (parameters? : ITitaniumMediaAudioPlayer) : ITitaniumMediaAudioPlayer;
     createAudioRecorder (parameters? : ITitaniumMediaAudioRecorder) : ITitaniumMediaAudioRecorder;
     getBubbleParent () : boolean;
@@ -15950,9 +15223,6 @@ interface ITitaniumMedia {
     getApiName () : string;
     getLifecycleContainer () : ITitaniumUIWindow;
     setLifecycleContainer (lifecycleContainer : ITitaniumUIWindow) : IVoid;
-    getQUALITY_640x480 () : number;
-    getQUALITY_IFRAME_1280x720 () : number;
-    getQUALITY_IFRAME_960x540 () : number;
     getAppMusicPlayer () : ITitaniumMediaMusicPlayer;
     getAudioLineType () : number;
     getAudioPlaying () : boolean;
@@ -16522,8 +15792,6 @@ interface ITitaniumWatchSession {
     ACTIVATION_STATE_NOT_ACTIVATED : number;
     ACTIVATION_STATE_INACTIVE : number;
     ACTIVATION_STATE_ACTIVATED : number;
-    hasContentPending : boolean;
-    remainingComplicationUserInfoTransfers : number;
     isSupported : boolean;
     isPaired : boolean;
     isWatchAppInstalled : boolean;
@@ -16548,8 +15816,6 @@ interface ITitaniumWatchSession {
     setBubbleParent (bubbleParent : boolean) : IVoid;
     getApiName () : string;
     getActivationState () : number;
-    getHasContentPending () : boolean;
-    getRemainingComplicationUserInfoTransfers () : number;
     getIsSupported () : boolean;
     getIsPaired () : boolean;
     getIsWatchAppInstalled () : boolean;
@@ -17690,6 +16956,7 @@ interface ITitanium {
     removeEventListener (name : string, callback : (...args : any[]) => any) : IVoid;
     fireEvent (name : string, event : any) : IVoid;
     applyProperties (props : any) : IVoid;
+    include (name : string) : IVoid;
     createBuffer (params : ICreateBufferArgs) : ITitaniumBuffer;
     createProxy (parameters? : ITitaniumProxy) : ITitaniumProxy;
     getBubbleParent () : boolean;
@@ -18523,10 +17790,6 @@ interface INotificationParams {
     userInfo : any;
     region : any;
 }
-interface ILaunchOptionsType {
-    source : string;
-    url : string;
-}
 interface IUserNotificationSettings {
     types : any[];
     categories : any[];
@@ -18801,7 +18064,6 @@ interface IPhotoGalleryOptionsType {
     mediaTypes : any[];
     popoverView : ITitaniumUIView;
     arrowDirection : number;
-    allowMultiple : boolean;
 }
 interface ICameraMediaItemType {
     success : boolean;
@@ -18843,16 +18105,6 @@ interface IMediaAuthorizationResponse {
     code : number;
 }
 interface IRequestCameraAccessResult {
-    success : boolean;
-    error : string;
-    code : number;
-}
-interface IRequestMusicLibraryAccessResult {
-    success : boolean;
-    error : string;
-    code : number;
-}
-interface IRequestPhotoGalleryAccessResult {
     success : boolean;
     error : string;
     code : number;
@@ -18986,10 +18238,6 @@ interface IAttribute {
     value : number;
     range : any[];
 }
-interface IClipboardItemsType {
-    items : any[];
-    options : any;
-}
 interface IFont {
     fontFamily : string;
     fontSize : number;
@@ -19015,7 +18263,6 @@ interface IListDataItem {
 }
 interface IRowActionType {
     title : string;
-    identifier : string;
     style : number;
     color : string;
 }
@@ -19083,17 +18330,9 @@ interface ITextAreaSelectedParams {
     location : number;
     length : number;
 }
-interface ITextAreaPadding {
-    left : number;
-    right : number;
-}
 interface ITextFieldSelectedParams {
     location : number;
     length : number;
-}
-interface ITextFieldPadding {
-    left : number;
-    right : number;
 }
 interface IPoint {
     x : number;
@@ -19208,7 +18447,7 @@ interface IBarItemType {
 interface ITransitionAnimationParam {
     duration : number;
     transitionFrom : ITitaniumUIAnimation;
-    transitionTo : ITitaniumUIAnimation;
+    tranistionTo : ITitaniumUIAnimation;
 }
 interface IPopoverParams {
     animated : boolean;
@@ -19284,7 +18523,6 @@ declare var RequestPermissionAccessResult : IRequestPermissionAccessResult;
 declare var CalendarPermissionResponse : ICalendarPermissionResponse;
 declare var launchOptions : ILaunchOptions;
 declare var NotificationParams : INotificationParams;
-declare var LaunchOptionsType : ILaunchOptionsType;
 declare var UserNotificationSettings : IUserNotificationSettings;
 declare var ImageAsCroppedDict : IImageAsCroppedDict;
 declare var EventsAuthorizationResponse : IEventsAuthorizationResponse;
@@ -19332,8 +18570,6 @@ declare var PreviewImageError : IPreviewImageError;
 declare var ScreenshotResult : IScreenshotResult;
 declare var MediaAuthorizationResponse : IMediaAuthorizationResponse;
 declare var RequestCameraAccessResult : IRequestCameraAccessResult;
-declare var RequestMusicLibraryAccessResult : IRequestMusicLibraryAccessResult;
-declare var RequestPhotoGalleryAccessResult : IRequestPhotoGalleryAccessResult;
 declare var RouteDescription : IRouteDescription;
 declare var PlayerQueue : IPlayerQueue;
 declare var ThumbnailResponse : IThumbnailResponse;
@@ -19357,7 +18593,6 @@ declare var PumpCallbackArgs : IPumpCallbackArgs;
 declare var CreateBufferArgs : ICreateBufferArgs;
 declare var MatrixCreationDict : IMatrixCreationDict;
 declare var Attribute : IAttribute;
-declare var ClipboardItemsType : IClipboardItemsType;
 declare var Font : IFont;
 declare var ItemTemplate : IItemTemplate;
 declare var ViewTemplate : IViewTemplate;
@@ -19378,9 +18613,7 @@ declare var TableViewIndexEntry : ITableViewIndexEntry;
 declare var TableViewContentInsetOption : ITableViewContentInsetOption;
 declare var TableViewEdgeInsets : ITableViewEdgeInsets;
 declare var textAreaSelectedParams : ITextAreaSelectedParams;
-declare var TextAreaPadding : ITextAreaPadding;
 declare var textFieldSelectedParams : ITextFieldSelectedParams;
-declare var TextFieldPadding : ITextFieldPadding;
 declare var Point : IPoint;
 declare var Gradient : IGradient;
 declare var GradientColorRef : IGradientColorRef;
